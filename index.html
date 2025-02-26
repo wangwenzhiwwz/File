@@ -168,60 +168,49 @@
                 transform: none;
             }
         }
-        
-        /* 黑白风格返回顶部按钮 */
         #back-to-top {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: white; /* 背景白色 */
-            color: black; /* 图标颜色 - 黑色 */
-            border: 0px solid black; /* 边框颜色黑色 */
-            border-radius: 50%; /* 圆形按钮 */
-            width: 50px;
-            height: 50px;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.5);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s, transform 0.3s, background 0.3s;
             opacity: 0;
-            pointer-events: none; /* 不可点击，直到显示 */
+            pointer-events: none;
         }
-
-        /* 按钮图标 */
         #back-to-top svg {
-            width: 24px;
-            height: 24px;
-            stroke: black;
+            width: 1.5rem;
+            height: 1.5rem;
             fill: none;
+            stroke: #333;
             stroke-width: 2;
         }
-
-        /* 按钮可见时 */
         #back-to-top.visible {
             opacity: 1;
             pointer-events: auto;
         }
-
-        /* 鼠标悬停效果 */
         #back-to-top:hover {
-            background-color: rgb(220, 220, 220); /* 悬停时背景变黑 */
-            color: white; /* 图标变白色 */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 更大的阴影 */
-            transform: scale(1.1); /* 按钮轻微放大 */
+            background: rgba(255, 255, 255, 0.7);
+            transform: scale(1.1);
         }
-
-        /* 小屏幕适配 */
         @media (max-width: 600px) {
             #back-to-top {
-                width: 45px;
-                height: 45px;
+                width: 2.5rem;
+                height: 2.5rem;
             }
             #back-to-top svg {
-                width: 20px;
-                height: 20px;
+                width: 1.2rem;
+                height: 1.2rem;
             }
         }
     </style>
@@ -229,7 +218,10 @@
 <body>
     <a href="https://www.webintoapp.com/store/223060" class="header-link" target="_blank">
         <div class="image-container">
-            <img src="https://wangwenzhi.eu.org/images/images/appstore.png" alt="App Store" loading="lazy">
+            <!-- Original URL with cache-busting query and fallback -->
+            <img src="https://wangwenzhi.eu.org/images/images/appstore.png?nocache=${Date.now()}" alt="App Store" loading="lazy" onerror="this.src='https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg';">
+            <!-- Uncomment below if hosting locally -->
+            <!-- <img src="./images/appstore.png" alt="App Store" loading="lazy" onerror="this.src='https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg';"> -->
         </div>
     </a>
     <header>
@@ -253,25 +245,6 @@
             <path d="M12 5V19M18 11L12 5L6 11" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </button>
-
-
-    <script>
-        // 控制返回顶部按钮显示/隐藏
-        const backToTopButton = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
-            }
-        });
-
-        // 点击返回顶部按钮时，滚动到顶部
-        backToTopButton.addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
 
     <script src="apps.js"></script>
 </body>

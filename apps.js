@@ -156,7 +156,6 @@ function renderCategories() {
 
     container.appendChild(fragment);
 
-    // Back-to-top button logic
     const backToTop = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
