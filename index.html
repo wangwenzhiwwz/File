@@ -168,24 +168,50 @@
                 transform: none;
             }
         }
-        /* Back-to-top button */
+        /* Improved back-to-top button with SVG */
         #back-to-top {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 15px;
+            right: 15px;
             background: #007bff;
             color: white;
             border: none;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            font-size: 20px;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
-            display: none;
-            transition: opacity 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s, transform 0.3s;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #back-to-top svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: none;
+            stroke: white;
+            stroke-width: 2;
+        }
+        #back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
         }
         #back-to-top:hover {
             background: #0056b3;
+            transform: scale(1.1);
+        }
+        @media (max-width: 600px) {
+            #back-to-top {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            #back-to-top svg {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -211,7 +237,11 @@
     </header>
 
     <div id="app-container"></div>
-    <button id="back-to-top" title="Back to Top">↑</button>
+    <button id="back-to-top" title="Back to Top">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 5V19M18 11L12 5L6 11" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
 
     <script src="apps.js"></script>
 </body>

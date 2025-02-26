@@ -159,8 +159,11 @@ function renderCategories() {
     // Back-to-top button logic
     const backToTop = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
-        backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
-        backToTop.style.opacity = window.scrollY > 300 ? '1' : '0';
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
     });
     backToTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
