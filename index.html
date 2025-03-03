@@ -81,10 +81,33 @@
 
         .hamburger {
             display: none;
-            font-size: 24px;
-            cursor: pointer;
+            width: 20px; /* 与 Logo 大小接近 */
+            height: 12px; /* 缩小高度 */
+            position: relative;
             background: none;
             border: none;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            position: absolute;
+            width: 100%;
+            height: 1.5px; /* 减小横条厚度 */
+            background: #1d1d1f;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:nth-child(1) {
+            top: 0;
+        }
+
+        .hamburger span:nth-child(2) {
+            top: 5px; /* 调整间距 */
+        }
+
+        .hamburger span:nth-child(3) {
+            top: 10px; /* 调整间距 */
         }
 
         .hero {
@@ -222,6 +245,57 @@
             opacity: 1;
         }
 
+        /* 暗黑模式全局样式 */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1c1c1e;
+                color: #f5f5f7;
+            }
+
+            header {
+                background: rgba(28, 28, 30, 0.9);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            .hamburger span {
+                background: #f5f5f7; /* 暗黑模式下三横条变白 */
+            }
+
+            .nav-links {
+                background: rgba(28, 28, 30, 0.95);
+            }
+
+            .nav-links a {
+                color: #f5f5f7;
+            }
+
+            .nav-links a:hover {
+                color: #0a84ff;
+            }
+
+            .hero {
+                background: #2c2c2e;
+            }
+
+            .hero p {
+                color: #d1d1d6;
+            }
+
+            .app-item {
+                background: #2c2c2e;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            .app-description {
+                color: #d1d1d6;
+            }
+
+            #back-to-top {
+                background: #f5f5f7;
+                color: #1c1c1e;
+            }
+        }
+
         /* 4K 大屏优化 */
         @media (min-width: 2560px) {
             .app-container {
@@ -246,50 +320,13 @@
 
         /* 手机端调整 */
         @media (max-width: 768px) {
-            .banner-container img {
-                min-height: 300px;
+            header {
+                padding: 10px 15px; /* 减小高度 */
             }
 
-            .app-grid {
-                grid-template-columns: repeat(2, 1fr); /* 强制两列 */
-                gap: 10px; /* 减小间距 */
-            }
-
-            .app-item {
-                padding: 10px; /* 统一内边距 */
-                width: 100%; /* 占满网格单元宽度 */
-                height: 160px; /* 固定高度 */
-                overflow: hidden; /* 超出内容隐藏 */
-            }
-
-            .app-icon {
-                width: 40px; /* 缩小图标 */
-                height: 40px;
-                margin-bottom: 10px;
-            }
-
-            .app-name {
-                font-size: 16px; /* 减小字体 */
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis; /* 单行超出显示省略号 */
-            }
-
-            .app-description {
-                font-size: 12px; /* 减小字体 */
-                display: -webkit-box;
-                -webkit-line-clamp: 2; /* 限制两行 */
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis; /* 超出显示省略号 */
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 20px;
+            .logo {
+                width: 24px;
+                height: 24px;
             }
 
             .hamburger {
@@ -299,7 +336,7 @@
             .nav-links {
                 display: none;
                 position: absolute;
-                top: 60px;
+                top: 44px;
                 left: 0;
                 width: 100%;
                 background: rgba(255, 255, 255, 0.95);
@@ -314,8 +351,61 @@
 
             .nav-links a {
                 display: block;
-                margin: 15px 25px;
+                margin: 12px 20px;
+                font-size: 14px;
+            }
+
+            .banner-container img {
+                min-height: 300px;
+            }
+
+            .app-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .app-item {
+                padding: 10px;
+                width: 100%;
+                height: 160px;
+                overflow: hidden;
+            }
+
+            .app-icon {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            .app-name {
                 font-size: 16px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .app-description {
+                font-size: 12px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+
+            /* 手机端暗黑模式覆盖 */
+            @media (prefers-color-scheme: dark) {
+                .nav-links {
+                    background: rgba(28, 28, 30, 0.95);
+                }
             }
         }
     </style>
@@ -328,7 +418,11 @@
                     <img src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" alt="Wangwenzhi Logo" loading="lazy">
                 </div>
             </a>
-            <button class="hamburger">☰</button>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="#android">Android</a>
                 <a href="#ulefone">Ulefone</a>
