@@ -63,7 +63,7 @@ const appData = [
             { name: "RuTracker.org", description: "最大的俄语torrent跟踪器", link: "https://rutracker.org/", icon: "./images/rutracker.jpg" },
             { name: "Lrepacks", description: "俄罗斯软件打包破解", link: "https://lrepacks.net/", icon: "./images/lrepacks.png" },
             { name: "CyberMania", description: "马来西亚Adobe软件破解", link: "https://www.cybermania.ws/?s=adobe", icon: "./images/CyberMania.png" },
-            { name: "4K Downloader Download", description: "从 YouTube 下载 4K 超高清格式视频的程序", link: "https://www.wwz.im/article/4kDownloader", icon: "./images/4KDownloader.png" },
+            { name: "4K Downloader Download", description: "从 YouTube 下载 4K 超高清格式视频的程序", link: "https://lrepacks.net/repaki-programm-dlya-interneta/801-4k-downloader-repack-amp-portable.html", icon: "./images/4KDownloader.png" },
             { name: "BalenaEtcher", description: "BalenaEtcher是一个图形化烧录工具", link: "https://etcher.balena.io/", icon: "./images/balena.png" },
             { name: "Hbuilder X", description: "HX是轻如编辑器、强如IDE的合体版本", link: "https://www.dcloud.io/hbuilderx.html", icon: "./images/hbuilderx.png" },
             { name: "Billfish素材管家", description: "创意设计必备素材管理工具", link: "https://www.billfish.cn/", icon: "./images/billfish.png" },
