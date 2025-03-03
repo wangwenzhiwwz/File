@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="https://wangwenzhi.eu.org/images/favicon_io/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="https://wangwenzhi.eu.org/images/favicon_io/site.webmanifest">
     <title>App Navigation</title>
     <style>
         * {
@@ -79,9 +79,17 @@
             color: #0071e3;
         }
 
+        .hamburger {
+            display: none; /* 默认隐藏 */
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
         .hero {
             text-align: center;
-            padding: 0 0 60px 0; /* 只保留底部padding */
+            padding: 0 0 60px 0;
             background: #fff;
             position: relative;
         }
@@ -99,8 +107,9 @@
         .banner-container img {
             width: 100%;
             height: auto;
-            object-fit: cover; /* 确保图片填充容器 */
+            object-fit: cover;
             display: block;
+            min-height: 200px;
         }
 
         .hero-content {
@@ -147,7 +156,7 @@
 
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 30px;
         }
 
@@ -212,6 +221,77 @@
         #back-to-top:hover {
             opacity: 1;
         }
+
+        /* 大屏幕调整 */
+        @media (min-width: 769px) {
+            .banner-container img {
+                min-height: 400px;
+            }
+        }
+
+        /* 手机端调整 */
+        @media (max-width: 768px) {
+            .banner-container img {
+                min-height: 300px;
+            }
+
+            .app-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .app-item {
+                padding: 15px;
+            }
+
+            .app-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .app-name {
+                font-size: 18px;
+            }
+
+            .app-description {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+
+            /* 手机端导航栏优化 */
+            .hamburger {
+                display: block; /* 显示汉堡菜单按钮 */
+            }
+
+            .nav-links {
+                display: none; /* 默认隐藏导航链接 */
+                position: absolute;
+                top: 60px; /* 根据头部高度调整 */
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.95);
+                text-align: left;
+                padding: 10px 0;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: block; /* 点击汉堡菜单时显示 */
+            }
+
+            .nav-links a {
+                display: block;
+                margin: 15px 25px;
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -222,6 +302,7 @@
                     <img src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" alt="Wangwenzhi Logo" loading="lazy">
                 </div>
             </a>
+            <button class="hamburger">☰</button>
             <div class="nav-links">
                 <a href="#android">Android</a>
                 <a href="#ulefone">Ulefone</a>
@@ -254,6 +335,11 @@
         function refreshPage() {
             location.reload(true);
         }
+
+        // 汉堡菜单切换
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
 
         const appData = [
             {
@@ -427,6 +513,7 @@
                     const targetId = this.getAttribute('href').substring(1);
                     const targetElement = document.getElementById(targetId);
                     targetElement.scrollIntoView({ behavior: 'smooth' });
+                    document.querySelector('.nav-links').classList.remove('active'); // 点击链接后关闭菜单
                 });
             });
         }
