@@ -2,6 +2,10 @@ function refreshPage() {
     location.reload(true);
 }
 
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
 const appData = [
     {
         title: "Android",
@@ -122,12 +126,11 @@ const appData = [
     }
 ];
 
-
 function createAppItem(app) {
     return `
         <div class="app-item">
             <a href="${app.link}" class="app-link" target="_blank" rel="noopener noreferrer">
-                <img class="app-icon" src="${app.icon}" alt="${app.name} Icon" loading="lazy" onerror="this.src='https://via.placeholder.com/100?text=Image+Not+Found';">
+                <img class="app-icon" src="${app.icon}" alt="${app.name} Icon" loading="lazy" onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found';">
                 <h3 class="app-name">${app.name}</h3>
                 <p class="app-description">${app.description}</p>
             </a>
@@ -138,7 +141,7 @@ function createAppItem(app) {
 function createCategory(category, index) {
     const appItems = category.apps.map(createAppItem).join('');
     return `
-        <section class="app-category" style="animation-delay: ${index * 0.1}s;">
+        <section class="app-category" id="${category.title.toLowerCase()}" style="animation-delay: ${index * 0.1}s;">
             <h2 class="app-category-title">${category.title}</h2>
             <div class="app-grid">${appItems}</div>
         </section>
@@ -157,7 +160,6 @@ function renderCategories() {
 
     container.appendChild(fragment);
 
-    // Back-to-top button logic
     const backToTop = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
@@ -168,6 +170,16 @@ function renderCategories() {
     });
     backToTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('.nav-links').classList.remove('active');
+        });
     });
 }
 
