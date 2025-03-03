@@ -109,7 +109,6 @@ const appData = [
     {
         title: "Other",
         apps: [
-            { name: "小鲸", description: "TV直播客户端", link: "http://www.xiaojingtv.com/", icon: "./images/xiaojing.png" },
             { name: "Emotn", description: "Free app store for all Android TV, TV Box and projector", link: "https://app.emotn.com/", icon: "./images/emotn.webp" },
             { name: "CN影院", description: "华人在线影院", link: "https://cnys.tv/", icon: "./images/nivideo.jfif" },
             { name: "US Address", description: "美国地址生成", link: "https://www.haoweichi.com/", icon: "./images/dizhi.png" },
