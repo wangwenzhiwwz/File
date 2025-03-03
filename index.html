@@ -80,7 +80,7 @@
         }
 
         .hamburger {
-            display: none; /* 默认隐藏 */
+            display: none;
             font-size: 24px;
             cursor: pointer;
             background: none;
@@ -156,7 +156,7 @@
 
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
@@ -222,8 +222,23 @@
             opacity: 1;
         }
 
-        /* 大屏幕调整 */
-        @media (min-width: 769px) {
+        /* 4K 大屏优化 */
+        @media (min-width: 2560px) {
+            .app-container {
+                max-width: 1920px;
+            }
+
+            .app-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .banner-container img {
+                min-height: 500px;
+            }
+        }
+
+        /* 普通大屏幕调整 */
+        @media (min-width: 769px) and (max-width: 2559px) {
             .banner-container img {
                 min-height: 400px;
             }
@@ -236,25 +251,37 @@
             }
 
             .app-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
+                grid-template-columns: repeat(2, 1fr); /* 强制两列 */
+                gap: 10px; /* 减小间距 */
             }
 
             .app-item {
-                padding: 15px;
+                padding: 10px; /* 统一内边距 */
+                width: 100%; /* 占满网格单元宽度 */
+                height: 160px; /* 固定高度 */
+                overflow: hidden; /* 超出内容隐藏 */
             }
 
             .app-icon {
-                width: 50px;
-                height: 50px;
+                width: 40px; /* 缩小图标 */
+                height: 40px;
+                margin-bottom: 10px;
             }
 
             .app-name {
-                font-size: 18px;
+                font-size: 16px; /* 减小字体 */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; /* 单行超出显示省略号 */
             }
 
             .app-description {
-                font-size: 14px;
+                font-size: 12px; /* 减小字体 */
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* 限制两行 */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis; /* 超出显示省略号 */
             }
 
             .hero h1 {
@@ -265,15 +292,14 @@
                 font-size: 20px;
             }
 
-            /* 手机端导航栏优化 */
             .hamburger {
-                display: block; /* 显示汉堡菜单按钮 */
+                display: block;
             }
 
             .nav-links {
-                display: none; /* 默认隐藏导航链接 */
+                display: none;
                 position: absolute;
-                top: 60px; /* 根据头部高度调整 */
+                top: 60px;
                 left: 0;
                 width: 100%;
                 background: rgba(255, 255, 255, 0.95);
@@ -283,7 +309,7 @@
             }
 
             .nav-links.active {
-                display: block; /* 点击汉堡菜单时显示 */
+                display: block;
             }
 
             .nav-links a {
@@ -336,7 +362,6 @@
             location.reload(true);
         }
 
-        // 汉堡菜单切换
         document.querySelector('.hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
@@ -513,7 +538,7 @@
                     const targetId = this.getAttribute('href').substring(1);
                     const targetElement = document.getElementById(targetId);
                     targetElement.scrollIntoView({ behavior: 'smooth' });
-                    document.querySelector('.nav-links').classList.remove('active'); // 点击链接后关闭菜单
+                    document.querySelector('.nav-links').classList.remove('active');
                 });
             });
         }
