@@ -37,12 +37,12 @@
         }
 
         .nav-container {
-            max-width: 1024px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            padding: 0;
         }
 
         .logo {
@@ -132,7 +132,7 @@
             height: auto;
             object-fit: cover;
             display: block;
-            min-height: 200px;
+            min-height: 300px;
         }
 
         .hero-content {
@@ -154,9 +154,8 @@
         }
 
         .app-container {
-            max-width: 1024px;
             margin: 0 auto;
-            padding: 0 22px;
+            padding: 0;
         }
 
         .app-category {
@@ -179,18 +178,18 @@
 
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 自适应宽度，最小 200px */
-            gap: 20px; /* 减小间距 */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
         }
 
         .app-item {
             background: #fff;
             border-radius: 18px;
-            padding: 20px;
+            padding: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             transition: transform 0.3s;
-            height: 260px; /* 固定高度，确保一致 */
-            overflow: hidden; /* 超出隐藏 */
+            height: 160px;
+            overflow: hidden;
         }
 
         .app-item:hover {
@@ -201,30 +200,30 @@
             text-decoration: none;
             color: inherit;
             display: block;
-            height: 100%; /* 占满容器 */
+            height: 100%;
         }
 
         .app-icon {
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             border-radius: 12px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .app-name {
-            font-size: 22px;
+            font-size: 16px;
             font-weight: 600;
-            margin-bottom: 10px;
-            white-space: nowrap; /* 单行 */
+            margin-bottom: 5px;
+            white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis; /* 超出省略 */
+            text-overflow: ellipsis;
         }
 
         .app-description {
-            font-size: 16px;
+            font-size: 12px;
             color: #6e6e73;
             display: -webkit-box;
-            -webkit-line-clamp: 3; /* 限制 3 行 */
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -307,32 +306,36 @@
             }
         }
 
-        /* 4K 大屏优化 */
-        @media (min-width: 2560px) {
+        /* 平板端调整（769px - 1024px） */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .nav-container {
+                padding: 0 22px; /* 平板端留白 22px，与手机端一致 */
+            }
+
             .app-container {
-                max-width: 1920px; /* 4K 屏幕更大容器 */
-            }
-
-            .app-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 自适应列数 */
-            }
-
-            .banner-container img {
-                min-height: 500px;
+                padding: 0 22px; /* 平板端留白 22px，与手机端一致 */
             }
         }
 
-        /* 普通大屏幕调整 */
-        @media (min-width: 769px) and (max-width: 2559px) {
-            .banner-container img {
-                min-height: 400px;
+        /* 电脑端调整（> 1024px） */
+        @media (min-width: 1025px) {
+            .nav-container {
+                padding: 0 200px; /* 电脑端留白 200px */
+            }
+
+            .app-container {
+                padding: 0 200px; /* 电脑端留白 200px */
             }
         }
 
-        /* 手机端调整 */
+        /* 手机端导航和网格调整（≤ 768px） */
         @media (max-width: 768px) {
             header {
                 padding: 10px 15px;
+            }
+
+            .nav-container {
+                padding: 0 22px; /* 手机端留白 22px */
             }
 
             .logo {
@@ -367,42 +370,12 @@
                 font-size: 14px;
             }
 
-            .banner-container img {
-                min-height: 300px;
+            .app-container {
+                padding: 0 22px; /* 手机端留白 22px */
             }
 
             .app-grid {
-                grid-template-columns: repeat(2, 1fr); /* 手机端 2 列 */
-                gap: 10px;
-            }
-
-            .app-item {
-                padding: 10px;
-                width: 100%;
-                height: 160px; /* 手机端固定高度 */
-                overflow: hidden;
-            }
-
-            .app-icon {
-                width: 40px;
-                height: 40px;
-                margin-bottom: 10px;
-            }
-
-            .app-name {
-                font-size: 16px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-
-            .app-description {
-                font-size: 12px;
-                display: -webkit-box;
-                -webkit-line-clamp: 2; /* 手机端 2 行 */
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                grid-template-columns: repeat(2, 1fr); /* 手机端强制 2 列 */
             }
 
             .hero h1 {
@@ -448,7 +421,7 @@
 
     <div class="hero">
         <div class="banner-container">
-            <a href="https://www.wwz.im" target="_blank">
+            <a href="https://www.wwz.im" target="_blank"> <!-- 链接替换为 https://www.wwz.im -->
                 <img src="./images/appstore.png" alt="App Store" loading="lazy">
             </a>
         </div>
@@ -460,7 +433,7 @@
 
     <div class="app-container" id="app-container"></div>
 
-    <button id="back-to-top" title="回到顶部">↑</button>
+    <button id="back-to-top" title="Back to Top">↑</button>
 
     <script src="apps.js"></script>
 </body>
