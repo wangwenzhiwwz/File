@@ -8,6 +8,20 @@ document.querySelector('.hamburger').addEventListener('click', function() {
 
 const appData = [
     {
+        title: "iOS",
+        apps: [
+            { name: "Hiddify", description: "VPN, Clash, SingBox,XRay,V2Ray", link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" },
+            { name: "Shadowrocket", description: "基于规则的代理实用程序", link: "https://apps.apple.com/us/app/shadowrocket/id932747118", icon: "./images/shadorocket.webp" },
+            { name: "QWeather", description: "和风天气提供全球天气预报", link: "https://www.qweather.com/en/app", icon: "./images/QWeather.webp" },
+            { name: "ProMovie Recorder", description: "充分利用设备的摄像功能", link: "https://apps.apple.com/us/app/promovie-recorder/id1076481548", icon: "./images/ProMovie.webp" },
+            { name: "LocalSend", description: "局域网发送文件", link: "https://localsend.org/#/download", icon: "./images/localsend.png" },
+            { name: "LanDrop", description: "将文件拖放到局域网上的任何设备", link: "https://landrop.app/#downloads", icon: "./images/LANDrop.svg" },
+            { name: "Blackmagic Camera", description: "Introducing Digital Film for iPhone!", link: "https://www.blackmagicdesign.com/products/blackmagiccamera", icon: "./images/BlackMagicCamera.webp" },
+            { name: "极影相机", description: "原名Fotorgear，口袋中的专业相机", link: "https://apps.apple.com/cn/app/%E6%9E%81%E5%BD%B1%E7%9B%B8%E6%9C%BA/id1459953293", icon: "./images/jiying.webp" },
+            { name: "太阳测量师", description: "(Sun Surveyor)计画每一个日出和日落的时刻", link: "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875", icon: "./images/sun.webp" }
+        ]
+    },
+    {
         title: "Android",
         apps: [
             { name: "VPN", description: "全平台VPN客户端", link: "https://www.wwz.im/article/VPN", icon: "./images/v2ray.png" },
@@ -71,20 +85,6 @@ const appData = [
             { name: "MPC-BE", description: "免费开源视频播放器", link: "./software/MPC-BE.1.8.2.x64.exe", icon: "./images/MPC.jpg" },
             { name: "IrfanView", description: "图像查看/浏览/转换器", link: "https://www.irfanview.com/", icon: "./images/irfanview.jpg" },
             { name: "Adobe GenP", description: "Adobe通用补丁。可以修补adobe 产品。", link: "https://www.cybermania.ws/apps/genp/", icon: "./images/adobe genp.png" }
-        ]
-    },
-    {
-        title: "iOS",
-        apps: [
-            { name: "Hiddify", description: "VPN, Clash, SingBox,XRay,V2Ray", link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" },
-            { name: "Shadowrocket", description: "基于规则的代理实用程序", link: "https://apps.apple.com/us/app/shadowrocket/id932747118", icon: "./images/shadorocket.webp" },
-            { name: "QWeather", description: "和风天气提供全球天气预报", link: "https://www.qweather.com/en/app", icon: "./images/QWeather.webp" },
-            { name: "ProMovie Recorder", description: "充分利用设备的摄像功能", link: "https://apps.apple.com/us/app/promovie-recorder/id1076481548", icon: "./images/ProMovie.webp" },
-            { name: "LocalSend", description: "局域网发送文件", link: "https://localsend.org/#/download", icon: "./images/localsend.png" },
-            { name: "LanDrop", description: "将文件拖放到局域网上的任何设备", link: "https://landrop.app/#downloads", icon: "./images/LANDrop.svg" },
-            { name: "Blackmagic Camera", description: "Introducing Digital Film for iPhone!", link: "https://www.blackmagicdesign.com/products/blackmagiccamera", icon: "./images/BlackMagicCamera.webp" },
-            { name: "极影相机", description: "原名Fotorgear，口袋中的专业相机", link: "https://apps.apple.com/cn/app/%E6%9E%81%E5%BD%B1%E7%9B%B8%E6%9C%BA/id1459953293", icon: "./images/jiying.webp" },
-            { name: "太阳测量师", description: "(Sun Surveyor)计画每一个日出和日落的时刻", link: "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875", icon: "./images/sun.webp" }
         ]
     },
     {

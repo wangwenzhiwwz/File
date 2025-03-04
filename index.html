@@ -309,22 +309,22 @@
         /* 平板端调整（769px - 1024px） */
         @media (min-width: 769px) and (max-width: 1024px) {
             .nav-container {
-                padding: 0 22px; /* 平板端留白 22px，与手机端一致 */
+                padding: 0 22px;
             }
 
             .app-container {
-                padding: 0 22px; /* 平板端留白 22px，与手机端一致 */
+                padding: 0 22px;
             }
         }
 
         /* 电脑端调整（> 1024px） */
         @media (min-width: 1025px) {
             .nav-container {
-                padding: 0 200px; /* 电脑端留白 200px */
+                padding: 0 200px;
             }
 
             .app-container {
-                padding: 0 200px; /* 电脑端留白 200px */
+                padding: 0 200px;
             }
         }
 
@@ -335,7 +335,7 @@
             }
 
             .nav-container {
-                padding: 0 22px; /* 手机端留白 22px */
+                padding: 0 22px;
             }
 
             .logo {
@@ -358,6 +358,8 @@
                 text-align: left;
                 padding: 10px 0;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                animation: slideDown 0.3s ease forwards; /* 添加下拉动画 */
             }
 
             .nav-links.active {
@@ -366,16 +368,16 @@
 
             .nav-links a {
                 display: block;
-                margin: 12px 20px;
-                font-size: 14px;
+                margin: 15px 20px; /* 增加间距，便于点击 */
+                font-size: 18px; /* 字体增大到 18px */
             }
 
             .app-container {
-                padding: 0 22px; /* 手机端留白 22px */
+                padding: 0 22px;
             }
 
             .app-grid {
-                grid-template-columns: repeat(2, 1fr); /* 手机端强制 2 列 */
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .hero h1 {
@@ -390,6 +392,18 @@
                 .nav-links {
                     background: rgba(28, 28, 30, 0.95);
                 }
+            }
+        }
+
+        /* 下拉动画 */
+        @keyframes slideDown {
+            from {
+                height: 0;
+                opacity: 0;
+            }
+            to {
+                height: auto; /* 展开到内容高度 */
+                opacity: 1;
             }
         }
     </style>
@@ -408,11 +422,11 @@
                 <span></span>
             </button>
             <div class="nav-links">
+                <a href="#ios">iOS</a> <!-- iOS 调整到最前面 -->
                 <a href="#android">Android</a>
                 <a href="#ulefone">Ulefone</a>
                 <a href="#web">Web</a>
                 <a href="#windows">Windows</a>
-                <a href="#ios">iOS</a>
                 <a href="#mac">Mac</a>
                 <a href="#other">Other</a>
             </div>
@@ -421,7 +435,7 @@
 
     <div class="hero">
         <div class="banner-container">
-            <a href="https://www.wwz.im" target="_blank"> <!-- 链接替换为 https://www.wwz.im -->
+            <a href="https://www.wwz.im" target="_blank">
                 <img src="./images/appstore.png" alt="App Store" loading="lazy">
             </a>
         </div>
