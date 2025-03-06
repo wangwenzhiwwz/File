@@ -83,7 +83,8 @@ const appData = [
             { name: "PureRef", description: "窗口悬浮显示图片，整理灵感", link: "https://www.pureref.com/", icon: "./images/PureRef.png" },
             { name: "MPC-BE", description: "免费开源视频播放器", link: "./software/MPC-BE.1.8.2.x64.exe", icon: "./images/MPC.jpg" },
             { name: "IrfanView", description: "图像查看/浏览/转换器", link: "https://www.irfanview.com/", icon: "./images/irfanview.jpg" },
-            { name: "Adobe GenP", description: "Adobe通用补丁。可以修补adobe 产品。", link: "https://www.cybermania.ws/apps/genp/", icon: "./images/adobe genp.png" }
+            { name: "Adobe GenP", description: "Adobe通用补丁。可以修补adobe 产品。", link: "https://www.cybermania.ws/apps/adobe-genp/", icon: "./images/adobe genp.png" }
+            { name: "Cursor", description: "使用 AI 进行编码的最佳方式。", link: "https://www.cursor.com/", icon: "./images/cursor.jpg" }
         ]
     },
     {
