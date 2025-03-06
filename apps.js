@@ -109,6 +109,7 @@ const appData = [
     {
         title: "Other",
         apps: [
+            { name: "Temp Mail", description: "生成一次性临时电子邮件地址并立即接", link: "https://temp-mail.org/", icon: "./images/Temp Mail.png" },
             { name: "Emotn", description: "Free app store for all Android TV, TV Box and projector", link: "https://app.emotn.com/", icon: "./images/emotn.webp" },
             { name: "CN影院", description: "华人在线影院", link: "https://cnys.tv/", icon: "./images/nivideo.jfif" },
             { name: "US Address", description: "美国地址生成", link: "https://www.haoweichi.com/", icon: "./images/dizhi.png" },
