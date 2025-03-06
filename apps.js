@@ -118,7 +118,7 @@ const appData = [
         createApp({ name: "Scene",             description: "强大而美观的系统管理工具",                          link: "./software/Scene - v8.0.15.apk",                                              icon: "./images/Scene.webp" }),
     ]},
     { title: "Web", apps: [
-        createApp({ name: "WWZ.iM",            description: "我的个人网站APP",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
+        createApp({ name: "WWZ.iM",            description: "我的个人网站",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "MY IP",             description: "iP查询软件",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
         createApp({ name: "ChatGPT",           description: "对话方式进行交互的人工智能",                        link: "https://ai.wwz.im/",                                                          icon: "./images/openai.png" }),
         createApp({ name: "Whimsical",         description: "Where great ideas take shape",                     link: "https://w.wwz.im/",                                                           icon: "./images/whimsical.jfif" }),
