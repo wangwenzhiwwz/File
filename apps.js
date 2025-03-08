@@ -87,6 +87,7 @@ const appData = [
     { title: "iOS", apps: [
         createApp({ name: "Hiddify",           description: "VPN, Clash, SingBox, XRay, V2Ray",                  link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" }),
         createApp({ name: "Shadowrocket",      description: "基于规则的代理实用程序",                          link: "https://apps.apple.com/us/app/shadowrocket/id932747118",                       icon: "./images/shadorocket.webp" }),
+        createApp({ name: "Notion",           description: "Plan, organize, track projects",                        link: "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281",       icon: "./images/notion.webp" }),
         createApp({ name: "ChatGPT",           description: "The official app by OpenAI",                        link: "https://apps.apple.com/us/app/chatgpt/id6448311069",                       icon: "./images/openai.png" }),
         createApp({ name: "QWeather",          description: "和风天气提供全球天气预报",                          link: "https://www.qweather.com/en/app",                                             icon: "./images/QWeather.webp" }),
         createApp({ name: "ProMovie Recorder", description: "充分利用设备的摄像功能",                          link: "https://apps.apple.com/us/app/promovie-recorder/id1076481548",                 icon: "./images/ProMovie.webp" }),
