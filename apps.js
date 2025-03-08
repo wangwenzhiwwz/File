@@ -87,6 +87,7 @@ const appData = [
     { title: "iOS", apps: [
         createApp({ name: "Hiddify",           description: "VPN, Clash, SingBox, XRay, V2Ray",                  link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" }),
         createApp({ name: "Shadowrocket",      description: "基于规则的代理实用程序",                          link: "https://apps.apple.com/us/app/shadowrocket/id932747118",                       icon: "./images/shadorocket.webp" }),
+        createApp({ name: "ChatGPT",           description: "The official app by OpenAI",                        link: "https://apps.apple.com/us/app/chatgpt/id6448311069",                       icon: "./images/openai.png" }),
         createApp({ name: "QWeather",          description: "和风天气提供全球天气预报",                          link: "https://www.qweather.com/en/app",                                             icon: "./images/QWeather.webp" }),
         createApp({ name: "ProMovie Recorder", description: "充分利用设备的摄像功能",                          link: "https://apps.apple.com/us/app/promovie-recorder/id1076481548",                 icon: "./images/ProMovie.webp" }),
         createApp({ name: "LocalSend",         description: "局域网发送文件",                                    link: "https://apps.apple.com/us/app/localsend/id1661733229",                         icon: "./images/localsend.png" }),
@@ -120,13 +121,15 @@ const appData = [
     { title: "Web", apps: [
         createApp({ name: "WWZ.iM",            description: "我的个人网站",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "MY IP",             description: "iP查询软件",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
-        createApp({ name: "ChatGPT",           description: "对话方式进行交互的人工智能",                        link: "https://ai.wwz.im/",                                                          icon: "./images/openai.png" }),
+        createApp({ name: "Ai",                description: "对话方式进行交互的人工智能",                        link: "https://ai.com/",                                                          icon: "./images/openai.png" }),
         createApp({ name: "Whimsical",         description: "Where great ideas take shape",                     link: "https://w.wwz.im/",                                                           icon: "./images/whimsical.jfif" }),
         createApp({ name: "闪电分镜",          description: "轻松高效的 前期策划",                               link: "https://m.wwz.im/",                                                           icon: "./images/SDFJ.webp" }),
         createApp({ name: "Nodeseek",          description: "热爱Web开发服务器和极客",                            link: "https://www.nodeseek.com/",                                                   icon: "./images/NodeSeek.png" }),
         createApp({ name: "V2EX",              description: "创意工作者的社区",                                  link: "https://www.v2ex.com/",                                                       icon: "./images/v2ex.png" }),
         createApp({ name: "Noise",             description: "Efficiency-follow",                                 link: "https://spcqwserdvymm.com.vika.cn/share/shryNwH3HRgvzMTaZVAGx/fodkuzz5eaw0w", icon: "./images/noise.jpg" }),
         createApp({ name: "AXU",               description: "阿虚同学的储藏间",                                  link: "https://axutongxue.com/",                                                     icon: "./images/axu.jpg" }),
+        createApp({ name: "TopHub",               description: "今日热榜排行",                                  link: "https://tophub.today/",                                                     icon: "./images/tophub.png" }),
+        createApp({ name: "IT之家",               description: "科技门户网站",                                  link: "https://www.ithome.com/",                                                     icon: "./images/ithome.png" }),
     ]},
     { title: "Windows", apps: [
         createApp({ name: "RustDesk",          description: "安全可靠的远程桌面体验",                            link: "https://rustdesk.com/",                                                       icon: "./images/rustdesk.svg" }),
