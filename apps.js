@@ -84,6 +84,23 @@ function displayError(message) {
 
 // 优化后的应用数据
 const appData = [
+    { title: "AI", apps: [
+        createApp({ name: "Ai.WWZ.iM",         description: "最新的人工智能对话系统",                              link: "https://ai.wwz.im/",                      icon: "./images/ai.png" }),
+        createApp({ name: "Grok",              description: "Grok 是由 xAI 开发的生成式人工智能聊天机器人",         link: "https://grok.com/",                       icon: "./images/Grok.jpg" }),
+        createApp({ name: "ChatGPT",           description: "The official app by OpenAI",                        link: "https://chatgpt.com/",                    icon: "./images/openai.png" }),
+        createApp({ name: "DeepSeek",           description: "深度求索人工智能基础技术研究",                       link: "https://chat.deepseek.com/",              icon: "./images/DeepSeek.jpg" }),
+        createApp({ name: "Gemini",           description: "Get help with planning, and more from Google AI.",                       link: "https://gemini.google.com/",              icon: "./images/Gemini.png" }),
+        createApp({ name: "Microsoft Copilot",           description: "Microsoft Copilot is your companion to inform and inspire. ",           link: "https://copilot.microsoft.com/",          icon: "./images/Copilot.png" }),
+        createApp({ name: "GitHub Copilot",           description: "GitHub Copilot can use your code",           link: "https://copilot.microsoft.com/",          icon: "./images/GitHub Copilot.png" }),
+        createApp({ name: "Suno",           description: "快速生成包含歌词、旋律和演唱的完整歌曲",           link: "https://suno.com/",                               icon: "./images/suno.jpg" }),
+        createApp({ name: "Viggle",           description: "将照片中的人物“动起来”，比如跳舞或模仿视频中的动作",           link: "https://viggle.ai/",                 icon: "./images/viggle.webp" }),
+        createApp({ name: "ElevenLabs",           description: "通过深度学习 生成自然、逼真的合成语音",           link: "https://elevenlabs.io/",                     icon: "./images/elevenlabs.png" }),
+        createApp({ name: "Perplexity",           description: "AI驱动的搜索引擎和问答工具",           link: "https://www.perplexity.ai/",                           icon: "./images/perplexity.png" }),
+        createApp({ name: "WebSim",           description: "利用强大的AI即时生成代码无需用户编写任何代码",           link: "https://websim.ai/",                           icon: "./images/WebSim.png" }),
+        createApp({ name: "Bolt.new",           description: "一个由StackBlitz开发的AI驱动的网页开发工具",           link: "https://bolt.new/",                           icon: "./images/Bolt.jpg" }),
+        createApp({ name: "DeepAI",           description: "涵盖图像生成、视频创作、文本生成和开发者API等领域",           link: "https://deepai.org/",                           icon: "./images/DeepAI.png" }),
+        createApp({ name: "Ollama",           description: "让用户在自己的设备上轻松运行和管理大型语言模型",           link: "https://ollama.com/",                           icon: "./images/ollama.png" }),
+    ]},
     { title: "iOS", apps: [
         createApp({ name: "Hiddify",           description: "VPN, Clash, SingBox, XRay, V2Ray",                  link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" }),
         createApp({ name: "Shadowrocket",      description: "基于规则的代理实用程序",                          link: "https://apps.apple.com/us/app/shadowrocket/id932747118",                       icon: "./images/shadorocket.webp" }),
@@ -105,8 +122,6 @@ const appData = [
         createApp({ name: "酷安",              description: "玩数码，上酷安 真实有趣的数码社区",                link: "https://www.coolapk.com/",                                                    icon: "./images/CoolAPK.png" }),
         createApp({ name: "Monitor+",          description: "专业手机监视软件",                                  link: "https://monitorplus.cc/",                                                     icon: "./images/monitor+.jpg" }),
         createApp({ name: "MXPlayer",          description: "强大的视频播放器",                                  link: "https://github.com/wangwenzhiwwz/file/releases/download/APK/MX_Player_Pro-v1.68.4_build.apk", icon: "./images/MxPlayer.png" }),
-    ]},
-    { title: "Ulefone", apps: [
         createApp({ name: "Wow时钟",          description: "时钟/倒计时显示APP",                               link: "https://github.com/wangwenzhiwwz/file/releases/download/APK/Wow.clock.apk",    icon: "./images/wow.png" }),
         createApp({ name: "DU RECORDER",       description: "The easiest way to record and livestream your screen", link: "https://www.du-recorder.com/",                                               icon: "./images/du-recorder.png" }),
         createApp({ name: "Battery显示",       description: "查看手机剩余的电量",                                 link: "./software/Battery.apk",                                                      icon: "./images/Battery.png" }),
@@ -123,7 +138,6 @@ const appData = [
     { title: "Web", apps: [
         createApp({ name: "WWZ.iM",            description: "我的个人网站",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "MY IP",             description: "iP查询软件",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
-        createApp({ name: "Ai",                description: "对话方式进行交互的人工智能",                        link: "https://ai.com/",                                                          icon: "./images/openai.png" }),
         createApp({ name: "Whimsical",         description: "Where great ideas take shape",                     link: "https://w.wwz.im/",                                                           icon: "./images/whimsical.jfif" }),
         createApp({ name: "闪电分镜",          description: "轻松高效的 前期策划",                               link: "https://m.wwz.im/",                                                           icon: "./images/SDFJ.webp" }),
         createApp({ name: "Nodeseek",          description: "热爱Web开发服务器和极客",                            link: "https://www.nodeseek.com/",                                                   icon: "./images/NodeSeek.png" }),
@@ -169,7 +183,27 @@ const appData = [
         createApp({ name: "WPS",               description: "AI-Powered Office Suite for Everyone",              link: "https://www.wps.com/",                                                        icon: "./images/wps.png" }),
         createApp({ name: "Surge",             description: "Advanced Network Toolbox for Mac & iOS",            link: "https://nssurge.com/",                                                        icon: "./images/surge.png" }),
         createApp({ name: "Appstorrent",       description: "Сотни приложений, игр и плагинов для macOS",          link: "https://appstorrent.ru/",                                                     icon: "./images/appstorrent.jpg" }),
-        createApp({ name: "MacGF",             description: "专注于macOS系统软件下载",                           link: "https://www.macgf.com/",                                                       icon: "./images/macgf.png" }),
+    ]},
+    { title: "VPS", apps: [
+        createApp({ name: "EUserv",            description: "Dedicated Server Hosting, VPS, Cloud Hosting",     link: "https://support.euserv.com/",                                    icon: "./images/EUserv.jpg" }),
+        createApp({ name: "BandwagonHost",     description: "All VPS hosting plans include: Enterprise servers",     link: "https://bwh88.net/services",                                    icon: "./images/bwh.png" }),
+        createApp({ name: "RackNerd",     description: "RackNerd is a diverse & global provider of Infrastructure as a Service solutions.",     link: "https://my.racknerd.com/clientarea.php",     icon: "./images/RackNerd.jpg" }),
+        createApp({ name: "DogYun",     description: "便宜的香港服务器，灵活高效的云托管弹性云服务器 ",     link: "https://vm.dogyun.com/server/list",                                    icon: "./images/dogyun.png" }),
+        createApp({ name: "V.PS",     description: "V.PS is a simple, fast and stable VPS service ",     link: "https://vps.hosting/clientarea/services/amsterdam-cloud-kvm-vps/",                icon: "./images/V.PS.png" }),
+        createApp({ name: "Oracle",     description: "提供永久免费服务器，配置高速度快线路好，需要信用卡注册，失败率极高",     link: "https://cloud.oracle.com",                             icon: "./images/Oracle.png" }),
+        createApp({ name: "CloudCone",     description: "提供基于KVM虚拟化的VPS产品以及独立服务器租用，数据中心在洛杉矶multacom机房（MC机房），产品支持按小时计费",     link: "https://app.cloudcone.com/",         icon: "./images/CloudCone.jpg" }),
+        createApp({ name: "VPS推荐",           description: "分享VPS优惠性价比产品",                            link: "https://kejilion.pro/topvps/",                                                icon: "./images/Cloud-icon.png" }),
+        createApp({ name: "Scamalytics",           description: "检测你的VPS的IP欺诈等级",                            link: "https://scamalytics.com/",                                                icon: "./images/scamalytics.png" }),
+        createApp({ name: "站长Ping",           description: "站长工具ping测速是一款全面的网站测速工具",               link: "https://ping.chinaz.com/",                                      icon: "./images/ChinaZ.png" }),
+        createApp({ name: "ITDOG",           description: "一个为IT运维人员和网站管理员设计的实用工具平台",               link: "https://www.itdog.cn/ping_ipv6/kr6.w1997.eu.org",              icon: "./images/ITDOG.png" }),
+        createApp({ name: "Dynadot",           description: "低价和无隐藏费用域名续费和转移价格竞争力强",               link: "https://www.dynadot.com/account/domain/name/list.html",              icon: "./images/Dynadot.jpg" }),
+        createApp({ name: "EU.org",           description: "从1996年开始的永久免费域名",                         link: "https://nic.eu.org/arf/en/",                                             icon: "./images/EUorg.png" }),
+        createApp({ name: "Hurricane Electric",       description: "Hurricane Electric 免费 IPv6 隧道代理",            link: "https://tunnelbroker.net/",                                             icon: "./images/Hurricane Electric.jpg" }),
+        createApp({ name: "FreeDNS",       description: "成立于 1999 年，提供免费 DNS 解析和动态 DNS 服务",            link: "https://freedns.afraid.org/subdomain/",                                             icon: "./images/FreeDNS.png" }),
+        createApp({ name: "Freenom",       description: "荷兰的域名注册商，也是全球第一个且唯一的免费域名提供商",            link: "https://my.freenom.com/clientarea.php?action=domains",          icon: "./images/Freenom.png" }),
+        createApp({ name: "Name.com",       description: "Name.com 提供多种顶级域名（TLDs）",            link: "https://www.name.com/zh-cn/account/login",                                        icon: "./images/name.jpg" }),
+
+
     ]},
     { title: "Other", apps: [
         createApp({ name: "Temp Mail",         description: "生成一次性临时电子邮件地址并立即接",                link: "https://temp-mail.org/",                                                      icon: "./images/Temp Mail.png" }),
@@ -182,7 +216,6 @@ const appData = [
         createApp({ name: "WebIntoApp",        description: "在线将您的网站变为Android和 iOS 的专用应用程序",   link: "https://www.webintoapp.com/",                                                 icon: "./images/webintoapp.png" }),
         createApp({ name: "草料二维码",        description: "一站式二维码生成工具，免费可用",                    link: "https://cli.im/",                                                             icon: "./images/cli.png" }),
         createApp({ name: "V2raySE",           description: "V2raySE 在线节点转换工具",                         link: "https://v2rayse.com/node-convert/",                                           icon: "./images/v2rayse.png" }),
-        createApp({ name: "VPS推荐",           description: "分享VPS优惠性价比产品",                            link: "https://kejilion.pro/topvps/",                                                icon: "./images/Cloud-icon.png" }),
         createApp({ name: "Estk.me",           description: "eSTK.me is a Removable eUICC solution",             link: "./software/EasyEUICC-1.2.0.apk",                                              icon: "./images/Estk.png" }),
         createApp({ name: "RedteaGO",          description: "Your top choice of eSIM for an enjoyable journey!", link: "https://esim.redteago.com/zh-CN/esim-mainland-hk-macao",                       icon: "./images/RedteaGO.jpg" }),
     ]},
