@@ -95,6 +95,8 @@ const appData = [
         createApp({ name: "AXU",               description: "阿虚同学的储藏间",                                  link: "https://axutongxue.com/",                                                     icon: "./images/axu.jpg" }),
         createApp({ name: "TopHub",               description: "今日热榜排行",                                  link: "https://tophub.today/",                                                     icon: "./images/tophub.png" }),
         createApp({ name: "IT之家",               description: "科技门户网站",                                  link: "https://www.ithome.com/",                                                     icon: "./images/ithome.png" }),
+        createApp({ name: "Estk.me",           description: "eSTK.me is a Removable eUICC solution",             link: "https://www.estk.me/downloads/",                                              icon: "./images/Estk.png" }),
+        createApp({ name: "RedteaGO",          description: "Your top choice of eSIM for an enjoyable journey!", link: "https://esim.redteago.com/zh-CN/esim-mainland-hk-macao",                       icon: "./images/RedteaGO.jpg" }),
     ]},
     { title: "AI", apps: [
         createApp({ name: "Ai.WWZ.iM",         description: "最新的人工智能对话系统",                              link: "https://ai.wwz.im/",                      icon: "./images/ai.png" }),
@@ -146,6 +148,7 @@ const appData = [
         createApp({ name: "Focus Chart",       description: "This app displays a focus chart with a siemens star.", link: "./software/Focus Chart.apk",                                               icon: "./images/Focus Chart.webp" }),
         createApp({ name: "Brevent",           description: "在没有 root 权限的情况下将应用待机",                 link: "./software/Brevent - v4.2.21.1.apk",                                          icon: "./images/Brevent.webp" }),
         createApp({ name: "Scene",             description: "强大而美观的系统管理工具",                          link: "./software/Scene - v8.0.15.apk",                                              icon: "./images/Scene.webp" }),
+        createApp({ name: "Estk.me",           description: "eSTK.me is a Removable eUICC solution",             link: "./software/EasyEUICC-1.2.0.apk",                                              icon: "./images/Estk.png" }),
     ]},
     { title: "Windows", apps: [
         createApp({ name: "RustDesk",          description: "安全可靠的远程桌面体验",                            link: "https://rustdesk.com/",                                                       icon: "./images/rustdesk.svg" }),
@@ -216,8 +219,6 @@ const appData = [
         createApp({ name: "WebIntoApp",        description: "在线将您的网站变为Android和 iOS 的专用应用程序",   link: "https://www.webintoapp.com/",                                                 icon: "./images/webintoapp.png" }),
         createApp({ name: "草料二维码",        description: "一站式二维码生成工具，免费可用",                    link: "https://cli.im/",                                                             icon: "./images/cli.png" }),
         createApp({ name: "V2raySE",           description: "V2raySE 在线节点转换工具",                         link: "https://v2rayse.com/node-convert/",                                           icon: "./images/v2rayse.png" }),
-        createApp({ name: "Estk.me",           description: "eSTK.me is a Removable eUICC solution",             link: "./software/EasyEUICC-1.2.0.apk",                                              icon: "./images/Estk.png" }),
-        createApp({ name: "RedteaGO",          description: "Your top choice of eSIM for an enjoyable journey!", link: "https://esim.redteago.com/zh-CN/esim-mainland-hk-macao",                       icon: "./images/RedteaGO.jpg" }),
     ]},
 ];
 
