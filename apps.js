@@ -85,7 +85,7 @@ function displayError(message) {
 // 优化后的应用数据
 const appData = [
     { title: "Web", apps: [
-        createApp({ name: "WWZ.iM",            description: "我的个人网站",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
+        createApp({ name: "WWZ.iM",            description: "My personal website",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "MY IP",             description: "What Is My IP Address - See Your Public Address - IPv4 & IPv6",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
         createApp({ name: "Notion",           description: "Plan, organize, track projects",                        link: "https://www.notion.so/",                                                icon: "./images/notion.webp" }),
         createApp({ name: "Milanote",           description: "The tool for organizing creative projects",       link: "https://app.milanote.com/",                                                          icon: "./images/milanote.jpg" }),
