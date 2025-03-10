@@ -84,6 +84,18 @@ function displayError(message) {
 
 // 优化后的应用数据
 const appData = [
+    { title: "Web", apps: [
+        createApp({ name: "WWZ.iM",            description: "我的个人网站",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
+        createApp({ name: "MY IP",             description: "iP查询软件",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
+        createApp({ name: "Whimsical",         description: "Where great ideas take shape",                     link: "https://w.wwz.im/",                                                           icon: "./images/whimsical.jfif" }),
+        createApp({ name: "闪电分镜",          description: "轻松高效的 前期策划",                               link: "https://m.wwz.im/",                                                           icon: "./images/SDFJ.webp" }),
+        createApp({ name: "Nodeseek",          description: "热爱Web开发服务器和极客",                            link: "https://www.nodeseek.com/",                                                   icon: "./images/NodeSeek.png" }),
+        createApp({ name: "V2EX",              description: "创意工作者的社区",                                  link: "https://www.v2ex.com/",                                                       icon: "./images/v2ex.png" }),
+        createApp({ name: "Alist.WWZ.im",      description: "Wangwenzhi Network disk",                                 link: "https://alist.wwz.im/",                                                      icon: "./images/noise.jpg" }),
+        createApp({ name: "AXU",               description: "阿虚同学的储藏间",                                  link: "https://axutongxue.com/",                                                     icon: "./images/axu.jpg" }),
+        createApp({ name: "TopHub",               description: "今日热榜排行",                                  link: "https://tophub.today/",                                                     icon: "./images/tophub.png" }),
+        createApp({ name: "IT之家",               description: "科技门户网站",                                  link: "https://www.ithome.com/",                                                     icon: "./images/ithome.png" }),
+    ]},
     { title: "AI", apps: [
         createApp({ name: "Ai.WWZ.iM",         description: "最新的人工智能对话系统",                              link: "https://ai.wwz.im/",                      icon: "./images/ai.png" }),
         createApp({ name: "Grok",              description: "Grok 是由 xAI 开发的生成式人工智能聊天机器人",         link: "https://grok.com/",                       icon: "./images/Grok.jpg" }),
@@ -134,18 +146,6 @@ const appData = [
         createApp({ name: "Focus Chart",       description: "This app displays a focus chart with a siemens star.", link: "./software/Focus Chart.apk",                                               icon: "./images/Focus Chart.webp" }),
         createApp({ name: "Brevent",           description: "在没有 root 权限的情况下将应用待机",                 link: "./software/Brevent - v4.2.21.1.apk",                                          icon: "./images/Brevent.webp" }),
         createApp({ name: "Scene",             description: "强大而美观的系统管理工具",                          link: "./software/Scene - v8.0.15.apk",                                              icon: "./images/Scene.webp" }),
-    ]},
-    { title: "Web", apps: [
-        createApp({ name: "WWZ.iM",            description: "我的个人网站",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
-        createApp({ name: "MY IP",             description: "iP查询软件",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
-        createApp({ name: "Whimsical",         description: "Where great ideas take shape",                     link: "https://w.wwz.im/",                                                           icon: "./images/whimsical.jfif" }),
-        createApp({ name: "闪电分镜",          description: "轻松高效的 前期策划",                               link: "https://m.wwz.im/",                                                           icon: "./images/SDFJ.webp" }),
-        createApp({ name: "Nodeseek",          description: "热爱Web开发服务器和极客",                            link: "https://www.nodeseek.com/",                                                   icon: "./images/NodeSeek.png" }),
-        createApp({ name: "V2EX",              description: "创意工作者的社区",                                  link: "https://www.v2ex.com/",                                                       icon: "./images/v2ex.png" }),
-        createApp({ name: "Alist.WWZ.im",      description: "Wangwenzhi Network disk",                                 link: "https://alist.wwz.im/",                                                      icon: "./images/noise.jpg" }),
-        createApp({ name: "AXU",               description: "阿虚同学的储藏间",                                  link: "https://axutongxue.com/",                                                     icon: "./images/axu.jpg" }),
-        createApp({ name: "TopHub",               description: "今日热榜排行",                                  link: "https://tophub.today/",                                                     icon: "./images/tophub.png" }),
-        createApp({ name: "IT之家",               description: "科技门户网站",                                  link: "https://www.ithome.com/",                                                     icon: "./images/ithome.png" }),
     ]},
     { title: "Windows", apps: [
         createApp({ name: "RustDesk",          description: "安全可靠的远程桌面体验",                            link: "https://rustdesk.com/",                                                       icon: "./images/rustdesk.svg" }),
