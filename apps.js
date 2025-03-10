@@ -87,6 +87,9 @@ const appData = [
     { title: "Web", apps: [
         createApp({ name: "WWZ.iM",            description: "我的个人网站",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "MY IP",             description: "iP查询软件",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
+        createApp({ name: "Notion",           description: "Plan, organize, track projects",                        link: "https://www.notion.so/",                                                icon: "./images/notion.webp" }),
+        createApp({ name: "Milanote",           description: "The tool for organizing creative projects",       link: "https://app.milanote.com/",                                                          icon: "./images/milanote.jpg" }),
+        createApp({ name: "Teambition",         description: "Alibaba Group Team Collaboration Tool",           link: "https://www.teambition.com/organization/61ade96d461f91c76e3bfc06/task/shortcut/66d920b8e2a3f00f0ddca2e3/",         icon: "./images/Teambition.jpg" }),
         createApp({ name: "Whimsical",         description: "Where great ideas take shape",                     link: "https://w.wwz.im/",                                                           icon: "./images/whimsical.jfif" }),
         createApp({ name: "闪电分镜",          description: "轻松高效的 前期策划",                               link: "https://m.wwz.im/",                                                           icon: "./images/SDFJ.webp" }),
         createApp({ name: "Nodeseek",          description: "热爱Web开发服务器和极客",                            link: "https://www.nodeseek.com/",                                                   icon: "./images/NodeSeek.png" }),
@@ -103,7 +106,7 @@ const appData = [
         createApp({ name: "Grok",              description: "Grok 是由 xAI 开发的生成式人工智能聊天机器人",         link: "https://grok.com/",                       icon: "./images/Grok.jpg" }),
         createApp({ name: "ChatGPT",           description: "The official app by OpenAI",                        link: "https://chatgpt.com/",                    icon: "./images/openai.png" }),
         createApp({ name: "DeepSeek",           description: "深度求索人工智能基础技术研究",                       link: "https://chat.deepseek.com/",              icon: "./images/DeepSeek.jpg" }),
-        createApp({ name: "Gemini",           description: "Get help with planning, and more from Google AI.",                       link: "https://gemini.google.com/",              icon: "./images/Gemini.png" }),
+        createApp({ name: "Gemini",           description: "Get help with planning, and more from Google AI.",           link: "https://gemini.google.com/",              icon: "./images/Gemini.png" }),
         createApp({ name: "Microsoft Copilot",           description: "Microsoft Copilot is your companion to inform and inspire. ",           link: "https://copilot.microsoft.com/",          icon: "./images/Copilot.png" }),
         createApp({ name: "GitHub Copilot",           description: "GitHub Copilot can use your code",           link: "https://copilot.microsoft.com/",          icon: "./images/GitHub Copilot.png" }),
         createApp({ name: "Suno",           description: "快速生成包含歌词、旋律和演唱的完整歌曲",           link: "https://suno.com/",                               icon: "./images/suno.jpg" }),
