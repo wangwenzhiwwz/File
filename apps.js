@@ -85,8 +85,12 @@ function displayError(message) {
 // 优化后的应用数据
 const appData = [
     { title: "Web", apps: [
-        createApp({ name: "WWZ.iM",            description: "My personal website",                                   link: "https://www.wwz.im/",                                                         icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
-        createApp({ name: "MY IP",             description: "What Is My IP Address - See Your Public Address - IPv4 & IPv6",                                        link: "https://ip.wwz.im/",                                                          icon: "./images/myip.png" }),
+        createApp({ name: "TuChong",          description: "Chinese leading photography community",                 link: "https://wangwenzhi.tuchong.com/videos/",               icon: "./images/tuchong.jpg" }),
+        createApp({ name: "新片场",           description: "Chinese leading photography community",                  link: "https://www.xinpianchang.com/",                         icon: "./images/xinpianchang.jpg" }),
+        createApp({ name: "ZCool",            description: " 打开站酷发现更好的设计",                                   link: "https://www.zcool.com.cn/",                         icon: "./images/Zcool.png" }),
+        createApp({ name: "Behance",          description: " Showcase, Discover, and Hire Creatives",               link: "https://www.behance.net/",                          icon: "./images/behance.png" }),
+        
+        createApp({ name: "MY IP",             description: "What Is My IP Address - See Your Public Address - IPv4 & IPv6",                link: "https://ip.wwz.im/",                 icon: "./images/myip.png" }),
         createApp({ name: "Notion",           description: "Plan, organize, track projects",                        link: "https://www.notion.so/",                                                icon: "./images/notion.webp" }),
         createApp({ name: "Milanote",           description: "The tool for organizing creative projects",       link: "https://app.milanote.com/",                                                          icon: "./images/milanote.jpg" }),
         createApp({ name: "Teambition",         description: "Alibaba Group Team Collaboration Tool",           link: "https://www.teambition.com/organization/61ade96d461f91c76e3bfc06/task/shortcut/66d920b8e2a3f00f0ddca2e3/",         icon: "./images/Teambition.jpg" }),
@@ -213,6 +217,7 @@ const appData = [
 
     ]},
     { title: "Other", apps: [
+        createApp({ name: "WWZ.iM",            description: "My personal website",                                   link: "https://www.wwz.im/",                                                 icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "Temp Mail",         description: "生成一次性临时电子邮件地址并立即接",                link: "https://temp-mail.org/",                                                      icon: "./images/Temp Mail.png" }),
         createApp({ name: "Emotn",             description: "Free app store for all Android TV, TV Box and projector", link: "https://app.emotn.com/",                                                icon: "./images/emotn.webp" }),
         createApp({ name: "CN影院",            description: "华人在线影院",                                      link: "https://cnys.tv/",                                                            icon: "./images/nivideo.jfif" }),
