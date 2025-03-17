@@ -157,6 +157,7 @@ const appData = [
         createApp({ name: "Focus Chart",       description: "This app displays a focus chart with a siemens star.", link: "./software/Focus Chart.apk",                                               icon: "./images/Focus Chart.webp" }),
         createApp({ name: "Brevent",           description: "在没有 root 权限的情况下将应用待机",                 link: "./software/Brevent - v4.2.21.1.apk",                                          icon: "./images/Brevent.webp" }),
         createApp({ name: "Scene",             description: "强大而美观的系统管理工具",                          link: "./software/Scene - v8.0.15.apk",                                              icon: "./images/Scene.webp" }),
+        createApp({ name: "贝利自动点击器",      description: "自动点击器",                                      link: "./software/贝利自动点击器_v2.8.9_v2.apk",                                       icon: "./images/贝利.png" }),
         createApp({ name: "Estk.me",           description: "eSTK.me is a Removable eUICC solution",             link: "./software/EasyEUICC-1.2.0.apk",                                              icon: "./images/Estk.png" }),
     ]},
     { title: "Windows", apps: [
