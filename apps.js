@@ -105,6 +105,7 @@ const appData = [
         createApp({ name: "IT之家",               description: "科技门户网站",                                  link: "https://www.ithome.com/",                                                     icon: "./images/ithome.png" }),
         createApp({ name: "Estk.me",           description: "eSTK.me is a Removable eUICC solution",             link: "https://www.estk.me/downloads/",                                              icon: "./images/Estk.png" }),
         createApp({ name: "RedteaGO",          description: "Your top choice of eSIM for an enjoyable journey!", link: "https://esim.redteago.com/zh-CN/orders",                       icon: "./images/RedteaGO.jpg" }),
+        createApp({ name: "影刀 RPA",           description: "机器人流程自动化（RPA）工具",                         link: "https://www.yingdao.com/",                                       icon: "./images/yingdao.webp" }),
     ]},
     { title: "AI", apps: [
         createApp({ name: "Ai.WWZ.iM",         description: "最新的人工智能对话系统",                              link: "https://ai.wwz.im/",                      icon: "./images/ai.png" }),
