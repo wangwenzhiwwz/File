@@ -232,7 +232,12 @@ const appData = [
         createApp({ name: "Radio Garden",      description: "位于荷兰的非营利组织的收音机",                      link: "https://radio.garden/",                                                       icon: "./images/radio.garden.png" }),
         createApp({ name: "WebIntoApp",        description: "在线将您的网站变为Android和 iOS 的专用应用程序",   link: "https://www.webintoapp.com/",                                                 icon: "./images/webintoapp.png" }),
         createApp({ name: "草料二维码",        description: "一站式二维码生成工具，免费可用",                    link: "https://cli.im/",                                                             icon: "./images/cli.png" }),
-        createApp({ name: "V2raySE",           description: "V2raySE 在线节点转换工具",                         link: "https://v2rayse.com/node-convert/",                                           icon: "./images/v2rayse.png" }),
+        createApp({ name: "V2raySE",           description: "V2raySE 在线节点转换工具",                         link: "https://v2.v2rayse.com/node-convert/",                                        icon: "./images/v2rayse.png" }),
+        
+        createApp({ name: "光厂",             description: "光厂（VJ师网）拥有数千万正版视频素材",               link: "https://www.vjshi.com/",                                                  icon: "./images/光厂.jpg" }),
+        createApp({ name: "新片场素材",        description: "一站式正版商用音视频素材平台",                       link: "https://stock.xinpianchang.com/",                                        icon: "./images/xinpianchang.jpg" }),
+        createApp({ name: "千库网",           description: "永久免费png图片背景素材下载,做设计不抠图",             link: "https://588ku.com/",                                                    icon: "./images/千库网.png" }),
+        
     ]},
 ];
 
