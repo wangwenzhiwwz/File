@@ -123,6 +123,7 @@ const appData = [
         createApp({ name: "Bolt.new",           description: "一个由StackBlitz开发的AI驱动的网页开发工具",           link: "https://bolt.new/",                           icon: "./images/Bolt.jpg" }),
         createApp({ name: "DeepAI",           description: "涵盖图像生成、视频创作、文本生成和开发者API等领域",           link: "https://deepai.org/",                           icon: "./images/DeepAI.png" }),
         createApp({ name: "Ollama",           description: "让用户在自己的设备上轻松运行和管理大型语言模型",           link: "https://ollama.com/",                           icon: "./images/ollama.png" }),
+        createApp({ name: "Bigjpg",           description: "AI人工智能图片无损放大",                                   link: "https://bigjpg.com/",                 icon: "./images/bigjpg.png" }),
     ]},
     { title: "iOS", apps: [
         createApp({ name: "Hiddify",           description: "VPN, Clash, SingBox, XRay, V2Ray",                  link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" }),
