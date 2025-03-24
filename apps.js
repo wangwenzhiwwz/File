@@ -118,6 +118,7 @@ const appData = [
     { title: "AI", apps: [
         createApp({ name: "Ai.WWZ.iM", description: "最新的人工智能对话系统", link: "https://ai.wwz.im/", icon: "./images/ai.png" }),
         createApp({ name: "Grok", description: "Grok 是由 xAI 开发的生成式人工智能聊天机器人", link: "https://grok.com/", icon: "./images/Grok.jpg" }),
+        createApp({ name: "GoogleAiStudio", description: "Build with the latest models from Google DeepMind", link: "https://aistudio.google.com/", icon: "./images/GoogleAiStudio.png" }),
         createApp({ name: "ChatGPT", description: "The official app by OpenAI", link: "https://chatgpt.com/", icon: "./images/openai.png" }),
         createApp({ name: "DeepSeek", description: "深度求索人工智能基础技术研究", link: "https://chat.deepseek.com/", icon: "./images/DeepSeek.jpg" }),
         createApp({ name: "Gemini", description: "Get help with planning, and more from Google AI.", link: "https://gemini.google.com/", icon: "./images/Gemini.png" }),
