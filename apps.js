@@ -135,6 +135,7 @@ const appData = [
         createApp({ name: "AnythingLLM", description: "The all-in-one AI application for everyone", link: "https://anythingllm.com/", icon: "./images/anythingllm.png" }),
         createApp({ name: "Bigjpg", description: "AI人工智能图片无损放大", link: "https://bigjpg.com/", icon: "./images/bigjpg.png" }),
         createApp({ name: "ComfyUI", description: "提供一个直观的工作流来生成图像", link: "https://www.comfy.org/", icon: "./images/ComfyUI.jpg" }),
+        createApp({ name: "Hugging Face", description: "The AI community building the future.", link: "https://huggingface.co/", icon: "./images/huggingface.png" }),
     ]},
     { title: "iOS", apps: [
         createApp({ name: "Hiddify", description: "VPN, Clash, SingBox, XRay, V2Ray", link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" }),
