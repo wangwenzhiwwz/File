@@ -119,6 +119,7 @@ const appData = [
         createApp({ name: "Ai.WWZ.iM", description: "最新的人工智能对话系统", link: "https://ai.wwz.im/", icon: "./images/ai.png" }),
         createApp({ name: "Grok", description: "Grok 是由 xAI 开发的生成式人工智能聊天机器人", link: "https://grok.com/", icon: "./images/Grok.jpg" }),
         createApp({ name: "GoogleAiStudio", description: "Build with the latest models from Google DeepMind", link: "https://aistudio.google.com/", icon: "./images/GoogleAiStudio.png" }),
+        createApp({ name: "Whisk", description: "Inspire your inner storyteller by generating videos", link: "https://labs.google/fx", icon: "./images/Google+Labs+Logo.jpg" }),
         createApp({ name: "ChatGPT", description: "The official app by OpenAI", link: "https://chatgpt.com/", icon: "./images/openai.png" }),
         createApp({ name: "DeepSeek", description: "深度求索人工智能基础技术研究", link: "https://chat.deepseek.com/", icon: "./images/DeepSeek.jpg" }),
         createApp({ name: "Gemini", description: "Get help with planning, and more from Google AI.", link: "https://gemini.google.com/", icon: "./images/Gemini.png" }),
@@ -136,6 +137,7 @@ const appData = [
         createApp({ name: "Bigjpg", description: "AI人工智能图片无损放大", link: "https://bigjpg.com/", icon: "./images/bigjpg.png" }),
         createApp({ name: "ComfyUI", description: "提供一个直观的工作流来生成图像", link: "https://www.comfy.org/", icon: "./images/ComfyUI.jpg" }),
         createApp({ name: "Hugging Face", description: "The AI community building the future.", link: "https://huggingface.co/", icon: "./images/huggingface.png" }),
+        
     ]},
     { title: "iOS", apps: [
         createApp({ name: "Hiddify", description: "VPN, Clash, SingBox, XRay, V2Ray", link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" }),
