@@ -137,6 +137,7 @@ const appData = [
         createApp({ name: "Bigjpg", description: "AI人工智能图片无损放大", link: "https://bigjpg.com/", icon: "./images/bigjpg.png" }),
         createApp({ name: "ComfyUI", description: "提供一个直观的工作流来生成图像", link: "https://www.comfy.org/", icon: "./images/ComfyUI.jpg" }),
         createApp({ name: "Hugging Face", description: "The AI community building the future.", link: "https://huggingface.co/", icon: "./images/huggingface.png" }),
+        createApp({ name: "AI Short", description: "t提供简洁易用的AI指令", link: "https://www.aishort.top/", icon: "./images/aishort.png" }),
         
     ]},
     { title: "iOS", apps: [
