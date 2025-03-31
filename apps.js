@@ -94,9 +94,9 @@ function displayError(message) {
 // 优化后的应用数据
 const appData = [
     { title: "Web", apps: [
-        createApp({ name: "TuChong", description: "Chinese leading photography community", link: "https://wangwenzhi.tuchong.com/videos/", icon: "./images/tuchong.jpg" }),
         createApp({ name: "新片场", description: "Chinese leading photography community", link: "https://www.xinpianchang.com/", icon: "./images/xinpianchang.jpg" }),
         createApp({ name: "ZCool", description: "打开站酷发现更好的设计", link: "https://www.zcool.com.cn/", icon: "./images/Zcool.png" }),
+        createApp({ name: "TuChong", description: "Chinese leading photography community", link: "https://wangwenzhi.tuchong.com/videos/", icon: "./images/tuchong.jpg" }),
         createApp({ name: "Behance", description: "Showcase, Discover, and Hire Creatives", link: "https://www.behance.net/", icon: "./images/behance.png" }),
         createApp({ name: "MY IP", description: "What Is My IP Address - See Your Public Address - IPv4 & IPv6", link: "https://ip.wwz.im/", icon: "./images/myip.png" }),
         createApp({ name: "Notion", description: "Plan, organize, track projects", link: "https://www.notion.so/", icon: "./images/notion.webp" }),
