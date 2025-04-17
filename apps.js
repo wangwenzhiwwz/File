@@ -250,6 +250,7 @@ const appData = [
         createApp({ name: "光厂", description: "光厂（VJ师网）拥有数千万正版视频素材", link: "https://www.vjshi.com/", icon: "./images/光厂.jpg" }),
         createApp({ name: "新片场素材", description: "一站式正版商用音视频素材平台", link: "https://stock.xinpianchang.com/", icon: "./images/xinpianchang.jpg" }),
         createApp({ name: "千库网", description: "永久免费png图片背景素材下载,做设计不抠图", link: "https://588ku.com/", icon: "./images/千库网.png" }),
+        createApp({ name: "SnapAny", description: "快速、免费、简单. 从1000+平台保存视频和图片", link: "https://snapany.com/", icon: "./images/snapany.png" }),
     ]},
 ];
 
