@@ -218,6 +218,7 @@ const appData = [
     ]},
     { title: "VPS", apps: [
         createApp({ name: "EUserv", description: "Dedicated Server Hosting, VPS, Cloud Hosting", link: "https://support.euserv.com/", icon: "./images/EUserv.jpg" }),
+        createApp({ name: "Serv00", description: "Working in the web application hosting market", link: "https://panel5.serv00.com/", icon: "./images/Serv00.jpg" }),
         createApp({ name: "BandwagonHost", description: "All VPS hosting plans include: Enterprise servers", link: "https://bwh88.net/services", icon: "./images/bwh.png" }),
         createApp({ name: "RackNerd", description: "RackNerd is a diverse & global provider of Infrastructure as a Service solutions.", link: "https://my.racknerd.com/clientarea.php", icon: "./images/RackNerd.jpg" }),
         createApp({ name: "DogYun", description: "便宜的香港服务器，灵活高效的云托管弹性云服务器 ", link: "https://vm.dogyun.com/server/list", icon: "./images/dogyun.png" }),
