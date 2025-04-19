@@ -139,7 +139,7 @@ const appData = [
         createApp({ name: "Hugging Face", description: "The AI community building the future.", link: "https://huggingface.co/", icon: "./images/huggingface.png" }),
         createApp({ name: "AI Short", description: "提供简洁易用的AI指令", link: "https://www.aishort.top/", icon: "./images/aishort.png" }),
         createApp({ name: "Hyper3D", description: "Rodin|AI 3D Model Generator from Images", link: "https://hyper3d.ai/", icon: "./images/hyper3d.png" }),
-        createApp({ name: "LiblibAI", description: "LiblibAI-哩布哩布AI - 中国领先的AI创作平台", link: "https://www.liblib.art/", icon: "./images/liblib.art.jpg" }),
+        createApp({ name: "LiblibAI", description: "LiblibAI-哩布哩布AI - 中国领先的AI创作平台", link: "https://www.liblib.art/", icon: "./images/liblib.jpg" }),
         
     ]},
     { title: "iOS", apps: [
