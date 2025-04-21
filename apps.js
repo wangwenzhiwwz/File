@@ -183,6 +183,7 @@ const appData = [
     ]},
     { title: "Windows", apps: [
         createApp({ name: "RustDesk", description: "安全可靠的远程桌面体验", link: "https://rustdesk.com/", icon: "./images/rustdesk.svg" }),
+        createApp({ name: "BalenaEtcher", description: "刷系统镜像到U盘", link: "https://etcher.balena.io/#download-etcher", icon: "./images/balena etcher.png" }),
         createApp({ name: "Parsec", description: "随时随地连接到工作、游戏或项目", link: "https://parsec.app/", icon: "./images/parsec.png" }),
         createApp({ name: "Tabby SSH", description: "全平台SSH远程管理工具", link: "https://tabby.sh/", icon: "./images/tabby-logo.png" }),
         createApp({ name: "V2rayN", description: "适用于Windows的GUI客户端", link: "https://www.wwz.im/article/VPN", icon: "./images/v2rayn.jpg" }),
