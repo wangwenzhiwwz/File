@@ -153,6 +153,8 @@ const appData = [
         createApp({ name: "Monitor+", description: "Remote control for Sony cameras", link: "https://apps.apple.com/al/app/monitor/id1554619768", icon: "./images/Monitor+.webp" }),
         createApp({ name: "Cadrage+", description: "Pro filmmaking and photography tool", link: "https://apps.apple.com/us/app/cadrage-directors-viewfinder/id793232740", icon: "./images/Cadrage.webp" }),
         createApp({ name: "LocalSend", description: "Secure local file sharing", link: "https://apps.apple.com/us/app/localsend/id1661733229", icon: "./images/localsend.png" }),
+        createApp({ name: "Hypic", description: "Photo Editor & AI Art", link: "https://apps.apple.com/de/app/hypic-photo-editor-ai-art/id1644042837", icon: "./images/hypic.webp" }),
+        createApp({ name: "截图带壳", description: "截图/视频带壳支持手机/手表全系列机型", link: "https://apps.apple.com/cn/app/%E6%88%AA%E5%9B%BE%E5%B8%A6%E5%A3%B3-%E5%B8%A6%E5%A3%B3%E6%88%AA%E5%9B%BE-%E8%A7%86%E9%A2%91%E9%AB%98%E6%B8%85%E5%AF%BC%E5%87%BA/id6544797343", icon: "./images/Snapmod.webp" }),
         createApp({ name: "QWeather", description: "Accurate global weather forecasts", link: "https://www.qweather.com/en/app", icon: "./images/QWeather.webp" }),
         createApp({ name: "太阳测量师", description: "Plan sunrise and sunset moments", link: "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875", icon: "./images/sun.webp" }),
     ]},
