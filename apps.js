@@ -116,8 +116,6 @@ const appData = [
         createApp({ name: "TopHub", description: "今日热榜排行", link: "https://tophub.today/", icon: "./images/tophub.png" }),
         createApp({ name: "IT之家", description: "科技门户网站", link: "https://www.ithome.com/", icon: "./images/ithome.png" }),
         createApp({ name: "Estk.me", description: "eSTK.me is a Removable eUICC solution", link: "https://www.estk.me/downloads/", icon: "./images/Estk.png" }),
-        createApp({ name: "RedteaGO", description: "Your top choice of eSIM for an enjoyable journey!", link: "https://esim.redteago.com/zh-CN/orders", icon: "./images/RedteaGO.jpg" }),
-        createApp({ name: "影刀 RPA", description: "机器人流程自动化（RPA）工具", link: "https://www.yingdao.com/", icon: "./images/yingdao.webp" }),
     ]},
     { title: "AI", apps: [
         createApp({ name: "Ai.WWZ.iM", description: "最新的人工智能对话系统", link: "https://ai.wwz.im/", icon: "./images/ai.png" }),
@@ -184,7 +182,7 @@ const appData = [
         createApp({ name: "Brevent", description: "在没有 root 权限的情况下将应用待机", link: "./software/Brevent - v4.2.21.1.apk", icon: "./images/Brevent.webp" }),
         createApp({ name: "Scene", description: "强大而美观的系统管理工具", link: "./software/Scene - v8.0.15.apk", icon: "./images/Scene.webp" }),
         createApp({ name: "贝利自动点击器", description: "自动点击器", link: "./software/贝利自动点击器_v2.8.9_v2.apk", icon: "./images/贝利.png" }),
-        createApp({ name: "Estk.me", description: "eSTK.me is a Removable eUICC solution", link: "./software/EasyEUICC-1.2.0.apk", icon: "./images/Estk.png" }),
+        createApp({ name: "Estk APP", description: "eSTK.me is a Removable eUICC solution", link: "./software/EasyEUICC-1.2.0.apk", icon: "./images/Estk.png" }),
     ]},
     { title: "Windows", apps: [
         createApp({ name: "RustDesk", description: "安全可靠的远程桌面体验", link: "https://rustdesk.com/", icon: "./images/rustdesk.svg" }),
@@ -207,6 +205,7 @@ const appData = [
         createApp({ name: "IrfanView", description: "图像查看/浏览/转换器", link: "https://www.irfanview.com/", icon: "./images/irfanview.jpg" }),
         createApp({ name: "Adobe GenP", description: "Adobe通用补丁。可以修补adobe 产品。", link: "https://www.cybermania.ws/apps/adobe-genp/", icon: "./images/adobe genp.png" }),
         createApp({ name: "Cursor", description: "使用 AI 进行编码的最佳方式。", link: "https://www.cursor.com/", icon: "./images/cursor.jpg" }),
+        createApp({ name: "影刀 RPA", description: "机器人流程自动化（RPA）工具", link: "https://www.yingdao.com/", icon: "./images/yingdao.webp" }),
     ]},
     { title: "Mac", apps: [
         createApp({ name: "奇迹秀", description: "效率插件", link: "https://www.qijishow.com/down/index.html", icon: "./images/qijishow.svg" }),
@@ -245,6 +244,8 @@ const appData = [
     ]},
     { title: "Other", apps: [
         createApp({ name: "WWZ.iM", description: "My personal website", link: "https://www.wwz.im/", icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
+        createApp({ name: "RedteaGO", description: "Your top choice of eSIM for an enjoyable journey!", link: "https://esim.redteago.com/zh-CN/orders", icon: "./images/RedteaGO.jpg" }),
+        createApp({ name: "Estk.me", description: "eSTK.me is a Removable eUICC solution", link: "https://www.estk.me/", icon: "./images/Estk.png" }),
         createApp({ name: "Temp Mail", description: "生成一次性临时电子邮件地址并立即接", link: "https://temp-mail.org/", icon: "./images/Temp Mail.png" }),
         createApp({ name: "Emotn", description: "Free app store for all Android TV, TV Box and projector", link: "https://app.emotn.com/", icon: "./images/emotn.webp" }),
         createApp({ name: "CN影院", description: "华人在线影院", link: "https://cnys.tv/", icon: "./images/nivideo.jfif" }),
