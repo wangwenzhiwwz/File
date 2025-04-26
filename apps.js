@@ -208,7 +208,7 @@ const appData = [
         createApp({ name: "影刀 RPA", description: "Robotic process automation tool", link: "https://www.yingdao.com/", icon: "./images/yingdao.webp" }),
     ]},
     { title: "Mac", apps: [
-        createApp({ name: "奇迹秀", description: "Boost productivity with plugins", link: "https://www.qijishow.com/down/index Torture.html", icon: "./images/qijishow.svg" }),
+        createApp({ name: "奇迹秀", description: "Boost productivity with plugins", link: "https://www.qijishow.com/", icon: "./images/qijishow.svg" }),
         createApp({ name: "Apple", description: "Official Apple website and resources", link: "https://www.apple.com/", icon: "./images/Apple.png" }),
         createApp({ name: "MOC", description: "Smooth mouse scrolling for macOS", link: "https://mos.caldis.me/", icon: "./images/moc.png" }),
         createApp({ name: "IINA", description: "Modern media player for macOS", link: "https://iina.io/", icon: "./images/iina.jpg" }),
