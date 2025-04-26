@@ -91,6 +91,7 @@ function displayError(message) {
     }, 10000);
 }
 
+
 // Optimized application data
 const appData = [
     { title: "Web", apps: [
@@ -281,20 +282,7 @@ function createAppItem(app) {
     `;
 }
 
-// 创建单个应用项的 HTML
-function createAppItem(app) {
-    return `
-        <div class="app-item">
-            <a href="${app.link}" class="app-link" target="_blank" rel="noopener noreferrer">
-                <img class="app-icon" src="${app.icon}" alt="${escapeHtml(app.name)} Icon" loading="lazy" onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found'; console.warn('Failed to load image: ${app.icon}');">
-                <h3 class="app-name">${escapeHtml(app.name)}</h3>
-                <p class="app-description">${escapeHtml(app.description)}</p>
-            </a>
-        </div>
-    `;
-}
-
-// 创建应用类别的 HTML，加入点击标题一键打开
+// 创建应用类别的 HTML
 function createCategory(category, index) {
     const appItems = category.apps.map(createAppItem).join('');
     return `
@@ -322,7 +310,13 @@ const smoothScroll = (e) => {
     const targetId = e.currentTarget.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+        const headerOffset = 80; // 预留顶部空隙，避免标题被遮挡
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
         document.querySelector('.nav-links')?.classList.remove('active');
     }
 };

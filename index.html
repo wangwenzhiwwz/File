@@ -359,7 +359,7 @@
                 padding: 10px 0;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
                 overflow: hidden;
-                animation: slideDown 0.3s ease forwards; /* 添加下拉动画 */
+                animation: slideDown 0.3s ease forwards;
             }
 
             .nav-links.active {
@@ -368,8 +368,10 @@
 
             .nav-links a {
                 display: block;
-                margin: 15px 20px; /* 增加间距，便于点击 */
-                font-size: 18px; /* 字体增大到 18px */
+                margin: 15px auto;
+                font-size: 18px;
+                padding: 14px 24px;
+                text-align: center;
             }
 
             .app-container {
@@ -395,14 +397,13 @@
             }
         }
 
-        /* 下拉动画 */
         @keyframes slideDown {
             from {
                 height: 0;
                 opacity: 0;
             }
             to {
-                height: auto; /* 展开到内容高度 */
+                height: auto;
                 opacity: 1;
             }
         }
