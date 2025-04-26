@@ -151,6 +151,7 @@ const appData = [
         createApp({ name: "Blackmagic Camera", description: "Professional digital film for iPhone", link: "https://www.blackmagicdesign.com/products/blackmagiccamera", icon: "./images/BlackMagicCamera.webp" }),
         createApp({ name: "极影相机", description: "Professional camera in your pocket", link: "https://apps.apple.com/cn/app/%E6%9E%81%E5%BD%B1%E7%9B%B8%E6%9C%BA/id1459953293", icon: "./images/jiying.webp" }),
         createApp({ name: "Monitor+", description: "Remote control for Sony cameras", link: "https://apps.apple.com/al/app/monitor/id1554619768", icon: "./images/Monitor+.webp" }),
+        createApp({ name: "Sony|Monitor&Control", description: "Supported cameras (as of April 2025)", link: "https://apps.apple.com/us/app/sony-monitor-control/id1643900558", icon: "./images/SonyMonitor.webp" }),
         createApp({ name: "Cadrage+", description: "Pro filmmaking and photography tool", link: "https://apps.apple.com/us/app/cadrage-directors-viewfinder/id793232740", icon: "./images/Cadrage.webp" }),
         createApp({ name: "LocalSend", description: "Secure local file sharing", link: "https://apps.apple.com/us/app/localsend/id1661733229", icon: "./images/localsend.png" }),
         createApp({ name: "Hypic", description: "Photo Editor & AI Art", link: "https://apps.apple.com/de/app/hypic-photo-editor-ai-art/id1644042837", icon: "./images/hypic.webp" }),
