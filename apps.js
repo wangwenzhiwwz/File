@@ -97,6 +97,7 @@ const appData = [
     { title: "Web", apps: [
         createApp({ name: "TopHub", description: "Daily trending news and rankings", link: "https://tophub.today/", icon: "./images/tophub.png" }),
         createApp({ name: "IT之家", description: "Leading technology news and reviews", link: "https://www.ithome.com/", icon: "./images/ithome.png" }),
+        createApp({ name: "Outlook", description: "Platform developed by Microsoft", link: "https://outlook.com/", icon: "./images/Microsoft_Outlook.png" }),
         createApp({ name: "Translate", description: "Intranet-based online translation tool", link: "https://p.wwz.im/https://translate.google.com/", icon: "./images/Google_Translate.png" }),
         createApp({ name: "新片场", description: "Discover global creative talent hub", link: "https://www.xinpianchang.com/", icon: "./images/xinpianchang.jpg" }),
         createApp({ name: "ZCool", description: "Inspiring design discovery platform", link: "https://www.zcool.com.cn/", icon: "./images/Zcool.png" }),
@@ -264,6 +265,9 @@ const appData = [
         createApp({ name: "闪电分镜", description: "Efficient pre-production planning tool", link: "https://web.mediastory.cc/", icon: "./images/SDFJ.webp" }),
         createApp({ name: "SnapAny", description: "Save videos, images from platforms", link: "https://snapany.com/", icon: "./images/snapany.png" }),
         createApp({ name: "AXU", description: "Personal resource and storage hub", link: "https://axutongxue.com/", icon: "./images/axu.jpg" }),
+        createApp({ name: "Wallpapers Central", description: "Wallpaper collection and customization platform", link: "https://wallpapers.ispazio.net/", icon: "./images/wallpapers.ispazio.jpg" }),
+        createApp({ name: "leManoosh", description: "Industrial Design Trends, Online Courses and Jobs", link: "https://lemanoosh.com/tagged/colors/", icon: "./images/lemanoosh.png" }),
+        createApp({ name: "Jerry-Lee Bosmans", description: "Dutch visual artist & designer", link: "https://www.byjer.com/", icon: "./images/JER.png" }),
         createApp({ name: "RedteaGO", description: "eSIM for seamless global travel", link: "https://esim.redteago.com/zh-CN/orders", icon: "./images/RedteaGO.jpg" }),
         createApp({ name: "Estk.me", description: "Removable eUICC management solution", link: "https://www.estk.me/downloads/", icon: "./images/Estk.png" }),
     ]},
