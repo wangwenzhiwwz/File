@@ -217,9 +217,7 @@ const appData = [
         createApp({ name: "VS Code", description: "Cross-platform code editing tool", link: "https://code.visualstudio.com/", icon: "./images/vscode.jpg" }),
         createApp({ name: "HandBrake", description: "Open-source video transcoding tool", link: "https://handbrake.fr/", icon: "./images/HandBrake.png" }),
         createApp({ name: "WPS", description: "AI-powered office productivity suite", link: "https://www.wps.com/", icon: "./images/wps.png" }),
-        createApp({ name: "Surוח
-
-ge", description: "Advanced network management toolbox", link: "https://nssurge.com/", icon: "./images/surge.png" }),
+        createApp({ name: "Surge", description: "Advanced network management toolbox", link: "https://nssurge.com/", icon: "./images/surge.png" }),
         createApp({ name: "Appstorrent", description: "Mac apps and games hub", link: "https://appstorrent.ru/", icon: "./images/appstorrent.jpg" }),
     ]},
     { title: "VPS", apps: [
