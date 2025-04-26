@@ -241,8 +241,7 @@ const appData = [
     ]},
     { title: "Other", apps: [
         createApp({ name: "WWZ.iM", description: "My personal website and portfolio", link: "https://www.wwz.im/", icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
-        createApp({ name: "RedteaGO", description: "eSIM for seamless global travel", link: "https://esim.redteago.com/zh-CN/orders", icon: "./images/RedteaGO.jpg" }),
-        createApp({ name: "Estk.me", description: "Removable eUICC management solution", link: "https://www.estk.me/downloads/", icon: "./images/Estk.png" }),
+        createApp({ name: "MY IP", description: "View public IPv4 and IPv6", link: "https://ip.wwz.im/", icon: "./images/myip.png" }),
         createApp({ name: "Temp Mail", description: "Disposable temporary email service", link: "https://temp-mail.org/", icon: "./images/Temp Mail.png" }),
         createApp({ name: "Emotn", description: "Free app store for Android TV", link: "https://app.emotn.com/", icon: "./images/emotn.webp" }),
         createApp({ name: "CN影院", description: "Online cinema for Chinese content", link: "https://cnys.tv/", icon: "./images/nivideo.jfif" }),
@@ -258,7 +257,8 @@ const appData = [
         createApp({ name: "千库网", description: "Free PNG images and backgrounds", link: "https://588ku.com/", icon: "./images/千库网.png" }),
         createApp({ name: "SnapAny", description: "Save videos, images from platforms", link: "https://snapany.com/", icon: "./images/snapany.png" }),
         createApp({ name: "AXU", description: "Personal resource and storage hub", link: "https://axutongxue.com/", icon: "./images/axu.jpg" }),
-        createApp({ name: "MY IP", description: "View public IPv4 and IPv6", link: "https://ip.wwz.im/", icon: "./images/myip.png" }),
+        createApp({ name: "RedteaGO", description: "eSIM for seamless global travel", link: "https://esim.redteago.com/zh-CN/orders", icon: "./images/RedteaGO.jpg" }),
+        createApp({ name: "Estk.me", description: "Removable eUICC management solution", link: "https://www.estk.me/downloads/", icon: "./images/Estk.png" }),
     ]},
 ];
 
