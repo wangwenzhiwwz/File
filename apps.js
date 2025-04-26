@@ -223,6 +223,7 @@ const appData = [
     ]},
     { title: "VPS", apps: [
         createApp({ name: "VPS.WWZ.iM", description: "My Server Status Manager", link: "https://vps.wwz.im/", icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
+        createApp({ name: "Nginx Proxy Manager", description: "Get Connected · Proxy Hosts", link: "https://npm.wwz.im/", icon: "./images/Nginx Proxy Manager.png" }),
         createApp({ name: "EUserv", description: "Dedicated servers and cloud hosting", link: "https://support.euserv.com/", icon: "./images/EUserv.jpg" }),
         createApp({ name: "Serv00", description: "Reliable web application hosting", link: "https://panel5.serv00.com/", icon: "./images/Serv00.jpg" }),
         createApp({ name: "BandwagonHost", description: "Enterprise-grade VPS hosting plans", link: "https://bwh88.net/services", icon: "./images/bwh.png" }),
