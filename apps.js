@@ -108,7 +108,7 @@ const appData = [
         createApp({ name: "Teambition", description: "Alibaba Group Team Collaboration Tool", link: "https://www.teambition.com/organization/61ade96d461f91c76e3bfc06/task/shortcut/66d920b8e2a3f00f0ddca2e3/", icon: "./images/Teambition.jpg" }),
         createApp({ name: "Whimsical", description: "Where great ideas take shape", link: "https://whimsical.com/", icon: "./images/whimsical.jfif" }),
         createApp({ name: "Artlist", description: "Powerful Digital Assets & Tools for Video Creators", link: "https://artlist.io/", icon: "./images/artlist.png" }),
-        createApp({ name: "闪电分镜", description: "轻松高效的前期策划", link: "https://m.wwz.im/", icon: "./images/SDFJ.webp" }),
+        createApp({ name: "闪电分镜", description: "轻松高效的前期策划", link: "https://web.mediastory.cc/", icon: "./images/SDFJ.webp" }),
         createApp({ name: "Nodeseek", description: "热爱Web开发服务器和极客", link: "https://www.nodeseek.com/", icon: "./images/NodeSeek.png" }),
         createApp({ name: "V2EX", description: "创意工作者的社区", link: "https://www.v2ex.com/", icon: "./images/v2ex.png" }),
         createApp({ name: "Alist.WWZ.im", description: "Wangwenzhi Network disk", link: "https://alist.wwz.im/", icon: "./images/noise.jpg" }),
@@ -275,12 +275,25 @@ function createAppItem(app) {
     `;
 }
 
-// 创建应用类别的 HTML
+// 创建单个应用项的 HTML
+function createAppItem(app) {
+    return `
+        <div class="app-item">
+            <a href="${app.link}" class="app-link" target="_blank" rel="noopener noreferrer">
+                <img class="app-icon" src="${app.icon}" alt="${escapeHtml(app.name)} Icon" loading="lazy" onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found'; console.warn('Failed to load image: ${app.icon}');">
+                <h3 class="app-name">${escapeHtml(app.name)}</h3>
+                <p class="app-description">${escapeHtml(app.description)}</p>
+            </a>
+        </div>
+    `;
+}
+
+// 创建应用类别的 HTML，加入点击标题一键打开
 function createCategory(category, index) {
     const appItems = category.apps.map(createAppItem).join('');
     return `
         <section class="app-category" id="${category.title.toLowerCase()}" style="animation-delay: ${index * 0.1}s;">
-            <h2 class="app-category-title">${escapeHtml(category.title)}</h2>
+            <h2 class="app-category-title" data-index="${index}" style="cursor: pointer;" title="点击打开所有该类网站">${escapeHtml(category.title)}</h2>
             <div class="app-grid">${appItems}</div>
         </section>
     `;
@@ -339,6 +352,19 @@ function renderCategories() {
     document.querySelectorAll('.nav-links a').forEach(anchor => {
         anchor.removeEventListener('click', smoothScroll);
         anchor.addEventListener('click', smoothScroll);
+    });
+
+    // 添加标题点击事件：打开所有链接
+    document.querySelectorAll('.app-category-title').forEach(title => {
+        title.addEventListener('click', () => {
+            const index = title.getAttribute('data-index');
+            const category = appData[parseInt(index)];
+            if (category && category.apps) {
+                category.apps.forEach(app => {
+                    window.open(app.link, '_blank');
+                });
+            }
+        });
     });
 }
 
