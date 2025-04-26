@@ -110,7 +110,7 @@ const appData = [
         createApp({ name: "闪电分镜", description: "轻松高效的前期策划", link: "https://web.mediastory.cc/", icon: "./images/SDFJ.webp" }),
         createApp({ name: "Nodeseek", description: "热爱Web开发服务器和极客", link: "https://www.nodeseek.com/", icon: "./images/NodeSeek.png" }),
         createApp({ name: "V2EX", description: "创意工作者的社区", link: "https://www.v2ex.com/", icon: "./images/v2ex.png" }),
-        createApp({ name: "Alist.WWZ.im", description: "Wangwenzhi Network disk", link: "https://alist.wwz.im/", icon: "./images/noise.jpg" }),
+        createApp({ name: "Alist", description: "Wangwenzhi Network disk", link: "https://alist.wwz.im/", icon: "./images/alist.png" }),
         createApp({ name: "TopHub", description: "今日热榜排行", link: "https://tophub.today/", icon: "./images/tophub.png" }),
         createApp({ name: "IT之家", description: "科技门户网站", link: "https://www.ithome.com/", icon: "./images/ithome.png" }),
         
