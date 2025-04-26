@@ -115,7 +115,7 @@ const appData = [
         createApp({ name: "AXU", description: "阿虚同学的储藏间", link: "https://axutongxue.com/", icon: "./images/axu.jpg" }),
         createApp({ name: "TopHub", description: "今日热榜排行", link: "https://tophub.today/", icon: "./images/tophub.png" }),
         createApp({ name: "IT之家", description: "科技门户网站", link: "https://www.ithome.com/", icon: "./images/ithome.png" }),
-        createApp({ name: "Estk.me", description: "eSTK.me is a Removable eUICC solution", link: "https://www.estk.me/downloads/", icon: "./images/Estk.png" }),
+        
     ]},
     { title: "AI", apps: [
         createApp({ name: "Ai.WWZ.iM", description: "最新的人工智能对话系统", link: "https://ai.wwz.im/", icon: "./images/ai.png" }),
@@ -245,7 +245,7 @@ const appData = [
     { title: "Other", apps: [
         createApp({ name: "WWZ.iM", description: "My personal website", link: "https://www.wwz.im/", icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "RedteaGO", description: "Your top choice of eSIM for an enjoyable journey!", link: "https://esim.redteago.com/zh-CN/orders", icon: "./images/RedteaGO.jpg" }),
-        createApp({ name: "Estk.me", description: "eSTK.me is a Removable eUICC solution", link: "https://www.estk.me/", icon: "./images/Estk.png" }),
+        createApp({ name: "Estk.me", description: "eSTK.me is a Removable eUICC solution", link: "https://www.estk.me/downloads/", icon: "./images/Estk.png" }),
         createApp({ name: "Temp Mail", description: "生成一次性临时电子邮件地址并立即接", link: "https://temp-mail.org/", icon: "./images/Temp Mail.png" }),
         createApp({ name: "Emotn", description: "Free app store for all Android TV, TV Box and projector", link: "https://app.emotn.com/", icon: "./images/emotn.webp" }),
         createApp({ name: "CN影院", description: "华人在线影院", link: "https://cnys.tv/", icon: "./images/nivideo.jfif" }),
