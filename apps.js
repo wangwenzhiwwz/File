@@ -94,6 +94,9 @@ function displayError(message) {
 // 优化后的应用数据
 const appData = [
     { title: "Web", apps: [
+        createApp({ name: "TopHub", description: "今日热榜排行", link: "https://tophub.today/", icon: "./images/tophub.png" }),   
+        createApp({ name: "IT之家", description: "科技门户网站", link: "https://www.ithome.com/", icon: "./images/ithome.png" }),
+        createApp({ name: "Translate", description: "在线翻译服务，支持多种语言之间的自动翻译", link: "https://p.wwz.im/https://translate.google.com/", icon: "./images/Google_Translate.png" }),
         createApp({ name: "新片场", description: "Chinese leading photography community", link: "https://www.xinpianchang.com/", icon: "./images/xinpianchang.jpg" }),
         createApp({ name: "ZCool", description: "打开站酷发现更好的设计", link: "https://www.zcool.com.cn/", icon: "./images/Zcool.png" }),
         createApp({ name: "TuChong", description: "Chinese leading photography community", link: "https://wangwenzhi.tuchong.com/videos/", icon: "./images/tuchong.jpg" }),
@@ -111,8 +114,6 @@ const appData = [
         createApp({ name: "Nodeseek", description: "热爱Web开发服务器和极客", link: "https://www.nodeseek.com/", icon: "./images/NodeSeek.png" }),
         createApp({ name: "V2EX", description: "创意工作者的社区", link: "https://www.v2ex.com/", icon: "./images/v2ex.jpeg" }),
         createApp({ name: "Alist", description: "Wangwenzhi Network disk", link: "https://alist.wwz.im/", icon: "./images/alist.png" }),
-        createApp({ name: "TopHub", description: "今日热榜排行", link: "https://tophub.today/", icon: "./images/tophub.png" }),
-        createApp({ name: "IT之家", description: "科技门户网站", link: "https://www.ithome.com/", icon: "./images/ithome.png" }),
         
     ]},
     { title: "AI", apps: [
