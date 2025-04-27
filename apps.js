@@ -106,7 +106,6 @@ const appData = [
         createApp({ name: "Cloudflare", description: "Web acceleration and security service", link: "https://dash.cloudflare.com/", icon: "./images/cloudflare.svg" }),
         createApp({ name: "Ping", description: "Website performance testing tool", link: "https://ping.chinaz.com/", icon: "./images/ChinaZ.png" }),
         createApp({ name: "Teambition", description: "Enterprise-grade team collaboration tool", link: "https://www.teambition.com/organization/61ade96d461f91c76e3bfc06/task/shortcut/66d920b8e2a3f00f0ddca2e3/", icon: "./images/Teambition.jpg" }),
-        createApp({ name: "Milanote", description: "Visual project management platform", link: "https://app.milanote.com/", icon: "./images/milanote.jpg" }),
         createApp({ name: "Whimsical", description: "Unified workspace for teams", link: "https://whimsical.com/", icon: "./images/whimsical.jfif" }),
         createApp({ name: "Nodeseek", description: "Vibrant web developer community", link: "https://www.nodeseek.com/", icon: "./images/NodeSeek.png" }),
         createApp({ name: "V2EX", description: "Creative professionals' discussion forum", link: "https://p.wwz.im/https://www.v2ex.com/", icon: "./images/v2ex.jpeg" }),
@@ -220,6 +219,7 @@ const appData = [
         createApp({ name: "WPS", description: "AI-powered office productivity suite", link: "https://www.wps.com/", icon: "./images/wps.png" }),
         createApp({ name: "Surge", description: "Advanced network toolbox for Mac", link: "https://nssurge.com/", icon: "./images/surge.png" }),
         createApp({ name: "Appstorrent", description: "Hundreds of macOS apps, games", link: "https://appstorrent.ru/", icon: "./images/appstorrent.jpg" }),
+        createApp({ name: "Milanote", description: "Visual project management platform", link: "https://app.milanote.com/", icon: "./images/milanote.jpg" }),
     ]},
     { title: "VPS", apps: [
         createApp({ name: "VPS.WWZ.iM", description: "Server monitoring and operation tool", link: "https://vps.wwz.im/", icon: "./images/Nezha Monitoring.png" }),
