@@ -114,6 +114,7 @@ const appData = [
     ]},
     { title: "AI", apps: [
         createApp({ name: "Ai.WWZ.iM", description: "Cutting-edge AI conversation system", link: "https://ai.wwz.im/", icon: "./images/ai.png" }),
+        createApp({ name: "豆包", description: "字节跳动旗下AI 智能助手", link: "https://www.doubao.com/", icon: "./images/doubao.png" }),
         createApp({ name: "Grok", description: "xAI's generative AI chatbot", link: "https://grok.com/", icon: "./images/Grok.jpg" }),
         createApp({ name: "ChatGPT", description: "OpenAI's official conversational AI", link: "https://chatgpt.com/", icon: "./images/openai.png" }),
         createApp({ name: "DeepSeek", description: "Advanced AI research platform", link: "https://chat.deepseek.com/", icon: "./images/DeepSeek.jpg" }),
