@@ -131,6 +131,7 @@ const appData = [
         createApp({ name: "DeepAI", description: "AI for images, videos, text", link: "https://deepai.org/", icon: "./images/DeepAI.png" }),
         createApp({ name: "Ollama", description: "Run large language models locally", link: "https://ollama.com/", icon: "./images/ollama.png" }),
         createApp({ name: "LM Studio", description: "Manage local language models", link: "https://lmstudio.ai/", icon: "./images/lmstudio_ai_logo.jpeg" }),
+        createApp({ name: "Cherry Studio", description: "多模型AI助手平台", link: "https://www.cherry-ai.com/", icon: "./images/CherryStudio.png" }),
         createApp({ name: "AnythingLLM", description: "Comprehensive AI application suite", link: "https://anythingllm.com/", icon: "./images/anythingllm.png" }),
         createApp({ name: "Bigjpg", description: "AI-powered lossless image upscaling", link: "https://bigjpg.com/", icon: "./images/bigjpg.png" }),
         createApp({ name: "ComfyUI", description: "Intuitive AI image generation", link: "https://www.comfy.org/", icon: "./images/ComfyUI.jpg" }),
