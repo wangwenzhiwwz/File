@@ -190,6 +190,7 @@ const appData = [
         createApp({ name: "Parsec", description: "Remote access for work, gaming", link: "https://parsec.app/", icon: "./images/parsec.png" }),
         createApp({ name: "Tabby SSH", description: "Cross-platform SSH management tool", link: "https://tabby.sh/", icon: "./images/tabby-logo.png" }),
         createApp({ name: "V2rayN", description: "Windows GUI VPN client", link: "https://www.wwz.im/article/VPN", icon: "./images/v2rayn.jpg" }),
+        createApp({ name: "VPN Gate", description: "Free Access to World Knowledge Beyond Government's Firewall.", link: "https://p.wwz.im/https://www.vpngate.net/en/", icon: "./images/VPN Gate.jpg" }),
         createApp({ name: "Moo0", description: "Video and image compression", link: "https://www.wwz.im/article/Moo0", icon: "./images/Moo0.png" }),
         createApp({ name: "Windows设置", description: "Practical Windows 11 settings tool", link: "https://github.com/wangwenzhiwwz/file/releases/download/Windows/Windows.3.6.5.exe", icon: "./images/windows.jpg" }),
         createApp({ name: "数码荔枝", description: "Share premium software resources", link: "https://lizhi.shop/", icon: "./images/smlz.jpg" }),
