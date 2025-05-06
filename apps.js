@@ -265,6 +265,7 @@ const appData = [
         createApp({ name: "US Address", description: "Generate valid US addresses", link: "https://www.haoweichi.com/", icon: "./images/dizhi.png" }),
         createApp({ name: "TheMatrix", description: "Matrix-inspired digital code background", link: "https://wangwenzhi.eu.org/TheMatrix/", icon: "./images/TheMatrix.png" }),
         createApp({ name: "菜鸟工具", description: "Online tools for developers, designers", link: "https://www.jyshare.com/", icon: "./images/cainiao.png" }),
+        createApp({ name: "Birme", description: "将图片压缩到所需的尺寸", link: "https://www.birme.net/", icon: "./images/birme.png" }),
         createApp({ name: "Radio Garden", description: "Stream global radio stations", link: "https://radio.garden/", icon: "./images/radio.garden.png" }),
         createApp({ name: "WebIntoApp", description: "Convert websites to mobile apps", link: "https://www.webintoapp.com/", icon: "./images/webintoapp.png" }),
         createApp({ name: "草料二维码", description: "Free one-stop QR code generator", link: "https://cli.im/", icon: "./images/cli.png" }),
