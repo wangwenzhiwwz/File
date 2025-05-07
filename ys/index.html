@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" nonce="c1ebdd0fe2ee43b29b81e2f30f4" src="//local.adguard.org?ts=1746627770986&amp;type=content-script&amp;dmn=p26-flow-sign.byteimg.com&amp;url=https%3A%2F%2Fp26-flow-sign.byteimg.com%2Ftos-cn-i-ik7evvg4ik%2F123edc631a014b2c963e0635186cf73f.html%3Frk3s%3D4a10e4d4%26x-expires%3D1746632016%26x-signature%3DTZB%252BLVMIwXxRYQ0JkpH5UFOj3tc%253D&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-push&amp;st-loc&amp;st-java&amp;st-dnt"></script>
+    <script type="text/javascript" nonce="c1ebdd0fe2ee43b29b81e2f30f4" src="//local.adguard.org?ts=1746627770986&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="https://wangwenzhi.eu.org/images/favicon_io/site.webmanifest">
+    <title>影视网站集合</title>
+    <style>
+        body {
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            background-color: #121212; /* 暗黑模式背景色 */
+            color: #fff; /* 暗黑模式文字颜色 */
+            scroll-behavior: smooth; /* 平滑滚动 */
+        }
+
+        .button {
+            transition: all 0.3s ease;
+            background-color: #222; /* 按钮背景色 */
+            color: #fff; /* 按钮文字颜色 */
+            border: 1px solid #444; /* 按钮边框颜色 */
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            background-color: #444; /* 按钮悬停背景色 */
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            background-color: #171414; /* 卡片背景色 */
+            border: 1px solid #212121; /* 卡片边框颜色 */
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 卡片悬停阴影 */
+        }
+
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 14px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="p-8">
+    <button id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold mb-6 text-center">影视网站集合</h1>
+        <div class="flex justify-center gap-4 mb-6">
+            <button onclick="renderSites('all')" class="button font-medium py-2 px-6 rounded-full">全部</button>
+            <button onclick="renderSites('影视')" class="button font-medium py-2 px-6 rounded-full">影视</button>
+            <button onclick="renderSites('直播')" class="button font-medium py-2 px-6 rounded-full">直播</button>
+            <button onclick="renderSites('HO')" class="button font-medium py-2 px-6 rounded-full">HO</button>
+            <button onclick="renderSites('TV')" class="button font-medium py-2 px-6 rounded-full">TV</button>
+            <button onclick="openAllDisplayedSites()" class="button font-medium py-2 px-6 rounded-full">一键打开所有显示网页</button>
+        </div>
+        <div class="flex justify-center mb-6">
+            <input type="text" id="searchInput" placeholder="搜索网站名称" oninput="renderSites(window.currentCategory, this.value)" class="border border-gray-700 p-3 rounded-full w-full max-w-md text-center">
+        </div>
+        <div id="siteContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Sites will be rendered here -->
+        </div>
+    </div>
+    <script>
+        const sites = [
+            {
+                name: "大师兄影视",
+                url: "https://dsxys.pro/",
+                logo: "https://dsxys.pro/mxtheme/images/logo.png",
+                category: "影视"
+            },
+            {
+                name: "iTalkBB TV",
+                url: "https://www.italkbbtv.com/",
+                logo: "https://www.italkbbtv.com/_nuxt/img/italk-logo.05e6b15.svg",
+                category: "HO"
+            },
+            {
+                name: "CNYS TV",
+                url: "https://cnys.tv/",
+                logo: "https://cnys.tv/upload/site/20241108-1/56fcb757ba06c8b53979a8f5daf92c68.png",
+                category: "影视"
+            },
+            {
+                name: "欧乐影视",
+                url: "https://www.olevod.tv/",
+                logo: "https://static.olelive.com/uploads/file/2ba1599ea6adbd319aeb2d9d77577ce2_20221229161103.png",
+                category: "影视"
+            },
+            {
+                name: "NoVIP 去广告",
+                url: "https://www.novipnoad.net/",
+                logo: "https://gaoshila.com/wp-content/uploads/2024/05/noad.jpg",
+                category: "影视"
+            },
+            {
+                name: "乐影影视",
+                url: "https://www.lyys8.com/#2tun.com",
+                logo: "https://www.lyys8.com/logo.svg",
+                category: "影视"
+            },
+            {
+                name: "低端影视",
+                url: "https://ddys.pro/",
+                logo: "https://gp-cdn.diandian.com/Avx1-WinamzMlB_UHOSuUQ0KC5Z-kTssJ1-Lm0o9oFqt4aRoHYRrkSBh20CXnqf1wCE",
+                category: "影视"
+            },
+            {
+                name: "Grab4K",
+                url: "https://grab4k.com/",
+                logo: "https://grab4k.com/mxstatic/image/logo.png",
+                category: "HO"
+            },
+            {
+                name: "爱奇艺",
+                url: "https://www.iqiyi.com/",
+                logo: "https://www.iqiyi.com/static/media/logo.0f63ac5d8ac0e4d5c368.svg",
+                category: "影视"
+            },
+            {
+                name: "腾讯视频",
+                url: "https://v.qq.com/",
+                logo: "https://logo.clearbit.com/qq.com",
+                category: "影视"
+            },
+            {
+                name: "优酷视频",
+                url: "https://www.youku.com/",
+                logo: "https://img.alicdn.com/imgextra/i1/O1CN01180Rqd1u3Lo8PdgSs_!!6000000005981-55-tps-213-72.svg",
+                category: "影视"
+            },
+            {
+                name: "哔哩哔哩",
+                url: "https://www.bilibili.com/",
+                logo: "https://s1.hdslb.com/bfs/static/jinkela/long/mstation/logo-bilibili-pink.png",
+                category: "影视"
+            },
+            {
+                name: "西瓜视频",
+                url: "https://www.ixigua.com/",
+                logo: "https://p-pc-weboff.byteimg.com/tos-cn-i-9r5gewecjs/xg-logo-light.svg",
+                category: "影视"
+            },
+            {
+                name: "咪咕视频",
+                url: "https://www.miguvideo.com/",
+                logo: "https://img.cmvideo.cn/publish/noms/2023/03/14/1O4Q0B5ARUODO.png",
+                category: "影视"
+            },
+            
+            {
+                name: "虎牙影视",
+                url: "https://www.huya.com/",
+                logo: "https://a.msstatic.com/huya/hd/h5/static-source/main/logo.png",
+                category: "直播"
+            },
+            {
+                name: "央视网",
+                url: "https://www.cctv.com/",
+                logo: "https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/14/1631585721137_436.png",
+                category: "TV"
+            },
+            {
+                name: "CCTV 直播",
+                url: "https://tv.cctv.com/live/",
+                logo: "https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/14/1631585721137_436.png",
+                category: "直播"
+            },
+            
+        ];
+
+        window.currentCategory = 'all';
+
+        window.renderSites = function (category = 'all', query = '') {
+            window.currentCategory = category;
+            const container = document.getElementById('siteContainer');
+            container.innerHTML = '';
+
+            const filtered = sites.filter(site => {
+                const matchCategory = category === 'all' || site.category === category;
+                const matchQuery = site.name.toLowerCase().includes(query.toLowerCase());
+                return matchCategory && matchQuery;
+            });
+
+            for (const site of filtered) {
+                if (category === 'all' && site.category === 'HO') {
+                    continue;
+                }
+                const card = document.createElement('a');
+                card.href = site.url;
+                card.target = '_blank';
+                card.className = 'card rounded-3xl p-6 shadow-sm';
+
+                card.innerHTML = `
+                  <div class="flex flex-col items-center gap-4">
+                    <div class="w-full flex justify-center items-center p-4 rounded-2xl h-28"> <!-- 移除背景色 -->
+                      <img src="${site.logo}" alt="${site.name}" class="max-h-20 max-w-full object-contain" />
+                    </div>
+                    <h2 class="text-center font-bold text-xl">${site.name}</h2>
+                    <p class="text-xs text-center text-gray-500 truncate w-full">${site.url}</p>
+                  </div>
+                `;
+                container.appendChild(card);
+            }
+        }
+
+        function openAllDisplayedSites() {
+            const cards = document.querySelectorAll('#siteContainer a');
+            cards.forEach(card => {
+                window.open(card.href, '_blank');
+            });
+        }
+
+        // 一键返回顶部功能
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior:'smooth'
+            });
+        });
+
+        // 初始渲染，默认排除HO分类
+        renderSites('all');
+    </script>
+</body>
+
+</html>
