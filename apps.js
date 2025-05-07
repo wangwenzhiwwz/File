@@ -252,6 +252,7 @@ const appData = [
         createApp({ name: "MY IP", description: "View public IPv4 and IPv6", link: "https://ip.wwz.im/", icon: "./images/myip.png" }),
         createApp({ name: "Alist", description: "Organized file storage solution", link: "https://alist.wwz.im/", icon: "./images/alist.png" }),
         createApp({ name: "Translate", description: "Intranet-based online translation tool", link: "https://p.wwz.im/https://translate.google.com/", icon: "./images/Google_Translate.png" }),
+        createApp({ name: "Yandex", description: "fast Internet search", link: "https://yandex.com/", icon: "./images/yandex.png" }),
         createApp({ name: "TuChong", description: "Showcase stunning photography portfolios", link: "https://wangwenzhi.tuchong.com/videos/", icon: "./images/tuchong.jpg" }),
         createApp({ name: "Temp Mail", description: "Disposable temporary email service", link: "https://temp-mail.org/", icon: "./images/Temp Mail.png" }),
         createApp({ name: "Emotn", description: "Free app store for Android TV", link: "https://app.emotn.com/", icon: "./images/emotn.webp" }),
