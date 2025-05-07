@@ -278,6 +278,8 @@ const appData = [
         createApp({ name: "闪电分镜", description: "Efficient pre-production planning tool", link: "https://web.mediastory.cc/", icon: "./images/SDFJ.webp" }),
         createApp({ name: "SnapAny", description: "Save videos, images from platforms", link: "https://snapany.com/", icon: "./images/snapany.png" }),
         createApp({ name: "AXU", description: "Personal resource and storage hub", link: "https://axutongxue.com/", icon: "./images/axu.jpg" }),
+        createApp({ name: "MEGA", description: "新西兰的云存储和文件分享", link: "https://mega.nz/", icon: "./images/MEGA.png" }),
+        createApp({ name: "Dropbox", description: "美国的知名云存储", link: "https://www.dropbox.com/", icon: "./images/Dropbox.png" }),
         createApp({ name: "Wallpapers Central", description: "Wallpaper collection and customization platform", link: "https://wallpapers.ispazio.net/", icon: "./images/wallpapers.ispazio.jpg" }),
         createApp({ name: "leManoosh", description: "Industrial Design Trends, Online Courses and Jobs", link: "https://lemanoosh.com/tagged/colors/", icon: "./images/lemanoosh.png" }),
         createApp({ name: "Jerry-Lee Bosmans", description: "Dutch visual artist & designer", link: "https://www.byjer.com/", icon: "./images/JER.png" }),
