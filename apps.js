@@ -263,7 +263,7 @@ const appData = [
         createApp({ name: "SMS-Activate.", description: "Virtual Number for OTP", link: "https://sms-activate.world/", icon: "./images/SMS.png" }),
         createApp({ name: "环球巴士", description: "一站式流媒体合租平台", link: "https://universalbus.cn/", icon: "./images/HQBS.png" }),
         createApp({ name: "TypingClub", description: "Online typing practice and learning platform.", link: "https://www.edclub.com/sportal/", icon: "./images/typingclub.jpeg" }), 
-        createApp({ name: "US Address", description: "Generate valid US addresses", link: "https://www.haoweichi.com/", icon: "./images/dizhi.png" }),
+        createApp({ name: "US Address", description: "Generate valid US addresses", link: "https://fauxid.com/identity/46c7de5b-db09-4161-b1bf-b5496f24384d", icon: "./images/dizhi.png" }),
         createApp({ name: "TheMatrix", description: "Matrix-inspired digital code background", link: "https://wangwenzhi.eu.org/TheMatrix/", icon: "./images/TheMatrix.png" }),
         createApp({ name: "菜鸟工具", description: "Online tools for developers, designers", link: "https://www.jyshare.com/", icon: "./images/cainiao.png" }),
         createApp({ name: "Birme", description: "将图片压缩到所需的尺寸", link: "https://www.birme.net/", icon: "./images/birme.png" }),
