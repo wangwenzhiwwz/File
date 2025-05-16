@@ -185,7 +185,7 @@ const appData = [
         createApp({ name: "Estk APP", description: "Removable eUICC management solution", link: "./software/EasyEUICC-1.2.0.apk", icon: "./images/Estk.png" }),
     ]},
     { title: "Windows", apps: [
-        createApp({ name: "RustDesk", description: "Secure and reliable remote desktop", link: "https://rustdesk.com/", icon: "./images/rustdesk.svg" }),
+        createApp({ name: "PowerToys", description: "用于自定义 Windows 的实用工具", link: "https://learn.microsoft.com/zh-cn/windows/powertoys/", icon: "./images/PowerToys.png" }),
         createApp({ name: "BalenaEtcher", description: "Flash OS images to USB", link: "https://etcher.balena.io/#download-etcher", icon: "./images/balena etcher.png" }),
         createApp({ name: "Parsec", description: "Remote access for work, gaming", link: "https://parsec.app/", icon: "./images/parsec.png" }),
         createApp({ name: "Tabby SSH", description: "Cross-platform SSH management tool", link: "https://tabby.sh/", icon: "./images/tabby-logo.png" }),
