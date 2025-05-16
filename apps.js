@@ -142,6 +142,7 @@ const appData = [
         createApp({ name: "Hyper3D", description: "AI-powered 3D model generator", link: "https://hyper3d.ai/", icon: "./images/hyper3d.png" }),
         createApp({ name: "LiblibAI", description: "China's leading AI creation platform", link: "https://www.liblib.art/", icon: "./images/liblib.jpg" }),
         createApp({ name: "Civitai", description: "Open-source generative AI community", link: "https://civitai.com/", icon: "./images/civitai.jpg" }),
+        createApp({ name: "Playground", description: "Free AI Design Tool", link: "https://playground.com/", icon: "./images/playground.jpeg" }),
     ]},
     { title: "iOS", apps: [
         createApp({ name: "Hiddify", description: "Multi-protocol VPN and proxy", link: "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone", icon: "./images/hiddify.png" }),
