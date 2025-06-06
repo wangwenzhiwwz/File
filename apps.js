@@ -252,6 +252,7 @@ const appData = [
     { title: "Other", apps: [
         createApp({ name: "WWZ.iM", description: "My personal website and portfolio", link: "https://www.wwz.im/", icon: "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" }),
         createApp({ name: "MY IP", description: "View public IPv4 and IPv6", link: "https://ip.wwz.im/", icon: "./images/myip.png" }),
+        createApp({ name: "Cloudflare Proxy EX", description: "Cloudflare超级代理，OpenAI/ChatGPT代理，Github加速", link: "https://p.wwz.im/", icon: "./images/☭.png" }),
         createApp({ name: "Alist", description: "Organized file storage solution", link: "https://alist.wwz.im/", icon: "./images/alist.png" }),
         createApp({ name: "Translate", description: "Intranet-based online translation tool", link: "https://p.wwz.im/https://translate.google.com/", icon: "./images/Google_Translate.png" }),
         createApp({ name: "Yandex", description: "fast Internet search", link: "https://yandex.com/", icon: "./images/yandex.png" }),
