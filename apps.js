@@ -108,7 +108,7 @@ const appData = [
         createApp({ name: "Teambition", description: "Enterprise-grade team collaboration tool", link: "https://www.teambition.com/organization/61ade96d461f91c76e3bfc06/task/shortcut/66d920b8e2a3f00f0ddca2e3/", icon: "./images/Teambition.jpg" }),
         createApp({ name: "Whimsical", description: "Unified workspace for teams", link: "https://whimsical.com/", icon: "./images/whimsical.jfif" }),
         createApp({ name: "Nodeseek", description: "Vibrant web developer community", link: "https://www.nodeseek.com/", icon: "./images/NodeSeek.png" }),
-        createApp({ name: "V2EX", description: "Creative professionals' discussion forum", link: "https://p.wwz.im/https://www.v2ex.com/", icon: "./images/v2ex.jpeg" }),
+        createApp({ name: "V2EX", description: "Creative professionals' discussion forum", link: "https://www.v2ex.com/", icon: "./images/v2ex.jpeg" }),
         createApp({ name: "Notion", description: "Versatile all-in-one productivity app", link: "https://www.notion.so/", icon: "./images/notion.webp" }),
         
     ]},
