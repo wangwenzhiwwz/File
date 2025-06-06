@@ -233,6 +233,7 @@ const appData = [
         createApp({ name: "EUserv", description: "Dedicated servers and cloud hosting", link: "https://support.euserv.com/", icon: "./images/EUserv.jpg" }),
         createApp({ name: "Serv00", description: "Reliable web application hosting", link: "https://panel5.serv00.com/", icon: "./images/Serv00.jpg" }),
         createApp({ name: "BandwagonHost", description: "Enterprise-grade VPS hosting plans", link: "https://bwh88.net/services", icon: "./images/bwh.png" }),
+        createApp({ name: "Hostinger", description: "Bring Your Idea Online With a Website", link: "https://hpanel.hostinger.com/vps", icon: "./images/hostinger.png" }),
         createApp({ name: "RackNerd", description: "Global infrastructure as a service", link: "https://my.racknerd.com/clientarea.php", icon: "./images/RackNerd.jpg" }),
         createApp({ name: "DogYun", description: "Affordable and flexible cloud servers", link: "https://vm.dogyun.com/server/list", icon: "./images/dogyun.png" }),
         createApp({ name: "V.PS", description: "Fast and stable VPS hosting", link: "https://vps.hosting/clientarea/services/amsterdam-cloud-kvm-vps/", icon: "./images/V.PS.png" }),
