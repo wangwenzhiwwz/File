@@ -208,6 +208,7 @@ const appData = [
         createApp({ name: "Adobe GenP", description: "Universal Adobe product patcher", link: "https://www.cybermania.ws/apps/adobe-genp/", icon: "./images/adobe genp.png" }),
         createApp({ name: "Cursor", description: "AI-enhanced coding environment", link: "https://www.cursor.com/", icon: "./images/cursor.jpg" }),
         createApp({ name: "影刀 RPA", description: "Robotic process automation tool", link: "https://www.yingdao.com/", icon: "./images/yingdao.webp" }),
+        createApp({ name: "NB助手", description: "一款免费的iOS设备必备工具", link: "https://nbtool8.com/index.html", icon: "./images/nbtool.png" }),
     ]},
     { title: "Mac", apps: [
         createApp({ name: "奇迹秀", description: "Boost productivity with plugins", link: "https://www.qijishow.com/", icon: "./images/qijishow.svg" }),
