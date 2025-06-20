@@ -271,6 +271,7 @@ const appData = [
         createApp({ name: "TheMatrix", description: "Matrix-inspired digital code background", link: "https://wangwenzhi.eu.org/TheMatrix/", icon: "./images/TheMatrix.png" }),
         createApp({ name: "菜鸟工具", description: "Online tools for developers, designers", link: "https://www.jyshare.com/", icon: "./images/cainiao.png" }),
         createApp({ name: "Birme", description: "将图片压缩到所需的尺寸", link: "https://www.birme.net/", icon: "./images/birme.png" }),
+        createApp({ name: "默沙东诊疗手册", description: "获得医生同样信赖的医学信息", link: "https://www.msdmanuals.cn/home", icon: "./images/msdmanuals.svg" }),
         createApp({ name: "Radio Garden", description: "Stream global radio stations", link: "https://radio.garden/", icon: "./images/radio.garden.png" }),
         createApp({ name: "WebIntoApp", description: "Convert websites to mobile apps", link: "https://www.webintoapp.com/", icon: "./images/webintoapp.png" }),
         createApp({ name: "草料二维码", description: "Free one-stop QR code generator", link: "https://cli.im/", icon: "./images/cli.png" }),
