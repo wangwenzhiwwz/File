@@ -160,6 +160,7 @@ const appData = [
         createApp({ name: "Hypic", description: "Photo Editor & AI Art", link: "https://apps.apple.com/de/app/hypic-photo-editor-ai-art/id1644042837", icon: "./images/hypic.webp" }),
         createApp({ name: "截图带壳", description: "截图/视频带壳支持手机/手表全系列机型", link: "https://apps.apple.com/cn/app/%E6%88%AA%E5%9B%BE%E5%B8%A6%E5%A3%B3-%E5%B8%A6%E5%A3%B3%E6%88%AA%E5%9B%BE-%E8%A7%86%E9%A2%91%E9%AB%98%E6%B8%85%E5%AF%BC%E5%87%BA/id6544797343", icon: "./images/Snapmod.webp" }),
         createApp({ name: "QWeather", description: "Accurate global weather forecasts", link: "https://www.qweather.com/en/app", icon: "./images/QWeather.webp" }),
+        createApp({ name: "默沙东诊疗手册", description: "健康信息是人人都应享受的权利", link: "https://apps.apple.com/mx/app/%E9%BB%98%E6%B2%99%E4%B8%9C%E8%AF%8A%E7%96%97%E6%89%8B%E5%86%8C-%E5%A4%A7%E4%BC%97%E7%89%88/id1188334624", icon: "./images/msdmanuals.webp" }),
         createApp({ name: "太阳测量师", description: "Plan sunrise and sunset moments", link: "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875", icon: "./images/sun.webp" }),
     ]},
     { title: "Android", apps: [
