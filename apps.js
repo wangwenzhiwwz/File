@@ -277,7 +277,7 @@ const appData = [
         createApp({ name: "WebIntoApp", description: "Convert websites to mobile apps", link: "https://www.webintoapp.com/", icon: "./images/webintoapp.png" }),
         createApp({ name: "草料二维码", description: "Free one-stop QR code generator", link: "https://cli.im/", icon: "./images/cli.png" }),
          createApp({ name: "Node Convert", description: "Node Conversion Tool Website", link: "https://sub.wwz.im/", icon: "./images/SUB Conversion.png" }),
-        createApp({ name: "V2raySE", description: "Online V2ray node conversion tool", link: "https://v2rayse.com/node-convert/", icon: "./images/v2rayse1.png" }),
+        createApp({ name: "V2raySE-Singbox", description: "Online V2ray node conversion tool", link: "https://v2rayse.com/node-convert/", icon: "./images/v2rayse1.png" }),
         createApp({ name: "V2raySE V2", description: "Online V2ray node conversion tool", link: "https://v2.v2rayse.com/node-convert/", icon: "./images/v2rayse.png" }),
         createApp({ name: "Artlist", description: "Royalty-free digital asset subscription", link: "https://artlist.io/", icon: "./images/artlist.png" }),
         createApp({ name: "光厂", description: "Royalty-free video material platform", link: "https://www.vjshi.com/", icon: "./images/光厂.jpg" }),
