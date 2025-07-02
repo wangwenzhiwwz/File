@@ -254,6 +254,7 @@ const appData = [
     { title: "Payzone", apps: [
         createApp({ name: "什么值得买", description: "我们的兴趣消费指南", link: "https://www.smzdm.com/", icon: "./images/smzdm.jpg" }),
         createApp({ name: "转运中国", description: "全球购物轻松送到国内", link: "https://www.uszcn.com/", icon: "./images/uszcn.png" }),
+        createApp({ name: "阿奇索", description: "阿奇索自动发货软件", link: "https://www.agiso.com/", icon: "./images/agiso.webp" }),
         createApp({ name: "Walmart", description: "Save Money. Live better", link: "https://www.walmart.com/", icon: "./images/walmart.svg" }),
         createApp({ name: "Artlist", description: "Royalty-free digital asset subscription", link: "https://artlist.io/", icon: "./images/artlist.png" }),
         createApp({ name: "光厂", description: "Royalty-free video material platform", link: "https://www.vjshi.com/", icon: "./images/光厂.jpg" }),
