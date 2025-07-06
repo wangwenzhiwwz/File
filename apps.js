@@ -211,6 +211,7 @@ const appData = [
         createApp({ name: "Cursor", description: "AI-enhanced coding environment", link: "https://www.cursor.com/", icon: "./images/cursor.jpg" }),
         createApp({ name: "影刀 RPA", description: "Robotic process automation tool", link: "https://www.yingdao.com/", icon: "./images/yingdao.webp" }),
         createApp({ name: "NB助手", description: "一款免费的iOS设备必备工具", link: "https://nbtool8.com/index.html", icon: "./images/nbtool.png" }),
+        createApp({ name: "Advanced-IP-Scanner", description: "数秒内完成网络扫描", link: "https://www.advanced-ip-scanner.com/cn/", icon: "./images/Advanced-IP-Scanner.webp" }),
     ]},
     { title: "Mac", apps: [
         createApp({ name: "奇迹秀", description: "Boost productivity with plugins", link: "https://www.qijishow.com/", icon: "./images/qijishow.svg" }),
