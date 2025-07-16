@@ -251,6 +251,7 @@ const appData = [
         createApp({ name: "FreeDNS", description: "Free DNS and dynamic DNS", link: "https://freedns.afraid.org/subdomain/", icon: "./images/FreeDNS.png" }),
         createApp({ name: "Freenom", description: "World's first free domain provider", link: "https://my.freenom.com/clientarea.php?action=domains", icon: "./images/Freenom.png" }),
         createApp({ name: "Name.com", description: "Wide range of domain TLDs", link: "https://www.name.com/zh-cn/account/login", icon: "./images/name.jpg" }),
+        createApp({ name: "ZeroTier", description: "Global Networking Solution for IoT, SD-WAN, and VPN", link: "https://my.zerotier.com/", icon: "./images/zerotier.png" }),
     ]},
     { title: "Payzone", apps: [
         createApp({ name: "什么值得买", description: "我们的兴趣消费指南", link: "https://www.smzdm.com/", icon: "./images/smzdm.jpg" }),
