@@ -271,6 +271,7 @@ const appData = [
         createApp({ name: "RedteaGO", description: "eSIM for seamless global travel", link: "https://esim.redteago.com/zh-CN/orders", icon: "./images/RedteaGO.jpg" }),
         createApp({ name: "CASETiFY", description: "Show Your Colors", link: "https://www.casetify.com/", icon: "./images/casetify.png" }),
         createApp({ name: "Gumroad", description: "Earn your first dollar online with Gumroad", link: "https://gumroad.com/discover", icon: "./images/gumroad.png" }),
+        createApp({ name: "小红书千帆", description: "解锁社交内容电商全新体验", link: "https://ark.xiaohongshu.com/ark", icon: "./images/ark.xiaohongshu.jpg" }),
         createApp({ name: "Estk.me", description: "Removable eUICC management solution", link: "https://www.estk.me/downloads/", icon: "./images/Estk.png" }),
         
     ]},
