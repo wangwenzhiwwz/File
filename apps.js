@@ -110,6 +110,7 @@ const appData = [
         createApp({ name: "闪电分镜", description: "Efficient pre-production planning tool", link: "https://web.mediastory.cc/", icon: "./images/SDFJ.webp" }),
         createApp({ name: "Nodeseek", description: "Vibrant web developer community", link: "https://www.nodeseek.com/", icon: "./images/NodeSeek.png" }),
         createApp({ name: "V2EX", description: "Creative professionals' discussion forum", link: "https://www.v2ex.com/", icon: "./images/v2ex.jpeg" }),
+        createApp({ name: "Google Voice", description: "Business Phone Number & Systems", link: "https://voice.google.com/", icon: "./images/google-voice.png" }),
         createApp({ name: "Notion", description: "Versatile all-in-one productivity app", link: "https://www.notion.so/", icon: "./images/notion.webp" }),
         
     ]},
