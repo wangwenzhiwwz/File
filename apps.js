@@ -166,7 +166,7 @@ const appData = [
         createApp({ name: "太阳测量师", description: "Plan sunrise and sunset moments", link: "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875", icon: "./images/sun.webp" }),
     ]},
     { title: "Android", apps: [
-        createApp({ name: "VPN", description: "Cross-platform VPN client solution", link: "https://www.wwz.im/article/VPN", icon: "./images/v2ray.png" }),
+        createApp({ name: "V2rayNG", description: "Cross-platform VPN client solution", link: "https://alist.wwz.im/VPN/V2rayNG", icon: "./images/v2ray.png" }),
         createApp({ name: "LocalSend", description: "Secure local file sharing", link: "https://localsend.org/#/download", icon: "./images/localsend.png" }),
         createApp({ name: "AuroraOSS", description: "Collection of open-source apps", link: "https://auroraoss.com/", icon: "./images/auroralogo.png" }),
         createApp({ name: "APkPure", description: "Fast Android APK downloader", link: "https://www.wwz.im/article/APKPure", icon: "./images/apkpure.png" }),
