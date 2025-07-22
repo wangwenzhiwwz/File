@@ -211,7 +211,7 @@ const appData = [
         createApp({ name: "Adobe GenP", description: "Universal Adobe product patcher", link: "https://www.cybermania.ws/apps/adobe-genp/", icon: "./images/adobe genp.png" }),
         createApp({ name: "Cursor", description: "AI-enhanced coding environment", link: "https://www.cursor.com/", icon: "./images/cursor.jpg" }),
         createApp({ name: "影刀 RPA", description: "Robotic process automation tool", link: "https://www.yingdao.com/", icon: "./images/yingdao.webp" }),
-        createApp({ name: "NB助手", description: "一款免费的iOS设备必备工具", link: "https://nbtool8.com/index.html", icon: "./images/nbtool.png" }),
+        createApp({ name: "Uninstall Tool", description: "安全、快速、强大的软件卸载删除工具", link: "https://www.ghxi.com/uninstalltool.html", icon: "./images/UninstallTool.png" }),
         createApp({ name: "Advanced-IP-Scanner", description: "数秒内完成网络扫描", link: "https://www.advanced-ip-scanner.com/cn/", icon: "./images/Advanced-IP-Scanner.webp" }),
     ]},
     { title: "Mac", apps: [
