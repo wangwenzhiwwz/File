@@ -545,9 +545,9 @@ const appData = [
                 "icon": "./images/MxPlayer.png"
             },
             {
-                "name": "Wow时钟",
+                "name": "Time 计时",
                 "description": "Clock and countdown display",
-                "link": "https://github.com/wangwenzhiwwz/file/releases/download/APK/Wow.clock.apk",
+                "link": "https://github.com/wangwenzhiwwz/Time/releases/tag/Time",
                 "icon": "./images/wow.png"
             },
             {
