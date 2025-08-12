@@ -50,6 +50,210 @@
 <button id="uploadBtn" class="floating-btn" title="上传到 GitHub">⬆️</button>
 <script src="apps.js"></script>
 <script>
+// apps.js 模板（请与 apps.js 文件内容保持同步，只用 %APPDATA_REPLACE% 作为 appData 部分占位符）
+const appsJsTemplate = `
+// 页面刷新函数
+function refreshPage() {
+    location.reload();
+}
+
+// 汉堡菜单切换功能
+function setupHamburgerMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    if (!hamburger) {
+        console.warn('Hamburger menu element not found.');
+        return;
+    }
+    hamburger.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks) {
+            navLinks.classList.toggle('active');
+        } else {
+            console.warn('Navigation links element not found.');
+        }
+    });
+}
+
+// HTML 转义函数，防止 XSS
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+// 构造器函数，确保字段完整性并记录错误
+function createApp({ name, description, link, icon }) {
+    const errors = [];
+    if (!name) errors.push('缺少 name 字段');
+    if (!description) errors.push('缺少 description 字段');
+    if (!link) errors.push('缺少 link 字段');
+    if (!icon) errors.push('缺少 icon 字段');
+
+    const app = {
+        name: name || 'Unnamed App',
+        description: description || 'No description available',
+        link: link || '#',
+        icon: icon || 'https://via.placeholder.com/60?text=No+Image'
+    };
+
+    if (errors.length > 0) {
+        const errorMessage = \`应用 "\${app.name}" 数据错误: \${errors.join(', ')}\`;
+        console.error(errorMessage);
+        displayError(errorMessage);
+    }
+
+    return app;
+}
+
+// 显示错误信息的函数
+function displayError(message) {
+    let errorContainer = document.getElementById('error-container');
+    if (!errorContainer) {
+        errorContainer = document.createElement('div');
+        errorContainer.id = 'error-container';
+        Object.assign(errorContainer.style, {
+            position: 'fixed',
+            top: '10px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            backgroundColor: '#ffebee',
+            color: '#c62828',
+            padding: '10px 20px',
+            borderRadius: '5px',
+            boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
+            zIndex: '1000',
+            maxWidth: '80%',
+            overflowY: 'auto',
+            maxHeight: '200px'
+        });
+        document.body.appendChild(errorContainer);
+    }
+
+    const errorItem = document.createElement('p');
+    errorItem.textContent = message;
+    errorItem.style.margin = '5px 0';
+    errorContainer.appendChild(errorItem);
+
+    setTimeout(() => {
+        errorItem.remove();
+        if (!errorContainer.hasChildNodes()) {
+            errorContainer.remove();
+        }
+    }, 10000);
+}
+
+// Optimized application data
+const appData = %APPDATA_REPLACE%;
+
+// 创建单个应用项的 HTML
+function createAppItem(app) {
+    return \`
+        <div class="app-item">
+            <a href="\${app.link}" class="app-link" target="_blank" rel="noopener noreferrer">
+                <img class="app-icon" src="\${app.icon}" alt="\${escapeHtml(app.name)} Icon" loading="lazy" onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found'; console.warn('Failed to load image: \${app.icon}');">
+                <h3 class="app-name">\${escapeHtml(app.name)}</h3>
+                <p class="app-description">\${escapeHtml(app.description)}</p>
+            </a>
+        </div>
+    \`;
+}
+
+// 创建应用类别的 HTML
+function createCategory(category, index) {
+    const appItems = category.apps.map(createAppItem).join('');
+    return \`
+        <section class="app-category" id="\${category.title.toLowerCase()}" style="animation-delay: \${index * 0.1}s;">
+            <h2 class="app-category-title" data-index="\${index}" style="cursor: pointer;" title="点击打开所有该类网站">\${escapeHtml(category.title)}</h2>
+            <div class="app-grid">\${appItems}</div>
+        </section>
+    \`;
+}
+
+// 全局事件处理函数
+const scrollHandler = () => {
+    const backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+        backToTop.classList.toggle('visible', window.scrollY > 300);
+    }
+};
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+const smoothScroll = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        const headerOffset = 80; // 预留顶部空隙，避免标题被遮挡
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+        document.querySelector('.nav-links')?.classList.remove('active');
+    }
+};
+
+// 渲染所有类别并设置事件
+function renderCategories() {
+    const container = document.getElementById('app-container');
+    if (!container) {
+        console.error('App container element not found.');
+        return;
+    }
+    if (!appData || !Array.isArray(appData)) {
+        console.error('appData is not defined or not an array.');
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    appData.forEach((category, index) => {
+        const div = document.createElement('div');
+        div.innerHTML = createCategory(category, index);
+        fragment.appendChild(div.firstElementChild);
+    });
+    container.appendChild(fragment);
+
+    const backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+        window.removeEventListener('scroll', scrollHandler);
+        window.addEventListener('scroll', scrollHandler);
+        backToTop.removeEventListener('click', scrollToTop);
+        backToTop.addEventListener('click', scrollToTop);
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+        anchor.removeEventListener('click', smoothScroll);
+        anchor.addEventListener('click', smoothScroll);
+    });
+
+    // 添加标题点击事件：打开所有链接
+    document.querySelectorAll('.app-category-title').forEach(title => {
+        title.addEventListener('click', () => {
+            const index = title.getAttribute('data-index');
+            const category = appData[parseInt(index)];
+            if (category && category.apps) {
+                category.apps.forEach(app => {
+                    window.open(app.link, '_blank');
+                });
+            }
+        });
+    });
+}
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', () => {
+    setupHamburgerMenu();
+    renderCategories();
+});
+`;
+
 (function(){
     const container = document.getElementById('categories');
     function render() {
@@ -81,13 +285,19 @@
     window.addApp = function(ci) { appData[ci].apps.push({ name:"", description:"", link:"", icon:"" }); render(); }
     window.deleteApp = function(ci, ai) { if(confirm("确定删除这个应用吗？")){ appData[ci].apps.splice(ai,1); render(); } }
     window.deleteCategory = function(ci) { if(confirm("确定删除这个分类吗？")){ appData.splice(ci,1); render(); } }
+
+    // 下载 apps.js 完整格式
     document.getElementById('downloadBtn').onclick = function(){
-        const blob = new Blob([`const appData = ${JSON.stringify(appData, null, 4)};`], {type: "application/javascript"});
+        // 替换 appData 部分，格式为缩进4空格
+        const appDataStr = JSON.stringify(appData, null, 4);
+        const fileContent = appsJsTemplate.replace('%APPDATA_REPLACE%', appDataStr);
+        const blob = new Blob([fileContent], {type: "application/javascript"});
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
         a.download = "apps.js";
         a.click();
     }
+
     document.getElementById('uploadBtn').onclick = function(){
         window.location.href = "https://github.com/wangwenzhiwwz/File/upload/master";
     }
