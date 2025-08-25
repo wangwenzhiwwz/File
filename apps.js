@@ -112,7 +112,7 @@ const appData = [
             {
                 "name": "Outlook",
                 "description": "Platform developed by Microsoft",
-                "link": "https://outlook.com/",
+                "link": "https://outlook.live.com/",
                 "icon": "./images/Microsoft_Outlook.png"
             },
             {
