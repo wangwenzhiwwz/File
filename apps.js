@@ -496,6 +496,12 @@ const appData = [
                 "description": "Plan sunrise and sunset moments",
                 "link": "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875",
                 "icon": "./images/sun.webp"
+            },
+            {
+                "name": "Project Indigo",
+                "description": "A new camera from Adobe Labs",
+                "link": "https://apps.apple.com/us/app/project-indigo/id6742591546",
+                "icon": "./images/ProjectIndigo.webp"
             }
         ]
     },
