@@ -782,6 +782,12 @@ const appData = [
                 "description": "数秒内完成网络扫描",
                 "link": "https://www.advanced-ip-scanner.com/cn/",
                 "icon": "./images/Advanced-IP-Scanner.webp"
+            },
+            {
+                "name": "AdGuard",
+                "description": "AdGuard for Windows is more than an ad blocker",
+                "link": "https://adguard.com/en/welcome.html",
+                "icon": "./images/AdGuard.png"
             }
         ]
     },
