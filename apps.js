@@ -788,6 +788,12 @@ const appData = [
                 "description": "AdGuard for Windows is more than an ad blocker",
                 "link": "https://adguard.com/en/welcome.html",
                 "icon": "./images/AdGuard.png"
+            },
+            {
+                "name": "Visual Studio Code",
+                "description": "Code Editing. Redefined",
+                "link": "https://code.visualstudio.com/",
+                "icon": "./images/VScode.jpg"
             }
         ]
     },
