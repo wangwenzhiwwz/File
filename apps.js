@@ -744,7 +744,7 @@ const appData = [
             {
                 "name": "MPC-BE",
                 "description": "Free open-source video player",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/Windows",
+                "link": "./software/MPC-BE.1.8.2.x64.exe",
                 "icon": "./images/MPC.jpg"
             },
             {
@@ -794,6 +794,12 @@ const appData = [
                 "description": "Code Editing. Redefined",
                 "link": "https://code.visualstudio.com/",
                 "icon": "./images/VScode.jpg"
+            },
+            {
+                "name": "Batch Render Creator",
+                "description": "Local Render Queue for Blender",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/blander",
+                "icon": "./images/batch_render_creator.png"
             }
         ]
     },
