@@ -744,7 +744,7 @@ const appData = [
             {
                 "name": "MPC-BE",
                 "description": "Free open-source video player",
-                "link": "./software/MPC-BE.1.8.2.x64.exe",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/Windows",
                 "icon": "./images/MPC.jpg"
             },
             {
