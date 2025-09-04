@@ -684,7 +684,7 @@ const appData = [
             {
                 "name": "Windows设置",
                 "description": "Practical Windows 11 settings tool",
-                "link": "https://github.com/wangwenzhiwwz/file/releases/download/Windows/Windows.3.6.5.exe",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/Windows",
                 "icon": "./images/windows.jpg"
             },
             {
@@ -744,7 +744,7 @@ const appData = [
             {
                 "name": "MPC-BE",
                 "description": "Free open-source video player",
-                "link": "./software/MPC-BE.1.8.2.x64.exe",
+                "link": "https://github.com/wangwenzhiwwz/File/blob/master/software/MPC-BE.1.8.2.x64.exe",
                 "icon": "./images/MPC.jpg"
             },
             {
