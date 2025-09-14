@@ -1139,6 +1139,18 @@ const appData = [
                 "description": "Removable eUICC management solution",
                 "link": "https://www.estk.me/downloads/",
                 "icon": "./images/Estk.png"
+            },
+            {
+                "name": "eSIMDB",
+                "description": "找到最佳的预付费 eSIM 套餐",
+                "link": "https://esimdb.com/",
+                "icon": "./images/esimdb.png"
+            },
+            {
+                "name": "BNESIM",
+                "description": "Best eSIM Plans for International Travel",
+                "link": "https://app.bnesim.com/",
+                "icon": "./images/bnesim.jpeg"
             }
         ]
     },
