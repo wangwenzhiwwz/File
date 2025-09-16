@@ -800,6 +800,12 @@ const appData = [
                 "description": "Local Render Queue for Blender",
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/blander",
                 "icon": "./images/batch_render_creator.png"
+            },
+            {
+                "name": "PSD Codec",
+                "description": "无需启动 Photoshop 进行快速预览",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/video",
+                "icon": "./images/PSDCodec.png"
             }
         ]
     },
