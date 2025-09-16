@@ -1220,7 +1220,7 @@ const appData = [
             {
                 "name": "CN影院",
                 "description": "Online cinema for Chinese content",
-                "link": "https://cnys.tv/",
+                "link": "https://huarenok.com/",
                 "icon": "./images/nivideo.jfif"
             },
             {
