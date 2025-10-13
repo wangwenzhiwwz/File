@@ -806,6 +806,12 @@ const appData = [
                 "description": "无需启动 Photoshop 进行快速预览",
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/video",
                 "icon": "./images/PSDCodec.png"
+            },
+            {
+                "name": "Moi 3D",
+                "description": "STP格式转换到OBJ Moi 3D",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/3D",
+                "icon": "./images/Moi-3D.png"
             }
         ]
     },
