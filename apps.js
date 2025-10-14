@@ -812,6 +812,12 @@ const appData = [
                 "description": "STP格式转换到OBJ Moi 3D",
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/3D",
                 "icon": "./images/Moi-3D.png"
+            },
+            {
+                "name": "CATIA_2018",
+                "description": "法国达索系统开发的高端三维设计与工程软件",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/3D",
+                "icon": "./images/DS-catia.jpg"
             }
         ]
     },
