@@ -526,6 +526,12 @@ const appData = [
                 "description": "Protects your online identity",
                 "link": "https://apps.apple.com/us/app/microsoft-authenticator/id983156458",
                 "icon": "./images/Microsoft-Authenticator.webp"
+            },
+            {
+                "name": "旅客八达通",
+                "description": "随时随地为iPhone 或 Apple Watch内的八达通充值。",
+                "link": "https://apps.apple.com/cn/app/%E6%97%85%E5%AE%A2%E5%85%AB%E8%BE%BE%E9%80%9A/id1505492952",
+                "icon": "./images/Tourists.webp"
             }
         ]
     },
