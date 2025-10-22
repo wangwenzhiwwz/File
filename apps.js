@@ -502,6 +502,18 @@ const appData = [
                 "description": "A new camera from Adobe Labs",
                 "link": "https://apps.apple.com/us/app/project-indigo/id6742591546",
                 "icon": "./images/ProjectIndigo.webp"
+            },
+            {
+                "name": "航旅纵横",
+                "description": "民航官方直销平台值机火车票接送机免税酒店",
+                "link": "https://apps.apple.com/cn/app/%E8%88%AA%E6%97%85%E7%BA%B5%E6%A8%AA-%E6%B0%91%E8%88%AA%E5%AE%98%E6%96%B9%E7%9B%B4%E9%94%80%E5%B9%B3%E5%8F%B0%E5%80%BC%E6%9C%BA%E7%81%AB%E8%BD%A6%E7%A5%A8%E6%8E%A5%E9%80%81%E6%9C%BA%E5%85%8D%E7%A8%8E%E9%85%92%E5%BA%97/id480161784",
+                "icon": "./images/Travelsky.webp"
+            },
+            {
+                "name": "",
+                "description": "",
+                "link": "",
+                "icon": ""
             }
         ]
     },
