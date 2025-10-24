@@ -544,6 +544,24 @@ const appData = [
                 "description": "Smarter voice calling",
                 "link": "https://apps.apple.com/us/app/google-voice/id318698524",
                 "icon": "./images/Google-Voice.webp"
+            },
+            {
+                "name": "Telegram",
+                "description": "Fast. Secure. Powerful.",
+                "link": "https://apps.apple.com/us/app/telegram-messenger/id686449807",
+                "icon": "./images/Telegram.webp"
+            },
+            {
+                "name": "Threads",
+                "description": "Connect and share ideas",
+                "link": "https://apps.apple.com/us/app/threads/id6446901002",
+                "icon": "./images/Threads .webp"
+            },
+            {
+                "name": "Instagram",
+                "description": "Videos, creators & friends",
+                "link": "https://apps.apple.com/us/app/instagram/id389801252",
+                "icon": "./images/Instagram.webp"
             }
         ]
     },
