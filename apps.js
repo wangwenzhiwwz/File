@@ -532,6 +532,18 @@ const appData = [
                 "description": "随时随地为iPhone 或 Apple Watch内的八达通充值。",
                 "link": "https://apps.apple.com/cn/app/%E6%97%85%E5%AE%A2%E5%85%AB%E8%BE%BE%E9%80%9A/id1505492952",
                 "icon": "./images/Tourists.webp"
+            },
+            {
+                "name": "小红书千帆",
+                "description": "小红书千帆商家移动工作台",
+                "link": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8D%83%E5%B8%86/id1508097648",
+                "icon": "./images/Xingin.webp"
+            },
+            {
+                "name": "Google Voice",
+                "description": "Smarter voice calling",
+                "link": "https://apps.apple.com/us/app/google-voice/id318698524",
+                "icon": "./images/Google-Voice.webp"
             }
         ]
     },
