@@ -1116,6 +1116,12 @@ const appData = [
                 "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
                 "link": "https://my.zerotier.com/",
                 "icon": "./images/zerotier.png"
+            },
+            {
+                "name": "ColoCrossing",
+                "description": "Colocation & Dedicated Server Hosting",
+                "link": "https://cloud.colocrossing.com/clientarea.php?action=services",
+                "icon": "./images/colocrossing.png"
             }
         ]
     },
