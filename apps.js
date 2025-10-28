@@ -1247,6 +1247,12 @@ const appData = [
                 "description": "Best eSIM Plans for International Travel",
                 "link": "https://app.bnesim.com/",
                 "icon": "./images/bnesim.jpeg"
+            },
+            {
+                "name": "Firsty",
+                "description": "Your international mobile data travel app",
+                "link": "https://www.firsty.app/",
+                "icon": "./images/firsty.webp"
             }
         ]
     },
