@@ -574,6 +574,12 @@ const appData = [
                 "description": "简单愉悦的智能生活体验",
                 "link": "https://apps.apple.com/cn/app/%E7%B1%B3%E5%AE%B6/id957323480",
                 "icon": "./images/MiHome.webp"
+            },
+            {
+                "name": "飓风相机",
+                "description": "电影创作者打造的相机应用",
+                "link": "https://apps.apple.com/us/app/%E9%A3%93%E9%A3%8E%E7%9B%B8%E6%9C%BA/id6749835845",
+                "icon": "./images/Ostar.webp"
             }
         ]
     },
