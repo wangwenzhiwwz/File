@@ -1444,6 +1444,12 @@ const appData = [
                 "description": "Dutch visual artist & designer",
                 "link": "https://www.byjer.com/",
                 "icon": "./images/JER.png"
+            },
+            {
+                "name": "Cusdis",
+                "description": "轻量级、隐私优先、开源的评论系统",
+                "link": "https://cusdis.com/dashboard",
+                "icon": "./images/Cusdis.png"
             }
         ]
     }
