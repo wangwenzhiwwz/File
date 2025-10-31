@@ -7,21 +7,14 @@ function refreshPage() {
 // 汉堡菜单切换功能
 function setupHamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
-    if (!hamburger) {
-        console.warn('Hamburger menu element not found.');
-        return;
-    }
+    if (!hamburger) return;
     hamburger.addEventListener('click', () => {
         const navLinks = document.querySelector('.nav-links');
-        if (navLinks) {
-            navLinks.classList.toggle('active');
-        } else {
-            console.warn('Navigation links element not found.');
-        }
+        if (navLinks) navLinks.classList.toggle('active');
     });
 }
 
-// HTML 转义函数，防止 XSS
+// HTML 转义函数
 function escapeHtml(unsafe) {
     return unsafe
         .replace(/&/g, "&amp;")
@@ -31,68 +24,37 @@ function escapeHtml(unsafe) {
         .replace(/'/g, "&#039;");
 }
 
-// 构造器函数，确保字段完整性并记录错误
+// 构造器函数
 function createApp({ name, description, link, icon }) {
-    const errors = [];
-    if (!name) errors.push('缺少 name 字段');
-    if (!description) errors.push('缺少 description 字段');
-    if (!link) errors.push('缺少 link 字段');
-    if (!icon) errors.push('缺少 icon 字段');
-
     const app = {
         name: name || 'Unnamed App',
         description: description || 'No description available',
         link: link || '#',
         icon: icon || 'https://via.placeholder.com/60?text=No+Image'
     };
-
-    if (errors.length > 0) {
-        const errorMessage = `应用 "${app.name}" 数据错误: ${errors.join(', ')}`;
-        console.error(errorMessage);
-        displayError(errorMessage);
-    }
-
     return app;
 }
 
-// 显示错误信息的函数
+// 显示错误
 function displayError(message) {
-    let errorContainer = document.getElementById('error-container');
-    if (!errorContainer) {
-        errorContainer = document.createElement('div');
-        errorContainer.id = 'error-container';
-        Object.assign(errorContainer.style, {
-            position: 'fixed',
-            top: '10px',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            backgroundColor: '#ffebee',
-            color: '#c62828',
-            padding: '10px 20px',
-            borderRadius: '5px',
-            boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
-            zIndex: '1000',
-            maxWidth: '80%',
-            overflowY: 'auto',
-            maxHeight: '200px'
+    let container = document.getElementById('error-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'error-container';
+        Object.assign(container.style, {
+            position: 'fixed', top: '10px', left: '50%', transform: 'translateX(-50%)',
+            background: '#ffebee', color: '#c62828', padding: '10px 20px', borderRadius: '5px',
+            boxShadow: '0 2px 5px rgba(0,0,0,0.2)', zIndex: '1000', maxWidth: '80%'
         });
-        document.body.appendChild(errorContainer);
+        document.body.appendChild(container);
     }
-
-    const errorItem = document.createElement('p');
-    errorItem.textContent = message;
-    errorItem.style.margin = '5px 0';
-    errorContainer.appendChild(errorItem);
-
-    setTimeout(() => {
-        errorItem.remove();
-        if (!errorContainer.hasChildNodes()) {
-            errorContainer.remove();
-        }
-    }, 10000);
+    const p = document.createElement('p');
+    p.textContent = message;
+    p.style.margin = '5px 0';
+    container.appendChild(p);
+    setTimeout(() => { p.remove(); if (!container.hasChildNodes()) container.remove(); }, 10000);
 }
 
-// Optimized application data
 const appData = [
     {
         "title": "Web",
@@ -205,7 +167,8 @@ const appData = [
                 "link": "https://www.notion.so/",
                 "icon": "./images/notion.webp"
             }
-        ]
+        ],
+        "domId": "cat-0"
     },
     {
         "title": "AI",
@@ -390,7 +353,8 @@ const appData = [
                 "link": "https://playground.com/",
                 "icon": "./images/playground.jpeg"
             }
-        ]
+        ],
+        "domId": "cat-1"
     },
     {
         "title": "iOS",
@@ -581,7 +545,8 @@ const appData = [
                 "link": "https://apps.apple.com/us/app/%E9%A3%93%E9%A3%8E%E7%9B%B8%E6%9C%BA/id6749835845",
                 "icon": "./images/Ostar.webp"
             }
-        ]
+        ],
+        "domId": "cat-2"
     },
     {
         "title": "Android",
@@ -695,18 +660,6 @@ const appData = [
                 "icon": "./images/Scene.webp"
             },
             {
-                "name": "贝利自动点击器",
-                "description": "Automated screen tapping utility",
-                "link": "https://www.wwz.im/article/Bailey_Auto_Clicker",
-                "icon": "./images/贝利.png"
-            },
-            {
-                "name": "Estk APP",
-                "description": "Removable eUICC management solution",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/esim",
-                "icon": "./images/Estk.png"
-            },
-            {
                 "name": "Shizuku",
                 "description": "Let your app use system APIs directly",
                 "link": "https://github.com/RikkaApps/Shizuku/releases",
@@ -717,8 +670,21 @@ const appData = [
                 "description": "免 Root 的 SIM 卡国家码修改工具",
                 "link": "https://github.com/Ackites/Nrfr/releases",
                 "icon": "./images/Nrfr.png"
+            },
+            {
+                "name": "贝利自动点击器",
+                "description": "Automated screen tapping utility",
+                "link": "https://www.wwz.im/article/Bailey_Auto_Clicker",
+                "icon": "./images/贝利.png"
+            },
+            {
+                "name": "Estk APP",
+                "description": "Removable eUICC management solution",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/esim",
+                "icon": "./images/Estk.png"
             }
-        ]
+        ],
+        "domId": "cat-3"
     },
     {
         "title": "Windows",
@@ -903,7 +869,8 @@ const appData = [
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/3D",
                 "icon": "./images/DS-catia.jpg"
             }
-        ]
+        ],
+        "domId": "cat-4"
     },
     {
         "title": "Mac",
@@ -998,7 +965,8 @@ const appData = [
                 "link": "https://app.milanote.com/",
                 "icon": "./images/milanote.jpg"
             }
-        ]
+        ],
+        "domId": "cat-5"
     },
     {
         "title": "VPS",
@@ -1135,7 +1103,8 @@ const appData = [
                 "link": "https://cloud.colocrossing.com/clientarea.php?action=services",
                 "icon": "./images/colocrossing.png"
             }
-        ]
+        ],
+        "domId": "cat-6"
     },
     {
         "title": "Payzone",
@@ -1266,7 +1235,8 @@ const appData = [
                 "link": "https://www.firsty.app/",
                 "icon": "./images/firsty.webp"
             }
-        ]
+        ],
+        "domId": "cat-7"
     },
     {
         "title": "Other",
@@ -1275,7 +1245,7 @@ const appData = [
                 "name": "WWZ.iM",
                 "description": "My personal website and portfolio",
                 "link": "https://www.wwz.im/",
-                "icon": "https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png"
+                "icon": "./images/Avatar.jpg"
             },
             {
                 "name": "MY IP",
@@ -1457,16 +1427,18 @@ const appData = [
                 "link": "https://cusdis.com/dashboard",
                 "icon": "./images/Cusdis.png"
             }
-        ]
+        ],
+        "domId": "cat-8"
     }
 ];
 
-// 创建单个应用项的 HTML
+// 创建应用项
 function createAppItem(app) {
     return `
         <div class="app-item">
             <a href="${app.link}" class="app-link" target="_blank" rel="noopener noreferrer">
-                <img class="app-icon" src="${app.icon}" alt="${escapeHtml(app.name)} Icon" loading="lazy" onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found'; console.warn('Failed to load image: ${app.icon}');">
+                <img class="app-icon" src="${app.icon}" alt="${escapeHtml(app.name)}" loading="lazy"
+                     onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found';">
                 <h3 class="app-name">${escapeHtml(app.name)}</h3>
                 <p class="app-description">${escapeHtml(app.description)}</p>
             </a>
@@ -1474,56 +1446,23 @@ function createAppItem(app) {
     `;
 }
 
-// 创建应用类别的 HTML
+// 创建类别
 function createCategory(category, index) {
     const appItems = category.apps.map(createAppItem).join('');
     return `
         <section class="app-category" id="${category.title.toLowerCase()}" style="animation-delay: ${index * 0.1}s;">
-            <h2 class="app-category-title" data-index="${index}" style="cursor: pointer;" title="点击打开所有该类网站">${escapeHtml(category.title)}</h2>
+            <h2 class="app-category-title" data-index="${index}" style="cursor: pointer;" title="点击打开所有该类网站">
+                ${escapeHtml(category.title)}
+            </h2>
             <div class="app-grid">${appItems}</div>
         </section>
     `;
 }
 
-// 全局事件处理函数
-const scrollHandler = () => {
-    const backToTop = document.getElementById('back-to-top');
-    if (backToTop) {
-        backToTop.classList.toggle('visible', window.scrollY > 300);
-    }
-};
-
-const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
-
-const smoothScroll = (e) => {
-    e.preventDefault();
-    const targetId = e.currentTarget.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-        const headerOffset = 80; // 预留顶部空隙，避免标题被遮挡
-        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - headerOffset;
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-        document.querySelector('.nav-links')?.classList.remove('active');
-    }
-};
-
-// 渲染所有类别并设置事件
+// 渲染
 function renderCategories() {
     const container = document.getElementById('app-container');
-    if (!container) {
-        console.error('App container element not found.');
-        return;
-    }
-    if (!appData || !Array.isArray(appData)) {
-        console.error('appData is not defined or not an array.');
-        return;
-    }
+    if (!container || !appData || !Array.isArray(appData)) return;
 
     const fragment = document.createDocumentFragment();
     appData.forEach((category, index) => {
@@ -1533,34 +1472,18 @@ function renderCategories() {
     });
     container.appendChild(fragment);
 
-    const backToTop = document.getElementById('back-to-top');
-    if (backToTop) {
-        window.removeEventListener('scroll', scrollHandler);
-        window.addEventListener('scroll', scrollHandler);
-        backToTop.removeEventListener('click', scrollToTop);
-        backToTop.addEventListener('click', scrollToTop);
-    }
-
-    document.querySelectorAll('.nav-links a').forEach(anchor => {
-        anchor.removeEventListener('click', smoothScroll);
-        anchor.addEventListener('click', smoothScroll);
-    });
-
-    // 添加标题点击事件：打开所有链接
+    // 标题点击打开所有
     document.querySelectorAll('.app-category-title').forEach(title => {
         title.addEventListener('click', () => {
             const index = title.getAttribute('data-index');
             const category = appData[parseInt(index)];
             if (category && category.apps) {
-                category.apps.forEach(app => {
-                    window.open(app.link, '_blank');
-                });
+                category.apps.forEach(app => window.open(app.link, '_blank'));
             }
         });
     });
 }
 
-// 页面加载完成后初始化
 document.addEventListener('DOMContentLoaded', () => {
     setupHamburgerMenu();
     renderCategories();
