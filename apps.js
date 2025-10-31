@@ -1260,8 +1260,8 @@ const appData = [
                 "icon": "./images/☭.png"
             },
             {
-                "name": "",
-                "description": "Translate text from images and photos online",
+                "name": "YandexTranslate",
+                "description": "TranslaYandexTranslatete text from images and photos online",
                 "link": "https://translate.yandex.com/translate",
                 "icon": "./images/YandexTranslate.png"
             },
