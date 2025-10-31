@@ -661,7 +661,7 @@ const appData = [
             {
                 "name": "Androbench",
                 "description": "Benchmark tool for Android",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
+                "link": "https://apkpure.net/androbench-storage-benchmark/com.andromeda.androbench2/download",
                 "icon": "./images/Androbench.webp"
             },
             {
