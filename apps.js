@@ -1456,6 +1456,12 @@ const appData = [
                 "description": "轻量级、隐私优先、开源的评论系统",
                 "link": "https://cusdis.com/dashboard",
                 "icon": "./images/Cusdis.png"
+            },
+            {
+                "name": "Yandex Translate",
+                "description": "Dictionary and online translation",
+                "link": "https://translate.yandex.com/translate",
+                "icon": "./images/YandexTranslate.png"
             }
         ]
     }
