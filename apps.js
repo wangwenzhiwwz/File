@@ -625,7 +625,7 @@ const appData = [
             {
                 "name": "MXPlayer",
                 "description": "Powerful video playback app",
-                "link": "https://github.com/wangwenzhiwwz/file/releases/download/APK/MX_Player_Pro-v1.68.4_build.apk",
+                "link": "https://www.wwz.im/article/MX_Player_Pro",
                 "icon": "./images/MxPlayer.png"
             },
             {
@@ -667,37 +667,37 @@ const appData = [
             {
                 "name": "uSmart",
                 "description": "Intelligent camera control app",
-                "link": "https://github.com/wangwenzhiwwz/file/releases/download/APK/uSmart.Camera_v1.0.070_230811.apk",
+                "link": "https://store.ulefone.com/pages/usmart-e02-spec?srsltid=AfmBOoqAycnJXCjQBEDzKCgebRBO2_SQXoJtjZDYA4JRoi2X2L4poXxI",
                 "icon": "./images/uSmart.png"
             },
             {
                 "name": "Chromascreen",
                 "description": "Green screen video editing",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
+                "link": "https://chromascreen.en.softonic.com/android?_gl=1*h21rbq*_gcl_au*OTQwNjczMjcwLjE3NjE4OTU4MDE.",
                 "icon": "./images/Chromascreen.webp"
             },
             {
                 "name": "Focus Chart",
                 "description": "Display professional focus chart",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
+                "link": "https://apkpure.com/focus-chart/com.distantblue.focuschart",
                 "icon": "./images/Focus Chart.webp"
             },
             {
                 "name": "Brevent",
                 "description": "App standby without root",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
+                "link": "https://play.google.com/store/apps/details?id=me.piebridge.brevent&hl=en",
                 "icon": "./images/Brevent.webp"
             },
             {
                 "name": "Scene",
                 "description": "Powerful system management tool",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
+                "link": "https://apkpure.net/scene/com.omarea.vtools/download",
                 "icon": "./images/Scene.webp"
             },
             {
                 "name": "贝利自动点击器",
                 "description": "Automated screen tapping utility",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
+                "link": "https://www.wwz.im/article/Bailey_Auto_Clicker",
                 "icon": "./images/贝利.png"
             },
             {
@@ -1456,12 +1456,6 @@ const appData = [
                 "description": "轻量级、隐私优先、开源的评论系统",
                 "link": "https://cusdis.com/dashboard",
                 "icon": "./images/Cusdis.png"
-            },
-            {
-                "name": "Yandex Translate",
-                "description": "Dictionary and online translation",
-                "link": "https://translate.yandex.com/translate",
-                "icon": "./images/YandexTranslate.png"
             }
         ]
     }
