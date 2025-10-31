@@ -711,6 +711,18 @@ const appData = [
                 "description": "Removable eUICC management solution",
                 "link": "./software/EasyEUICC-1.2.0.apk",
                 "icon": "./images/Estk.png"
+            },
+            {
+                "name": "Shizuku",
+                "description": "Let your app use system APIs directly",
+                "link": "https://github.com/RikkaApps/Shizuku/releases",
+                "icon": "./images/Shizuku.webp"
+            },
+            {
+                "name": "Nrfr",
+                "description": "免 Root 的 SIM 卡国家码修改工具",
+                "link": "https://github.com/Ackites/Nrfr/releases",
+                "icon": "./images/Nrfr.png"
             }
         ]
     },
