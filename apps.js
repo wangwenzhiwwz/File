@@ -996,6 +996,12 @@ const appData = [
                 "icon": "./images/EUserv.jpg"
             },
             {
+                "name": "Oracle",
+                "description": "Free high-performance cloud servers",
+                "link": "https://cloud.oracle.com",
+                "icon": "./images/Oracle.png"
+            },
+            {
                 "name": "BandwagonHost",
                 "description": "Enterprise-grade VPS hosting plans",
                 "link": "https://bwh88.net/services",
@@ -1008,22 +1014,28 @@ const appData = [
                 "icon": "./images/hostinger.png"
             },
             {
-                "name": "RackNerd",
-                "description": "Global infrastructure as a service",
-                "link": "https://my.racknerd.com/clientarea.php",
-                "icon": "./images/RackNerd.jpg"
-            },
-            {
-                "name": "Oracle",
-                "description": "Free high-performance cloud servers",
-                "link": "https://cloud.oracle.com",
-                "icon": "./images/Oracle.png"
+                "name": "ColoCrossing",
+                "description": "Colocation & Dedicated Server Hosting",
+                "link": "https://cloud.colocrossing.com/clientarea.php?action=services",
+                "icon": "./images/colocrossing.png"
             },
             {
                 "name": "CloudCone",
                 "description": "KVM-based VPS and dedicated servers",
                 "link": "https://app.cloudcone.com/",
                 "icon": "./images/CloudCone.jpg"
+            },
+            {
+                "name": "RackNerd",
+                "description": "Global infrastructure as a service",
+                "link": "https://my.racknerd.com/clientarea.php",
+                "icon": "./images/RackNerd.jpg"
+            },
+            {
+                "name": "DogYun",
+                "description": "Affordable and flexible cloud servers",
+                "link": "https://vm.dogyun.com/server/list",
+                "icon": "./images/dogyun.png"
             },
             {
                 "name": "VPS推荐",
@@ -1042,12 +1054,6 @@ const appData = [
                 "description": "Reliable web application hosting",
                 "link": "https://panel5.serv00.com/",
                 "icon": "./images/Serv00.jpg"
-            },
-            {
-                "name": "DogYun",
-                "description": "Affordable and flexible cloud servers",
-                "link": "https://vm.dogyun.com/server/list",
-                "icon": "./images/dogyun.png"
             },
             {
                 "name": "ITDOG",
@@ -1096,12 +1102,6 @@ const appData = [
                 "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
                 "link": "https://my.zerotier.com/",
                 "icon": "./images/zerotier.png"
-            },
-            {
-                "name": "ColoCrossing",
-                "description": "Colocation & Dedicated Server Hosting",
-                "link": "https://cloud.colocrossing.com/clientarea.php?action=services",
-                "icon": "./images/colocrossing.png"
             }
         ],
         "domId": "cat-6"
@@ -1260,10 +1260,22 @@ const appData = [
                 "icon": "./images/☭.png"
             },
             {
+                "name": "",
+                "description": "Translate text from images and photos online",
+                "link": "https://translate.yandex.com/translate",
+                "icon": "./images/YandexTranslate.png"
+            },
+            {
                 "name": "Alist",
                 "description": "Organized file storage solution",
                 "link": "https://alist.wwz.im/",
                 "icon": "./images/alist.png"
+            },
+            {
+                "name": "Cusdis",
+                "description": "轻量级、隐私优先、开源的评论系统",
+                "link": "https://cusdis.com/dashboard",
+                "icon": "./images/Cusdis.png"
             },
             {
                 "name": "Translate",
@@ -1420,12 +1432,6 @@ const appData = [
                 "description": "Dutch visual artist & designer",
                 "link": "https://www.byjer.com/",
                 "icon": "./images/JER.png"
-            },
-            {
-                "name": "Cusdis",
-                "description": "轻量级、隐私优先、开源的评论系统",
-                "link": "https://cusdis.com/dashboard",
-                "icon": "./images/Cusdis.png"
             }
         ],
         "domId": "cat-8"
