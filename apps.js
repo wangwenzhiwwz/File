@@ -174,22 +174,16 @@ const appData = [
         "title": "AI",
         "apps": [
             {
-                "name": "Ai.WWZ.iM",
-                "description": "Cutting-edge AI conversation system",
-                "link": "https://ai.wwz.im/",
-                "icon": "./images/ai.png"
+                "name": "Sora",
+                "description": "旗舰级视频音频生成模型 Sora 2",
+                "link": "https://sora.chatgpt.com/profile",
+                "icon": "./images/Sora.webp"
             },
             {
-                "name": "Qwen",
-                "description": "阿里巴巴云开发的智能助手",
-                "link": "https://www.tongyi.com/",
-                "icon": "./images/QWEN.png"
-            },
-            {
-                "name": "豆包",
-                "description": "字节跳动旗下AI 智能助手",
-                "link": "https://www.doubao.com/",
-                "icon": "./images/doubao.png"
+                "name": "ChatGPT",
+                "description": "OpenAI's official conversational AI",
+                "link": "https://chatgpt.com/",
+                "icon": "./images/openai.png"
             },
             {
                 "name": "Grok",
@@ -198,10 +192,28 @@ const appData = [
                 "icon": "./images/Grok.jpg"
             },
             {
-                "name": "ChatGPT",
-                "description": "OpenAI's official conversational AI",
-                "link": "https://chatgpt.com/",
-                "icon": "./images/openai.png"
+                "name": "豆包",
+                "description": "字节跳动旗下AI 智能助手",
+                "link": "https://www.doubao.com/",
+                "icon": "./images/doubao.png"
+            },
+            {
+                "name": "Ai.WWZ.iM",
+                "description": "Cutting-edge AI conversation system",
+                "link": "https://ai.wwz.im/",
+                "icon": "./images/ai.png"
+            },
+            {
+                "name": "GitHub Copilot",
+                "description": "AI-powered coding assistant",
+                "link": "https://github.com/copilot/",
+                "icon": "./images/GitHub Copilot.png"
+            },
+            {
+                "name": "Qwen",
+                "description": "阿里巴巴云开发的智能助手",
+                "link": "https://www.tongyi.com/",
+                "icon": "./images/QWEN.png"
             },
             {
                 "name": "DeepSeek",
@@ -220,12 +232,6 @@ const appData = [
                 "description": "AI companion for productivity",
                 "link": "https://copilot.microsoft.com/",
                 "icon": "./images/Copilot.png"
-            },
-            {
-                "name": "GitHub Copilot",
-                "description": "AI-powered coding assistant",
-                "link": "https://github.com/copilot/",
-                "icon": "./images/GitHub Copilot.png"
             },
             {
                 "name": "GoogleAiStudio",
