@@ -589,7 +589,7 @@ const appData = [
             {
                 "name": "V2rayNG",
                 "description": "Cross-platform VPN client solution",
-                "link": "https://alist.wwz.im/VPN/V2rayNG",
+                "link": "https://v2rayng.2dust.link/",
                 "icon": "./images/v2ray.png"
             },
             {
@@ -643,13 +643,13 @@ const appData = [
             {
                 "name": "Battery显示",
                 "description": "Monitor remaining battery life",
-                "link": "./software/Battery.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/Battery.png"
             },
             {
                 "name": "时间悬浮",
                 "description": "Display precise current time",
-                "link": "./software/clock.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/clock.png"
             },
             {
@@ -661,14 +661,8 @@ const appData = [
             {
                 "name": "Androbench",
                 "description": "Benchmark tool for Android",
-                "link": "./software/Androbench.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/Androbench.webp"
-            },
-            {
-                "name": "MyFLIR",
-                "description": "Thermal imaging mobile app",
-                "link": "./software/MyFLIR.apk",
-                "icon": "./images/MyFLIR.webp"
             },
             {
                 "name": "uSmart",
@@ -679,37 +673,37 @@ const appData = [
             {
                 "name": "Chromascreen",
                 "description": "Green screen video editing",
-                "link": "./software/Chromascreen.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/Chromascreen.webp"
             },
             {
                 "name": "Focus Chart",
                 "description": "Display professional focus chart",
-                "link": "./software/Focus Chart.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/Focus Chart.webp"
             },
             {
                 "name": "Brevent",
                 "description": "App standby without root",
-                "link": "./software/Brevent - v4.2.21.1.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/Brevent.webp"
             },
             {
                 "name": "Scene",
                 "description": "Powerful system management tool",
-                "link": "./software/Scene - v8.0.15.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/Scene.webp"
             },
             {
                 "name": "贝利自动点击器",
                 "description": "Automated screen tapping utility",
-                "link": "./software/贝利自动点击器_v2.8.9_v2.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/APK",
                 "icon": "./images/贝利.png"
             },
             {
                 "name": "Estk APP",
                 "description": "Removable eUICC management solution",
-                "link": "./software/EasyEUICC-1.2.0.apk",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/esim",
                 "icon": "./images/Estk.png"
             },
             {
