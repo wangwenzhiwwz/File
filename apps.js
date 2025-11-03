@@ -1108,6 +1108,12 @@ const appData = [
                 "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
                 "link": "https://my.zerotier.com/",
                 "icon": "./images/zerotier.png"
+            },
+            {
+                "name": "IPing.cc",
+                "description": "IP Address Query - IPv4",
+                "link": "https://www.iping.cc/",
+                "icon": "./images/iping.cc.png"
             }
         ],
         "domId": "cat-6"
