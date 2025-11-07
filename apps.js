@@ -678,6 +678,12 @@ const appData = [
                 "icon": "./images/Nrfr.png"
             },
             {
+                "name": "晨钟网络科技",
+                "description": "免ROOT的通用ADB玩机工具《搞机工具箱》",
+                "link": "https://jamcz.com/",
+                "icon": "./images/CZ.png"
+            },
+            {
                 "name": "贝利自动点击器",
                 "description": "Automated screen tapping utility",
                 "link": "https://www.wwz.im/article/Bailey_Auto_Clicker",
