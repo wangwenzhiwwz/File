@@ -550,6 +550,12 @@ const appData = [
                 "description": "电影创作者打造的相机应用",
                 "link": "https://apps.apple.com/us/app/%E9%A3%93%E9%A3%8E%E7%9B%B8%E6%9C%BA/id6749835845",
                 "icon": "./images/Ostar.webp"
+            },
+            {
+                "name": "野草助手",
+                "description": "智能电视 adb 应用分享工具",
+                "link": "https://apps.apple.com/ar/app/%E9%87%8E%E8%8D%89%E5%8A%A9%E6%89%8B/id6479590367",
+                "icon": "./images/yecao.webp"
             }
         ],
         "domId": "cat-2"
