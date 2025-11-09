@@ -996,28 +996,16 @@ const appData = [
         "title": "VPS",
         "apps": [
             {
-                "name": "VPS.WWZ.iM",
-                "description": "Server monitoring and operation tool",
-                "link": "https://vps.wwz.im/",
-                "icon": "./images/Nezha Monitoring.png"
-            },
-            {
                 "name": "Nginx Proxy Manager",
                 "description": "Get Connected · Proxy Hosts",
                 "link": "https://npm.wwz.im/",
                 "icon": "./images/Nginx Proxy Manager.png"
             },
             {
-                "name": "X-UI",
-                "description": "An Advanced Web Panel • Built on Xray Core",
-                "link": "https://www.wwz.im/article/xui/",
-                "icon": "./images/3x-ui-light.png"
-            },
-            {
-                "name": "EUserv",
-                "description": "Dedicated servers and cloud hosting",
-                "link": "https://support.euserv.com/",
-                "icon": "./images/EUserv.jpg"
+                "name": "VPS.WWZ.iM",
+                "description": "Server monitoring and operation tool",
+                "link": "https://vps.wwz.im/",
+                "icon": "./images/Nezha Monitoring.png"
             },
             {
                 "name": "Oracle",
@@ -1032,10 +1020,10 @@ const appData = [
                 "icon": "./images/bwh.png"
             },
             {
-                "name": "Hostinger",
-                "description": "Bring Your Idea Online With a Website",
-                "link": "https://hpanel.hostinger.com/vps",
-                "icon": "./images/hostinger.png"
+                "name": "EUserv",
+                "description": "Dedicated servers and cloud hosting",
+                "link": "https://support.euserv.com/",
+                "icon": "./images/EUserv.jpg"
             },
             {
                 "name": "ColoCrossing",
@@ -1048,6 +1036,12 @@ const appData = [
                 "description": "KVM-based VPS and dedicated servers",
                 "link": "https://app.cloudcone.com/",
                 "icon": "./images/CloudCone.jpg"
+            },
+            {
+                "name": "Hostinger",
+                "description": "Bring Your Idea Online With a Website",
+                "link": "https://hpanel.hostinger.com/vps",
+                "icon": "./images/hostinger.png"
             },
             {
                 "name": "RackNerd",
@@ -1066,12 +1060,6 @@ const appData = [
                 "description": "Curated cost-effective VPS deals",
                 "link": "https://kejilion.pro/topvps/",
                 "icon": "./images/Cloud-icon.png"
-            },
-            {
-                "name": "Scamalytics",
-                "description": "Check VPS IP fraud risk",
-                "link": "https://scamalytics.com/",
-                "icon": "./images/scamalytics.png"
             },
             {
                 "name": "Serv00",
@@ -1122,16 +1110,22 @@ const appData = [
                 "icon": "./images/name.jpg"
             },
             {
-                "name": "ZeroTier",
-                "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
-                "link": "https://my.zerotier.com/",
-                "icon": "./images/zerotier.png"
-            },
-            {
                 "name": "IPing.cc",
                 "description": "IP Address Query - IPv4",
                 "link": "https://www.iping.cc/",
                 "icon": "./images/iping.cc.png"
+            },
+            {
+                "name": "Scamalytics",
+                "description": "Check VPS IP fraud risk",
+                "link": "https://scamalytics.com/",
+                "icon": "./images/scamalytics.png"
+            },
+            {
+                "name": "ZeroTier",
+                "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
+                "link": "https://my.zerotier.com/",
+                "icon": "./images/zerotier.png"
             }
         ],
         "domId": "cat-6"
