@@ -534,16 +534,22 @@ const appData = [
                 "icon": "./images/Instagram.webp"
             },
             {
+                "name": "米家",
+                "description": "简单愉悦的智能生活体验",
+                "link": "https://apps.apple.com/cn/app/%E7%B1%B3%E5%AE%B6/id957323480",
+                "icon": "./images/MiHome.webp"
+            },
+            {
                 "name": "涂鸦",
                 "description": "涂鸦智能App 智生活 能享受",
                 "link": "https://apps.apple.com/cn/app/%E6%B6%82%E9%B8%A6/id1586116399",
                 "icon": "./images/Tuya.webp"
             },
             {
-                "name": "米家",
-                "description": "简单愉悦的智能生活体验",
-                "link": "https://apps.apple.com/cn/app/%E7%B1%B3%E5%AE%B6/id957323480",
-                "icon": "./images/MiHome.webp"
+                "name": "云鲸",
+                "description": "立足家用智能清洁电器",
+                "link": "https://apps.apple.com/cn/app/%E4%BA%91%E9%B2%B8%E6%99%BA%E8%83%BD/id1462004352",
+                "icon": "./images/narwal.webp"
             },
             {
                 "name": "飓风相机",
