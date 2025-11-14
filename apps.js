@@ -1462,6 +1462,12 @@ const appData = [
                 "description": "I-TRY-ALL-THINGS;-I-ACHIEVE-WHAT-I-CAN",
                 "link": "https://spacetypegenerator.com/clutter",
                 "icon": "./images/spacetypegenerator.png"
+            },
+            {
+                "name": "Vocal Remover",
+                "description": "Vocal Remover and Isolation [AI]",
+                "link": "https://vocalremover.org/",
+                "icon": "./images/vocalremover.jpg"
             }
         ],
         "domId": "cat-8"
