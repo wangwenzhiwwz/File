@@ -1456,6 +1456,12 @@ const appData = [
                 "description": "Dutch visual artist & designer",
                 "link": "https://www.byjer.com/",
                 "icon": "./images/JER.png"
+            },
+            {
+                "name": "SPACE TYPE GENERATOR",
+                "description": "I-TRY-ALL-THINGS;-I-ACHIEVE-WHAT-I-CAN",
+                "link": "https://spacetypegenerator.com/clutter",
+                "icon": "./images/spacetypegenerator.png"
             }
         ],
         "domId": "cat-8"
