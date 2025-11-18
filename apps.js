@@ -892,6 +892,12 @@ const appData = [
                 "description": "法国达索系统开发的高端三维设计与工程软件",
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/3D",
                 "icon": "./images/DS-catia.jpg"
+            },
+            {
+                "name": "超链PRO",
+                "description": "开箱即用的网盘下载/解析解决方案",
+                "link": "https://clianpro.cn/",
+                "icon": "./images/clianpro.svg"
             }
         ],
         "domId": "cat-4"
