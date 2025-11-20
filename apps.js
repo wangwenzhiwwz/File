@@ -898,6 +898,12 @@ const appData = [
                 "description": "开箱即用的网盘下载/解析解决方案",
                 "link": "https://clianpro.cn/",
                 "icon": "./images/clianpro.svg"
+            },
+            {
+                "name": "Affinity",
+                "description": "Professional Creative Software, Free for Everyone",
+                "link": "https://www.affinity.studio/",
+                "icon": "./images/affinity.png"
             }
         ],
         "domId": "cat-4"
