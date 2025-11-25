@@ -1224,12 +1224,6 @@ const appData = [
                 "icon": "./images/HQBS.png"
             },
             {
-                "name": "RedteaGO",
-                "description": "eSIM for seamless global travel",
-                "link": "https://esim.redteago.com/zh-CN/orders",
-                "icon": "./images/RedteaGO.jpg"
-            },
-            {
                 "name": "CASETiFY",
                 "description": "Show Your Colors",
                 "link": "https://www.casetify.com/",
@@ -1248,16 +1242,22 @@ const appData = [
                 "icon": "./images/ark.xiaohongshu.jpg"
             },
             {
-                "name": "Estk.me",
-                "description": "Removable eUICC management solution",
-                "link": "https://www.estk.me/downloads/",
-                "icon": "./images/Estk.png"
-            },
-            {
                 "name": "eSIMDB",
                 "description": "找到最佳的预付费 eSIM 套餐",
                 "link": "https://esimdb.com/",
                 "icon": "./images/esimdb.png"
+            },
+            {
+                "name": "Firsty",
+                "description": "Your international mobile data travel app",
+                "link": "https://www.firsty.app/",
+                "icon": "./images/firsty.webp"
+            },
+            {
+                "name": "Estk.me",
+                "description": "Removable eUICC management solution",
+                "link": "https://www.estk.me/downloads/",
+                "icon": "./images/Estk.png"
             },
             {
                 "name": "BNESIM",
@@ -1266,10 +1266,10 @@ const appData = [
                 "icon": "./images/bnesim.jpeg"
             },
             {
-                "name": "Firsty",
-                "description": "Your international mobile data travel app",
-                "link": "https://www.firsty.app/",
-                "icon": "./images/firsty.webp"
+                "name": "RedteaGO",
+                "description": "eSIM for seamless global travel",
+                "link": "https://esim.redteago.com/zh-CN/orders",
+                "icon": "./images/RedteaGO.jpg"
             }
         ],
         "domId": "cat-7"
