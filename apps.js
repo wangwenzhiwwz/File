@@ -174,22 +174,46 @@ const appData = [
         "title": "AI",
         "apps": [
             {
-                "name": "Sora",
-                "description": "旗舰级视频音频生成模型 Sora 2",
-                "link": "https://sora.chatgpt.com/profile",
-                "icon": "./images/Sora.webp"
-            },
-            {
                 "name": "ChatGPT",
                 "description": "OpenAI's official conversational AI",
                 "link": "https://chatgpt.com/",
                 "icon": "./images/openai.png"
             },
             {
+                "name": "Gemini",
+                "description": "Google AI planning and assistance",
+                "link": "https://gemini.google.com/",
+                "icon": "./images/Gemini.png"
+            },
+            {
+                "name": "Flow",
+                "description": "Google 高级视频AI 模型 Veo",
+                "link": "https://labs.google/fx/tools/flow",
+                "icon": "./images/Flow.jpg"
+            },
+            {
+                "name": "Sora",
+                "description": "旗舰级视频音频生成模型 Sora 2",
+                "link": "https://sora.chatgpt.com/profile",
+                "icon": "./images/Sora.webp"
+            },
+            {
                 "name": "Grok",
                 "description": "xAI's generative AI chatbot",
                 "link": "https://grok.com/",
                 "icon": "./images/Grok.jpg"
+            },
+            {
+                "name": "GoogleLabs",
+                "description": "AI-powered video storytelling platform",
+                "link": "https://labs.google/fx",
+                "icon": "./images/Google+Labs+Logo.jpg"
+            },
+            {
+                "name": "GoogleAiStudio",
+                "description": "Google DeepMind's latest AI tools",
+                "link": "https://aistudio.google.com/",
+                "icon": "./images/GoogleAiStudio.png"
             },
             {
                 "name": "豆包",
@@ -222,28 +246,10 @@ const appData = [
                 "icon": "./images/DeepSeek.jpg"
             },
             {
-                "name": "Gemini",
-                "description": "Google AI planning and assistance",
-                "link": "https://gemini.google.com/",
-                "icon": "./images/Gemini.png"
-            },
-            {
                 "name": "Microsoft Copilot",
                 "description": "AI companion for productivity",
                 "link": "https://copilot.microsoft.com/",
                 "icon": "./images/Copilot.png"
-            },
-            {
-                "name": "GoogleAiStudio",
-                "description": "Google DeepMind's latest AI tools",
-                "link": "https://aistudio.google.com/",
-                "icon": "./images/GoogleAiStudio.png"
-            },
-            {
-                "name": "GoogleLabs",
-                "description": "AI-powered video storytelling platform",
-                "link": "https://labs.google/fx",
-                "icon": "./images/Google+Labs+Logo.jpg"
             },
             {
                 "name": "Suno",
