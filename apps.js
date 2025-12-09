@@ -129,7 +129,7 @@ const appData = [
                 "name": "Google Keep",
                 "description": "Lightweight note-taking and to-do application",
                 "link": "https://keep.google.com/",
-                "icon": "./images/behance.Google_Keep.pngpng"
+                "icon": "./images/Google_Keep.png"
             },
             {
                 "name": "Whimsical",
