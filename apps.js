@@ -1492,6 +1492,12 @@ const appData = [
                 "description": "Vocal Remover and Isolation [AI]",
                 "link": "https://vocalremover.org/",
                 "icon": "./images/vocalremover.jpg"
+            },
+            {
+                "name": "SeedHub",
+                "description": "影视&动漫分享",
+                "link": "https://www.seedhub.cc/",
+                "icon": "./images/seedhub.png"
             }
         ],
         "domId": "cat-8"
