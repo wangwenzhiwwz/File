@@ -1150,6 +1150,12 @@ const appData = [
                 "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
                 "link": "https://my.zerotier.com/",
                 "icon": "./images/zerotier.png"
+            },
+            {
+                "name": "Myip.is",
+                "description": "显示你当前的公网 IP 地址",
+                "link": "https://myip.is/",
+                "icon": "./images/myip.jpg"
             }
         ],
         "domId": "cat-6"
