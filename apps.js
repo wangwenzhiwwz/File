@@ -237,7 +237,7 @@ const appData = [
                 "name": "Xiaomi MiMo",
                 "description": "Unlocking the Reasoning Potential of Language Model",
                 "link": "https://aistudio.xiaomimimo.com/",
-                "icon": ""
+                "icon": "./images/Xiaomi.png"
             },
             {
                 "name": "Qwen",
