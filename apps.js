@@ -234,6 +234,12 @@ const appData = [
                 "icon": "./images/GitHub Copilot.png"
             },
             {
+                "name": "Xiaomi MiMo",
+                "description": "Unlocking the Reasoning Potential of Language Model",
+                "link": "https://aistudio.xiaomimimo.com/",
+                "icon": ""
+            },
+            {
                 "name": "Qwen",
                 "description": "阿里巴巴云开发的智能助手",
                 "link": "https://www.tongyi.com/",
