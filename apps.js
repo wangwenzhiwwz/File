@@ -1510,6 +1510,12 @@ const appData = [
                 "description": "影视&动漫分享",
                 "link": "https://www.seedhub.cc/",
                 "icon": "./images/seedhub.png"
+            },
+            {
+                "name": "Google Search Console",
+                "description": "Search Console tools and reports help you measure your site's Search traffic and performance",
+                "link": "https://search.google.com/search-console/performance/insights?resource_id=sc-domain%3Awwz.im",
+                "icon": "./images/search-console.svg"
             }
         ],
         "domId": "cat-8"
