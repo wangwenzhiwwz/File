@@ -764,7 +764,7 @@ const appData = [
             {
                 "name": "VPN Gate",
                 "description": "Free Access to World Knowledge Beyond Government's Firewall.",
-                "link": "https://p.wwz.im/https://www.vpngate.net/en/",
+                "link": "https://www.vpngate.net/en/",
                 "icon": "./images/VPN Gate.jpg"
             },
             {
@@ -1314,12 +1314,6 @@ const appData = [
                 "icon": "./images/myip.png"
             },
             {
-                "name": "Cloudflare Proxy EX",
-                "description": "Cloudflare超级代理，OpenAI/ChatGPT代理，Github加速",
-                "link": "https://p.wwz.im/",
-                "icon": "./images/☭.png"
-            },
-            {
                 "name": "YandexTranslate",
                 "description": "TranslaYandexTranslatete text from images and photos online",
                 "link": "https://translate.yandex.com/translate",
@@ -1340,7 +1334,7 @@ const appData = [
             {
                 "name": "Translate",
                 "description": "Intranet-based online translation tool",
-                "link": "https://p.wwz.im/https://translate.google.com/",
+                "link": "https://translate.google.com/",
                 "icon": "./images/Google_Translate.png"
             },
             {
