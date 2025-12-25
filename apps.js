@@ -608,7 +608,7 @@ const appData = [
             {
                 "name": "APkPure",
                 "description": "Fast Android APK downloader",
-                "link": "https://www.wwz.im/article/APKPure",
+                "link": "https://blog.wwz.im/article/APKPure",
                 "icon": "./images/apkpure.png"
             },
             {
@@ -632,7 +632,7 @@ const appData = [
             {
                 "name": "MXPlayer",
                 "description": "Powerful video playback app",
-                "link": "https://www.wwz.im/article/MX_Player_Pro",
+                "link": "https://blog.wwz.im/article/MX_Player_Pro",
                 "icon": "./images/MxPlayer.png"
             },
             {
@@ -716,7 +716,7 @@ const appData = [
             {
                 "name": "贝利自动点击器",
                 "description": "Automated screen tapping utility",
-                "link": "https://www.wwz.im/article/Bailey_Auto_Clicker",
+                "link": "https://blog.wwz.im/article/Bailey_Auto_Clicker",
                 "icon": "./images/贝利.png"
             },
             {
@@ -758,7 +758,7 @@ const appData = [
             {
                 "name": "V2rayN",
                 "description": "Windows GUI VPN client",
-                "link": "https://www.wwz.im/article/VPN",
+                "link": "https://blog.wwz.im/article/VPN",
                 "icon": "./images/v2rayn.jpg"
             },
             {
@@ -770,7 +770,7 @@ const appData = [
             {
                 "name": "Moo0",
                 "description": "Video and image compression",
-                "link": "https://www.wwz.im/article/Moo0",
+                "link": "https://blog.wwz.im/article/Moo0",
                 "icon": "./images/Moo0.png"
             },
             {
@@ -980,7 +980,7 @@ const appData = [
             {
                 "name": "Adobe",
                 "description": "Adobe 2024 universal Mac patch",
-                "link": "https://www.wwz.im/article/Adobe/",
+                "link": "https://blog.wwz.im/article/Adobe/",
                 "icon": "./images/Adobe.svg"
             },
             {
