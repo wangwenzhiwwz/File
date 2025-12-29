@@ -1510,6 +1510,12 @@ const appData = [
                 "description": "Search Console tools and reports help you measure your site's Search traffic and performance",
                 "link": "https://search.google.com/search-console/performance/insights?resource_id=sc-domain%3Awwz.im",
                 "icon": "./images/search-console.svg"
+            },
+            {
+                "name": "QR Studio",
+                "description": "Professional HD & Vector QR Generator",
+                "link": "https://qr.wwz.im/",
+                "icon": "./images/W-QR.png"
             }
         ],
         "domId": "cat-8"
