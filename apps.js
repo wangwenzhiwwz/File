@@ -1308,6 +1308,12 @@ const appData = [
                 "icon": "./images/Avatar.jpg"
             },
             {
+                "name": "QR Studio",
+                "description": "Professional HD & Vector QR Generator",
+                "link": "https://qr.wwz.im/",
+                "icon": "./images/W-QR.png"
+            },
+            {
                 "name": "MY IP",
                 "description": "View public IPv4 and IPv6",
                 "link": "https://ip.wwz.im/",
@@ -1326,6 +1332,12 @@ const appData = [
                 "icon": "./images/alist.png"
             },
             {
+                "name": "Yandex",
+                "description": "fast Internet search",
+                "link": "https://yandex.com/",
+                "icon": "./images/yandex.png"
+            },
+            {
                 "name": "Cusdis",
                 "description": "轻量级、隐私优先、开源的评论系统",
                 "link": "https://cusdis.com/dashboard",
@@ -1336,12 +1348,6 @@ const appData = [
                 "description": "Intranet-based online translation tool",
                 "link": "https://translate.google.com/",
                 "icon": "./images/Google_Translate.png"
-            },
-            {
-                "name": "Yandex",
-                "description": "fast Internet search",
-                "link": "https://yandex.com/",
-                "icon": "./images/yandex.png"
             },
             {
                 "name": "TuChong",
@@ -1510,12 +1516,6 @@ const appData = [
                 "description": "Search Console tools and reports help you measure your site's Search traffic and performance",
                 "link": "https://search.google.com/search-console/performance/insights?resource_id=sc-domain%3Awwz.im",
                 "icon": "./images/search-console.svg"
-            },
-            {
-                "name": "QR Studio",
-                "description": "Professional HD & Vector QR Generator",
-                "link": "https://qr.wwz.im/",
-                "icon": "./images/W-QR.png"
             }
         ],
         "domId": "cat-8"
