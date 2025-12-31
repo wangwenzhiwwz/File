@@ -174,16 +174,22 @@ const appData = [
         "title": "AI",
         "apps": [
             {
+                "name": "Gemini",
+                "description": "Google AI planning and assistance",
+                "link": "https://gemini.google.com/",
+                "icon": "./images/Gemini.png"
+            },
+            {
                 "name": "ChatGPT",
                 "description": "OpenAI's official conversational AI",
                 "link": "https://chatgpt.com/",
                 "icon": "./images/openai.png"
             },
             {
-                "name": "Gemini",
-                "description": "Google AI planning and assistance",
-                "link": "https://gemini.google.com/",
-                "icon": "./images/Gemini.png"
+                "name": "Grok",
+                "description": "xAI's generative AI chatbot",
+                "link": "https://grok.com/",
+                "icon": "./images/Grok.jpg"
             },
             {
                 "name": "Flow",
@@ -196,12 +202,6 @@ const appData = [
                 "description": "旗舰级视频音频生成模型 Sora 2",
                 "link": "https://sora.chatgpt.com/profile",
                 "icon": "./images/Sora.webp"
-            },
-            {
-                "name": "Grok",
-                "description": "xAI's generative AI chatbot",
-                "link": "https://grok.com/",
-                "icon": "./images/Grok.jpg"
             },
             {
                 "name": "GoogleLabs",
@@ -222,16 +222,10 @@ const appData = [
                 "icon": "./images/doubao.png"
             },
             {
-                "name": "Ai.WWZ.iM",
-                "description": "Cutting-edge AI conversation system",
-                "link": "https://ai.wwz.im/",
-                "icon": "./images/ai.png"
-            },
-            {
-                "name": "GitHub Copilot",
-                "description": "AI-powered coding assistant",
-                "link": "https://github.com/copilot/",
-                "icon": "./images/GitHub Copilot.png"
+                "name": "Kling AI",
+                "description": "Kling AI is a generative artificial intelligence service created",
+                "link": "https://app.klingai.com/",
+                "icon": "./images/klingai.jpg"
             },
             {
                 "name": "Xiaomi MiMo",
@@ -240,10 +234,22 @@ const appData = [
                 "icon": "./images/Xiaomi.png"
             },
             {
+                "name": "GitHub Copilot",
+                "description": "AI-powered coding assistant",
+                "link": "https://github.com/copilot/",
+                "icon": "./images/GitHub Copilot.png"
+            },
+            {
                 "name": "Qwen",
                 "description": "阿里巴巴云开发的智能助手",
                 "link": "https://www.tongyi.com/",
                 "icon": "./images/QWEN.png"
+            },
+            {
+                "name": "Ai.WWZ.iM",
+                "description": "Cutting-edge AI conversation system",
+                "link": "https://ai.wwz.im/",
+                "icon": "./images/ai.png"
             },
             {
                 "name": "DeepSeek",
