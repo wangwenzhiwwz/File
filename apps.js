@@ -736,6 +736,18 @@ const appData = [
                 "description": "Removable eUICC management solution",
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/esim",
                 "icon": "./images/Estk.png"
+            },
+            {
+                "name": "野草助手",
+                "description": "一款智能电视应用分享工具",
+                "link": "https://www.yecao.net/",
+                "icon": "./images/yecao.webp"
+            },
+            {
+                "name": "甲壳虫ADB助手",
+                "description": "Android设备的调试与管理",
+                "link": "https://github.com/didjdk/adbhelper",
+                "icon": "./images/adbhelper.jpg"
             }
         ],
         "domId": "cat-3"
