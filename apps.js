@@ -96,6 +96,12 @@ const appData = [
                 "icon": "./images/Zcool.png"
             },
             {
+                "name": "Spotify",
+                "description": "Music for everyone",
+                "link": "https://open.spotify.com/",
+                "icon": "./images/Spotify.png"
+            },
+            {
                 "name": "GitHub",
                 "description": "Collaborative code hosting platform",
                 "link": "https://github.com/",
