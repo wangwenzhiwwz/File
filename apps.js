@@ -204,6 +204,12 @@ const appData = [
                 "icon": "./images/Grok.jpg"
             },
             {
+                "name": "NotebookLM",
+                "description": "AI Research Tool & Thinking Partner",
+                "link": "https://notebooklm.google.com/",
+                "icon": "./images/notebooklm.png"
+            },
+            {
                 "name": "Flow",
                 "description": "Google 高级视频AI 模型 Veo",
                 "link": "https://labs.google/fx/tools/flow",
