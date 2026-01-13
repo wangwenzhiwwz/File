@@ -78,6 +78,12 @@ const appData = [
                 "icon": "./images/Microsoft_Outlook.png"
             },
             {
+                "name": "Gmail",
+                "description": "Gmail is email that's intuitive",
+                "link": "https://mail.google.com/",
+                "icon": "./images/Gmail.png"
+            },
+            {
                 "name": "Zoho Mail",
                 "description": "Host your business email on a secure",
                 "link": "https://mail.zoho.eu/",
@@ -172,12 +178,6 @@ const appData = [
                 "description": "Versatile all-in-one productivity app",
                 "link": "https://www.notion.so/",
                 "icon": "./images/notion.webp"
-            },
-            {
-                "name": "Gmail",
-                "description": "Gmail is email that's intuitive",
-                "link": "https://mail.google.com/",
-                "icon": "./images/Gmail.png"
             }
         ],
         "domId": "cat-0"
