@@ -90,6 +90,12 @@ const appData = [
                 "icon": "./images/Zoho-Mail.png"
             },
             {
+                "name": "Bilibili",
+                "description": "哔哩哔哩(゜-゜)つロ干杯~-bilibili",
+                "link": "https://www.bilibili.com/c/tech/",
+                "icon": "./images/bilibili.png"
+            },
+            {
                 "name": "新片场",
                 "description": "Discover global creative talent hub",
                 "link": "https://www.xinpianchang.com/",
