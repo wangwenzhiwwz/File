@@ -1336,6 +1336,18 @@ const appData = [
                 "description": "eSIM for seamless global travel",
                 "link": "https://esim.redteago.com/zh-CN/orders",
                 "icon": "./images/RedteaGO.jpg"
+            },
+            {
+                "name": "像素蛋糕",
+                "description": "PixCake-像素级AI精修软件",
+                "link": "https://www.pixcakeai.com/",
+                "icon": "./images/pixcake.png"
+            },
+            {
+                "name": "美图云修",
+                "description": "专业级AI人像精修",
+                "link": "https://yunxiu.meitu.com/",
+                "icon": "./images/yunxiu.png"
             }
         ],
         "domId": "cat-7"
