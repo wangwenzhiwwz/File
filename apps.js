@@ -1570,6 +1570,12 @@ const appData = [
                 "description": "Search Console tools and reports help you measure your site's Search traffic and performance",
                 "link": "https://search.google.com/search-console/performance/insights?resource_id=sc-domain%3Awwz.im",
                 "icon": "./images/search-console.svg"
+            },
+            {
+                "name": "AppleWalls",
+                "description": "Official iPhone, iPad & Mac Wallpapers",
+                "link": "https://www.applewalls.com/",
+                "icon": "./images/AppleWallpaper.jpg"
             }
         ],
         "domId": "cat-8"
