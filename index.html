@@ -99,13 +99,15 @@
     .nav-left:hover .nav-logo { opacity: 1; }
     
     .nav-center {
-        display: flex; align-items: center; justify-content: center;
+        display: flex; align-items: center; 
+        justify-content: flex-start; /* 保持左对齐 */
         overflow-x: auto; height: 100%;
         scrollbar-width: none; -ms-overflow-style: none; 
+        padding-left: 5px; 
     }
     .nav-center::-webkit-scrollbar { display: none; }
     
-    .nav-tabs { display: flex; gap: 8px; padding: 0 10px; }
+    .nav-tabs { display: flex; gap: 8px; padding: 0 5px; margin: 0 auto; }
 
     .nav-tab-item {
         padding: 6px 16px; border-radius: 99px; 
@@ -140,26 +142,18 @@
         display: flex; justify-content: center; align-items: center;
     }
 
-    /* === Search Bar (优化重点) === */
+    /* === Search Bar === */
     .search-container { max-width: 600px; margin: 0 auto; position: relative; }
     
     .search-input {
         width: 100%; padding: 16px 20px 16px 50px; 
-        
-        /* 核心修改 1：大圆角（胶囊形） */
         border-radius: 99px; 
-        
         border: 2px solid transparent; 
-        
-        /* 核心修改 2：颜色极浅 (0.02) */
         background: rgba(0, 0, 0, 0.02); 
-        
         color: var(--text-main); 
         font-size: 16px; font-weight: 500;
         transition: all 0.25s ease;
     }
-    
-    /* 悬停稍微加深一点点 (0.05) */
     .search-input:hover { background: rgba(0, 0, 0, 0.05); }
     
     @media (prefers-color-scheme: dark) {
@@ -201,13 +195,15 @@
     }
     .btn-open-all:hover { border-color: var(--text-main); color: var(--text-main); background: rgba(128,128,128,0.05); }
 
+    /* === 基础网格布局 (平板/移动优先) === */
     .app-grid { 
         display: grid; 
-        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
+        /* 默认保持 160px，确保平板能排 3-4 列 */
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
         gap: 12px; 
     }
 
-    /* === Cards === */
+    /* === 卡片样式 === */
     .app-card {
         background: var(--card-bg); 
         border-radius: 16px; 
@@ -221,14 +217,12 @@
     }
     .app-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 
+    /* 默认图标 (平板/移动) */
     .icon-wrapper {
-        width: 40px; height: 40px; margin-bottom: 6px; border-radius: 8px; 
+        width: 40px; height: 40px; margin-bottom: 8px; border-radius: 10px; 
         overflow: hidden; background: transparent; flex-shrink: 0;
     }
-    .app-icon { 
-        width: 100%; height: 100%; object-fit: cover; border-radius: 8px; 
-        opacity: 0; transition: opacity 0.3s ease-in;
-    }
+    .app-icon { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; opacity: 0; transition: opacity 0.3s ease-in; }
     .app-icon.loaded { opacity: 1; }
     
     .app-name { 
@@ -239,6 +233,34 @@
         font-size: 12px; color: var(--text-sub); line-height: 1.4; opacity: 0.9;
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
         overflow: hidden; text-overflow: ellipsis; height: 34px; margin-top: 2px;
+    }
+
+    /* === 电脑端专属放大 (Middle Ground) === */
+    /* 当屏幕宽度 > 1024px 时，使用折中数值 */
+    @media (min-width: 1024px) {
+        .app-grid {
+            /* 220px 太大，160px 太小，取 190px */
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
+            gap: 16px; 
+        }
+        .app-card {
+            padding: 20px; /* 16px -> 20px */
+            border-radius: 18px; 
+        }
+        .icon-wrapper {
+            width: 48px; height: 48px; /* 40px -> 48px */
+            margin-bottom: 10px;
+            border-radius: 12px;
+        }
+        .app-icon { border-radius: 12px; }
+        .app-name { 
+            font-size: 16px; /* 15px -> 16px */
+            margin-bottom: 3px;
+        }
+        .app-desc {
+            font-size: 13px; /* 12px -> 13px */
+            height: 36px; /* 高度微调 */
+        }
     }
 
     /* === Empty State === */
@@ -263,17 +285,19 @@
     .back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
     .back-to-top:hover { transform: translateY(-3px); }
 
-    /* Mobile Only (Under 640px) */
+    /* Mobile Only */
     @media (max-width: 640px) {
         .nav-inner-container { padding: 0 15px; gap: 10px; }
-        .nav-center { justify-content: flex-start; padding-right: 15px; }
+        .nav-center { padding-right: 15px; }
         .container { padding: 20px 15px; }
         .hero-time { font-size: 48px; }
+        
         .app-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
         .app-card { padding: 12px 10px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
         .icon-wrapper { width: 32px; height: 32px; margin-bottom: 6px; border-radius: 8px; }
         .app-name { font-size: 14px; margin-bottom: 2px; }
         .app-desc { font-size: 11px; height: 32px; }
+        
         .btn-open-all span { display: none; }
         .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
     }
