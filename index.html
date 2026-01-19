@@ -3,524 +3,447 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>App WWZ – Utility Hub</title>
     <link rel="icon" href="https://wangwenzhi.eu.org/images/favicon_io/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://wangwenzhi.eu.org/images/favicon_io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="https://wangwenzhi.eu.org/images/favicon_io/android-chrome-512x512.png">
-    <link rel="manifest" href="https://wangwenzhi.eu.org/images/favicon_io/site.webmanifest">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="APP.WWZ.iM" />
-    <meta property="og:description" content="All-in-One Utility Hub" />
-    <meta property="og:site_name" content="app.wwz.im" />
-    <meta property="og:image" content="https://wangwenzhi.eu.org/images/og-image.png" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="640" />
-    <title>App WWZ – All-in-One Utility Hub</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'SF Pro Display', -apple-system, sans-serif;
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    :root {
+        --bg-body: #ffffff;
+        --card-bg: #ffffff;
+        --text-main: #000000;
+        --text-sub: #666666;
+        --border-color: #f0f0f0;
+        
+        /* 阴影配置 */
+        --shadow-sm: 0 8px 24px rgba(0,0,0,0.12); 
+        --shadow-hover: 0 16px 48px rgba(0,0,0,0.22);
+        
+        --glass: rgba(255, 255, 255, 0.85); 
+        --nav-height: 60px;
+        --content-width: 1200px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg-body: #000000;
+            --card-bg: #111111;
+            --text-main: #ffffff;
+            --text-sub: #888888;
+            --border-color: #222222;
+            --shadow-sm: 0 8px 24px rgba(0,0,0,0.6);
+            --glass: rgba(0, 0, 0, 0.85);
         }
-
-        body {
-            background: #fafafa;
-            color: #1d1d1f;
-            line-height: 1.4;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            width: 100%;
-            /* 降低背景 A 通道，增加模糊半径 */
-            background: rgba(255, 255, 255, 0.5); 
-            backdrop-filter: blur(25px); 
-            -webkit-backdrop-filter: blur(25px); /* 兼容 Safari */
-            padding: 15px 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 100; /* 确保在最顶层 */
-            box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
-        }
-
-        .nav-container {
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 0;
-            position: relative;
-        }
-
-        .logo {
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-        }
-
-        .logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transition: transform 0.3s;
-        }
-
-        .logo:hover img {
-            transform: scale(1.1);
-        }
-
-        .nav-links {
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        .nav-links a {
-            color: #1d1d1f;
-            text-decoration: none;
-            font-size: 14px;
-            margin: 0 20px;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #0071e3;
-        }
-
-        .hamburger {
-            display: none;
-            width: 20px;
-            height: 12px;
-            position: relative;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .hamburger span {
-            position: absolute;
-            width: 100%;
-            height: 1.5px;
-            background: #1d1d1f;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .hamburger span:nth-child(1) {
-            top: 0;
-        }
-
-        .hamburger span:nth-child(2) {
-            top: 5px;
-        }
-
-        .hamburger span:nth-child(3) {
-            top: 10px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 0 0 60px 0;
-            background: #fff;
-            position: relative;
-            /* 关键：拉回到导航栏下方开始渲染 */
-            margin-top: -65px; 
-        }
-
-        .banner-container {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .banner-container a {
-            display: block;
-            width: 100%;
-        }
-
-        .banner-container img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            min-height: 400px; /* 增加高度以体现穿透效果 */
-        }
-
-        .hero-content {
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 56px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 28px;
-            color: #6e6e73;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .app-container {
-            margin: 0 auto;
-            padding: 0;
-        }
-
-        .app-category {
-            margin: 60px 0;
-            opacity: 0;
-            animation: fadeIn 0.5s ease forwards;
-            position: relative;
-        }
-
-        /* 关键修复：为锚点添加偏移 */
-        .app-category::before {
-            content: "";
-            display: block;
-            height: 100px;     /* 桌面端 header 高度 ≈ 70px */
-            margin-top: -70px;
-            visibility: hidden;
-            pointer-events: none;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .app-category-title {
-            font-size: 32px;
-            font-weight: 600;
-            margin-bottom: 30px;
-            text-align: center;
-            cursor: pointer; /* 鼠标指针变为手型 */
-            transition: color 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-/* 悬停时颜色变化 */
-.app-category-title:hover {
-    color: #757575;
-}
-
-/* 添加可点击的图标/提示符号 */
-.app-category-title::after {
-    content: "-›"; /* Apple 风格的指示符 */
-    font-size: 28px;
-    opacity: 0;
-    transition: all 0.3s ease;
-    transform: translateX(-10px);
-}
-
-/* 悬停时符号浮现并位移 */
-.app-category-title:hover::after {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-        .app-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
-
-        .app-item {
-            background: #fff;
-            border-radius: 18px;
-            padding: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            height: 160px;
-            overflow: hidden;
-        }
-
-        .app-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .app-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            height: 100%;
-        }
-
-        .app-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 12px;
-            margin-bottom: 10px;
-        }
-
-        .app-name {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 5px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .app-description {
-            font-size: 12px;
-            color: #6e6e73;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        #back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 40px;
-            height: 40px;
-            background: #000;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #back-to-top.visible {
-            opacity: 0.8;
-        }
-
-        #back-to-top:hover {
-            opacity: 1;
-        }
-
-        /* 暗黑模式 */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: #1c1c1e;
-                color: #f5f5f7;
-            }
-
-            header {
-                background: rgba(0, 0, 0, 0.5);   
-            }
-
-            .hamburger span {
-                background: #f5f5f7;
-            }
-
-            .nav-links a {
-                color: #f5f5f7;
-            }
-
-            .nav-links a:hover {
-                color: #0a84ff;
-            }
-
-            .hero {
-                background: #2c2c2e;
-            }
-
-            .hero p {
-                color: #d1d1d6;
-            }
-
-            .app-item {
-                background: #2c2c2e;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            }
-
-            .app-description {
-                color: #d1d1d6;
-            }
-
-            #back-to-top {
-                background: #f5f5f7;
-                color: #1c1c1e;
-            }
-        }
-
-        /* 平板端调整（769px - 1024px） */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .nav-container {
-                padding: 0 22px;
-            }
-
-            .app-container {
-                padding: 0 22px;
-            }
-        }
-
-        /* 电脑端调整（> 1024px） */
-        @media (min-width: 1025px) {
-            .nav-container {
-                padding: 0 200px;
-            }
-
-            .app-container {
-                padding: 0 200px;
-            }
-        }
-
-        /* 手机端调整（≤ 768px） */
-        @media (max-width: 768px) {
-            header {
-                padding: 10px 15px;
-            }
-
-            .nav-container {
-                padding: 0 22px;
-            }
-
-            .logo {
-                width: 24px;
-                height: 24px;
-            }
-
-            .settings-icon, a[title="管理后台"] {
-                display: none !important;
-            }
-
-            .hamburger {
-                display: block;
-                margin-left: auto;
-                margin-right: 0;
-                position: absolute;
-                right: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 46px;
-                left: 0;
-                width: 100%;
-                background: rgba(255, 255, 255, 0.95);
-                text-align: left;
-                padding: 10px 0;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                overflow: hidden;
-                animation: slideDown 0.3s ease forwards;
-                border-radius: 12px;
-                backdrop-filter: blur(10px);
-            }
-
-            .nav-links.active {
-                display: block;
-            }
-
-            .nav-links a {
-                display: block;
-                margin: 15px auto;
-                font-size: 18px;
-                padding: 14px 24px;
-                text-align: center;
-            }
-
-            .app-container {
-                padding: 0 22px;
-            }
-
-            .app-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 20px;
-            }
-
-            /* 手机端锚点偏移（header 更矮） */
-            .app-category::before {
-                height: 55px !important;
-                margin-top: -55px !important;
-            }
-
-            @media (prefers-color-scheme: dark) {
-                .nav-links {
-                    background: rgba(28, 28, 30, 0.95);
-                }
-            }
-        }
-
-        @keyframes slideDown {
-            from {
-                height: 0;
-                opacity: 0;
-            }
-            to {
-                height: auto;
-                opacity: 1;
-            }
-        }
-    </style>
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; outline: none; -webkit-tap-highlight-color: transparent; }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+        background: var(--bg-body);
+        color: var(--text-main);
+        min-height: 100vh;
+        padding-top: var(--nav-height);
+        position: relative;
+    }
+
+    /* === Background === */
+    .banner-bg {
+        position: absolute; top: 0; left: 0; width: 100%; height: 500px;
+        z-index: -1; overflow: hidden; pointer-events: none;
+        mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+        opacity: 0.05;
+    }
+    .blob {
+        position: absolute; border-radius: 50%; filter: blur(100px);
+        background: var(--text-main);
+        animation: float 10s infinite ease-in-out alternate;
+    }
+    .blob-1 { top: -100px; left: -10%; width: 50%; height: 400px; }
+    .blob-2 { top: -50px; right: -10%; width: 60%; height: 450px; animation-delay: -5s; }
+    @keyframes float { 0% { transform: translate(0, 0); } 100% { transform: translate(0, 20px); } }
+
+    /* === Navbar === */
+    .navbar {
+        position: fixed; top: 0; left: 0; width: 100%; height: var(--nav-height);
+        background: var(--glass);
+        backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);
+        z-index: 1000;
+        display: flex; justify-content: center;
+    }
+
+    .nav-inner-container {
+        width: 100%; max-width: var(--content-width);
+        padding: 0 20px;
+        display: grid; grid-template-columns: auto 1fr auto;
+        align-items: center; gap: 15px;
+    }
+    
+    .nav-left { display: flex; align-items: center; gap: 10px; flex-shrink: 0; cursor: pointer; }
+    .nav-logo { width: 32px; height: 32px; border-radius: 8px; filter: grayscale(100%); opacity: 0.9; transition: opacity 0.2s; }
+    .nav-left:hover .nav-logo { opacity: 1; }
+    
+    .nav-center {
+        display: flex; align-items: center; justify-content: center;
+        overflow-x: auto; height: 100%;
+        scrollbar-width: none; -ms-overflow-style: none; 
+    }
+    .nav-center::-webkit-scrollbar { display: none; }
+    
+    .nav-tabs { display: flex; gap: 8px; padding: 0 10px; }
+
+    .nav-tab-item {
+        padding: 6px 16px; border-radius: 99px; 
+        font-size: 13px; font-weight: 500; color: var(--text-sub);
+        cursor: pointer; white-space: nowrap; transition: all 0.2s;
+        background: transparent; border: none;
+    }
+    .nav-tab-item:hover { color: var(--text-main); background: rgba(128,128,128,0.05); }
+    .nav-tab-item.active { 
+        background: var(--text-main); color: var(--bg-body); font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    }
+
+    .nav-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .btn-icon {
+        color: var(--text-main); font-size: 16px; text-decoration: none;
+        width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+        border-radius: 50%; transition: background 0.2s; opacity: 0.7;
+    }
+    .btn-icon:hover { opacity: 1; background: rgba(128,128,128,0.1); }
+
+    /* === Hero Section === */
+    .hero-section { padding: 40px 20px; text-align: center; position: relative; }
+    .hero-clock { margin-bottom: 25px; }
+    
+    .hero-time { 
+        font-size: 64px; font-weight: 700; letter-spacing: -3px; line-height: 1; 
+        color: var(--text-main); display: inline-block;
+    }
+    .hero-meta {
+        font-size: 14px; color: var(--text-sub); margin-top: 8px; font-weight: 500; letter-spacing: 0.5px;
+        display: flex; justify-content: center; align-items: center; gap: 15px;
+    }
+    .weather-info { display: flex; align-items: center; gap: 6px; opacity: 0; transition: opacity 0.5s; }
+    .weather-info.loaded { opacity: 1; }
+
+    .search-container { max-width: 600px; margin: 0 auto; position: relative; }
+    .search-input {
+        width: 100%; padding: 14px 20px 14px 44px;
+        border-radius: 12px; border: 1px solid var(--border-color);
+        background: transparent; color: var(--text-main); font-size: 15px;
+        transition: all 0.2s;
+    }
+    .search-input:focus {
+        border-color: var(--text-main); 
+        box-shadow: 0 0 0 4px rgba(128,128,128,0.05);
+        background: var(--card-bg);
+    }
+    .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-sub); font-size: 15px; }
+
+    /* === Content Grid === */
+    .container { max-width: var(--content-width); margin: 0 auto; padding: 20px; padding-bottom: 80px; }
+    .category-section { margin-bottom: 50px; scroll-margin-top: 80px; }
+    
+    .cat-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding: 0 5px; }
+    .cat-title { font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px; color: var(--text-main); }
+    .cat-title::before { content: ''; display: block; width: 5px; height: 5px; background: var(--text-main); border-radius: 50%; }
+
+    .btn-open-all {
+        font-size: 12px; color: var(--text-sub); background: transparent;
+        padding: 5px 10px; border: 1px solid var(--border-color); border-radius: 8px; 
+        cursor: pointer; font-weight: 500; transition: all 0.2s; 
+        display: flex; align-items: center; gap: 5px;
+    }
+    .btn-open-all:hover { border-color: var(--text-main); color: var(--text-main); background: rgba(128,128,128,0.05); }
+
+    .app-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+        gap: 12px; 
+    }
+
+    /* === Cards (Left Aligned + Deep Shadow) === */
+    .app-card {
+        background: var(--card-bg); 
+        border-radius: 16px; 
+        padding: 16px; 
+        display: flex; flex-direction: column; align-items: flex-start; text-align: left;
+        text-decoration: none; color: var(--text-main);
+        transition: transform 0.2s, box-shadow 0.2s;
+        border: none; 
+        box-shadow: var(--shadow-sm); 
+        position: relative; overflow: hidden; height: 100%;
+    }
+    .app-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+
+    .icon-wrapper {
+        width: 48px; height: 48px; margin-bottom: 8px; border-radius: 10px; 
+        overflow: hidden; background: transparent; flex-shrink: 0;
+    }
+    /* 图片淡入优化 */
+    .app-icon { 
+        width: 100%; height: 100%; object-fit: cover; border-radius: 10px; 
+        opacity: 0; transition: opacity 0.3s ease-in;
+    }
+    .app-icon.loaded { opacity: 1; }
+    
+    .app-name { 
+        font-size: 15px; font-weight: 700; margin-bottom: 2px; line-height: 1.2;
+        color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%;
+    }
+    /* 强制两行高度，视觉对齐 */
+    .app-desc { 
+        font-size: 12px; color: var(--text-sub); line-height: 1.4; opacity: 0.9;
+        display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+        overflow: hidden; text-overflow: ellipsis; height: 34px; margin-top: 2px;
+    }
+
+    /* === Empty State === */
+    .empty-state {
+        text-align: center; padding: 60px 0; color: var(--text-sub);
+        display: none;
+    }
+    .empty-state i { font-size: 40px; margin-bottom: 15px; opacity: 0.3; }
+    .empty-state p { font-size: 14px; }
+
+    /* Back To Top */
+    .back-to-top {
+        position: fixed; bottom: 30px; right: 30px;
+        width: 40px; height: 40px; border-radius: 50%;
+        background: var(--text-main); color: var(--bg-body);
+        border: none; display: flex; align-items: center; justify-content: center;
+        font-size: 14px; cursor: pointer;
+        opacity: 0; visibility: hidden; transform: translateY(20px);
+        transition: all 0.3s; z-index: 900;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+    .back-to-top:hover { transform: translateY(-3px); }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .nav-inner-container { padding: 0 15px; gap: 10px; }
+        .nav-center { justify-content: flex-start; padding-right: 15px; }
+        .container { padding: 20px 15px; }
+        .hero-time { font-size: 48px; }
+        .app-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .app-card { padding: 12px 10px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .icon-wrapper { width: 40px; height: 40px; margin-bottom: 6px; border-radius: 8px; }
+        .app-name { font-size: 14px; margin-bottom: 2px; }
+        .app-desc { font-size: 11px; height: 32px; }
+        .btn-open-all span { display: none; }
+        .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+    }
+</style>
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="#" onclick="refreshPage()">
-                <div class="logo">
-                    <img src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" alt="Wangwenzhi Logo" loading="lazy">
-                </div>
-            </a>
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links">
-                <a href="#web">Web</a>
-                <a href="#ai">AI</a>
-                <a href="#ios">iOS</a>
-                <a href="#android">Android</a>
-                <a href="#windows">Windows</a>
-                <a href="#mac">Mac</a>
-                <a href="#vps">VPS</a>
-                <a href="#payzone">Payzone</a>
-                <a href="#other">Other</a>
-            </div>
 
-            <a href="admin.html" title="管理后台" style="margin-left:15px; display:flex; align-items:center;">
-                <svg class="settings-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
-                    <path d="M19.14,12.94a7.49,7.49,0,0,0,.06-1,7.49,7.49,0,0,0-.06-1l2.11-1.65a.5.5,0,0,0,.12-.64l-2-3.46a.5.5,0,0,0-.6-.22l-2.49,1a7.28,7.28,0,0,0-1.73-1l-.38-2.65A.5.5,0,0,0,13,2H11a.5.5,0,0,0-.5.42l-.38,2.65a7.28,7.28,0,0,0-1.73,1l-2.49-1a.5.5,0,0,0-.6.22l-2,3.46a.5.5,0,0,0,.12.64L4.86,10a7.49,7.49,0,0,0-.06,1,7.49,7.49,0,0,0,.06,1l-2.11,1.65a.5.5,0,0,0-.12.64l2,3.46a.5.5,0,0,0,.6.22l2.49-1a7.28,7.28,0,0,0,1.73,1l.38,2.65A.5.5,0,0,0,11,22h2a.5.5,0,0,0,.5-.42l.38-2.65a7.28,7.28,0,0,0,1.73-1l2.49,1a.5.5,0,0,0,.6-.22l2-3.46a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/>
-                </svg>
-            </a>
-        </div>
-    </header>
+<div class="banner-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+</div>
 
-    <div class="hero">
-        <div class="banner-container">
-            <a href="https://www.wwz.im" target="_blank">
-                <img src="./images/appstore.png" alt="App Store" loading="lazy">
-            </a>
+<nav class="navbar">
+    <div class="nav-inner-container">
+        <div class="nav-left" onclick="scrollToTop()">
+            <img src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" class="nav-logo" alt="Logo">
         </div>
-        <div class="hero-content">
-            <h1>Best Apps</h1>
-            <p>AI-Powered Tools to Boost Your Productivity</p>
+        
+        <div class="nav-center">
+            <div class="nav-tabs" id="navTabs"></div>
+        </div>
+        
+        <div class="nav-right">
+            <a href="admin.html" class="btn-icon" title="管理后台">
+                <i class="fa-solid fa-gear"></i>
+            </a>
         </div>
     </div>
+</nav>
 
-    <div class="app-container" id="app-container"></div>
+<section class="hero-section">
+    <div class="hero-clock">
+        <div class="hero-time" id="heroTime">00:00</div>
+        <div class="hero-meta">
+            <span id="heroDate">Loading...</span>
+            <div class="weather-info" id="weatherWidget">
+                </div>
+        </div>
+    </div>
+    <div class="search-container">
+        <i class="fa-solid fa-search search-icon"></i>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+    </div>
+</section>
 
-    <button id="back-to-top" title="Back to Top">Top</button>
+<div class="container" id="app-container"></div>
 
-    <script src="apps.js"></script>
+<div class="empty-state" id="emptyState">
+    <i class="fa-solid fa-ghost"></i>
+    <p>No results found</p>
+</div>
+
+<button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="apps.js"></script>
+
+<script>
+// === 1. 时间 & 天气 (优化点3) ===
+function updateTime() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    document.getElementById('heroTime').textContent = `${hours}:${minutes}`;
+    
+    const options = { month: 'long', day: 'numeric', weekday: 'long' };
+    document.getElementById('heroDate').textContent = now.toLocaleDateString('zh-CN', options);
+}
+setInterval(updateTime, 1000);
+updateTime();
+
+// 天气获取 (自动定位 + 纯文字展示)
+function fetchWeather() {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(async (position) => {
+        const { latitude, longitude } = position.coords;
+        try {
+            const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`);
+            const data = await res.json();
+            const temp = Math.round(data.current_weather.temperature);
+            const wElement = document.getElementById('weatherWidget');
+            wElement.innerHTML = `<i class="fa-solid fa-cloud"></i> ${temp}°C`;
+            wElement.classList.add('loaded');
+        } catch(e) { console.log('Weather fetch failed'); }
+    });
+}
+fetchWeather(); // 页面加载时尝试获取
+
+// === 2. 渲染逻辑 (含优化点2：图片淡入) ===
+function renderCategoriesCustom() {
+    const container = document.getElementById('app-container');
+    const navTabs = document.getElementById('navTabs');
+    if (!container || !appData) return;
+    
+    container.innerHTML = '';
+    navTabs.innerHTML = '';
+    
+    appData.forEach((cat, ci) => {
+        const tabBtn = document.createElement('button');
+        tabBtn.className = 'nav-tab-item';
+        tabBtn.textContent = cat.title;
+        tabBtn.dataset.target = `cat-${ci}`;
+        tabBtn.title = "双击打开全部分类链接";
+        tabBtn.onclick = () => {
+            const section = document.getElementById(`cat-${ci}`);
+            if(section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+        tabBtn.ondblclick = () => openAllApps(ci);
+        navTabs.appendChild(tabBtn);
+
+        const cardsHTML = cat.apps.map(app => `
+            <a href="${app.link}" target="_blank" class="app-card" 
+               data-name="${app.name.toLowerCase()}" 
+               data-desc="${app.description.toLowerCase()}">
+                <div class="icon-wrapper">
+                    <img class="app-icon" src="${app.icon}" loading="lazy" 
+                         onload="this.classList.add('loaded')" 
+                         onerror="this.src='https://ui-avatars.com/api/?name=${app.name}&background=random&color=000&size=128'; this.classList.add('loaded');">
+                </div>
+                <div class="app-name">${app.name}</div>
+                <div class="app-desc">${app.description}</div>
+            </a>
+        `).join('');
+
+        const section = document.createElement('div');
+        section.className = 'category-section';
+        section.id = `cat-${ci}`;
+        section.innerHTML = `
+            <div class="cat-header">
+                <div class="cat-title">${cat.title}</div>
+                <button class="btn-open-all" onclick="openAllApps(${ci})">
+                    <i class="fa-solid fa-rocket"></i> <span>打开全部</span>
+                </button>
+            </div>
+            <div class="app-grid">${cardsHTML}</div>
+        `;
+        container.appendChild(section);
+    });
+    setupScrollSpy();
+}
+
+function setupScrollSpy() {
+    const sections = document.querySelectorAll('.category-section');
+    const navItems = document.querySelectorAll('.nav-tab-item');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navItems.forEach(item => item.classList.remove('active'));
+                const activeTab = document.querySelector(`.nav-tab-item[data-target="${entry.target.id}"]`);
+                if (activeTab) {
+                    activeTab.classList.add('active');
+                    activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+            }
+        });
+    }, { rootMargin: '-20% 0px -60% 0px' });
+    sections.forEach(section => observer.observe(section));
+}
+
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) backToTopBtn.classList.add('show');
+    else backToTopBtn.classList.remove('show');
+});
+
+window.openAllApps = function(catIndex) {
+    const category = appData[catIndex];
+    if (category && category.apps) category.apps.forEach(app => window.open(app.link, '_blank'));
+};
+
+// === 3. 搜索与空状态 (优化点1) ===
+const searchInput = document.getElementById('searchInput');
+const emptyState = document.getElementById('emptyState');
+
+searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase().trim();
+    const sections = document.querySelectorAll('.category-section');
+    let totalVisible = 0;
+    
+    sections.forEach(section => {
+        let hasVisible = false;
+        const cards = section.querySelectorAll('.app-card');
+        cards.forEach(card => {
+            const match = card.dataset.name.includes(term) || card.dataset.desc.includes(term);
+            card.style.display = match ? 'flex' : 'none';
+            if (match) hasVisible = true;
+        });
+        section.style.display = hasVisible ? 'block' : 'none';
+        if(hasVisible) totalVisible++;
+    });
+
+    // 控制空状态显示
+    emptyState.style.display = (totalVisible === 0 && term !== '') ? 'block' : 'none';
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement !== searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderCategoriesCustom();
+});
+</script>
 </body>
 </html>
