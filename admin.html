@@ -2,265 +2,300 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>App 管理后台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Admin Pro</title>
 <link rel="icon" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
     :root {
-        --bg: #ffffff;
-        --text: #000000;
-        --card: #ffffff;
-        --border: #e5e5e5;
-        --input-bg: #fafafa;
-        --btn: #000000;
-        --btn-text: #ffffff;
-        --accent: #000000;
-        --shadow: rgba(0,0,0,0.08);
-        --radius: 12px;
-        --icon-size: 48px;
+        --bg-body: #f5f5f7; /* 浅灰背景 */
+        --bg-sidebar: #ffffff;
+        --bg-card: #ffffff;
+        --text-primary: #1d1d1f;
+        --text-secondary: #86868b;
+        --border-color: #d2d2d7;
+        --accent: #0071e3;
+        --danger: #ff3b30;
+        --row-hover: #f5f5f7;
+        --radius: 10px;
+        --sidebar-w: 240px;
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --bg: #000000;
-            --text: #ffffff;
-            --card: #111111;
-            --border: #333333;
-            --input-bg: #1a1a1a;
-            --btn: #ffffff;
-            --btn-text: #000000;
-            --accent: #ffffff;
-            --shadow: rgba(0,0,0,0.3);
+            --bg-body: #000000;
+            --bg-sidebar: #1c1c1e;
+            --bg-card: #1c1c1e;
+            --text-primary: #f5f5f7;
+            --text-secondary: #98989d;
+            --border-color: #38383a;
+            --accent: #0a84ff;
+            --danger: #ff453a;
+            --row-hover: #2c2c2e;
         }
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; outline: none; -webkit-tap-highlight-color: transparent; }
+    
     body {
-        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.5;
-        padding-bottom: 110px;
-        transition: background 0.3s, color 0.3s;
+        font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--bg-body);
+        color: var(--text-primary);
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        display: flex;
     }
 
-    header {
-        position: sticky; top: 0; background: rgba(var(--bg), 0.92);
-        backdrop-filter: blur(14px); padding: 12px 20px;
-        box-shadow: 0 1px 0 var(--border); z-index: 10;
-        display: flex; align-items: center; justify-content: space-between;
-        border-bottom: 1px solid var(--border);
-    }
-    .logo { width: 26px; height: 26px; cursor: pointer; }
-    .logo img { width: 100%; height: 100%; filter: grayscale(100%); transition: filter 0.3s; }
-    .logo:hover img { filter: grayscale(0); }
-    h1 { font-size: 17px; font-weight: 600; margin: 0; flex: 1; text-align: center; }
-
-    .back-home {
-        background: none; border: none; font-size: 12px; color: var(--text);
-        cursor: pointer; opacity: 0.7; transition: opacity 0.2s;
-    }
-    .back-home:hover { opacity: 1; }
-
-    #categories {
-        max-width: 960px; margin: 28px auto; padding: 0 20px;
-        display: grid; gap: 24px;
+    /* === 1. 侧边栏 (Sidebar) === */
+    aside {
+        width: var(--sidebar-w);
+        background: var(--bg-sidebar);
+        border-right: 1px solid var(--border-color);
+        display: flex; flex-direction: column;
+        z-index: 10;
+        flex-shrink: 0;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .category {
-        background: var(--card); border-radius: var(--radius); padding: 20px;
-        box-shadow: 0 4px 16px var(--shadow); border: 1px solid var(--border);
-        transition: transform 0.2s, box-shadow 0.2s;
+    .brand {
+        height: 60px; display: flex; align-items: center; padding: 0 20px;
+        font-weight: 600; font-size: 16px; gap: 10px;
+        border-bottom: 1px solid var(--border-color);
     }
-    .category:hover { transform: translateY(-1px); box-shadow: 0 8px 24px var(--shadow); }
+    .brand img { width: 24px; height: 24px; border-radius: 6px; }
 
-    .category h2 {
-        font-size: 17px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
-        font-weight: 600; color: var(--text);
+    .nav-scroll { flex: 1; overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 4px; }
+    
+    .nav-item {
+        padding: 10px 12px; border-radius: 8px; cursor: pointer;
+        color: var(--text-primary); font-size: 13px; font-weight: 500;
+        display: flex; justify-content: space-between; align-items: center;
+        transition: all 0.2s; text-decoration: none;
     }
-    .category input[type="text"] {
-        flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border);
-        background: var(--input-bg); color: var(--text); font-size: 14px;
-        font-weight: 500;
-        transition: border 0.2s, background 0.2s;
-    }
-    .category input:focus { outline: none; border-color: var(--accent); background: var(--bg); }
+    .nav-item:hover { background: var(--row-hover); }
+    .nav-item.active { background: var(--accent); color: #fff; }
+    .nav-item.active .badge { color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.2); }
+    
+    .badge { font-size: 11px; color: var(--text-secondary); background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 10px; }
 
-    .apps-list {
-        display: grid; gap: 10px; margin-bottom: 14px;
+    .sidebar-actions {
+        padding: 16px; border-top: 1px solid var(--border-color);
+        background: var(--bg-sidebar);
+        display: flex; flex-direction: column; gap: 10px;
     }
-    .app {
-        display: grid; 
-        grid-template-columns: 26px var(--icon-size) 110px 1fr 1.5fr 1fr auto; 
-        gap: 8px; align-items: center;
-        padding: 10px; background: var(--input-bg); border-radius: 10px;
-        border: 1px solid var(--border); transition: all 0.2s;
-        user-select: none;
-        font-size: 13px;
-    }
-    .app:hover { background: var(--bg); border-color: var(--accent); }
 
-    /* 拖拽手柄 - 更大、更浅 */
-    .drag-handle {
-        width: 22px; height: 22px; cursor: grab; opacity: 0.25;
+    /* === 2. 主内容区 (Main) === */
+    main {
+        flex: 1; height: 100%; overflow-y: auto;
+        padding: 30px 40px; scroll-behavior: smooth;
+    }
+
+    /* === 3. 分类容器 (Group) === */
+    .group-container {
+        margin-bottom: 30px;
+        background: var(--bg-card);
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        overflow: hidden;
+    }
+
+    .group-header {
+        padding: 12px 20px;
+        background: rgba(128,128,128,0.03);
+        border-bottom: 1px solid var(--border-color);
+        display: flex; align-items: center; gap: 12px;
+    }
+    
+    .group-title-input {
+        flex: 1; background: transparent; border: none;
+        font-size: 15px; font-weight: 700; color: var(--text-primary);
+        padding: 4px 0;
+    }
+
+    /* === 4. App 行 (Dense Row) === */
+    .app-row {
+        display: grid;
+        /* 布局：拖拽手柄 | 图标 | [名称/描述] | [链接/路径] | 删除按钮 */
+        grid-template-columns: 24px 40px 1.2fr 1.5fr 36px;
+        gap: 16px;
+        padding: 10px 20px;
+        align-items: center;
+        border-bottom: 1px solid var(--border-color);
+        background: var(--bg-card);
+        transition: background 0.15s;
+    }
+    .app-row:last-child { border-bottom: none; }
+    .app-row:hover { background: var(--row-hover); }
+    .app-row.dragging { opacity: 0.5; background: var(--row-hover); }
+
+    /* 元素样式 */
+    .drag-handle { color: var(--border-color); cursor: grab; display: flex; justify-content: center; }
+    .app-row:hover .drag-handle { color: var(--text-secondary); }
+
+    .icon-box {
+        width: 40px; height: 40px; border-radius: 8px; overflow: hidden;
+        border: 1px solid var(--border-color); background: #fafafa;
         display: flex; align-items: center; justify-content: center;
-        transition: opacity 0.2s;
-        color: var(--text);
+        flex-shrink: 0;
     }
-    .drag-handle:hover { opacity: 0.5; }
-    .drag-handle:active { cursor: grabbing; opacity: 0.7; }
-    .app.dragging .drag-handle { opacity: 1; }
+    .icon-box img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* 图标预览 */
-    .icon-preview {
-        width: var(--icon-size); height: var(--icon-size); border-radius: 10px; overflow: hidden;
-        background: var(--input-bg); border: 1px solid var(--border);
+    /* 双行文本输入区 */
+    .text-stack { display: flex; flex-direction: column; gap: 2px; }
+    
+    input.seamless {
+        background: transparent; border: 1px solid transparent;
+        color: var(--text-primary); font-size: 13px; padding: 2px 4px;
+        border-radius: 4px; width: 100%; transition: all 0.2s;
+    }
+    input.seamless:hover { background: rgba(128,128,128,0.05); }
+    input.seamless:focus { background: var(--bg-card); border-color: var(--accent); box-shadow: 0 0 0 2px rgba(0,113,227,0.1); }
+    
+    .inp-title { font-weight: 600; font-size: 14px; }
+    .inp-desc { color: var(--text-secondary); font-size: 12px; }
+    .inp-code { color: var(--text-secondary); font-family: 'SF Mono', Menlo, monospace; font-size: 11px; }
+
+    .btn-icon {
+        width: 28px; height: 28px; border-radius: 6px;
+        border: none; background: transparent; cursor: pointer;
+        color: var(--danger); opacity: 0; transition: opacity 0.2s;
         display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 1px 4px var(--shadow);
     }
-    .icon-preview img {
-        width: 100%; height: 100%; object-fit: cover;
-    }
-    .icon-preview .placeholder {
-        font-size: 20px; color: #aaa; font-weight: bold;
-    }
+    .app-row:hover .btn-icon { opacity: 1; }
+    .btn-icon:hover { background: rgba(255, 59, 48, 0.1); }
 
-    /* 统一输入框样式 */
-    .app input {
-        padding: 6px 8px; border-radius: 6px; border: 1px solid transparent;
-        background: transparent; color: var(--text);
-        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-        font-weight: 500;
-        transition: border 0.2s;
+    /* 添加按钮区 */
+    .group-footer {
+        padding: 8px; background: var(--bg-card); border-top: 1px solid var(--border-color);
+        display: flex; justify-content: center;
     }
-    .app input:focus { outline: none; border-color: var(--accent); background: var(--bg); }
+    .btn-add-row {
+        width: 100%; padding: 8px; border: 1px dashed var(--border-color);
+        background: transparent; border-radius: 8px;
+        color: var(--text-secondary); cursor: pointer; font-size: 12px;
+        transition: all 0.2s;
+    }
+    .btn-add-row:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,113,227,0.02); }
 
-    /* 名称输入框更大 */
-    .app input[placeholder="名称"] {
-        font-size: 15px;
-        font-weight: 600;
+    /* 通用按钮 */
+    .btn {
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+        width: 100%; padding: 10px; border-radius: 8px; border: none; cursor: pointer;
+        font-size: 13px; font-weight: 500; transition: all 0.2s;
     }
+    .btn-primary { background: var(--text-primary); color: var(--bg-body); }
+    .btn-primary:hover { opacity: 0.9; }
+    
+    .btn-ghost { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); }
+    .btn-ghost:hover { background: var(--row-hover); border-color: var(--text-secondary); }
 
-    /* 图标路径输入框 */
-    .app input[placeholder*="图标"] {
-        min-width: 0;
-        font-family: 'SF Mono', Menlo, monospace;
-        font-size: 12px;
-        padding: 6px 8px;
-        font-weight: 500;
-    }
+    .mobile-bar { display: none; }
 
-    button {
-        cursor: pointer; border: none; border-radius: 8px; padding: 6px 10px;
-        font-size: 12px; font-weight: 500; transition: all 0.2s;
-    }
-    .add-btn { background: var(--btn); color: var(--btn-text); }
-    .add-btn:hover { opacity: 0.9; transform: translateY(-1px); }
-    .delete-btn { background: transparent; color: #d32f2f; font-size: 12px; }
-    .delete-btn:hover { background: #ffebee; }
-
-    .app.dragging { opacity: 0.5; transform: scale(0.97); z-index: 10; }
-    .app.drag-over { border-color: var(--accent); background: rgba(var(--accent), 0.07); transform: scale(1.01); }
-
-    /* 浮动按钮 */
-    .floating-btn {
-        position: fixed; left: 24px; display: flex; align-items: center; gap: 8px;
-        background: var(--btn); color: var(--btn-text); border: none;
-        border-radius: 28px; padding: 11px 18px; font-size: 13px; font-weight: 500;
-        box-shadow: 0 5px 14px var(--shadow); transition: all 0.3s; z-index: 999;
-    }
-    .floating-btn i { font-size: 15px; }
-    .floating-btn:hover {
-        transform: translateY(-2px); box-shadow: 0 8px 20px var(--shadow);
-    }
-    #downloadBtn { bottom: 140px; }
-    #uploadBtn { bottom: 88px; }
-    #uploadImageBtn { bottom: 30px; }
-
-    /* 左侧快速导航 */
-    #quick-nav {
-        position: fixed; left: 20px; top: 50%; transform: translateY(-50%);
-        display: flex; flex-direction: column; gap: 7px; z-index: 100;
-        padding: 12px 8px; background: rgba(var(--card), 0.96);
-        border-radius: 16px; backdrop-filter: blur(12px);
-        box-shadow: 0 5px 18px var(--shadow); border: 1px solid var(--border);
-        max-height: 76vh; overflow-y: auto;
-    }
-    .qn-btn {
-        min-width: 88px; height: 34px; padding: 0 14px;
-        background: transparent; color: var(--text); border: 1px solid var(--border);
-        border-radius: 17px; font-size: 12px; font-weight: 500;
-        cursor: pointer; transition: all 0.25s;
-        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-        display: flex; align-items: center; justify-content: center;
-        user-select: none;
-    }
-    .qn-btn:hover {
-        background: var(--accent); color: var(--btn-text); border-color: transparent;
-        transform: translateY(-1px);
-    }
-    .qn-btn.active {
-        background: var(--accent); color: var(--btn-text);
-        font-weight: 600; box-shadow: 0 0 0 2px rgba(var(--accent), 0.25);
-    }
-
-    /* 滚动条 */
-    #quick-nav::-webkit-scrollbar { width: 3px; }
-    #quick-nav::-webkit-scrollbar-thumb { background: #bbb; border-radius: 2px; }
-
+    /* === 响应式 (Mobile) === */
     @media (max-width: 768px) {
-        #quick-nav { display: none; }
-        #categories { padding: 0 14px; margin: 18px auto; }
-        .floating-btn { left: 14px; padding: 9px 14px; font-size: 12px; }
-        .category { padding: 16px; }
-        .app { 
-            grid-template-columns: 22px 40px 90px 1fr 1fr 1fr auto; 
-            gap: 6px; padding: 8px; font-size: 12px;
+        body { flex-direction: column; }
+        
+        aside {
+            position: fixed; top: 0; left: 0; height: 100%;
+            transform: translateX(-100%); box-shadow: 4px 0 15px rgba(0,0,0,0.1);
         }
-        :root { --icon-size: 40px; }
-        .icon-preview { width: 40px; height: 40px; border-radius: 8px; }
-        .icon-preview .placeholder { font-size: 18px; }
-        .app input[placeholder*="图标"] { font-size: 11px; }
-        .drag-handle { width: 20px; height: 20px; }
-        .app input[placeholder="名称"] { font-size: 14px; }
+        aside.active { transform: translateX(0); }
+        
+        .mobile-bar {
+            display: flex; height: 50px; align-items: center; justify-content: space-between;
+            padding: 0 15px; border-bottom: 1px solid var(--border-color);
+            background: var(--bg-card); flex-shrink: 0; z-index: 20;
+        }
+
+        main { padding: 15px; }
+
+        /* 手机端 App Row 布局调整 */
+        .app-row {
+            grid-template-columns: 40px 1fr 30px;
+            gap: 10px; padding: 12px;
+        }
+        /* 隐藏拖拽，图标在左，中间所有输入框垂直堆叠，右侧删除 */
+        .drag-handle { display: none; }
+        
+        /* 强制所有输入框占满整行 */
+        .text-stack { grid-column: 2; gap: 6px; }
+        .text-stack:nth-of-type(2) { grid-column: 2; margin-top: 4px; }
+        
+        /* 合并两列的输入框区域 */
+        .app-row > .text-stack:nth-child(3) { grid-column: 2; } 
+        .app-row > .text-stack:nth-child(4) { grid-column: 2; }
+        
+        .btn-icon { opacity: 1; }
+
+        .group-container { border-radius: 8px; }
+        
+        .overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4); z-index: 9; display: none;
+        }
+        .overlay.active { display: block; }
     }
 </style>
 </head>
 <body>
-<header>
-    <a href="index.html" class="logo" title="返回首页">
+
+<div class="overlay" onclick="toggleSidebar()"></div>
+<div class="mobile-bar">
+    <button class="btn-ghost" style="width:auto; border:none; padding:8px;" onclick="toggleSidebar()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <span style="font-weight:600;">App Admin</span>
+    <button class="btn-ghost" style="width:auto; border:none; padding:8px;" onclick="location.href='index.html'">
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </button>
+</div>
+
+<aside id="sidebar">
+    <div class="brand">
         <img src="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png" alt="Logo">
-    </a>
-    <h1>App 管理后台</h1>
-    <button class="back-home" onclick="window.location.href='index.html'">返回主页</button>
-</header>
+        <span>管理控制台</span>
+    </div>
 
-<aside id="quick-nav"></aside>
+    <div class="nav-scroll" id="navList">
+        </div>
 
-<div id="categories"></div>
+    <div class="sidebar-actions">
+        <button class="btn btn-primary" id="downloadBtn" title="保存 .js 文件到本地">
+            <i class="fa-solid fa-download"></i> 下载配置 (Save)
+        </button>
+        
+        <button class="btn btn-ghost" id="uploadBtn" title="跳转到 GitHub 上传页面" onclick="window.location.href='https://github.com/wangwenzhiwwz/File/upload/master'">
+            <i class="fa-brands fa-github"></i> 上传数据 (GitHub)
+        </button>
+        
+        <button class="btn btn-ghost" id="uploadImageBtn" title="上传图片到图床" onclick="window.open('https://github.com/wangwenzhiwwz/File/upload/master/images', '_blank')">
+            <i class="fa-regular fa-image"></i> 上传图片 (Images)
+        </button>
+        
+        <button class="btn btn-ghost" onclick="addCategory()">
+            <i class="fa-solid fa-folder-plus"></i> 新建分类
+        </button>
+        
+        <div style="text-align:center; margin-top:10px; font-size:12px; color:var(--text-secondary);">
+            <a href="index.html" style="color:inherit; text-decoration:none;">返回前台首页 &rarr;</a>
+        </div>
+    </div>
+</aside>
 
-<button id="uploadImageBtn" class="floating-btn" title="上传图片到 GitHub"
-        onclick="window.open('https://github.com/wangwenzhiwwz/File/upload/master/images', '_blank')">
-  Upload Image <i class="fas fa-image"></i>
-</button>
-<button id="downloadBtn" class="floating-btn" title="下载 apps.js">
-  Download Data <i class="fas fa-download"></i>
-</button>
-<button id="uploadBtn" class="floating-btn" title="上传到 GitHub">
-  Upload Data <i class="fas fa-upload"></i>
-</button>
+<main id="mainContent">
+    <div id="appContainer"></div>
+    <div style="height: 60px;"></div>
+</main>
 
 <script src="apps.js"></script>
 <script>
-// === apps.js 模板（请与你的 apps.js 保持一致）===
+// === 1. 下载模板 (Template) ===
 const appsJsTemplate = `
 // 页面刷新函数
-function refreshPage() {
-    location.reload();
-}
-
-// 汉堡菜单切换功能
+function refreshPage() { location.reload(); }
 function setupHamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
     if (!hamburger) return;
@@ -269,82 +304,39 @@ function setupHamburgerMenu() {
         if (navLinks) navLinks.classList.toggle('active');
     });
 }
-
-// HTML 转义函数
 function escapeHtml(unsafe) {
-    return unsafe
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+    if(!unsafe) return "";
+    return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
 }
-
-// 构造器函数
 function createApp({ name, description, link, icon }) {
-    const app = {
-        name: name || 'Unnamed App',
-        description: description || 'No description available',
-        link: link || '#',
-        icon: icon || 'https://via.placeholder.com/60?text=No+Image'
-    };
-    return app;
+    return { name: name||'Unnamed', description: description||'', link: link||'#', icon: icon||'' };
 }
-
-// 显示错误
-function displayError(message) {
-    let container = document.getElementById('error-container');
-    if (!container) {
-        container = document.createElement('div');
-        container.id = 'error-container';
-        Object.assign(container.style, {
-            position: 'fixed', top: '10px', left: '50%', transform: 'translateX(-50%)',
-            background: '#ffebee', color: '#c62828', padding: '10px 20px', borderRadius: '5px',
-            boxShadow: '0 2px 5px rgba(0,0,0,0.2)', zIndex: '1000', maxWidth: '80%'
-        });
-        document.body.appendChild(container);
-    }
-    const p = document.createElement('p');
-    p.textContent = message;
-    p.style.margin = '5px 0';
-    container.appendChild(p);
-    setTimeout(() => { p.remove(); if (!container.hasChildNodes()) container.remove(); }, 10000);
-}
-
 const appData = %APPDATA_REPLACE%;
 
-// 创建应用项
 function createAppItem(app) {
     return \`
         <div class="app-item">
             <a href="\${app.link}" class="app-link" target="_blank" rel="noopener noreferrer">
                 <img class="app-icon" src="\${app.icon}" alt="\${escapeHtml(app.name)}" loading="lazy"
-                     onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found';">
+                     onerror="this.src='https://via.placeholder.com/60?text=Wait';">
                 <h3 class="app-name">\${escapeHtml(app.name)}</h3>
                 <p class="app-description">\${escapeHtml(app.description)}</p>
             </a>
         </div>
     \`;
 }
-
-// 创建类别
 function createCategory(category, index) {
     const appItems = category.apps.map(createAppItem).join('');
     return \`
         <section class="app-category" id="\${category.title.toLowerCase()}" style="animation-delay: \${index * 0.1}s;">
-            <h2 class="app-category-title" data-index="\${index}" style="cursor: pointer;" title="点击打开所有该类网站">
-                \${escapeHtml(category.title)}
-            </h2>
+            <h2 class="app-category-title" data-index="\${index}" style="cursor: pointer;">\${escapeHtml(category.title)}</h2>
             <div class="app-grid">\${appItems}</div>
         </section>
     \`;
 }
-
-// 渲染
 function renderCategories() {
     const container = document.getElementById('app-container');
-    if (!container || !appData || !Array.isArray(appData)) return;
-
+    if (!container || !appData) return;
     const fragment = document.createDocumentFragment();
     appData.forEach((category, index) => {
         const div = document.createElement('div');
@@ -352,262 +344,194 @@ function renderCategories() {
         fragment.appendChild(div.firstElementChild);
     });
     container.appendChild(fragment);
-
-    // 标题点击打开所有
     document.querySelectorAll('.app-category-title').forEach(title => {
         title.addEventListener('click', () => {
             const index = title.getAttribute('data-index');
             const category = appData[parseInt(index)];
-            if (category && category.apps) {
-                category.apps.forEach(app => window.open(app.link, '_blank'));
-            }
+            if (category && category.apps) category.apps.forEach(app => window.open(app.link, '_blank'));
         });
     });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    setupHamburgerMenu();
-    renderCategories();
-});
+document.addEventListener('DOMContentLoaded', () => { setupHamburgerMenu(); renderCategories(); });
 `;
 
-// === 管理后台逻辑 ===
+// === 2. 逻辑 (Logic) ===
 const ICON_PREFIX = './images/';
-const categoryIds = [];
 
-// 清理图标路径（移除重复前缀）
-function cleanIconPath(path) {
-    if (!path) return '';
+function cleanPath(path) {
+    if(!path) return '';
     return path.replace(new RegExp('^' + ICON_PREFIX.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), '');
 }
-
-// 补全图标路径
-function fullIconPath(path) {
-    if (!path) return '';
-    const clean = cleanIconPath(path);
+function fullPath(path) {
+    if(!path) return '';
+    const clean = cleanPath(path);
     return clean ? ICON_PREFIX + clean : '';
 }
+function safe(str) {
+    return str ? str.replace(/"/g, "&quot;") : ""; 
+}
 
-function renderQuickNav() {
-    const nav = document.getElementById('quick-nav');
+// 移动端菜单
+function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('active');
+    document.querySelector('.overlay').classList.toggle('active');
+}
+
+// 渲染
+function render() {
+    const nav = document.getElementById('navList');
+    const main = document.getElementById('appContainer');
     nav.innerHTML = '';
-    appData.forEach((cat, idx) => {
-        const safeId = 'cat-' + idx;
-        cat.domId = safeId;
-        categoryIds.push({title: cat.title, id: safeId, idx});
+    main.innerHTML = '';
 
-        const btn = document.createElement('button');
-        btn.className = 'qn-btn';
-        btn.textContent = cat.title || '未命名';
-        btn.title = cat.title || '未命名';
-        btn.dataset.idx = idx;
-        btn.draggable = true;
-
-        // 拖拽排序
-        btn.ondragstart = e => { e.dataTransfer.setData('text/plain', idx); btn.classList.add('dragging'); };
-        btn.ondragend = () => btn.classList.remove('dragging');
-        btn.ondragover = e => e.preventDefault();
-        btn.ondrop = e => {
+    appData.forEach((cat, ci) => {
+        // 1. 侧边栏导航
+        const navItem = document.createElement('a');
+        navItem.className = 'nav-item';
+        navItem.href = '#';
+        navItem.innerHTML = `<span>${safe(cat.title)}</span> <span class="badge">${cat.apps.length}</span>`;
+        navItem.onclick = (e) => {
             e.preventDefault();
-            const fromIdx = +e.dataTransfer.getData('text/plain');
-            if (fromIdx !== idx) {
-                [appData[fromIdx], appData[idx]] = [appData[idx], appData[fromIdx]];
-                render();
-            }
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            navItem.classList.add('active');
+            const target = document.getElementById('group-' + ci);
+            if(target) target.scrollIntoView({behavior: 'smooth', block: 'start'});
+            if(window.innerWidth <= 768) toggleSidebar();
         };
+        nav.appendChild(navItem);
 
-        // 点击跳转到分类顶部（留 70px）
-        btn.onclick = () => {
-            const el = document.getElementById(safeId);
-            if (el) {
-                const offset = 70;
-                const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
-                window.scrollTo({ top, behavior: 'smooth' });
-                setTimeout(highlightActive, 600);
-            }
-        };
+        // 2. 主体内容块
+        const group = document.createElement('div');
+        group.className = 'group-container';
+        group.id = 'group-' + ci;
 
-        nav.appendChild(btn);
-    });
-}
+        // 标题头
+        group.innerHTML = `
+            <div class="group-header">
+                <i class="fa-solid fa-layer-group" style="color:var(--accent)"></i>
+                <input class="group-title-input" value="${safe(cat.title)}" 
+                       onchange="appData[${ci}].title=this.value; renderNavTitles();">
+                <button class="btn-icon" style="opacity:1; color:var(--text-secondary);" onclick="deleteCategory(${ci})" title="删除分类">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+            <div class="group-body"></div>
+            <div class="group-footer">
+                <button class="btn-add-row" onclick="addApp(${ci})">
+                    <i class="fa-solid fa-plus"></i> 添加一行 (Add App)
+                </button>
+            </div>
+        `;
 
-function highlightActive() {
-    const buttons = document.querySelectorAll('.qn-btn');
-    let minDist = Infinity, activeIdx = -1;
+        const body = group.querySelector('.group-body');
 
-    categoryIds.forEach((c, i) => {
-        const el = document.getElementById(c.id);
-        if (!el) return;
-        const rect = el.getBoundingClientRect();
-        const dist = Math.abs(rect.top + rect.height/2 - window.innerHeight/2);
-        if (dist < minDist) { minDist = dist; activeIdx = i; }
-    });
+        // 遍历 App
+        cat.apps.forEach((app, ai) => {
+            const cleanIcon = cleanPath(app.icon);
+            const row = document.createElement('div');
+            row.className = 'app-row';
+            row.draggable = true;
+            row.dataset.ci = ci;
+            row.dataset.ai = ai;
 
-    buttons.forEach((b, i) => b.classList.toggle('active', i === activeIdx));
-}
-
-(function(){
-    const container = document.getElementById('categories');
-
-    function render() {
-        container.innerHTML = '';
-        categoryIds.length = 0;
-
-        appData.forEach((cat, ci) => {
-            const safeId = 'cat-' + ci;
-            const catDiv = document.createElement('div');
-            catDiv.className = 'category';
-            catDiv.id = safeId;
-
-            const appsHTML = cat.apps.map((app, ai) => {
-                const cleanIcon = cleanIconPath(app.icon);
-                return `
-                <div class="app" data-cat="${ci}" data-app="${ai}">
-                    <div class="drag-handle" draggable="true" title="拖拽排序">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                        </svg>
-                    </div>
-                    <div class="icon-preview">
-                        <img src="${fullIconPath(app.icon)}" alt="icon" 
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-                             onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
-                        <div class="placeholder" style="display:${cleanIcon?'none':'block'};">Question Mark</div>
-                    </div>
-                    <input value="${escapeHtml(app.name)}" placeholder="名称" onchange="appData[${ci}].apps[${ai}].name=this.value;">
-                    <input value="${escapeHtml(app.description)}" placeholder="描述" onchange="appData[${ci}].apps[${ai}].description=this.value">
-                    <input value="${escapeHtml(app.link)}" placeholder="链接" onchange="appData[${ci}].apps[${ai}].link=this.value">
-                    <input value="${escapeHtml(cleanIcon)}" placeholder="图标 (images/xxx.png)" 
-                           onchange="handleIconChange(this, ${ci}, ${ai})">
-                    <button class="delete-btn" onclick="deleteApp(${ci},${ai})">删除</button>
+            row.innerHTML = `
+                <div class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></div>
+                
+                <div class="icon-box">
+                    <img src="${fullPath(app.icon)}" 
+                         onerror="this.style.display='none'" 
+                         onload="this.style.display='block'">
                 </div>
-            `}).join('');
 
-            catDiv.innerHTML = `
-                <h2>
-                    <input type="text" value="${escapeHtml(cat.title)}" 
-                           onchange="appData[${ci}].title=this.value; renderQuickNav();">
-                    <button class="delete-btn" onclick="deleteCategory(${ci})">删除分类</button>
-                </h2>
-                <div class="apps-list">${appsHTML}</div>
-                <button class="add-btn" onclick="addApp(${ci})">+ 添加应用</button>
+                <div class="text-stack">
+                    <input class="seamless inp-title" value="${safe(app.name)}" placeholder="名称 Name" 
+                           onchange="update(${ci},${ai},'name',this.value)">
+                    <input class="seamless inp-desc" value="${safe(app.description)}" placeholder="描述 Description" 
+                           onchange="update(${ci},${ai},'description',this.value)">
+                </div>
+
+                <div class="text-stack">
+                    <input class="seamless inp-code" value="${safe(app.link)}" placeholder="链接 URL" 
+                           onchange="update(${ci},${ai},'link',this.value)">
+                    <input class="seamless inp-code" value="${safe(cleanIcon)}" placeholder="图标路径 images/..." 
+                           onchange="updateIcon(this,${ci},${ai})">
+                </div>
+
+                <button class="btn-icon" onclick="deleteApp(${ci},${ai})"><i class="fa-solid fa-circle-minus"></i></button>
             `;
-            container.appendChild(catDiv);
+            body.appendChild(row);
         });
 
-        renderQuickNav();
-        highlightActive();
-        setupAppDrag();
-    }
-
-    // 图标输入处理
-    window.handleIconChange = function(input, ci, ai) {
-        const raw = input.value.trim();
-        const clean = cleanIconPath(raw);
-        appData[ci].apps[ai].icon = clean ? ICON_PREFIX + clean : '';
-        input.value = clean;
-        updateIconPreview(input.closest('.app'));
-    };
-
-    window.updateIconPreview = function(appEl) {
-        const iconInput = appEl.querySelector('input[placeholder*="图标"]');
-        const img = appEl.querySelector('.icon-preview img');
-        const placeholder = appEl.querySelector('.icon-preview .placeholder');
-        const clean = iconInput.value.trim();
-        const url = fullIconPath(clean);
-
-        if (clean) {
-            img.src = url + (url.includes('?') ? '&t=' : '?t=') + Date.now();
-            img.style.display = 'block';
-            placeholder.style.display = 'none';
-        } else {
-            img.style.display = 'none';
-            placeholder.style.display = 'block';
-        }
-    };
-
-    function setupAppDrag() {
-        document.querySelectorAll('.app').forEach(appEl => {
-            const handle = appEl.querySelector('.drag-handle');
-
-            // 仅手柄可拖拽
-            handle.ondragstart = e => {
-                e.dataTransfer.setData('text/plain', JSON.stringify({
-                    cat: appEl.dataset.cat,
-                    app: appEl.dataset.app
-                }));
-                appEl.classList.add('dragging');
-            };
-            handle.ondragend = () => appEl.classList.remove('dragging');
-
-            // 目标行
-            appEl.ondragover = e => { e.preventDefault(); appEl.classList.add('drag-over'); };
-            appEl.ondragleave = () => appEl.classList.remove('drag-over');
-            appEl.ondrop = e => {
-                e.preventDefault();
-                appEl.classList.remove('drag-over');
-                const from = JSON.parse(e.dataTransfer.getData('text/plain'));
-                const toCat = +appEl.dataset.cat;
-                const toApp = +appEl.dataset.app;
-                if (from.cat === toCat && from.app === toApp) return;
-                const item = appData[from.cat].apps.splice(from.app, 1)[0];
-                appData[toCat].apps.splice(toApp, 0, item);
-                render();
-            };
-
-            // 防止其他区域干扰
-            appEl.querySelectorAll('input, button, .icon-preview').forEach(el => {
-                el.addEventListener('mousedown', e => e.stopPropagation());
-                el.addEventListener('dragstart', e => e.preventDefault());
-            });
-        });
-    }
-
-    window.addApp = ci => { 
-        appData[ci].apps.push({name:"",description:"",link:"",icon:""}); 
-        render(); 
-    };
-    window.deleteApp = (ci, ai) => { 
-        if(confirm("确定删除？")){ 
-            appData[ci].apps.splice(ai,1); 
-            render(); 
-        } 
-    };
-    window.deleteCategory = ci => { 
-        if(confirm("确定删除分类？")){ 
-            appData.splice(ci,1); 
-            render(); 
-        } 
-    };
-
-    // 下载时自动补全所有图标路径
-    document.getElementById('downloadBtn').onclick = () => {
-        const dataWithFullPaths = JSON.parse(JSON.stringify(appData));
-        dataWithFullPaths.forEach(cat => {
-            cat.apps.forEach(app => {
-                app.icon = fullIconPath(app.icon);
-            });
-        });
-        const content = appsJsTemplate.replace('%APPDATA_REPLACE%', JSON.stringify(dataWithFullPaths, null, 4));
-        const blob = new Blob([content], {type: "application/javascript"});
-        const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(blob), download: "apps.js"});
-        a.click();
-    };
-
-    document.getElementById('uploadBtn').onclick = () => {
-        window.location.href = "https://github.com/wangwenzhiwwz/File/upload/master";
-    };
-
-    render();
-
-    let ticking = false;
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            requestAnimationFrame(() => { highlightActive(); ticking = false; });
-            ticking = true;
-        }
+        main.appendChild(group);
     });
-})();
+
+    setupDrag();
+}
+
+// 仅刷新左侧标题，不重绘整个DOM防止闪烁
+function renderNavTitles() {
+    const navItems = document.querySelectorAll('.nav-item span:first-child');
+    appData.forEach((cat, i) => {
+        if(navItems[i]) navItems[i].textContent = cat.title;
+    });
+}
+
+// 数据更新
+window.update = (ci, ai, key, val) => { appData[ci].apps[ai][key] = val; };
+
+window.updateIcon = (el, ci, ai) => {
+    const clean = cleanPath(el.value.trim());
+    appData[ci].apps[ai].icon = clean ? ICON_PREFIX + clean : '';
+    el.value = clean;
+    // 实时预览
+    const img = el.closest('.app-row').querySelector('img');
+    if(img) {
+        img.src = fullPath(clean);
+        img.style.display = clean ? 'block' : 'none';
+    }
+};
+
+window.addApp = (ci) => { appData[ci].apps.push({name:"",description:"",link:"",icon:""}); render(); };
+window.deleteApp = (ci, ai) => { if(confirm("Delete this app?")) { appData[ci].apps.splice(ai,1); render(); } };
+window.addCategory = () => { appData.push({title:"新分类", apps:[]}); render(); setTimeout(()=>window.scrollTo(0, document.body.scrollHeight), 100); };
+window.deleteCategory = (ci) => { if(confirm("Delete this category?")) { appData.splice(ci,1); render(); } };
+
+// 拖拽
+function setupDrag() {
+    let dragged = null;
+    document.querySelectorAll('.app-row').forEach(row => {
+        row.addEventListener('dragstart', function() { dragged = this; setTimeout(()=>this.classList.add('dragging'),0); });
+        row.addEventListener('dragend', function() { this.classList.remove('dragging'); dragged = null; });
+        row.addEventListener('dragover', e => e.preventDefault());
+        row.addEventListener('drop', function(e) {
+            e.preventDefault();
+            if(!dragged || dragged === this) return;
+            
+            const sC = dragged.dataset.ci, sA = dragged.dataset.ai;
+            const tC = this.dataset.ci, tA = this.dataset.ai;
+            
+            // 数据交换
+            const item = appData[sC].apps.splice(sA, 1)[0];
+            appData[tC].apps.splice(tA, 0, item);
+            render();
+        });
+    });
+}
+
+// 下载
+document.getElementById('downloadBtn').onclick = () => {
+    const exportData = JSON.parse(JSON.stringify(appData));
+    exportData.forEach(c => c.apps.forEach(a => a.icon = fullPath(a.icon)));
+    const content = appsJsTemplate.replace('%APPDATA_REPLACE%', JSON.stringify(exportData, null, 4));
+    const blob = new Blob([content], {type: "application/javascript"});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = "apps.js";
+    a.click();
+};
+
+// 启动
+render();
 </script>
 </body>
 </html>
