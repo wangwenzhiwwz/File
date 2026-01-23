@@ -23,30 +23,36 @@
 
 <style>
     :root {
-        --bg-body: #ffffff;
+        --bg-body: #f8f9fa; 
         --card-bg: #ffffff;
+        --card-border: #eaeaea;
+        
         --text-main: #000000;
         --text-sub: #666666;
         --border-color: #f0f0f0;
         
         /* 阴影配置 */
-        --shadow-sm: 0 4px 12px rgba(0,0,0,0.08); 
-        --shadow-hover: 0 12px 32px rgba(0,0,0,0.18);
+        --shadow-sm: 0 2px 6px rgba(0,0,0,0.03); 
+        --shadow-hover: 0 8px 24px rgba(0,0,0,0.1);
         
-        --glass: rgba(255, 255, 255, 0.85); 
-        --nav-height: 60px;
-        --content-width: 1200px;
+        --glass: rgba(255, 255, 255, 0.95); 
+        --nav-height: 56px;
+        
+        /* 修改点 1：宽度增加到 1400px，视野更宽 */
+        --content-width: 1400px;
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --bg-body: #000000;
-            --card-bg: #111111;
+            --bg-body: #050505;
+            --card-bg: #141414;
+            --card-border: #333333;
+            
             --text-main: #ffffff;
             --text-sub: #888888;
             --border-color: #222222;
             --shadow-sm: 0 4px 12px rgba(0,0,0,0.4);
-            --glass: rgba(0, 0, 0, 0.85);
+            --glass: rgba(10, 10, 10, 0.95);
         }
     }
 
@@ -61,30 +67,14 @@
         position: relative;
     }
 
-    /* === Background === */
-    .banner-bg {
-        position: absolute; top: 0; left: 0; width: 100%; height: 500px;
-        z-index: -1; overflow: hidden; pointer-events: none;
-        mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
-        opacity: 0.05;
-    }
-    .blob {
-        position: absolute; border-radius: 50%; filter: blur(100px);
-        background: var(--text-main);
-        animation: float 10s infinite ease-in-out alternate;
-    }
-    .blob-1 { top: -100px; left: -10%; width: 50%; height: 400px; }
-    .blob-2 { top: -50px; right: -10%; width: 60%; height: 450px; animation-delay: -5s; }
-    @keyframes float { 0% { transform: translate(0, 0); } 100% { transform: translate(0, 20px); } }
-
     /* === Navbar === */
     .navbar {
         position: fixed; top: 0; left: 0; width: 100%; height: var(--nav-height);
         background: var(--glass);
-        backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
         z-index: 1000;
         display: flex; justify-content: center;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .nav-inner-container {
@@ -95,7 +85,7 @@
     }
     
     .nav-left { display: flex; align-items: center; gap: 10px; flex-shrink: 0; cursor: pointer; }
-    .nav-logo { width: 32px; height: 32px; border-radius: 8px; filter: grayscale(100%); opacity: 0.9; transition: opacity 0.2s; }
+    .nav-logo { width: 28px; height: 28px; border-radius: 6px; filter: grayscale(100%); opacity: 0.9; transition: opacity 0.2s; }
     .nav-left:hover .nav-logo { opacity: 1; }
     
     .nav-center {
@@ -107,10 +97,11 @@
     }
     .nav-center::-webkit-scrollbar { display: none; }
     
-    .nav-tabs { display: flex; gap: 8px; padding: 0 5px; margin: 0 auto; }
+    .nav-tabs { display: flex; gap: 6px; padding: 0 5px; margin: 0 auto; }
 
     .nav-tab-item {
-        padding: 6px 16px; border-radius: 99px; 
+        padding: 4px 12px;
+        border-radius: 99px; 
         font-size: 13px; font-weight: 500; color: var(--text-sub);
         cursor: pointer; white-space: nowrap; transition: all 0.2s;
         background: transparent; border: none;
@@ -118,43 +109,44 @@
     .nav-tab-item:hover { color: var(--text-main); background: rgba(128,128,128,0.05); }
     .nav-tab-item.active { 
         background: var(--text-main); color: var(--bg-body); font-weight: 600;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
     }
 
-    .nav-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .nav-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
     .btn-icon {
-        color: var(--text-main); font-size: 16px; text-decoration: none;
-        width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+        color: var(--text-main); font-size: 15px; text-decoration: none;
+        width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
         border-radius: 50%; transition: background 0.2s; opacity: 0.7;
     }
     .btn-icon:hover { opacity: 1; background: rgba(128,128,128,0.1); }
 
-    /* === Hero Section === */
-    .hero-section { padding: 40px 20px; text-align: center; position: relative; }
-    .hero-clock { margin-bottom: 25px; }
+    /* === Hero Section (Compressed) === */
+    .hero-section { padding: 30px 15px; text-align: center; position: relative; }
+    .hero-clock { margin-bottom: 20px; }
     
     .hero-time { 
-        font-size: 64px; font-weight: 700; letter-spacing: -3px; line-height: 1; 
+        font-size: 48px;
+        font-weight: 700; letter-spacing: -2px; line-height: 1; 
         color: var(--text-main); display: inline-block;
     }
     .hero-meta {
-        font-size: 14px; color: var(--text-sub); margin-top: 8px; font-weight: 500; letter-spacing: 0.5px;
+        font-size: 13px; color: var(--text-sub); margin-top: 5px; font-weight: 500; letter-spacing: 0.5px;
         display: flex; justify-content: center; align-items: center;
     }
 
-    /* === Search Bar === */
-    .search-container { max-width: 600px; margin: 0 auto; position: relative; }
+    /* === Search Bar (Compact) === */
+    .search-container { max-width: 500px; margin: 0 auto; position: relative; }
     
     .search-input {
-        width: 100%; padding: 16px 20px 16px 50px; 
+        width: 100%; padding: 12px 16px 12px 42px;
         border-radius: 99px; 
         border: 2px solid transparent; 
-        background: rgba(0, 0, 0, 0.02); 
+        background: rgba(0, 0, 0, 0.03); 
         color: var(--text-main); 
-        font-size: 16px; font-weight: 500;
+        font-size: 15px; font-weight: 500;
         transition: all 0.25s ease;
     }
-    .search-input:hover { background: rgba(0, 0, 0, 0.05); }
+    .search-input:hover { background: rgba(0, 0, 0, 0.06); }
     
     @media (prefers-color-scheme: dark) {
         .search-input { background: rgba(255, 255, 255, 0.05); }
@@ -164,125 +156,157 @@
     .search-input:focus {
         background: var(--card-bg);
         border-color: var(--text-main); 
-        box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        transform: scale(1.01);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        transform: scale(1.005);
     }
     
     .search-icon { 
-        position: absolute; left: 20px; top: 50%; transform: translateY(-50%); 
-        color: var(--text-main); opacity: 0.6; font-size: 16px; 
+        position: absolute; left: 16px; top: 50%; transform: translateY(-50%); 
+        color: var(--text-main); opacity: 0.6; font-size: 14px; 
         pointer-events: none;
     }
 
-    /* === Content Grid (Balanced Version) === */
-    .container { max-width: var(--content-width); margin: 0 auto; padding: 20px; padding-bottom: 80px; }
-    .category-section { margin-bottom: 40px; scroll-margin-top: 80px; }
+    .search-actions {
+        position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+        display: flex; align-items: center; gap: 8px;
+    }
+    .kbd-shortcut {
+        border: 1px solid var(--border-color);
+        border-radius: 4px; padding: 1px 6px;
+        font-size: 11px; color: var(--text-sub);
+        background: rgba(128,128,128,0.08);
+        pointer-events: none; opacity: 0.8;
+    }
+    .clear-btn {
+        cursor: pointer; color: var(--text-sub); font-size: 14px;
+        display: none; transition: color 0.2s;
+    }
+    .clear-btn:hover { color: var(--text-main); }
     
-    .cat-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; padding: 0 5px; }
+    .search-container.has-value .clear-btn { display: block; }
+    .search-container.has-value .kbd-shortcut { display: none; }
+
+
+    /* === Content Grid === */
+    .container { max-width: var(--content-width); margin: 0 auto; padding: 20px; padding-bottom: 60px; }
+    .category-section { margin-bottom: 30px; scroll-margin-top: 70px; }
+    
+    .cat-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding: 0 4px; }
     
     .cat-title { 
-        font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; 
+        font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; 
         color: var(--text-main); cursor: pointer; user-select: none; transition: opacity 0.2s;
     }
     .cat-title:hover { opacity: 0.7; }
-    .cat-title::before { content: ''; display: block; width: 5px; height: 5px; background: var(--text-main); border-radius: 50%; }
+    .cat-title::before { content: ''; display: block; width: 4px; height: 4px; background: var(--text-main); border-radius: 50%; }
 
     .btn-open-all {
-        font-size: 12px; color: var(--text-sub); background: transparent;
-        padding: 5px 10px; border: 1px solid var(--border-color); border-radius: 8px; 
+        font-size: 11px; color: var(--text-sub); background: transparent;
+        padding: 4px 8px; border: 1px solid var(--border-color); border-radius: 6px; 
         cursor: pointer; font-weight: 500; transition: all 0.2s; 
-        display: flex; align-items: center; gap: 5px;
+        display: flex; align-items: center; gap: 4px;
     }
     .btn-open-all:hover { border-color: var(--text-main); color: var(--text-main); background: rgba(128,128,128,0.05); }
 
-    /* === 网格布局调整 (Balanced) === */
+    /* === Grid Layout === */
     .app-grid { 
         display: grid; 
-        /* 基础宽度 160px，保证平板显示紧凑但舒适 */
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
-        gap: 14px; 
+        gap: 12px; 
     }
 
-    /* === 卡片样式调整 === */
+    /* === Animation === */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(15px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === Card Style (Compressed Height) === */
     .app-card {
         background: var(--card-bg); 
-        border-radius: 14px;
-        padding: 16px; /* 舒适的内边距 */
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        
+        padding: 12px; 
         
         display: flex; flex-direction: column; align-items: flex-start; text-align: left;
         text-decoration: none; color: var(--text-main);
         transition: transform 0.2s, box-shadow 0.2s;
-        border: none; 
         box-shadow: var(--shadow-sm); 
         position: relative; overflow: hidden; height: 100%;
+        
+        animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
     }
-    .app-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+    .app-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
 
-    /* 图标：默认 42px (介于原版和超大版之间) */
     .icon-wrapper {
-        width: 42px; height: 42px; 
-        margin-bottom: 10px; 
-        border-radius: 11px; 
+        width: 38px; height: 38px; 
+        margin-bottom: 8px; 
+        border-radius: 10px; 
         overflow: hidden; background: transparent; flex-shrink: 0;
     }
-    .app-icon { width: 100%; height: 100%; object-fit: cover; border-radius: 11px; opacity: 0; transition: opacity 0.3s ease-in; }
+    .app-icon { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; opacity: 0; transition: opacity 0.3s ease-in; }
     .app-icon.loaded { opacity: 1; }
     
     .app-name { 
-        font-size: 15px; /* 字号适中 */
-        font-weight: 700; margin-bottom: 4px; line-height: 1.3;
+        font-size: 14px; 
+        font-weight: 700; 
+        margin-bottom: 2px;
+        line-height: 1.2;
         color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%;
     }
     .app-desc { 
-        font-size: 12px; color: var(--text-sub); line-height: 1.4; opacity: 0.9;
+        font-size: 11px; color: var(--text-sub); 
+        line-height: 1.35;
+        opacity: 0.9;
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
         overflow: hidden; text-overflow: ellipsis; 
-        height: 35px; 
+        height: 30px; 
         margin-top: 0px;
     }
 
-    /* === 电脑端专属 (PC Optimization) === */
+    /* === PC Optimization (6 columns max) === */
     @media (min-width: 1024px) {
         .app-grid {
-            /* 210px: 黄金尺寸，比原版大，但比上一版小 */
-            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); 
-            gap: 20px; 
+            /* 修改点 2：minmax(215px) 配合 1400px 容器，正好能放下 6 个 (1400/215 ≈ 6.5) */
+            grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); 
+            gap: 14px; 
         }
         .app-card {
-            padding: 20px; 
-            border-radius: 18px; 
+            padding: 14px;
+            border-radius: 14px; 
         }
         .icon-wrapper {
-            width: 52px; height: 52px; /* 适度加大 */
-            margin-bottom: 14px;
-            border-radius: 14px;
+            width: 44px; height: 44px; 
+            margin-bottom: 10px;
+            border-radius: 12px;
         }
         .app-name { 
-            font-size: 16px; 
-            margin-bottom: 5px;
+            font-size: 15px; 
+            margin-bottom: 3px;
         }
         .app-desc {
-            font-size: 13px; 
-            height: 38px; 
+            font-size: 12px; 
+            height: 33px; 
         }
     }
 
     /* === Empty State === */
     .empty-state {
-        text-align: center; padding: 60px 0; color: var(--text-sub);
+        text-align: center; padding: 40px 0; color: var(--text-sub);
         display: none;
     }
-    .empty-state i { font-size: 40px; margin-bottom: 15px; opacity: 0.3; }
-    .empty-state p { font-size: 14px; }
+    .empty-state i { font-size: 32px; margin-bottom: 10px; opacity: 0.3; }
+    .empty-state p { font-size: 13px; }
 
     /* Back To Top */
     .back-to-top {
-        position: fixed; bottom: 30px; right: 30px;
-        width: 40px; height: 40px; border-radius: 50%;
+        position: fixed; bottom: 25px; right: 25px;
+        width: 36px; height: 36px; border-radius: 50%;
         background: var(--text-main); color: var(--bg-body);
         border: none; display: flex; align-items: center; justify-content: center;
-        font-size: 14px; cursor: pointer;
-        opacity: 0; visibility: hidden; transform: translateY(20px);
+        font-size: 13px; cursor: pointer;
+        opacity: 0; visibility: hidden; transform: translateY(15px);
         transition: all 0.3s; z-index: 900;
         box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     }
@@ -291,39 +315,33 @@
 
     /* Mobile Only Adjustments */
     @media (max-width: 640px) {
-        .nav-inner-container { padding: 0 15px; gap: 10px; }
-        .nav-center { padding-right: 15px; }
-        .container { padding: 20px 15px; }
-        .hero-time { font-size: 48px; }
+        .nav-inner-container { padding: 0 12px; gap: 8px; }
+        .nav-center { padding-right: 12px; }
+        .container { padding: 15px 12px; }
+        .hero-time { font-size: 40px; }
         
         .app-grid { 
-            /* 强制双列 */
             grid-template-columns: repeat(2, 1fr); 
-            gap: 12px; 
+            gap: 8px; 
         }
         
         .app-card { 
-            padding: 14px; 
-            border-radius: 14px; 
+            padding: 10px; 
+            border-radius: 10px; 
         }
         .icon-wrapper { 
-            width: 40px; height: 40px; /* 手机端适中大小 */
-            margin-bottom: 8px; border-radius: 10px; 
+            width: 34px; height: 34px; 
+            margin-bottom: 6px; border-radius: 8px; 
         }
-        .app-name { font-size: 14px; margin-bottom: 3px; }
-        .app-desc { font-size: 11px; height: 32px; line-height: 1.35; }
+        .app-name { font-size: 13px; margin-bottom: 1px; }
+        .app-desc { font-size: 10px; height: 26px; line-height: 1.3; }
         
         .btn-open-all span { display: none; }
-        .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+        .back-to-top { bottom: 20px; right: 20px; width: 36px; height: 36px; }
     }
 </style>
 </head>
 <body>
-
-<div class="banner-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-</div>
 
 <nav class="navbar">
     <div class="nav-inner-container">
@@ -353,6 +371,10 @@
     <div class="search-container">
         <i class="fa-solid fa-search search-icon"></i>
         <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+        <div class="search-actions">
+            <span class="kbd-shortcut">/</span>
+            <i class="fa-solid fa-times-circle clear-btn" id="clearBtn" onclick="clearSearch()"></i>
+        </div>
     </div>
 </section>
 
@@ -405,8 +427,9 @@ function renderCategoriesCustom() {
         tabBtn.ondblclick = () => openAllApps(ci);
         navTabs.appendChild(tabBtn);
 
-        const cardsHTML = cat.apps.map(app => `
+        const cardsHTML = cat.apps.map((app, index) => `
             <a href="${app.link}" target="_blank" class="app-card" 
+               style="animation-delay: ${index * 0.04}s;" 
                data-name="${app.name.toLowerCase()}" 
                data-desc="${app.description.toLowerCase()}">
                 <div class="icon-wrapper">
@@ -470,10 +493,15 @@ window.openAllApps = function(catIndex) {
 };
 
 const searchInput = document.getElementById('searchInput');
+const searchContainer = document.querySelector('.search-container');
 const emptyState = document.getElementById('emptyState');
 
 searchInput.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase().trim();
+    
+    if (term.length > 0) searchContainer.classList.add('has-value');
+    else searchContainer.classList.remove('has-value');
+
     const sections = document.querySelectorAll('.category-section');
     let totalVisible = 0;
     
@@ -492,10 +520,20 @@ searchInput.addEventListener('input', (e) => {
     emptyState.style.display = (totalVisible === 0 && term !== '') ? 'block' : 'none';
 });
 
+window.clearSearch = function() {
+    searchInput.value = '';
+    searchInput.dispatchEvent(new Event('input')); 
+    searchInput.focus();
+};
+
 document.addEventListener('keydown', (e) => {
     if (e.key === '/' && document.activeElement !== searchInput) {
         e.preventDefault();
         searchInput.focus();
+    }
+    if (e.key === 'Escape' && document.activeElement === searchInput) {
+        clearSearch();
+        searchInput.blur();
     }
 });
 
