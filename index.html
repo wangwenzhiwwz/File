@@ -174,7 +174,7 @@
         pointer-events: none;
     }
 
-    /* === Content Grid (中等紧凑版) === */
+    /* === Content Grid (Balanced Version) === */
     .container { max-width: var(--content-width); margin: 0 auto; padding: 20px; padding-bottom: 80px; }
     .category-section { margin-bottom: 40px; scroll-margin-top: 80px; }
     
@@ -195,21 +195,19 @@
     }
     .btn-open-all:hover { border-color: var(--text-main); color: var(--text-main); background: rgba(128,128,128,0.05); }
 
-    /* === 网格布局调整 (Middle Ground) === */
+    /* === 网格布局调整 (Balanced) === */
     .app-grid { 
         display: grid; 
-        /* 宽度取中间值：150px (保证手机双列，平板更密) */
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-        gap: 10px; /* 间距中等 */
+        /* 基础宽度 160px，保证平板显示紧凑但舒适 */
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+        gap: 14px; 
     }
 
     /* === 卡片样式调整 === */
     .app-card {
         background: var(--card-bg); 
-        border-radius: 14px; /* 圆角适中 */
-        
-        /* Padding: 12px (比16px小，比10px大) */
-        padding: 12px; 
+        border-radius: 14px;
+        padding: 16px; /* 舒适的内边距 */
         
         display: flex; flex-direction: column; align-items: flex-start; text-align: left;
         text-decoration: none; color: var(--text-main);
@@ -220,49 +218,52 @@
     }
     .app-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
 
-    /* 图标：取 38px (比之前的 40px 小一点，比 32px 大) */
+    /* 图标：默认 42px (介于原版和超大版之间) */
     .icon-wrapper {
-        width: 38px; height: 38px; 
-        margin-bottom: 8px; /* 间距保留呼吸感 */
-        border-radius: 10px; 
+        width: 42px; height: 42px; 
+        margin-bottom: 10px; 
+        border-radius: 11px; 
         overflow: hidden; background: transparent; flex-shrink: 0;
     }
-    .app-icon { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; opacity: 0; transition: opacity 0.3s ease-in; }
+    .app-icon { width: 100%; height: 100%; object-fit: cover; border-radius: 11px; opacity: 0; transition: opacity 0.3s ease-in; }
     .app-icon.loaded { opacity: 1; }
     
     .app-name { 
-        font-size: 14px; font-weight: 700; margin-bottom: 3px; line-height: 1.2;
+        font-size: 15px; /* 字号适中 */
+        font-weight: 700; margin-bottom: 4px; line-height: 1.3;
         color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%;
     }
     .app-desc { 
-        font-size: 11px; color: var(--text-sub); line-height: 1.4; opacity: 0.9;
+        font-size: 12px; color: var(--text-sub); line-height: 1.4; opacity: 0.9;
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
         overflow: hidden; text-overflow: ellipsis; 
-        height: 32px; /* 限制为刚好两行的高度，不会太高 */
+        height: 35px; 
         margin-top: 0px;
     }
 
-    /* === 电脑端专属放大 (Middle Ground) === */
+    /* === 电脑端专属 (PC Optimization) === */
     @media (min-width: 1024px) {
         .app-grid {
-            /* 180px: 介于 160px 和 220px 之间 */
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
-            gap: 14px; 
+            /* 210px: 黄金尺寸，比原版大，但比上一版小 */
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); 
+            gap: 20px; 
         }
         .app-card {
-            padding: 16px; /* 舒适的 PC 端内边距 */
-            border-radius: 16px; 
+            padding: 20px; 
+            border-radius: 18px; 
         }
         .icon-wrapper {
-            width: 44px; height: 44px; /* 适中大小 */
-            margin-bottom: 10px;
+            width: 52px; height: 52px; /* 适度加大 */
+            margin-bottom: 14px;
+            border-radius: 14px;
         }
         .app-name { 
-            font-size: 15px; 
+            font-size: 16px; 
+            margin-bottom: 5px;
         }
         .app-desc {
-            font-size: 12px; 
-            height: 34px; 
+            font-size: 13px; 
+            height: 38px; 
         }
     }
 
@@ -288,22 +289,29 @@
     .back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
     .back-to-top:hover { transform: translateY(-3px); }
 
-    /* Mobile Only */
+    /* Mobile Only Adjustments */
     @media (max-width: 640px) {
         .nav-inner-container { padding: 0 15px; gap: 10px; }
         .nav-center { padding-right: 15px; }
         .container { padding: 20px 15px; }
         .hero-time { font-size: 48px; }
         
-        .app-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .app-grid { 
+            /* 强制双列 */
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 12px; 
+        }
         
         .app-card { 
-            padding: 12px; /* 手机端适中内边距 */
-            border-radius: 12px; 
+            padding: 14px; 
+            border-radius: 14px; 
         }
-        .icon-wrapper { width: 38px; height: 38px; margin-bottom: 6px; border-radius: 10px; }
-        .app-name { font-size: 14px; margin-bottom: 2px; }
-        .app-desc { font-size: 11px; height: 30px; line-height: 1.35; }
+        .icon-wrapper { 
+            width: 40px; height: 40px; /* 手机端适中大小 */
+            margin-bottom: 8px; border-radius: 10px; 
+        }
+        .app-name { font-size: 14px; margin-bottom: 3px; }
+        .app-desc { font-size: 11px; height: 32px; line-height: 1.35; }
         
         .btn-open-all span { display: none; }
         .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
