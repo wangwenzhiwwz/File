@@ -30,8 +30,8 @@
         --border-color: #f0f0f0;
         
         /* 阴影配置 */
-        --shadow-sm: 0 8px 24px rgba(0,0,0,0.12); 
-        --shadow-hover: 0 16px 48px rgba(0,0,0,0.22);
+        --shadow-sm: 0 4px 12px rgba(0,0,0,0.08); 
+        --shadow-hover: 0 12px 32px rgba(0,0,0,0.18);
         
         --glass: rgba(255, 255, 255, 0.85); 
         --nav-height: 60px;
@@ -45,7 +45,7 @@
             --text-main: #ffffff;
             --text-sub: #888888;
             --border-color: #222222;
-            --shadow-sm: 0 8px 24px rgba(0,0,0,0.6);
+            --shadow-sm: 0 4px 12px rgba(0,0,0,0.4);
             --glass: rgba(0, 0, 0, 0.85);
         }
     }
@@ -100,7 +100,7 @@
     
     .nav-center {
         display: flex; align-items: center; 
-        justify-content: flex-start; /* 保持左对齐 */
+        justify-content: flex-start;
         overflow-x: auto; height: 100%;
         scrollbar-width: none; -ms-overflow-style: none; 
         padding-left: 5px; 
@@ -174,14 +174,14 @@
         pointer-events: none;
     }
 
-    /* === Content Grid === */
+    /* === Content Grid (中等紧凑版) === */
     .container { max-width: var(--content-width); margin: 0 auto; padding: 20px; padding-bottom: 80px; }
-    .category-section { margin-bottom: 50px; scroll-margin-top: 80px; }
+    .category-section { margin-bottom: 40px; scroll-margin-top: 80px; }
     
-    .cat-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding: 0 5px; }
+    .cat-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; padding: 0 5px; }
     
     .cat-title { 
-        font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px; 
+        font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; 
         color: var(--text-main); cursor: pointer; user-select: none; transition: opacity 0.2s;
     }
     .cat-title:hover { opacity: 0.7; }
@@ -195,19 +195,22 @@
     }
     .btn-open-all:hover { border-color: var(--text-main); color: var(--text-main); background: rgba(128,128,128,0.05); }
 
-    /* === 基础网格布局 (平板/移动优先) === */
+    /* === 网格布局调整 (Middle Ground) === */
     .app-grid { 
         display: grid; 
-        /* 默认保持 160px，确保平板能排 3-4 列 */
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
-        gap: 12px; 
+        /* 宽度取中间值：150px (保证手机双列，平板更密) */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+        gap: 10px; /* 间距中等 */
     }
 
-    /* === 卡片样式 === */
+    /* === 卡片样式调整 === */
     .app-card {
         background: var(--card-bg); 
-        border-radius: 16px; 
-        padding: 16px; 
+        border-radius: 14px; /* 圆角适中 */
+        
+        /* Padding: 12px (比16px小，比10px大) */
+        padding: 12px; 
+        
         display: flex; flex-direction: column; align-items: flex-start; text-align: left;
         text-decoration: none; color: var(--text-main);
         transition: transform 0.2s, box-shadow 0.2s;
@@ -215,51 +218,51 @@
         box-shadow: var(--shadow-sm); 
         position: relative; overflow: hidden; height: 100%;
     }
-    .app-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .app-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
 
-    /* 默认图标 (平板/移动) */
+    /* 图标：取 38px (比之前的 40px 小一点，比 32px 大) */
     .icon-wrapper {
-        width: 40px; height: 40px; margin-bottom: 8px; border-radius: 10px; 
+        width: 38px; height: 38px; 
+        margin-bottom: 8px; /* 间距保留呼吸感 */
+        border-radius: 10px; 
         overflow: hidden; background: transparent; flex-shrink: 0;
     }
     .app-icon { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; opacity: 0; transition: opacity 0.3s ease-in; }
     .app-icon.loaded { opacity: 1; }
     
     .app-name { 
-        font-size: 15px; font-weight: 700; margin-bottom: 2px; line-height: 1.2;
+        font-size: 14px; font-weight: 700; margin-bottom: 3px; line-height: 1.2;
         color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%;
     }
     .app-desc { 
-        font-size: 12px; color: var(--text-sub); line-height: 1.4; opacity: 0.9;
+        font-size: 11px; color: var(--text-sub); line-height: 1.4; opacity: 0.9;
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-        overflow: hidden; text-overflow: ellipsis; height: 34px; margin-top: 2px;
+        overflow: hidden; text-overflow: ellipsis; 
+        height: 32px; /* 限制为刚好两行的高度，不会太高 */
+        margin-top: 0px;
     }
 
     /* === 电脑端专属放大 (Middle Ground) === */
-    /* 当屏幕宽度 > 1024px 时，使用折中数值 */
     @media (min-width: 1024px) {
         .app-grid {
-            /* 220px 太大，160px 太小，取 190px */
-            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
-            gap: 16px; 
+            /* 180px: 介于 160px 和 220px 之间 */
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+            gap: 14px; 
         }
         .app-card {
-            padding: 20px; /* 16px -> 20px */
-            border-radius: 18px; 
+            padding: 16px; /* 舒适的 PC 端内边距 */
+            border-radius: 16px; 
         }
         .icon-wrapper {
-            width: 48px; height: 48px; /* 40px -> 48px */
+            width: 44px; height: 44px; /* 适中大小 */
             margin-bottom: 10px;
-            border-radius: 12px;
         }
-        .app-icon { border-radius: 12px; }
         .app-name { 
-            font-size: 16px; /* 15px -> 16px */
-            margin-bottom: 3px;
+            font-size: 15px; 
         }
         .app-desc {
-            font-size: 13px; /* 12px -> 13px */
-            height: 36px; /* 高度微调 */
+            font-size: 12px; 
+            height: 34px; 
         }
     }
 
@@ -292,11 +295,15 @@
         .container { padding: 20px 15px; }
         .hero-time { font-size: 48px; }
         
-        .app-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-        .app-card { padding: 12px 10px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        .icon-wrapper { width: 32px; height: 32px; margin-bottom: 6px; border-radius: 8px; }
+        .app-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        
+        .app-card { 
+            padding: 12px; /* 手机端适中内边距 */
+            border-radius: 12px; 
+        }
+        .icon-wrapper { width: 38px; height: 38px; margin-bottom: 6px; border-radius: 10px; }
         .app-name { font-size: 14px; margin-bottom: 2px; }
-        .app-desc { font-size: 11px; height: 32px; }
+        .app-desc { font-size: 11px; height: 30px; line-height: 1.35; }
         
         .btn-open-all span { display: none; }
         .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
