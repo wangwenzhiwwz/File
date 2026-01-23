@@ -1,10 +1,5 @@
 
-// 页面刷新函数
-function refreshPage() {
-    location.reload();
-}
-
-// 汉堡菜单切换功能
+function refreshPage() { location.reload(); }
 function setupHamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
     if (!hamburger) return;
@@ -13,48 +8,10 @@ function setupHamburgerMenu() {
         if (navLinks) navLinks.classList.toggle('active');
     });
 }
-
-// HTML 转义函数
 function escapeHtml(unsafe) {
-    return unsafe
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+    if(!unsafe) return "";
+    return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
 }
-
-// 构造器函数
-function createApp({ name, description, link, icon }) {
-    const app = {
-        name: name || 'Unnamed App',
-        description: description || 'No description available',
-        link: link || '#',
-        icon: icon || 'https://via.placeholder.com/60?text=No+Image'
-    };
-    return app;
-}
-
-// 显示错误
-function displayError(message) {
-    let container = document.getElementById('error-container');
-    if (!container) {
-        container = document.createElement('div');
-        container.id = 'error-container';
-        Object.assign(container.style, {
-            position: 'fixed', top: '10px', left: '50%', transform: 'translateX(-50%)',
-            background: '#ffebee', color: '#c62828', padding: '10px 20px', borderRadius: '5px',
-            boxShadow: '0 2px 5px rgba(0,0,0,0.2)', zIndex: '1000', maxWidth: '80%'
-        });
-        document.body.appendChild(container);
-    }
-    const p = document.createElement('p');
-    p.textContent = message;
-    p.style.margin = '5px 0';
-    container.appendChild(p);
-    setTimeout(() => { p.remove(); if (!container.hasChildNodes()) container.remove(); }, 10000);
-}
-
 const appData = [
     {
         "title": "Web",
@@ -208,6 +165,12 @@ const appData = [
                 "description": "xAI's generative AI chatbot",
                 "link": "https://grok.com/",
                 "icon": "./images/Grok.jpg"
+            },
+            {
+                "name": "TapNow",
+                "description": "AI Visual Creation Engine for Ads, Films",
+                "link": "https://app.tapnow.ai/#/canvas/projects",
+                "icon": "./images/tapnow.jpg"
             },
             {
                 "name": "NotebookLM",
@@ -1581,60 +1544,8 @@ const appData = [
         "domId": "cat-8"
     }
 ];
-
-// 创建应用项
-function createAppItem(app) {
-    return `
-        <div class="app-item">
-            <a href="${app.link}" class="app-link" target="_blank" rel="noopener noreferrer">
-                <img class="app-icon" src="${app.icon}" alt="${escapeHtml(app.name)}" loading="lazy"
-                     onerror="this.src='https://via.placeholder.com/60?text=Image+Not+Found';">
-                <h3 class="app-name">${escapeHtml(app.name)}</h3>
-                <p class="app-description">${escapeHtml(app.description)}</p>
-            </a>
-        </div>
-    `;
-}
-
-// 创建类别
-function createCategory(category, index) {
-    const appItems = category.apps.map(createAppItem).join('');
-    return `
-        <section class="app-category" id="${category.title.toLowerCase()}" style="animation-delay: ${index * 0.1}s;">
-            <h2 class="app-category-title" data-index="${index}" style="cursor: pointer;" title="点击打开所有该类网站">
-                ${escapeHtml(category.title)}
-            </h2>
-            <div class="app-grid">${appItems}</div>
-        </section>
-    `;
-}
-
-// 渲染
-function renderCategories() {
-    const container = document.getElementById('app-container');
-    if (!container || !appData || !Array.isArray(appData)) return;
-
-    const fragment = document.createDocumentFragment();
-    appData.forEach((category, index) => {
-        const div = document.createElement('div');
-        div.innerHTML = createCategory(category, index);
-        fragment.appendChild(div.firstElementChild);
-    });
-    container.appendChild(fragment);
-
-    // 标题点击打开所有
-    document.querySelectorAll('.app-category-title').forEach(title => {
-        title.addEventListener('click', () => {
-            const index = title.getAttribute('data-index');
-            const category = appData[parseInt(index)];
-            if (category && category.apps) {
-                category.apps.forEach(app => window.open(app.link, '_blank'));
-            }
-        });
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    setupHamburgerMenu();
-    renderCategories();
+document.addEventListener('DOMContentLoaded', () => { 
+    if(document.getElementById('app-container')) {
+        // 前台逻辑
+    }
 });
