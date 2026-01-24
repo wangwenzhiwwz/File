@@ -1175,16 +1175,16 @@ const appData = [
         "title": "Payzone",
         "apps": [
             {
-                "name": "什么值得买",
-                "description": "我们的兴趣消费指南",
-                "link": "https://www.smzdm.com/",
-                "icon": "./images/smzdm.jpg"
+                "name": "账号星球",
+                "description": "Spotify 苹果ID 电报Telegram 账号购买",
+                "link": "https://www.accountboy.com/",
+                "icon": "./images/accountboy.jpeg"
             },
             {
-                "name": "转运中国",
-                "description": "全球购物轻松送到国内",
-                "link": "https://www.uszcn.com/",
-                "icon": "./images/uszcn.png"
+                "name": "环球巴士",
+                "description": "一站式流媒体合租平台",
+                "link": "https://universalbus.cn/",
+                "icon": "./images/HQBS.png"
             },
             {
                 "name": "阿奇索",
@@ -1197,6 +1197,12 @@ const appData = [
                 "description": "Save Money. Live better",
                 "link": "https://www.walmart.com/",
                 "icon": "./images/walmart.svg"
+            },
+            {
+                "name": "转运中国",
+                "description": "全球购物轻松送到国内",
+                "link": "https://www.uszcn.com/",
+                "icon": "./images/uszcn.png"
             },
             {
                 "name": "Artlist",
@@ -1245,12 +1251,6 @@ const appData = [
                 "description": "Virtual Number for OTP",
                 "link": "https://sms-activate.world/",
                 "icon": "./images/SMS.png"
-            },
-            {
-                "name": "环球巴士",
-                "description": "一站式流媒体合租平台",
-                "link": "https://universalbus.cn/",
-                "icon": "./images/HQBS.png"
             },
             {
                 "name": "CASETiFY",
