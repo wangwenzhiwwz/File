@@ -1175,16 +1175,22 @@ const appData = [
         "title": "Payzone",
         "apps": [
             {
-                "name": "账号星球",
-                "description": "Spotify 苹果ID 电报Telegram 账号购买",
-                "link": "https://www.accountboy.com/",
-                "icon": "./images/accountboy.jpeg"
-            },
-            {
                 "name": "环球巴士",
                 "description": "一站式流媒体合租平台",
                 "link": "https://universalbus.cn/",
                 "icon": "./images/HQBS.png"
+            },
+            {
+                "name": "银河录像局",
+                "description": "银河录像局次世代合租平台",
+                "link": "https://nf.video/",
+                "icon": "./images/nf.video.png"
+            },
+            {
+                "name": "账号星球",
+                "description": "Spotify 苹果ID 电报Telegram 账号购买",
+                "link": "https://www.accountboy.com/",
+                "icon": "./images/accountboy.jpeg"
             },
             {
                 "name": "阿奇索",
