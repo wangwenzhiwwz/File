@@ -173,6 +173,18 @@ const appData = [
                 "icon": "./images/tapnow.jpg"
             },
             {
+                "name": "OpenClaw",
+                "description": "Personal AI Assistant",
+                "link": "https://openclaw.ai/",
+                "icon": "./images/openclaw-ai-agent.webp"
+            },
+            {
+                "name": "OpenCode ",
+                "description": "The open source AI coding agent",
+                "link": "https://opencode.ai/download",
+                "icon": "./images/OpenCode.jpeg"
+            },
+            {
                 "name": "NotebookLM",
                 "description": "AI Research Tool & Thinking Partner",
                 "link": "https://notebooklm.google.com/",
@@ -363,12 +375,6 @@ const appData = [
                 "description": "Free AI Design Tool",
                 "link": "https://playground.com/",
                 "icon": "./images/playground.jpeg"
-            },
-            {
-                "name": "OpenClaw",
-                "description": "Personal AI Assistant",
-                "link": "https://openclaw.ai/",
-                "icon": "./images/openclaw-ai-agent.webp"
             }
         ],
         "domId": "cat-1"
