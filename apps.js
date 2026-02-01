@@ -363,6 +363,12 @@ const appData = [
                 "description": "Free AI Design Tool",
                 "link": "https://playground.com/",
                 "icon": "./images/playground.jpeg"
+            },
+            {
+                "name": "OpenClaw",
+                "description": "Personal AI Assistant",
+                "link": "https://openclaw.ai/",
+                "icon": "./images/openclaw-ai-agent.webp"
             }
         ],
         "domId": "cat-1"
