@@ -136,16 +136,19 @@
         width: 100%; padding: 14px 18px 14px 44px;
         border-radius: 99px; 
         border: none; 
-        background: rgba(0, 0, 0, 0.04); 
+        /* 修改：使用纯色背景 */
+        background: #f0f2f5; 
         color: var(--text-main); 
         font-size: 16px; font-weight: 500;
         transition: all 0.25s ease;
     }
-    .search-input:hover { background: rgba(0, 0, 0, 0.07); }
+    /* 修改：悬停时使用纯色 */
+    .search-input:hover { background: #e4e6e9; }
     
     @media (prefers-color-scheme: dark) {
-        .search-input { background: rgba(255, 255, 255, 0.08); }
-        .search-input:hover { background: rgba(255, 255, 255, 0.12); }
+        /* 修改：深色模式使用纯深灰 */
+        .search-input { background: #262626; }
+        .search-input:hover { background: #333333; }
     }
 
     .search-input:focus {
