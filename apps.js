@@ -113,6 +113,12 @@ const appData = [
                 "icon": "./images/whimsical.jfif"
             },
             {
+                "name": "Mixboard",
+                "description": "AI-powered concepting board that helps you explore",
+                "link": "https://mixboard.google.com/projects",
+                "icon": "./images/mixboard.png"
+            },
+            {
                 "name": "闪电分镜",
                 "description": "Efficient pre-production planning tool",
                 "link": "https://web.mediastory.cc/",
@@ -183,6 +189,12 @@ const appData = [
                 "description": "Google DeepMind's latest AI tools",
                 "link": "https://aistudio.google.com/",
                 "icon": "./images/GoogleAiStudio.png"
+            },
+            {
+                "name": "NotebookLM",
+                "description": "AI Research Tool & Thinking Partner",
+                "link": "https://notebooklm.google.com/",
+                "icon": "./images/notebooklm.png"
             },
             {
                 "name": "Playground",
@@ -345,12 +357,6 @@ const appData = [
                 "description": "AI-powered 3D model generator",
                 "link": "https://hyper3d.ai/",
                 "icon": "./images/hyper3d.png"
-            },
-            {
-                "name": "NotebookLM",
-                "description": "AI Research Tool & Thinking Partner",
-                "link": "https://notebooklm.google.com/",
-                "icon": "./images/notebooklm.png"
             },
             {
                 "name": "Bigjpg",
