@@ -185,6 +185,12 @@ const appData = [
                 "icon": "./images/GoogleAiStudio.png"
             },
             {
+                "name": "Playground",
+                "description": "Free AI Design Tool",
+                "link": "https://playground.com/design/c/mobile-wallpaper",
+                "icon": "./images/playground.jpeg"
+            },
+            {
                 "name": "豆包",
                 "description": "字节跳动旗下AI 智能助手",
                 "link": "https://www.doubao.com/",
@@ -195,12 +201,6 @@ const appData = [
                 "description": "即梦AI - 即刻造梦",
                 "link": "https://jimeng.jianying.com/ai-tool/home",
                 "icon": "./images/jimeng.png"
-            },
-            {
-                "name": "Playground",
-                "description": "Free AI Design Tool",
-                "link": "https://playground.com/design/c/mobile-wallpaper",
-                "icon": "./images/playground.jpeg"
             },
             {
                 "name": "Kling AI",
