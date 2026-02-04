@@ -167,12 +167,6 @@ const appData = [
                 "icon": "./images/Grok.jpg"
             },
             {
-                "name": "TapNow",
-                "description": "AI Visual Creation Engine for Ads, Films",
-                "link": "https://app.tapnow.ai/#/canvas/projects",
-                "icon": "./images/tapnow.jpg"
-            },
-            {
                 "name": "OpenClaw",
                 "description": "Personal AI Assistant",
                 "link": "https://openclaw.ai/",
@@ -209,6 +203,12 @@ const appData = [
                 "icon": "./images/GoogleAiStudio.png"
             },
             {
+                "name": "Ai.WWZ.iM",
+                "description": "Cutting-edge AI conversation system",
+                "link": "https://ai.wwz.im/",
+                "icon": "./images/ai.png"
+            },
+            {
                 "name": "豆包",
                 "description": "字节跳动旗下AI 智能助手",
                 "link": "https://www.doubao.com/",
@@ -239,12 +239,6 @@ const appData = [
                 "icon": "./images/QWEN.png"
             },
             {
-                "name": "Ai.WWZ.iM",
-                "description": "Cutting-edge AI conversation system",
-                "link": "https://ai.wwz.im/",
-                "icon": "./images/ai.png"
-            },
-            {
                 "name": "DeepSeek",
                 "description": "Advanced AI research platform",
                 "link": "https://chat.deepseek.com/",
@@ -257,58 +251,10 @@ const appData = [
                 "icon": "./images/Copilot.png"
             },
             {
-                "name": "Viggle",
-                "description": "Animate photos with dynamic motions",
-                "link": "https://viggle.ai/",
-                "icon": "./images/viggle.webp"
-            },
-            {
-                "name": "ElevenLabs",
-                "description": "Realistic AI-generated synthetic voice",
-                "link": "https://elevenlabs.io/",
-                "icon": "./images/elevenlabs.png"
-            },
-            {
                 "name": "Perplexity",
                 "description": "AI-driven search and Q&A",
                 "link": "https://www.perplexity.ai/",
                 "icon": "./images/perplexity.png"
-            },
-            {
-                "name": "WebSim",
-                "description": "Instant AI-powered code generation",
-                "link": "https://websim.ai/",
-                "icon": "./images/WebSim.png"
-            },
-            {
-                "name": "Ollama",
-                "description": "Run large language models locally",
-                "link": "https://ollama.com/",
-                "icon": "./images/ollama.png"
-            },
-            {
-                "name": "LM Studio",
-                "description": "Manage local language models",
-                "link": "https://lmstudio.ai/",
-                "icon": "./images/lmstudio_ai_logo.jpeg"
-            },
-            {
-                "name": "Cherry Studio",
-                "description": "多模型AI助手平台",
-                "link": "https://www.cherry-ai.com/",
-                "icon": "./images/CherryStudio.png"
-            },
-            {
-                "name": "Bigjpg",
-                "description": "AI-powered lossless image upscaling",
-                "link": "https://bigjpg.com/",
-                "icon": "./images/bigjpg.png"
-            },
-            {
-                "name": "AI Short",
-                "description": "Simplified AI command interface",
-                "link": "https://www.aishort.top/",
-                "icon": "./images/aishort.png"
             }
         ],
         "domId": "cat-1"
@@ -329,6 +275,12 @@ const appData = [
                 "icon": "./images/suno.jpg"
             },
             {
+                "name": "ElevenLabs",
+                "description": "Realistic AI-generated synthetic voice",
+                "link": "https://elevenlabs.io/",
+                "icon": "./images/elevenlabs.png"
+            },
+            {
                 "name": "ComfyUI",
                 "description": "Intuitive AI image generation",
                 "link": "https://www.comfy.org/",
@@ -341,6 +293,24 @@ const appData = [
                 "icon": "./images/comfyui-aaaki.svg"
             },
             {
+                "name": "LM Studio",
+                "description": "Manage local language models",
+                "link": "https://lmstudio.ai/",
+                "icon": "./images/lmstudio_ai_logo.jpeg"
+            },
+            {
+                "name": "Ollama",
+                "description": "Run large language models locally",
+                "link": "https://ollama.com/",
+                "icon": "./images/ollama.png"
+            },
+            {
+                "name": "Cherry Studio",
+                "description": "多模型AI助手平台",
+                "link": "https://www.cherry-ai.com/",
+                "icon": "./images/CherryStudio.png"
+            },
+            {
                 "name": "Hugging Face",
                 "description": "Open-source AI development hub",
                 "link": "https://huggingface.co/",
@@ -351,6 +321,24 @@ const appData = [
                 "description": "China's leading AI creation platform",
                 "link": "https://www.liblib.art/video-effect",
                 "icon": "./images/liblib.jpg"
+            },
+            {
+                "name": "TapNow",
+                "description": "AI Visual Creation Engine for Ads, Films",
+                "link": "https://app.tapnow.ai/#/canvas/projects",
+                "icon": "./images/tapnow.jpg"
+            },
+            {
+                "name": "Viggle",
+                "description": "Animate photos with dynamic motions",
+                "link": "https://viggle.ai/",
+                "icon": "./images/viggle.webp"
+            },
+            {
+                "name": "WebSim",
+                "description": "Instant AI-powered code generation",
+                "link": "https://websim.ai/",
+                "icon": "./images/WebSim.png"
             },
             {
                 "name": "Civitai",
@@ -369,6 +357,18 @@ const appData = [
                 "description": "Free AI Design Tool",
                 "link": "https://playground.com/design/c/mobile-wallpaper",
                 "icon": "./images/playground.jpeg"
+            },
+            {
+                "name": "Bigjpg",
+                "description": "AI-powered lossless image upscaling",
+                "link": "https://bigjpg.com/",
+                "icon": "./images/bigjpg.png"
+            },
+            {
+                "name": "AI Short",
+                "description": "Simplified AI command interface",
+                "link": "https://www.aishort.top/",
+                "icon": "./images/aishort.png"
             }
         ]
     },
