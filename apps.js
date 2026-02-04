@@ -167,22 +167,10 @@ const appData = [
                 "icon": "./images/Grok.jpg"
             },
             {
-                "name": "OpenClaw",
-                "description": "Personal AI Assistant",
-                "link": "https://openclaw.ai/",
-                "icon": "./images/openclaw-ai-agent.webp"
-            },
-            {
-                "name": "OpenCode ",
-                "description": "The open source AI coding agent",
-                "link": "https://opencode.ai/download",
-                "icon": "./images/OpenCode.jpeg"
-            },
-            {
-                "name": "NotebookLM",
-                "description": "AI Research Tool & Thinking Partner",
-                "link": "https://notebooklm.google.com/",
-                "icon": "./images/notebooklm.png"
+                "name": "Microsoft Copilot",
+                "description": "AI companion for productivity",
+                "link": "https://copilot.microsoft.com/imagine",
+                "icon": "./images/Copilot.png"
             },
             {
                 "name": "Sora",
@@ -191,28 +179,28 @@ const appData = [
                 "icon": "./images/Sora.webp"
             },
             {
-                "name": "GoogleLabs",
-                "description": "AI-powered video storytelling platform",
-                "link": "https://labs.google/fx",
-                "icon": "./images/Google+Labs+Logo.jpg"
-            },
-            {
                 "name": "GoogleAiStudio",
                 "description": "Google DeepMind's latest AI tools",
                 "link": "https://aistudio.google.com/",
                 "icon": "./images/GoogleAiStudio.png"
             },
             {
-                "name": "Ai.WWZ.iM",
-                "description": "Cutting-edge AI conversation system",
-                "link": "https://ai.wwz.im/",
-                "icon": "./images/ai.png"
-            },
-            {
                 "name": "豆包",
                 "description": "字节跳动旗下AI 智能助手",
                 "link": "https://www.doubao.com/",
                 "icon": "./images/doubao.png"
+            },
+            {
+                "name": "即梦AI",
+                "description": "即梦AI - 即刻造梦",
+                "link": "https://jimeng.jianying.com/ai-tool/home",
+                "icon": "./images/jimeng.png"
+            },
+            {
+                "name": "Playground",
+                "description": "Free AI Design Tool",
+                "link": "https://playground.com/design/c/mobile-wallpaper",
+                "icon": "./images/playground.jpeg"
             },
             {
                 "name": "Kling AI",
@@ -243,12 +231,6 @@ const appData = [
                 "description": "Advanced AI research platform",
                 "link": "https://chat.deepseek.com/",
                 "icon": "./images/DeepSeek.jpg"
-            },
-            {
-                "name": "Microsoft Copilot",
-                "description": "AI companion for productivity",
-                "link": "https://copilot.microsoft.com/",
-                "icon": "./images/Copilot.png"
             },
             {
                 "name": "Perplexity",
@@ -291,6 +273,12 @@ const appData = [
                 "description": "秋葉aaaki 开发的 ComfyUI 启动器",
                 "link": "https://comfyui-wiki.com/zh/install/install-comfyui",
                 "icon": "./images/comfyui-aaaki.svg"
+            },
+            {
+                "name": "GoogleLabs",
+                "description": "AI-powered video storytelling platform",
+                "link": "https://labs.google/fx",
+                "icon": "./images/Google+Labs+Logo.jpg"
             },
             {
                 "name": "LM Studio",
@@ -353,16 +341,28 @@ const appData = [
                 "icon": "./images/hyper3d.png"
             },
             {
-                "name": "Playground",
-                "description": "Free AI Design Tool",
-                "link": "https://playground.com/design/c/mobile-wallpaper",
-                "icon": "./images/playground.jpeg"
+                "name": "NotebookLM",
+                "description": "AI Research Tool & Thinking Partner",
+                "link": "https://notebooklm.google.com/",
+                "icon": "./images/notebooklm.png"
             },
             {
                 "name": "Bigjpg",
                 "description": "AI-powered lossless image upscaling",
                 "link": "https://bigjpg.com/",
                 "icon": "./images/bigjpg.png"
+            },
+            {
+                "name": "OpenClaw",
+                "description": "Personal AI Assistant",
+                "link": "https://openclaw.ai/",
+                "icon": "./images/openclaw-ai-agent.webp"
+            },
+            {
+                "name": "OpenCode ",
+                "description": "The open source AI coding agent",
+                "link": "https://opencode.ai/download",
+                "icon": "./images/OpenCode.jpeg"
             },
             {
                 "name": "AI Short",
