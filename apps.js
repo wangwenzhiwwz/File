@@ -185,28 +185,10 @@ const appData = [
                 "icon": "./images/OpenCode.jpeg"
             },
             {
-                "name": "ComfyUI",
-                "description": "Intuitive AI image generation",
-                "link": "https://www.comfy.org/",
-                "icon": "./images/ComfyUI.jpg"
-            },
-            {
-                "name": "Hugging Face",
-                "description": "Open-source AI development hub",
-                "link": "https://huggingface.co/",
-                "icon": "./images/huggingface.png"
-            },
-            {
                 "name": "NotebookLM",
                 "description": "AI Research Tool & Thinking Partner",
                 "link": "https://notebooklm.google.com/",
                 "icon": "./images/notebooklm.png"
-            },
-            {
-                "name": "Flow",
-                "description": "Google 高级视频AI 模型 Veo",
-                "link": "https://labs.google/fx/tools/flow",
-                "icon": "./images/Flow.jpg"
             },
             {
                 "name": "Sora",
@@ -275,12 +257,6 @@ const appData = [
                 "icon": "./images/Copilot.png"
             },
             {
-                "name": "Suno",
-                "description": "Generate complete songs with lyrics",
-                "link": "https://suno.com/",
-                "icon": "./images/suno.jpg"
-            },
-            {
                 "name": "Viggle",
                 "description": "Animate photos with dynamic motions",
                 "link": "https://viggle.ai/",
@@ -305,18 +281,6 @@ const appData = [
                 "icon": "./images/WebSim.png"
             },
             {
-                "name": "Bolt.new",
-                "description": "AI-driven web development tool",
-                "link": "https://bolt.new/",
-                "icon": "./images/Bolt.jpg"
-            },
-            {
-                "name": "DeepAI",
-                "description": "AI for images, videos, text",
-                "link": "https://deepai.org/",
-                "icon": "./images/DeepAI.png"
-            },
-            {
                 "name": "Ollama",
                 "description": "Run large language models locally",
                 "link": "https://ollama.com/",
@@ -335,12 +299,6 @@ const appData = [
                 "icon": "./images/CherryStudio.png"
             },
             {
-                "name": "AnythingLLM",
-                "description": "Comprehensive AI application suite",
-                "link": "https://anythingllm.com/",
-                "icon": "./images/anythingllm.png"
-            },
-            {
                 "name": "Bigjpg",
                 "description": "AI-powered lossless image upscaling",
                 "link": "https://bigjpg.com/",
@@ -351,20 +309,43 @@ const appData = [
                 "description": "Simplified AI command interface",
                 "link": "https://www.aishort.top/",
                 "icon": "./images/aishort.png"
-            },
-            {
-                "name": "Hyper3D",
-                "description": "AI-powered 3D model generator",
-                "link": "https://hyper3d.ai/",
-                "icon": "./images/hyper3d.png"
             }
-            
         ],
         "domId": "cat-1"
     },
     {
         "title": "AI Workflow",
         "apps": [
+            {
+                "name": "Flow",
+                "description": "Google 高级视频AI 模型 Veo",
+                "link": "https://labs.google/fx/tools/flow",
+                "icon": "./images/Flow.jpg"
+            },
+            {
+                "name": "Suno",
+                "description": "Generate complete songs with lyrics",
+                "link": "https://suno.com/",
+                "icon": "./images/suno.jpg"
+            },
+            {
+                "name": "ComfyUI",
+                "description": "Intuitive AI image generation",
+                "link": "https://www.comfy.org/",
+                "icon": "./images/ComfyUI.jpg"
+            },
+            {
+                "name": "ComfyUI-aaaki",
+                "description": "秋葉aaaki 开发的 ComfyUI 启动器",
+                "link": "https://comfyui-wiki.com/zh/install/install-comfyui",
+                "icon": "./images/comfyui-aaaki.svg"
+            },
+            {
+                "name": "Hugging Face",
+                "description": "Open-source AI development hub",
+                "link": "https://huggingface.co/",
+                "icon": "./images/huggingface.png"
+            },
             {
                 "name": "LiblibAI",
                 "description": "China's leading AI creation platform",
@@ -376,6 +357,12 @@ const appData = [
                 "description": "Open-source generative AI community",
                 "link": "https://civitai.com/videos",
                 "icon": "./images/civitai.jpg"
+            },
+            {
+                "name": "Hyper3D",
+                "description": "AI-powered 3D model generator",
+                "link": "https://hyper3d.ai/",
+                "icon": "./images/hyper3d.png"
             },
             {
                 "name": "Playground",
@@ -1567,7 +1554,6 @@ const appData = [
         ],
         "domId": "cat-8"
     }
-    
 ];
 document.addEventListener('DOMContentLoaded', () => { 
     if(document.getElementById('app-container')) {
