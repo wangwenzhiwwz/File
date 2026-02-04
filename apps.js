@@ -211,7 +211,7 @@ const appData = [
             {
                 "name": "智谱清影",
                 "description": "智谱清言是基于GLM-4.7 的全能AI 助手",
-                "link": "https://chatglm.cn/",
+                "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
                 "icon": "./images/chatglm.png"
             },
             {
