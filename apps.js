@@ -185,6 +185,18 @@ const appData = [
                 "icon": "./images/OpenCode.jpeg"
             },
             {
+                "name": "ComfyUI",
+                "description": "Intuitive AI image generation",
+                "link": "https://www.comfy.org/",
+                "icon": "./images/ComfyUI.jpg"
+            },
+            {
+                "name": "Hugging Face",
+                "description": "Open-source AI development hub",
+                "link": "https://huggingface.co/",
+                "icon": "./images/huggingface.png"
+            },
+            {
                 "name": "NotebookLM",
                 "description": "AI Research Tool & Thinking Partner",
                 "link": "https://notebooklm.google.com/",
@@ -335,18 +347,6 @@ const appData = [
                 "icon": "./images/bigjpg.png"
             },
             {
-                "name": "ComfyUI",
-                "description": "Intuitive AI image generation",
-                "link": "https://www.comfy.org/",
-                "icon": "./images/ComfyUI.jpg"
-            },
-            {
-                "name": "Hugging Face",
-                "description": "Open-source AI development hub",
-                "link": "https://huggingface.co/",
-                "icon": "./images/huggingface.png"
-            },
-            {
                 "name": "AI Short",
                 "description": "Simplified AI command interface",
                 "link": "https://www.aishort.top/",
@@ -357,27 +357,33 @@ const appData = [
                 "description": "AI-powered 3D model generator",
                 "link": "https://hyper3d.ai/",
                 "icon": "./images/hyper3d.png"
-            },
+            }
+            
+        ],
+        "domId": "cat-1"
+    },
+    {
+        "title": "AI Workflow",
+        "apps": [
             {
                 "name": "LiblibAI",
                 "description": "China's leading AI creation platform",
-                "link": "https://www.liblib.art/",
+                "link": "https://www.liblib.art/video-effect",
                 "icon": "./images/liblib.jpg"
             },
             {
                 "name": "Civitai",
                 "description": "Open-source generative AI community",
-                "link": "https://civitai.com/",
+                "link": "https://civitai.com/videos",
                 "icon": "./images/civitai.jpg"
             },
             {
                 "name": "Playground",
                 "description": "Free AI Design Tool",
-                "link": "https://playground.com/",
+                "link": "https://playground.com/design/c/mobile-wallpaper",
                 "icon": "./images/playground.jpeg"
             }
-        ],
-        "domId": "cat-1"
+        ]
     },
     {
         "title": "iOS",
@@ -1561,6 +1567,7 @@ const appData = [
         ],
         "domId": "cat-8"
     }
+    
 ];
 document.addEventListener('DOMContentLoaded', () => { 
     if(document.getElementById('app-container')) {
