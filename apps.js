@@ -368,7 +368,7 @@ const appData = [
                 "name": "OpenClaw",
                 "description": "Personal AI Assistant",
                 "link": "https://openclaw.ai/",
-                "icon": "./images/openclaw-ai-agent.webp"
+                "icon": "./images/openclaw.svg"
             },
             {
                 "name": "OpenCode ",
