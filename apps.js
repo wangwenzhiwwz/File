@@ -209,6 +209,12 @@ const appData = [
                 "icon": "./images/klingai.jpg"
             },
             {
+                "name": "智谱清影",
+                "description": "智谱清言是基于GLM-4.7 的全能AI 助手",
+                "link": "https://chatglm.cn/",
+                "icon": "./images/chatglm.png"
+            },
+            {
                 "name": "Xiaomi MiMo",
                 "description": "Unlocking the Reasoning Potential of Language Model",
                 "link": "https://aistudio.xiaomimimo.com/",
