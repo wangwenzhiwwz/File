@@ -275,6 +275,12 @@ const appData = [
                 "icon": "./images/suno.jpg"
             },
             {
+                "name": "ChatCut",
+                "description": "AI Video Editor | Edit Videos with Prompts",
+                "link": "https://www.chatcut.io/",
+                "icon": "./images/chatcut.png"
+            },
+            {
                 "name": "ElevenLabs",
                 "description": "Realistic AI-generated synthetic voice",
                 "link": "https://elevenlabs.io/",
