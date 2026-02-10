@@ -299,6 +299,12 @@ const appData = [
                 "icon": "./images/comfyui-aaaki.svg"
             },
             {
+                "name": "Lovart",
+                "description": "The World's First AI Design Agent",
+                "link": "https://www.lovart.ai/",
+                "icon": "./images/lovart.png"
+            },
+            {
                 "name": "GoogleLabs",
                 "description": "AI-powered video storytelling platform",
                 "link": "https://labs.google/fx",
