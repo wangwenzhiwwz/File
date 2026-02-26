@@ -6,6 +6,21 @@
 
 点击以下分类链接，可直接跳转至对应资源的下载页面：
 
+### 🎬 影音与 3D 设计 (Media & Design)
+* [视频编码工具](https://github.com/wangwenzhiwwz/File/releases/tag/%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81)
+* [视频处理相关](https://github.com/wangwenzhiwwz/File/releases/tag/video)
+* [Blender 3D 软件](https://github.com/wangwenzhiwwz/File/releases/tag/blander)
+* [3D 建模与设计资源](https://github.com/wangwenzhiwwz/File/releases/tag/3D)
+
+### 💻 电脑系统与工具 (PC & Tools)
+* [Windows 系统工具](https://github.com/wangwenzhiwwz/File/releases/tag/Windows)
+* [小米笔记本 Pro 驱动](https://github.com/wangwenzhiwwz/File/releases/tag/Mi)
+* [文件管理工具](https://github.com/wangwenzhiwwz/File/releases/tag/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86)
+* [DiskGenius 硬盘工具](https://github.com/wangwenzhiwwz/File/releases/tag/Diskgenius)
+* [WPS 办公软件](https://github.com/wangwenzhiwwz/File/releases/tag/WPS)
+* [常用下载工具](https://github.com/wangwenzhiwwz/File/releases/tag/%E4%B8%8B%E8%BD%BD)
+
+
 ### 📱 硬件设备与刷机 (Hardware & ROMs)
 * [安卓 TV 电视软件](https://github.com/wangwenzhiwwz/File/releases/tag/TV)
 * [安卓手机常用 APK](https://github.com/wangwenzhiwwz/File/releases/tag/APK)
@@ -21,20 +36,6 @@
 * [VPN 与代理工具](https://github.com/wangwenzhiwwz/File/releases/tag/VPN)
 * [GitHub 相关工具](https://github.com/wangwenzhiwwz/File/releases/tag/GitHub)
 * [Web 编程软件集合](https://github.com/wangwenzhiwwz/File/releases/tag/web)
-
-### 🎬 影音与 3D 设计 (Media & Design)
-* [视频编码工具](https://github.com/wangwenzhiwwz/File/releases/tag/%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81)
-* [视频处理相关](https://github.com/wangwenzhiwwz/File/releases/tag/video)
-* [Blender 3D 软件](https://github.com/wangwenzhiwwz/File/releases/tag/blander)
-* [3D 建模与设计资源](https://github.com/wangwenzhiwwz/File/releases/tag/3D)
-
-### 💻 电脑系统与工具 (PC & Tools)
-* [Windows 系统工具](https://github.com/wangwenzhiwwz/File/releases/tag/Windows)
-* [小米笔记本 Pro 驱动](https://github.com/wangwenzhiwwz/File/releases/tag/Mi)
-* [文件管理工具](https://github.com/wangwenzhiwwz/File/releases/tag/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86)
-* [DiskGenius 硬盘工具](https://github.com/wangwenzhiwwz/File/releases/tag/Diskgenius)
-* [WPS 办公软件](https://github.com/wangwenzhiwwz/File/releases/tag/WPS)
-* [常用下载工具](https://github.com/wangwenzhiwwz/File/releases/tag/%E4%B8%8B%E8%BD%BD)
 
 ## 📥 下载指引
 
