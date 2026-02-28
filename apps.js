@@ -293,10 +293,22 @@ const appData = [
                 "icon": "./images/ComfyUI.jpg"
             },
             {
+                "name": "Cursor",
+                "description": "AI-enhanced coding environment",
+                "link": "https://www.cursor.com/",
+                "icon": "./images/cursor.jpg"
+            },
+            {
                 "name": "ComfyUI-aaaki",
                 "description": "秋葉aaaki 开发的 ComfyUI 启动器",
                 "link": "https://comfyui-wiki.com/zh/install/install-comfyui",
                 "icon": "./images/comfyui-aaaki.svg"
+            },
+            {
+                "name": "TapNow",
+                "description": "AI Visual Creation Engine for Ads, Films",
+                "link": "https://app.tapnow.ai/#/canvas/projects",
+                "icon": "./images/tapnow.jpg"
             },
             {
                 "name": "Lovart",
@@ -339,12 +351,6 @@ const appData = [
                 "description": "China's leading AI creation platform",
                 "link": "https://www.liblib.art/video-effect",
                 "icon": "./images/liblib.jpg"
-            },
-            {
-                "name": "TapNow",
-                "description": "AI Visual Creation Engine for Ads, Films",
-                "link": "https://app.tapnow.ai/#/canvas/projects",
-                "icon": "./images/tapnow.jpg"
             },
             {
                 "name": "Viggle",
@@ -393,6 +399,12 @@ const appData = [
                 "description": "Simplified AI command interface",
                 "link": "https://www.aishort.top/",
                 "icon": "./images/aishort.png"
+            },
+            {
+                "name": "Nano Banana Pro",
+                "description": "Nano Banana Pro 提示词",
+                "link": "https://nanobanana.lsshirtai.com/",
+                "icon": "./images/nanobanana.jpg"
             }
         ]
     },
@@ -886,12 +898,6 @@ const appData = [
                 "icon": "./images/adobe genp.png"
             },
             {
-                "name": "Cursor",
-                "description": "AI-enhanced coding environment",
-                "link": "https://www.cursor.com/",
-                "icon": "./images/cursor.jpg"
-            },
-            {
                 "name": "影刀 RPA",
                 "description": "Robotic process automation tool",
                 "link": "https://www.yingdao.com/",
@@ -944,12 +950,6 @@ const appData = [
                 "description": "法国达索系统开发的高端三维设计与工程软件",
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/3D",
                 "icon": "./images/DS-catia.jpg"
-            },
-            {
-                "name": "超链PRO",
-                "description": "开箱即用的网盘下载/解析解决方案",
-                "link": "https://clianpro.cn/",
-                "icon": "./images/clianpro.svg"
             },
             {
                 "name": "Affinity",
