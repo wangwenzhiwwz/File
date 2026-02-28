@@ -167,6 +167,18 @@ const appData = [
                 "icon": "./images/openai.png"
             },
             {
+                "name": "Flow",
+                "description": "Google 高级视频AI 模型 Veo",
+                "link": "https://labs.google/fx/tools/flow",
+                "icon": "./images/Flow.jpg"
+            },
+            {
+                "name": "即梦AI",
+                "description": "即梦AI - 即刻造梦",
+                "link": "https://jimeng.jianying.com/ai-tool/home",
+                "icon": "./images/jimeng.png"
+            },
+            {
                 "name": "Grok",
                 "description": "xAI's generative AI chatbot",
                 "link": "https://grok.com/",
@@ -207,12 +219,6 @@ const appData = [
                 "description": "字节跳动旗下AI 智能助手",
                 "link": "https://www.doubao.com/",
                 "icon": "./images/doubao.png"
-            },
-            {
-                "name": "即梦AI",
-                "description": "即梦AI - 即刻造梦",
-                "link": "https://jimeng.jianying.com/ai-tool/home",
-                "icon": "./images/jimeng.png"
             },
             {
                 "name": "Kling AI",
@@ -263,10 +269,16 @@ const appData = [
         "title": "AI Workflow",
         "apps": [
             {
-                "name": "Flow",
-                "description": "Google 高级视频AI 模型 Veo",
-                "link": "https://labs.google/fx/tools/flow",
-                "icon": "./images/Flow.jpg"
+                "name": "ComfyUI",
+                "description": "Intuitive AI image generation",
+                "link": "https://www.comfy.org/",
+                "icon": "./images/ComfyUI.jpg"
+            },
+            {
+                "name": "TapNow",
+                "description": "AI Visual Creation Engine for Ads, Films",
+                "link": "https://app.tapnow.ai/#/canvas/projects",
+                "icon": "./images/tapnow.jpg"
             },
             {
                 "name": "Suno",
@@ -281,16 +293,16 @@ const appData = [
                 "icon": "./images/chatcut.png"
             },
             {
+                "name": "Lovart",
+                "description": "The World's First AI Design Agent",
+                "link": "https://www.lovart.ai/",
+                "icon": "./images/lovart.png"
+            },
+            {
                 "name": "ElevenLabs",
                 "description": "Realistic AI-generated synthetic voice",
                 "link": "https://elevenlabs.io/",
                 "icon": "./images/elevenlabs.png"
-            },
-            {
-                "name": "ComfyUI",
-                "description": "Intuitive AI image generation",
-                "link": "https://www.comfy.org/",
-                "icon": "./images/ComfyUI.jpg"
             },
             {
                 "name": "Cursor",
@@ -303,18 +315,6 @@ const appData = [
                 "description": "秋葉aaaki 开发的 ComfyUI 启动器",
                 "link": "https://comfyui-wiki.com/zh/install/install-comfyui",
                 "icon": "./images/comfyui-aaaki.svg"
-            },
-            {
-                "name": "TapNow",
-                "description": "AI Visual Creation Engine for Ads, Films",
-                "link": "https://app.tapnow.ai/#/canvas/projects",
-                "icon": "./images/tapnow.jpg"
-            },
-            {
-                "name": "Lovart",
-                "description": "The World's First AI Design Agent",
-                "link": "https://www.lovart.ai/",
-                "icon": "./images/lovart.png"
             },
             {
                 "name": "GoogleLabs",
