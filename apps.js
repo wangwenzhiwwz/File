@@ -269,6 +269,18 @@ const appData = [
         "title": "AI Workflow",
         "apps": [
             {
+                "name": "LiblibAI",
+                "description": "China's leading AI creation platform",
+                "link": "https://www.liblib.art/video-effect",
+                "icon": "./images/liblib.jpg"
+            },
+            {
+                "name": "Civitai",
+                "description": "Open-source generative AI community",
+                "link": "https://civitai.com/videos",
+                "icon": "./images/civitai.jpg"
+            },
+            {
                 "name": "ComfyUI",
                 "description": "Intuitive AI image generation",
                 "link": "https://www.comfy.org/",
@@ -347,12 +359,6 @@ const appData = [
                 "icon": "./images/huggingface.png"
             },
             {
-                "name": "LiblibAI",
-                "description": "China's leading AI creation platform",
-                "link": "https://www.liblib.art/video-effect",
-                "icon": "./images/liblib.jpg"
-            },
-            {
                 "name": "Viggle",
                 "description": "Animate photos with dynamic motions",
                 "link": "https://viggle.ai/",
@@ -363,12 +369,6 @@ const appData = [
                 "description": "Instant AI-powered code generation",
                 "link": "https://websim.ai/",
                 "icon": "./images/WebSim.png"
-            },
-            {
-                "name": "Civitai",
-                "description": "Open-source generative AI community",
-                "link": "https://civitai.com/videos",
-                "icon": "./images/civitai.jpg"
             },
             {
                 "name": "Hyper3D",
@@ -405,6 +405,12 @@ const appData = [
                 "description": "Nano Banana Pro 提示词",
                 "link": "https://nanobanana.lsshirtai.com/",
                 "icon": "./images/nanobanana.jpg"
+            },
+            {
+                "name": "RunningHub",
+                "description": "ComfyUI Cloud, Create AI Apps Online",
+                "link": "https://www.runninghub.cn/workflows?id=all_1871125640751345666",
+                "icon": "./images/RunningHub.png"
             }
         ]
     },
