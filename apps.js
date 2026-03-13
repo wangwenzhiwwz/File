@@ -808,6 +808,12 @@ const appData = [
                 "icon": "./images/tabby-logo.png"
             },
             {
+                "name": " Clash Nyanpasu",
+                "description": "New Generation Clash GUI Client",
+                "link": "https://clashnyanpasu.xyz/",
+                "icon": "./images/clash-nyanpasu.png"
+            },
+            {
                 "name": "V2rayN",
                 "description": "Windows GUI VPN client",
                 "link": "https://blog.wwz.im/article/VPN",
