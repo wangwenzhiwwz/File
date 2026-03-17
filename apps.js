@@ -862,6 +862,12 @@ const appData = [
                 "icon": "./images/CyberMania.png"
             },
             {
+                "name": "4k Video Downloader",
+                "description": "4K Video Downloader Plus 视频下载器专业版",
+                "link": "https://jpsmile.com/4k-video-downloader-plus/",
+                "icon": "./images/4K Video Downloader.webp"
+            },
+            {
                 "name": "4K Downloader",
                 "description": "Download 4K YouTube videos",
                 "link": "https://lrepacks.net/repaki-programm-dlya-interneta/801-4k-downloader-repack-amp-portable.html",
