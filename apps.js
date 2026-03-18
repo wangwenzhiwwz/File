@@ -365,6 +365,12 @@ const appData = [
                 "icon": "./images/viggle.webp"
             },
             {
+                "name": "Antigravity",
+                "description": "Experience liftoff with the next-generation IDE",
+                "link": "https://antigravity.google/",
+                "icon": "./images/Antigravity.jpg"
+            },
+            {
                 "name": "WebSim",
                 "description": "Instant AI-powered code generation",
                 "link": "https://websim.ai/",
