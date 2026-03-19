@@ -275,10 +275,10 @@ const appData = [
                 "icon": "./images/liblib.jpg"
             },
             {
-                "name": "Civitai",
-                "description": "Open-source generative AI community",
-                "link": "https://civitai.com/videos",
-                "icon": "./images/civitai.jpg"
+                "name": "LibTV",
+                "description": "LiblibAI 推出的专业 AI 视频创作平台",
+                "link": "https://www.liblib.tv/",
+                "icon": "./images/LibTV.png"
             },
             {
                 "name": "ComfyUI",
@@ -287,10 +287,10 @@ const appData = [
                 "icon": "./images/ComfyUI.jpg"
             },
             {
-                "name": "TapNow",
-                "description": "AI Visual Creation Engine for Ads, Films",
-                "link": "https://app.tapnow.ai/#/canvas/projects",
-                "icon": "./images/tapnow.jpg"
+                "name": "RunningHub",
+                "description": "ComfyUI Cloud, Create AI Apps Online",
+                "link": "https://www.runninghub.cn/workflows?id=all_1871125640751345666",
+                "icon": "./images/RunningHub.png"
             },
             {
                 "name": "Suno",
@@ -303,6 +303,12 @@ const appData = [
                 "description": "AI Video Editor | Edit Videos with Prompts",
                 "link": "https://www.chatcut.io/",
                 "icon": "./images/chatcut.png"
+            },
+            {
+                "name": "TapNow",
+                "description": "AI Visual Creation Engine for Ads, Films",
+                "link": "https://app.tapnow.ai/#/canvas/projects",
+                "icon": "./images/tapnow.jpg"
             },
             {
                 "name": "Lovart",
@@ -409,14 +415,14 @@ const appData = [
             {
                 "name": "Nano Banana Pro",
                 "description": "Nano Banana Pro 提示词",
-                "link": "https://nanobanana.lsshirtai.com/",
+                "link": "https://nanobanana.org/zh/banana-prompts",
                 "icon": "./images/nanobanana.jpg"
             },
             {
-                "name": "RunningHub",
-                "description": "ComfyUI Cloud, Create AI Apps Online",
-                "link": "https://www.runninghub.cn/workflows?id=all_1871125640751345666",
-                "icon": "./images/RunningHub.png"
+                "name": "Civitai",
+                "description": "Open-source generative AI community",
+                "link": "https://civitai.com/videos",
+                "icon": "./images/civitai.jpg"
             }
         ]
     },
