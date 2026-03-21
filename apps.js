@@ -281,6 +281,12 @@ const appData = [
                 "icon": "./images/LibTV.png"
             },
             {
+                "name": "Topaz Video AI",
+                "description": "AI视频无损放大软件",
+                "link": "https://www.qijishow.com/down/Topaz%20Video%20AI.html",
+                "icon": "./images/Topaz.png"
+            },
+            {
                 "name": "ComfyUI",
                 "description": "Intuitive AI image generation",
                 "link": "https://www.comfy.org/",
