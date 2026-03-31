@@ -269,16 +269,22 @@ const appData = [
         "title": "AI Workflow",
         "apps": [
             {
+                "name": "LibTV",
+                "description": "LiblibAI 推出的专业 AI 视频创作平台",
+                "link": "https://www.liblib.tv/",
+                "icon": "./images/LibTV.png"
+            },
+            {
                 "name": "LiblibAI",
                 "description": "China's leading AI creation platform",
                 "link": "https://www.liblib.art/video-effect",
                 "icon": "./images/liblib.jpg"
             },
             {
-                "name": "LibTV",
-                "description": "LiblibAI 推出的专业 AI 视频创作平台",
-                "link": "https://www.liblib.tv/",
-                "icon": "./images/LibTV.png"
+                "name": "小云雀AI ",
+                "description": "一句话打造一个爆款短剧",
+                "link": "https://xyq.jianying.com/",
+                "icon": "./images/xyq.png"
             },
             {
                 "name": "Topaz Video AI",
