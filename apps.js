@@ -269,6 +269,12 @@ const appData = [
         "title": "AI Workflow",
         "apps": [
             {
+                "name": "Beeble",
+                "description": "Transform your shots in seconds.",
+                "link": "https://app.beeble.ai/home",
+                "icon": "./images/beeble.png"
+            },
+            {
                 "name": "LibTV",
                 "description": "LiblibAI 推出的专业 AI 视频创作平台",
                 "link": "https://www.liblib.tv/",
