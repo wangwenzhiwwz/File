@@ -706,6 +706,12 @@ const appData = [
                 "icon": "./images/MxPlayer.png"
             },
             {
+                "name": "MinimalTimer",
+                "description": "Android 极简翻页计时器",
+                "link": "https://wangwenzhi.eu.org/MinimalTimer/",
+                "icon": "./images/MinimalTimer.png"
+            },
+            {
                 "name": "Time 计时",
                 "description": "Clock and countdown display",
                 "link": "https://github.com/wangwenzhiwwz/Time/releases/tag/Time",
