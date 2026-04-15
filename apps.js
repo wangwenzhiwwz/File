@@ -748,9 +748,9 @@ const appData = [
                 "icon": "./images/Androbench.webp"
             },
             {
-                "name": "Chromascreen",
-                "description": "Green screen video editing",
-                "link": "https://chromascreen.en.softonic.com/android?_gl=1*h21rbq*_gcl_au*OTQwNjczMjcwLjE3NjE4OTU4MDE.",
+                "name": "VFX Tracker",
+                "description": "影视拍摄手机屏幕跟踪工具",
+                "link": "https://wangwenzhi.eu.org/VFXTracker/",
                 "icon": "./images/Chromascreen.webp"
             },
             {
