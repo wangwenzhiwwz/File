@@ -147,6 +147,12 @@ const appData = [
                 "description": "Versatile all-in-one productivity app",
                 "link": "https://www.notion.so/",
                 "icon": "./images/notion.webp"
+            },
+            {
+                "name": "IP.WWZ.iM",
+                "description": "Minimalist tool to check your Public IP",
+                "link": "https://ip.wwz.im/",
+                "icon": "./images/ip.wwz.im.png"
             }
         ],
         "domId": "cat-0"
@@ -444,7 +450,6 @@ const appData = [
             }
         ]
     },
-    
     {
         "title": "Android",
         "apps": [
@@ -1423,7 +1428,7 @@ const appData = [
             {
                 "name": "MY IP",
                 "description": "View public IPv4 and IPv6",
-                "link": "https://ip.wwz.im/",
+                "link": "https://myip.is/",
                 "icon": "./images/myip.png"
             },
             {
