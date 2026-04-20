@@ -266,7 +266,7 @@ const appData = [
         "domId": "cat-1"
     },
     {
-        "title": "AI Workflow",
+        "title": "GenAI",
         "apps": [
             {
                 "name": "Beeble",
@@ -444,210 +444,7 @@ const appData = [
             }
         ]
     },
-    {
-        "title": "iOS",
-        "apps": [
-            {
-                "name": "Hiddify",
-                "description": "Multi-protocol VPN and proxy",
-                "link": "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone",
-                "icon": "./images/hiddify.png"
-            },
-            {
-                "name": "Shadowrocket",
-                "description": "Rule-based proxy management utility",
-                "link": "https://apps.apple.com/us/app/shadowrocket/id932747118",
-                "icon": "./images/shadorocket.webp"
-            },
-            {
-                "name": "Notion",
-                "description": "Plan, organize, and track projects",
-                "link": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281",
-                "icon": "./images/notion.webp"
-            },
-            {
-                "name": "ChatGPT",
-                "description": "OpenAI's official AI chatbot",
-                "link": "https://apps.apple.com/us/app/chatgpt/id6448311069",
-                "icon": "./images/openai.png"
-            },
-            {
-                "name": "Duolingo",
-                "description": "Learn over 40 languages playfully",
-                "link": "https://apps.apple.com/us/app/duolingo-language-lessons/id570060128",
-                "icon": "./images/Duolingo.webp"
-            },
-            {
-                "name": "ProMovie Recorder",
-                "description": "Advanced mobile camera features",
-                "link": "https://apps.apple.com/us/app/promovie-recorder/id1076481548",
-                "icon": "./images/ProMovie.webp"
-            },
-            {
-                "name": "Blackmagic Camera",
-                "description": "Professional digital film for iPhone",
-                "link": "https://www.blackmagicdesign.com/products/blackmagiccamera",
-                "icon": "./images/BlackMagicCamera.webp"
-            },
-            {
-                "name": "极影相机",
-                "description": "Professional camera in your pocket",
-                "link": "https://apps.apple.com/cn/app/%E6%9E%81%E5%BD%B1%E7%9B%B8%E6%9C%BA/id1459953293",
-                "icon": "./images/jiying.webp"
-            },
-            {
-                "name": "Monitor+",
-                "description": "Remote control for Sony cameras",
-                "link": "https://apps.apple.com/al/app/monitor/id1554619768",
-                "icon": "./images/Monitor+.webp"
-            },
-            {
-                "name": "Sony|Monitor&Control",
-                "description": "Supported cameras (as of April 2025)",
-                "link": "https://apps.apple.com/us/app/sony-monitor-control/id1643900558",
-                "icon": "./images/SonyMonitor.webp"
-            },
-            {
-                "name": "Cadrage+",
-                "description": "Pro filmmaking and photography tool",
-                "link": "https://apps.apple.com/us/app/cadrage-directors-viewfinder/id793232740",
-                "icon": "./images/Cadrage.webp"
-            },
-            {
-                "name": "LocalSend",
-                "description": "Secure local file sharing",
-                "link": "https://apps.apple.com/us/app/localsend/id1661733229",
-                "icon": "./images/localsend.png"
-            },
-            {
-                "name": "Hypic",
-                "description": "Photo Editor & AI Art",
-                "link": "https://apps.apple.com/de/app/hypic-photo-editor-ai-art/id1644042837",
-                "icon": "./images/hypic.webp"
-            },
-            {
-                "name": "截图带壳",
-                "description": "截图/视频带壳支持手机/手表全系列机型",
-                "link": "https://apps.apple.com/cn/app/%E6%88%AA%E5%9B%BE%E5%B8%A6%E5%A3%B3-%E5%B8%A6%E5%A3%B3%E6%88%AA%E5%9B%BE-%E8%A7%86%E9%A2%91%E9%AB%98%E6%B8%85%E5%AF%BC%E5%87%BA/id6544797343",
-                "icon": "./images/Snapmod.webp"
-            },
-            {
-                "name": "QWeather",
-                "description": "Accurate global weather forecasts",
-                "link": "https://www.qweather.com/en/app",
-                "icon": "./images/QWeather.webp"
-            },
-            {
-                "name": "默沙东诊疗手册",
-                "description": "健康信息是人人都应享受的权利",
-                "link": "https://apps.apple.com/mx/app/%E9%BB%98%E6%B2%99%E4%B8%9C%E8%AF%8A%E7%96%97%E6%89%8B%E5%86%8C-%E5%A4%A7%E4%BC%97%E7%89%88/id1188334624",
-                "icon": "./images/msdmanuals.webp"
-            },
-            {
-                "name": "太阳测量师",
-                "description": "Plan sunrise and sunset moments",
-                "link": "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875",
-                "icon": "./images/sun.webp"
-            },
-            {
-                "name": "Project Indigo",
-                "description": "A new camera from Adobe Labs",
-                "link": "https://apps.apple.com/us/app/project-indigo/id6742591546",
-                "icon": "./images/ProjectIndigo.webp"
-            },
-            {
-                "name": "航旅纵横",
-                "description": "民航官方直销平台值机火车票接送机免税酒店",
-                "link": "https://apps.apple.com/cn/app/%E8%88%AA%E6%97%85%E7%BA%B5%E6%A8%AA-%E6%B0%91%E8%88%AA%E5%AE%98%E6%96%B9%E7%9B%B4%E9%94%80%E5%B9%B3%E5%8F%B0%E5%80%BC%E6%9C%BA%E7%81%AB%E8%BD%A6%E7%A5%A8%E6%8E%A5%E9%80%81%E6%9C%BA%E5%85%8D%E7%A8%8E%E9%85%92%E5%BA%97/id480161784",
-                "icon": "./images/Travelsky.webp"
-            },
-            {
-                "name": "铁路12306",
-                "description": "中国铁道科学研究院集团有限公司",
-                "link": "https://apps.apple.com/us/app/%E9%93%81%E8%B7%AF12306/id564818797",
-                "icon": "./images/12306.webp"
-            },
-            {
-                "name": "Google Authenticator",
-                "description": "Google Authenticator adds an extra layer",
-                "link": "https://apps.apple.com/us/app/google-authenticator/id388497605",
-                "icon": "./images/Google-Authenticator.webp"
-            },
-            {
-                "name": "Microsoft Authenticator",
-                "description": "Protects your online identity",
-                "link": "https://apps.apple.com/us/app/microsoft-authenticator/id983156458",
-                "icon": "./images/Microsoft-Authenticator.webp"
-            },
-            {
-                "name": "旅客八达通",
-                "description": "随时随地为iPhone 或 Apple Watch内的八达通充值。",
-                "link": "https://apps.apple.com/cn/app/%E6%97%85%E5%AE%A2%E5%85%AB%E8%BE%BE%E9%80%9A/id1505492952",
-                "icon": "./images/Tourists.webp"
-            },
-            {
-                "name": "小红书千帆",
-                "description": "小红书千帆商家移动工作台",
-                "link": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8D%83%E5%B8%86/id1508097648",
-                "icon": "./images/Xingin.webp"
-            },
-            {
-                "name": "Google Voice",
-                "description": "Smarter voice calling",
-                "link": "https://apps.apple.com/us/app/google-voice/id318698524",
-                "icon": "./images/Google-Voice.webp"
-            },
-            {
-                "name": "Telegram",
-                "description": "Fast. Secure. Powerful.",
-                "link": "https://apps.apple.com/us/app/telegram-messenger/id686449807",
-                "icon": "./images/Telegram.webp"
-            },
-            {
-                "name": "Threads",
-                "description": "Connect and share ideas",
-                "link": "https://apps.apple.com/us/app/threads/id6446901002",
-                "icon": "./images/Threads .webp"
-            },
-            {
-                "name": "Instagram",
-                "description": "Videos, creators & friends",
-                "link": "https://apps.apple.com/us/app/instagram/id389801252",
-                "icon": "./images/Instagram.webp"
-            },
-            {
-                "name": "米家",
-                "description": "简单愉悦的智能生活体验",
-                "link": "https://apps.apple.com/cn/app/%E7%B1%B3%E5%AE%B6/id957323480",
-                "icon": "./images/MiHome.webp"
-            },
-            {
-                "name": "涂鸦",
-                "description": "涂鸦智能App 智生活 能享受",
-                "link": "https://apps.apple.com/cn/app/%E6%B6%82%E9%B8%A6/id1586116399",
-                "icon": "./images/Tuya.webp"
-            },
-            {
-                "name": "云鲸",
-                "description": "立足家用智能清洁电器",
-                "link": "https://apps.apple.com/cn/app/%E4%BA%91%E9%B2%B8%E6%99%BA%E8%83%BD/id1462004352",
-                "icon": "./images/narwal.webp"
-            },
-            {
-                "name": "飓风相机",
-                "description": "电影创作者打造的相机应用",
-                "link": "https://apps.apple.com/us/app/%E9%A3%93%E9%A3%8E%E7%9B%B8%E6%9C%BA/id6749835845",
-                "icon": "./images/Ostar.webp"
-            },
-            {
-                "name": "野草助手",
-                "description": "智能电视 adb 应用分享工具",
-                "link": "https://apps.apple.com/ar/app/%E9%87%8E%E8%8D%89%E5%8A%A9%E6%89%8B/id6479590367",
-                "icon": "./images/yecao.webp"
-            }
-        ],
-        "domId": "cat-2"
-    },
+    
     {
         "title": "Android",
         "apps": [
@@ -1013,6 +810,210 @@ const appData = [
             }
         ],
         "domId": "cat-4"
+    },
+    {
+        "title": "iOS",
+        "apps": [
+            {
+                "name": "Hiddify",
+                "description": "Multi-protocol VPN and proxy",
+                "link": "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone",
+                "icon": "./images/hiddify.png"
+            },
+            {
+                "name": "Shadowrocket",
+                "description": "Rule-based proxy management utility",
+                "link": "https://apps.apple.com/us/app/shadowrocket/id932747118",
+                "icon": "./images/shadorocket.webp"
+            },
+            {
+                "name": "Notion",
+                "description": "Plan, organize, and track projects",
+                "link": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281",
+                "icon": "./images/notion.webp"
+            },
+            {
+                "name": "ChatGPT",
+                "description": "OpenAI's official AI chatbot",
+                "link": "https://apps.apple.com/us/app/chatgpt/id6448311069",
+                "icon": "./images/openai.png"
+            },
+            {
+                "name": "Duolingo",
+                "description": "Learn over 40 languages playfully",
+                "link": "https://apps.apple.com/us/app/duolingo-language-lessons/id570060128",
+                "icon": "./images/Duolingo.webp"
+            },
+            {
+                "name": "ProMovie Recorder",
+                "description": "Advanced mobile camera features",
+                "link": "https://apps.apple.com/us/app/promovie-recorder/id1076481548",
+                "icon": "./images/ProMovie.webp"
+            },
+            {
+                "name": "Blackmagic Camera",
+                "description": "Professional digital film for iPhone",
+                "link": "https://www.blackmagicdesign.com/products/blackmagiccamera",
+                "icon": "./images/BlackMagicCamera.webp"
+            },
+            {
+                "name": "极影相机",
+                "description": "Professional camera in your pocket",
+                "link": "https://apps.apple.com/cn/app/%E6%9E%81%E5%BD%B1%E7%9B%B8%E6%9C%BA/id1459953293",
+                "icon": "./images/jiying.webp"
+            },
+            {
+                "name": "Monitor+",
+                "description": "Remote control for Sony cameras",
+                "link": "https://apps.apple.com/al/app/monitor/id1554619768",
+                "icon": "./images/Monitor+.webp"
+            },
+            {
+                "name": "Sony|Monitor&Control",
+                "description": "Supported cameras (as of April 2025)",
+                "link": "https://apps.apple.com/us/app/sony-monitor-control/id1643900558",
+                "icon": "./images/SonyMonitor.webp"
+            },
+            {
+                "name": "Cadrage+",
+                "description": "Pro filmmaking and photography tool",
+                "link": "https://apps.apple.com/us/app/cadrage-directors-viewfinder/id793232740",
+                "icon": "./images/Cadrage.webp"
+            },
+            {
+                "name": "LocalSend",
+                "description": "Secure local file sharing",
+                "link": "https://apps.apple.com/us/app/localsend/id1661733229",
+                "icon": "./images/localsend.png"
+            },
+            {
+                "name": "Hypic",
+                "description": "Photo Editor & AI Art",
+                "link": "https://apps.apple.com/de/app/hypic-photo-editor-ai-art/id1644042837",
+                "icon": "./images/hypic.webp"
+            },
+            {
+                "name": "截图带壳",
+                "description": "截图/视频带壳支持手机/手表全系列机型",
+                "link": "https://apps.apple.com/cn/app/%E6%88%AA%E5%9B%BE%E5%B8%A6%E5%A3%B3-%E5%B8%A6%E5%A3%B3%E6%88%AA%E5%9B%BE-%E8%A7%86%E9%A2%91%E9%AB%98%E6%B8%85%E5%AF%BC%E5%87%BA/id6544797343",
+                "icon": "./images/Snapmod.webp"
+            },
+            {
+                "name": "QWeather",
+                "description": "Accurate global weather forecasts",
+                "link": "https://www.qweather.com/en/app",
+                "icon": "./images/QWeather.webp"
+            },
+            {
+                "name": "默沙东诊疗手册",
+                "description": "健康信息是人人都应享受的权利",
+                "link": "https://apps.apple.com/mx/app/%E9%BB%98%E6%B2%99%E4%B8%9C%E8%AF%8A%E7%96%97%E6%89%8B%E5%86%8C-%E5%A4%A7%E4%BC%97%E7%89%88/id1188334624",
+                "icon": "./images/msdmanuals.webp"
+            },
+            {
+                "name": "太阳测量师",
+                "description": "Plan sunrise and sunset moments",
+                "link": "https://apps.apple.com/cn/app/%E5%A4%AA%E9%98%B3%E6%B5%8B%E9%87%8F%E5%B8%88-sun-surveyor/id525176875",
+                "icon": "./images/sun.webp"
+            },
+            {
+                "name": "Project Indigo",
+                "description": "A new camera from Adobe Labs",
+                "link": "https://apps.apple.com/us/app/project-indigo/id6742591546",
+                "icon": "./images/ProjectIndigo.webp"
+            },
+            {
+                "name": "航旅纵横",
+                "description": "民航官方直销平台值机火车票接送机免税酒店",
+                "link": "https://apps.apple.com/cn/app/%E8%88%AA%E6%97%85%E7%BA%B5%E6%A8%AA-%E6%B0%91%E8%88%AA%E5%AE%98%E6%96%B9%E7%9B%B4%E9%94%80%E5%B9%B3%E5%8F%B0%E5%80%BC%E6%9C%BA%E7%81%AB%E8%BD%A6%E7%A5%A8%E6%8E%A5%E9%80%81%E6%9C%BA%E5%85%8D%E7%A8%8E%E9%85%92%E5%BA%97/id480161784",
+                "icon": "./images/Travelsky.webp"
+            },
+            {
+                "name": "铁路12306",
+                "description": "中国铁道科学研究院集团有限公司",
+                "link": "https://apps.apple.com/us/app/%E9%93%81%E8%B7%AF12306/id564818797",
+                "icon": "./images/12306.webp"
+            },
+            {
+                "name": "Google Authenticator",
+                "description": "Google Authenticator adds an extra layer",
+                "link": "https://apps.apple.com/us/app/google-authenticator/id388497605",
+                "icon": "./images/Google-Authenticator.webp"
+            },
+            {
+                "name": "Microsoft Authenticator",
+                "description": "Protects your online identity",
+                "link": "https://apps.apple.com/us/app/microsoft-authenticator/id983156458",
+                "icon": "./images/Microsoft-Authenticator.webp"
+            },
+            {
+                "name": "旅客八达通",
+                "description": "随时随地为iPhone 或 Apple Watch内的八达通充值。",
+                "link": "https://apps.apple.com/cn/app/%E6%97%85%E5%AE%A2%E5%85%AB%E8%BE%BE%E9%80%9A/id1505492952",
+                "icon": "./images/Tourists.webp"
+            },
+            {
+                "name": "小红书千帆",
+                "description": "小红书千帆商家移动工作台",
+                "link": "https://apps.apple.com/cn/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8D%83%E5%B8%86/id1508097648",
+                "icon": "./images/Xingin.webp"
+            },
+            {
+                "name": "Google Voice",
+                "description": "Smarter voice calling",
+                "link": "https://apps.apple.com/us/app/google-voice/id318698524",
+                "icon": "./images/Google-Voice.webp"
+            },
+            {
+                "name": "Telegram",
+                "description": "Fast. Secure. Powerful.",
+                "link": "https://apps.apple.com/us/app/telegram-messenger/id686449807",
+                "icon": "./images/Telegram.webp"
+            },
+            {
+                "name": "Threads",
+                "description": "Connect and share ideas",
+                "link": "https://apps.apple.com/us/app/threads/id6446901002",
+                "icon": "./images/Threads .webp"
+            },
+            {
+                "name": "Instagram",
+                "description": "Videos, creators & friends",
+                "link": "https://apps.apple.com/us/app/instagram/id389801252",
+                "icon": "./images/Instagram.webp"
+            },
+            {
+                "name": "米家",
+                "description": "简单愉悦的智能生活体验",
+                "link": "https://apps.apple.com/cn/app/%E7%B1%B3%E5%AE%B6/id957323480",
+                "icon": "./images/MiHome.webp"
+            },
+            {
+                "name": "涂鸦",
+                "description": "涂鸦智能App 智生活 能享受",
+                "link": "https://apps.apple.com/cn/app/%E6%B6%82%E9%B8%A6/id1586116399",
+                "icon": "./images/Tuya.webp"
+            },
+            {
+                "name": "云鲸",
+                "description": "立足家用智能清洁电器",
+                "link": "https://apps.apple.com/cn/app/%E4%BA%91%E9%B2%B8%E6%99%BA%E8%83%BD/id1462004352",
+                "icon": "./images/narwal.webp"
+            },
+            {
+                "name": "飓风相机",
+                "description": "电影创作者打造的相机应用",
+                "link": "https://apps.apple.com/us/app/%E9%A3%93%E9%A3%8E%E7%9B%B8%E6%9C%BA/id6749835845",
+                "icon": "./images/Ostar.webp"
+            },
+            {
+                "name": "野草助手",
+                "description": "智能电视 adb 应用分享工具",
+                "link": "https://apps.apple.com/ar/app/%E9%87%8E%E8%8D%89%E5%8A%A9%E6%89%8B/id6479590367",
+                "icon": "./images/yecao.webp"
+            }
+        ],
+        "domId": "cat-2"
     },
     {
         "title": "Mac",
