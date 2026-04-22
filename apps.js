@@ -1036,6 +1036,12 @@ const appData = [
                 "icon": "./images/Apple.png"
             },
             {
+                "name": "Mac Mouse Fix",
+                "description": "让你10美元的鼠标比苹果触控板还好用！",
+                "link": "https://macmousefix.com/zh-Hans/",
+                "icon": "./images/macmousefix.png"
+            },
+            {
                 "name": "MOC",
                 "description": "Smooth mouse scrolling for macOS",
                 "link": "https://mos.caldis.me/",
