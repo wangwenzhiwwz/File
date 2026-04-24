@@ -1412,6 +1412,12 @@ const appData = [
                 "description": "专业级AI人像精修",
                 "link": "https://yunxiu.meitu.com/",
                 "icon": "./images/yunxiu.png"
+            },
+            {
+                "name": "Superalink",
+                "description": "Super hassle-free & affordable connectivity",
+                "link": "https://www.superalink.com/zh/destination?type=limited-offer",
+                "icon": "./images/superalink.png"
             }
         ],
         "domId": "cat-7"
