@@ -454,6 +454,12 @@ const appData = [
         "title": "Android",
         "apps": [
             {
+                "name": "FlClash",
+                "description": "一款基于 ClashMeta 的多平台代理客户端",
+                "link": "https://github.com/chen08209/FlClash/releases",
+                "icon": "./images/FlClash.png"
+            },
+            {
                 "name": "V2rayNG",
                 "description": "Cross-platform VPN client solution",
                 "link": "https://v2rayng.2dust.link/",
@@ -819,12 +825,6 @@ const appData = [
     {
         "title": "iOS",
         "apps": [
-            {
-                "name": "Hiddify",
-                "description": "Multi-protocol VPN and proxy",
-                "link": "https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone",
-                "icon": "./images/hiddify.png"
-            },
             {
                 "name": "Shadowrocket",
                 "description": "Rule-based proxy management utility",
