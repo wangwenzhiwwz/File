@@ -275,16 +275,16 @@ const appData = [
         "title": "GenAI",
         "apps": [
             {
-                "name": "Beeble",
-                "description": "Transform your shots in seconds.",
-                "link": "https://app.beeble.ai/home",
-                "icon": "./images/beeble.png"
-            },
-            {
                 "name": "LibTV",
                 "description": "LiblibAI 推出的专业 AI 视频创作平台",
                 "link": "https://www.liblib.tv/",
                 "icon": "./images/LibTV.png"
+            },
+            {
+                "name": "Beeble",
+                "description": "Transform your shots in seconds.",
+                "link": "https://app.beeble.ai/home",
+                "icon": "./images/beeble.png"
             },
             {
                 "name": "LiblibAI",
@@ -454,16 +454,16 @@ const appData = [
         "title": "Android",
         "apps": [
             {
-                "name": "FlClash",
-                "description": "一款基于 ClashMeta 的多平台代理客户端",
-                "link": "https://github.com/chen08209/FlClash/releases",
-                "icon": "./images/FlClash.png"
-            },
-            {
                 "name": "V2rayNG",
                 "description": "Cross-platform VPN client solution",
                 "link": "https://v2rayng.2dust.link/",
                 "icon": "./images/v2ray.png"
+            },
+            {
+                "name": "FlClash",
+                "description": "一款基于 ClashMeta 的多平台代理客户端",
+                "link": "https://github.com/chen08209/FlClash/releases",
+                "icon": "./images/FlClash.png"
             },
             {
                 "name": "LocalSend",
@@ -628,10 +628,10 @@ const appData = [
         "title": "Windows",
         "apps": [
             {
-                "name": "PowerToys",
-                "description": "用于自定义 Windows 的实用工具",
-                "link": "https://learn.microsoft.com/zh-cn/windows/powertoys/",
-                "icon": "./images/PowerToys.png"
+                "name": "V2rayN",
+                "description": "Windows GUI VPN client",
+                "link": "https://blog.wwz.im/article/VPN",
+                "icon": "./images/v2rayn.jpg"
             },
             {
                 "name": "BalenaEtcher",
@@ -658,16 +658,16 @@ const appData = [
                 "icon": "./images/clash-nyanpasu.png"
             },
             {
-                "name": "V2rayN",
-                "description": "Windows GUI VPN client",
-                "link": "https://blog.wwz.im/article/VPN",
-                "icon": "./images/v2rayn.jpg"
-            },
-            {
                 "name": "VPN Gate",
                 "description": "Free Access to World Knowledge Beyond Government's Firewall.",
                 "link": "https://www.vpngate.net/en/",
                 "icon": "./images/VPN Gate.jpg"
+            },
+            {
+                "name": "PowerToys",
+                "description": "用于自定义 Windows 的实用工具",
+                "link": "https://learn.microsoft.com/zh-cn/windows/powertoys/",
+                "icon": "./images/PowerToys.png"
             },
             {
                 "name": "Moo0",
@@ -844,6 +844,12 @@ const appData = [
                 "icon": "./images/openai.png"
             },
             {
+                "name": "Google Authenticator",
+                "description": "Google Authenticator adds an extra layer",
+                "link": "https://apps.apple.com/us/app/google-authenticator/id388497605",
+                "icon": "./images/Google-Authenticator.webp"
+            },
+            {
                 "name": "Duolingo",
                 "description": "Learn over 40 languages playfully",
                 "link": "https://apps.apple.com/us/app/duolingo-language-lessons/id570060128",
@@ -938,12 +944,6 @@ const appData = [
                 "description": "中国铁道科学研究院集团有限公司",
                 "link": "https://apps.apple.com/us/app/%E9%93%81%E8%B7%AF12306/id564818797",
                 "icon": "./images/12306.webp"
-            },
-            {
-                "name": "Google Authenticator",
-                "description": "Google Authenticator adds an extra layer",
-                "link": "https://apps.apple.com/us/app/google-authenticator/id388497605",
-                "icon": "./images/Google-Authenticator.webp"
             },
             {
                 "name": "Microsoft Authenticator",
@@ -1238,12 +1238,6 @@ const appData = [
                 "description": "Wide range of domain TLDs",
                 "link": "https://www.name.com/zh-cn/account/login",
                 "icon": "./images/name.jpg"
-            },
-            {
-                "name": "IPing.cc",
-                "description": "IP Address Query - IPv4",
-                "link": "https://www.iping.cc/",
-                "icon": "./images/iping.cc.png"
             },
             {
                 "name": "Scamalytics",
