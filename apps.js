@@ -510,7 +510,7 @@ const appData = [
             {
                 "name": "MXPlayer",
                 "description": "Powerful video playback app",
-                "link": "https://blog.wwz.im/article/MX_Player_Pro",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/download/ulefone/MXPlayer_v2.13.2.apk",
                 "icon": "./images/MxPlayer.png"
             },
             {
