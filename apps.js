@@ -153,6 +153,12 @@ const appData = [
                 "description": "Minimalist tool to check your Public IP",
                 "link": "https://ip.wwz.im/",
                 "icon": "./images/ip.wwz.im.png"
+            },
+            {
+                "name": "  IPPure",
+                "description": "IP address infomation and risk analysis",
+                "link": "https://ippure.com/",
+                "icon": "./images/ippure.png"
             }
         ],
         "domId": "cat-0"
