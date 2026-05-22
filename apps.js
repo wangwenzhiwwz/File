@@ -209,12 +209,6 @@ const appData = [
                 "icon": "./images/Copilot.png"
             },
             {
-                "name": "Sora",
-                "description": "旗舰级视频音频生成模型 Sora 2",
-                "link": "https://sora.chatgpt.com/profile",
-                "icon": "./images/Sora.webp"
-            },
-            {
                 "name": "GoogleAiStudio",
                 "description": "Google DeepMind's latest AI tools",
                 "link": "https://aistudio.google.com/",
@@ -275,6 +269,18 @@ const appData = [
         "title": "GenAI",
         "apps": [
             {
+                "name": "Lovart",
+                "description": "The World's First AI Design Agent",
+                "link": "https://www.lovart.ai/",
+                "icon": "./images/lovart.png"
+            },
+            {
+                "name": "TapNow",
+                "description": "AI Visual Creation Engine for Ads, Films",
+                "link": "https://app.tapnow.ai/#/canvas/projects",
+                "icon": "./images/tapnow.jpg"
+            },
+            {
                 "name": "LiblibAI",
                 "description": "China's leading AI creation platform",
                 "link": "https://www.liblib.art/video-effect",
@@ -321,18 +327,6 @@ const appData = [
                 "description": "AI Video Editor | Edit Videos with Prompts",
                 "link": "https://www.chatcut.io/",
                 "icon": "./images/chatcut.png"
-            },
-            {
-                "name": "TapNow",
-                "description": "AI Visual Creation Engine for Ads, Films",
-                "link": "https://app.tapnow.ai/#/canvas/projects",
-                "icon": "./images/tapnow.jpg"
-            },
-            {
-                "name": "Lovart",
-                "description": "The World's First AI Design Agent",
-                "link": "https://www.lovart.ai/",
-                "icon": "./images/lovart.png"
             },
             {
                 "name": "ElevenLabs",
