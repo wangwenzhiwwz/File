@@ -149,10 +149,10 @@ const appData = [
                 "icon": "./images/notion.webp"
             },
             {
-                "name": "IP.WWZ.iM",
-                "description": "Minimalist tool to check your Public IP",
-                "link": "https://ip.wwz.im/",
-                "icon": "./images/ip.wwz.im.png"
+                "name": "Myip.is",
+                "description": "显示你当前的公网 IP 地址",
+                "link": "https://myip.is/",
+                "icon": "./images/myip.jpg"
             },
             {
                 "name": "  IPPure",
@@ -177,6 +177,12 @@ const appData = [
                 "description": "OpenAI's official conversational AI",
                 "link": "https://chatgpt.com/",
                 "icon": "./images/openai.png"
+            },
+            {
+                "name": "LibTV",
+                "description": "LiblibAI 推出的专业 AI 视频创作平台",
+                "link": "https://www.liblib.tv/",
+                "icon": "./images/LibTV.png"
             },
             {
                 "name": "Flow",
@@ -261,18 +267,6 @@ const appData = [
                 "description": "阿里巴巴云开发的智能助手",
                 "link": "https://www.tongyi.com/",
                 "icon": "./images/QWEN.png"
-            },
-            {
-                "name": "DeepSeek",
-                "description": "Advanced AI research platform",
-                "link": "https://chat.deepseek.com/",
-                "icon": "./images/DeepSeek.jpg"
-            },
-            {
-                "name": "Perplexity",
-                "description": "AI-driven search and Q&A",
-                "link": "https://www.perplexity.ai/",
-                "icon": "./images/perplexity.png"
             }
         ],
         "domId": "cat-1"
@@ -281,22 +275,16 @@ const appData = [
         "title": "GenAI",
         "apps": [
             {
-                "name": "LibTV",
-                "description": "LiblibAI 推出的专业 AI 视频创作平台",
-                "link": "https://www.liblib.tv/",
-                "icon": "./images/LibTV.png"
+                "name": "LiblibAI",
+                "description": "China's leading AI creation platform",
+                "link": "https://www.liblib.art/video-effect",
+                "icon": "./images/liblib.jpg"
             },
             {
                 "name": "Beeble",
                 "description": "Transform your shots in seconds.",
                 "link": "https://app.beeble.ai/home",
                 "icon": "./images/beeble.png"
-            },
-            {
-                "name": "LiblibAI",
-                "description": "China's leading AI creation platform",
-                "link": "https://www.liblib.art/video-effect",
-                "icon": "./images/liblib.jpg"
             },
             {
                 "name": "小云雀AI ",
@@ -1256,12 +1244,6 @@ const appData = [
                 "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
                 "link": "https://my.zerotier.com/",
                 "icon": "./images/zerotier.png"
-            },
-            {
-                "name": "Myip.is",
-                "description": "显示你当前的公网 IP 地址",
-                "link": "https://myip.is/",
-                "icon": "./images/myip.jpg"
             }
         ],
         "domId": "cat-6"
@@ -1310,6 +1292,12 @@ const appData = [
                 "description": "Royalty-free digital asset subscription",
                 "link": "https://artlist.io/",
                 "icon": "./images/artlist.png"
+            },
+            {
+                "name": "小红书千帆",
+                "description": "解锁社交内容电商全新体验",
+                "link": "https://ark.xiaohongshu.com/ark",
+                "icon": "./images/ark.xiaohongshu.jpg"
             },
             {
                 "name": "光厂",
@@ -1366,10 +1354,16 @@ const appData = [
                 "icon": "./images/gumroad.png"
             },
             {
-                "name": "小红书千帆",
-                "description": "解锁社交内容电商全新体验",
-                "link": "https://ark.xiaohongshu.com/ark",
-                "icon": "./images/ark.xiaohongshu.jpg"
+                "name": "Estk.me",
+                "description": "Removable eUICC management solution",
+                "link": "https://www.estk.me/downloads/",
+                "icon": "./images/Estk.png"
+            },
+            {
+                "name": "Superalink",
+                "description": "Super hassle-free & affordable connectivity",
+                "link": "https://www.superalink.com/zh/destination?type=limited-offer",
+                "icon": "./images/superalink.png"
             },
             {
                 "name": "eSIMDB",
@@ -1382,12 +1376,6 @@ const appData = [
                 "description": "Your international mobile data travel app",
                 "link": "https://www.firsty.app/",
                 "icon": "./images/firsty.webp"
-            },
-            {
-                "name": "Estk.me",
-                "description": "Removable eUICC management solution",
-                "link": "https://www.estk.me/downloads/",
-                "icon": "./images/Estk.png"
             },
             {
                 "name": "BNESIM",
@@ -1406,18 +1394,6 @@ const appData = [
                 "description": "PixCake-像素级AI精修软件",
                 "link": "https://www.pixcakeai.com/",
                 "icon": "./images/pixcake.png"
-            },
-            {
-                "name": "美图云修",
-                "description": "专业级AI人像精修",
-                "link": "https://yunxiu.meitu.com/",
-                "icon": "./images/yunxiu.png"
-            },
-            {
-                "name": "Superalink",
-                "description": "Super hassle-free & affordable connectivity",
-                "link": "https://www.superalink.com/zh/destination?type=limited-offer",
-                "icon": "./images/superalink.png"
             }
         ],
         "domId": "cat-7"
@@ -1425,6 +1401,12 @@ const appData = [
     {
         "title": "Other",
         "apps": [
+            {
+                "name": "SnapAny",
+                "description": "Save videos, images from platforms",
+                "link": "https://snapany.com/",
+                "icon": "./images/snapany.png"
+            },
             {
                 "name": "WWZ.iM",
                 "description": "My personal website and portfolio",
@@ -1438,10 +1420,34 @@ const appData = [
                 "icon": "./images/W-QR.png"
             },
             {
+                "name": "Node Convert",
+                "description": "Node Conversion Tool Website",
+                "link": "https://sub.wwz.im/",
+                "icon": "./images/SUB Conversion.png"
+            },
+            {
                 "name": "MY IP",
                 "description": "View public IPv4 and IPv6",
-                "link": "https://myip.is/",
+                "link": "https://ip.wwz.im/",
                 "icon": "./images/myip.png"
+            },
+            {
+                "name": "草料二维码",
+                "description": "Free one-stop QR code generator",
+                "link": "https://cli.im/",
+                "icon": "./images/cli.png"
+            },
+            {
+                "name": "菜鸟工具",
+                "description": "Online tools for developers, designers",
+                "link": "https://www.jyshare.com/",
+                "icon": "./images/cainiao.png"
+            },
+            {
+                "name": "OpenWRT固件生成",
+                "description": "定制适用于您设备的OpenWrt固件",
+                "link": "https://openwrt.ai/?target=mediatek%2Ffilogic&id=cudy_tr3000-mod",
+                "icon": "./images/openwrt.png"
             },
             {
                 "name": "YandexTranslate",
@@ -1468,12 +1474,6 @@ const appData = [
                 "icon": "./images/Cusdis.png"
             },
             {
-                "name": "Translate",
-                "description": "Intranet-based online translation tool",
-                "link": "https://translate.google.com/",
-                "icon": "./images/Google_Translate.png"
-            },
-            {
                 "name": "TuChong",
                 "description": "Showcase stunning photography portfolios",
                 "link": "https://wangwenzhi.tuchong.com/videos/",
@@ -1484,6 +1484,12 @@ const appData = [
                 "description": "Disposable temporary email service",
                 "link": "https://temp-mail.org/",
                 "icon": "./images/Temp Mail.png"
+            },
+            {
+                "name": "US Address",
+                "description": "Generate valid US addresses",
+                "link": "https://fauxid.com/identity/46c7de5b-db09-4161-b1bf-b5496f24384d",
+                "icon": "./images/dizhi.png"
             },
             {
                 "name": "Emotn",
@@ -1502,24 +1508,6 @@ const appData = [
                 "description": "Online typing practice and learning platform.",
                 "link": "https://www.edclub.com/sportal/",
                 "icon": "./images/typingclub.jpeg"
-            },
-            {
-                "name": "US Address",
-                "description": "Generate valid US addresses",
-                "link": "https://fauxid.com/identity/46c7de5b-db09-4161-b1bf-b5496f24384d",
-                "icon": "./images/dizhi.png"
-            },
-            {
-                "name": "TheMatrix",
-                "description": "Matrix-inspired digital code background",
-                "link": "https://wangwenzhi.eu.org/TheMatrix/",
-                "icon": "./images/TheMatrix.png"
-            },
-            {
-                "name": "菜鸟工具",
-                "description": "Online tools for developers, designers",
-                "link": "https://www.jyshare.com/",
-                "icon": "./images/cainiao.png"
             },
             {
                 "name": "Birme",
@@ -1546,18 +1534,6 @@ const appData = [
                 "icon": "./images/webintoapp.png"
             },
             {
-                "name": "草料二维码",
-                "description": "Free one-stop QR code generator",
-                "link": "https://cli.im/",
-                "icon": "./images/cli.png"
-            },
-            {
-                "name": "Node Convert",
-                "description": "Node Conversion Tool Website",
-                "link": "https://sub.wwz.im/",
-                "icon": "./images/SUB Conversion.png"
-            },
-            {
                 "name": "V2raySE-Singbox",
                 "description": "Online V2ray node conversion tool",
                 "link": "https://v2rayse.com/node-convert/",
@@ -1570,21 +1546,9 @@ const appData = [
                 "icon": "./images/v2rayse.png"
             },
             {
-                "name": "OpenWRT固件生成",
-                "description": "定制适用于您设备的OpenWrt固件",
-                "link": "https://openwrt.ai/?target=mediatek%2Ffilogic&id=cudy_tr3000-mod",
-                "icon": "./images/openwrt.png"
-            },
-            {
-                "name": "SnapAny",
-                "description": "Save videos, images from platforms",
-                "link": "https://snapany.com/",
-                "icon": "./images/snapany.png"
-            },
-            {
                 "name": "AXU",
                 "description": "Personal resource and storage hub",
-                "link": "https://axutongxue.com/",
+                "link": "https://axutongxue.net/",
                 "icon": "./images/axu.jpg"
             },
             {
