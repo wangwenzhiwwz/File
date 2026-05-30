@@ -89,12 +89,6 @@ const appData = [
                 "icon": "./images/cloudflare.svg"
             },
             {
-                "name": "Ping",
-                "description": "Website performance testing tool",
-                "link": "https://ping.chinaz.com/",
-                "icon": "./images/ChinaZ.png"
-            },
-            {
                 "name": "Teambition",
                 "description": "Enterprise-grade team collaboration tool",
                 "link": "https://www.teambition.com/organization/61ade96d461f91c76e3bfc06/task/shortcut/66d920b8e2a3f00f0ddca2e3/",
@@ -111,12 +105,6 @@ const appData = [
                 "description": "Unified workspace for teams",
                 "link": "https://whimsical.com/",
                 "icon": "./images/whimsical.jfif"
-            },
-            {
-                "name": "Mixboard",
-                "description": "AI-powered concepting board that helps you explore",
-                "link": "https://mixboard.google.com/projects",
-                "icon": "./images/mixboard.png"
             },
             {
                 "name": "闪电分镜",
@@ -147,6 +135,18 @@ const appData = [
                 "description": "Versatile all-in-one productivity app",
                 "link": "https://www.notion.so/",
                 "icon": "./images/notion.webp"
+            },
+            {
+                "name": "ITDOG",
+                "description": "Practical tools for IT operations",
+                "link": "https://www.itdog.cn/ping_ipv6/kr6.w1997.eu.org",
+                "icon": "./images/ITDOG.png"
+            },
+            {
+                "name": "Ping",
+                "description": "Website performance testing tool",
+                "link": "https://ping.chinaz.com/",
+                "icon": "./images/ChinaZ.png"
             },
             {
                 "name": "Myip.is",
@@ -1114,34 +1114,16 @@ const appData = [
         "title": "VPS",
         "apps": [
             {
-                "name": "Nginx Proxy Manager",
-                "description": "Get Connected · Proxy Hosts",
-                "link": "https://npm.wwz.im/",
-                "icon": "./images/Nginx Proxy Manager.png"
-            },
-            {
-                "name": "VPS.WWZ.iM",
-                "description": "Server monitoring and operation tool",
-                "link": "https://vps.wwz.im/",
-                "icon": "./images/Nezha Monitoring.png"
-            },
-            {
-                "name": "Oracle",
-                "description": "Free high-performance cloud servers",
-                "link": "https://cloud.oracle.com",
-                "icon": "./images/Oracle.png"
-            },
-            {
                 "name": "BandwagonHost",
                 "description": "Enterprise-grade VPS hosting plans",
                 "link": "https://bwh88.net/services",
                 "icon": "./images/bwh.png"
             },
             {
-                "name": "EUserv",
-                "description": "Dedicated servers and cloud hosting",
-                "link": "https://support.euserv.com/",
-                "icon": "./images/EUserv.jpg"
+                "name": "CloudCone",
+                "description": "KVM-based VPS and dedicated servers",
+                "link": "https://app.cloudcone.com/",
+                "icon": "./images/CloudCone.jpg"
             },
             {
                 "name": "ColoCrossing",
@@ -1150,10 +1132,22 @@ const appData = [
                 "icon": "./images/colocrossing.png"
             },
             {
-                "name": "CloudCone",
-                "description": "KVM-based VPS and dedicated servers",
-                "link": "https://app.cloudcone.com/",
-                "icon": "./images/CloudCone.jpg"
+                "name": "Oracle",
+                "description": "Free high-performance cloud servers",
+                "link": "https://cloud.oracle.com",
+                "icon": "./images/Oracle.png"
+            },
+            {
+                "name": "EUserv",
+                "description": "Dedicated servers and cloud hosting",
+                "link": "https://support.euserv.com/",
+                "icon": "./images/EUserv.jpg"
+            },
+            {
+                "name": "Vultr ",
+                "description": "以高性价比和按小时计费知名云服务商",
+                "link": "https://console.vultr.com/dashboard/",
+                "icon": "./images/vultr.png"
             },
             {
                 "name": "Hostinger",
@@ -1184,12 +1178,6 @@ const appData = [
                 "description": "Reliable web application hosting",
                 "link": "https://panel5.serv00.com/",
                 "icon": "./images/Serv00.jpg"
-            },
-            {
-                "name": "ITDOG",
-                "description": "Practical tools for IT operations",
-                "link": "https://www.itdog.cn/ping_ipv6/kr6.w1997.eu.org",
-                "icon": "./images/ITDOG.png"
             },
             {
                 "name": "Dynadot",
@@ -1228,16 +1216,16 @@ const appData = [
                 "icon": "./images/name.jpg"
             },
             {
+                "name": "Nginx Proxy Manager",
+                "description": "Get Connected · Proxy Hosts",
+                "link": "https://npm.wwz.im/",
+                "icon": "./images/Nginx Proxy Manager.png"
+            },
+            {
                 "name": "Scamalytics",
                 "description": "Check VPS IP fraud risk",
                 "link": "https://scamalytics.com/",
                 "icon": "./images/scamalytics.png"
-            },
-            {
-                "name": "ZeroTier",
-                "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
-                "link": "https://my.zerotier.com/",
-                "icon": "./images/zerotier.png"
             }
         ],
         "domId": "cat-6"
@@ -1400,6 +1388,12 @@ const appData = [
                 "description": "Save videos, images from platforms",
                 "link": "https://snapany.com/",
                 "icon": "./images/snapany.png"
+            },
+            {
+                "name": "ZeroTier",
+                "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
+                "link": "https://my.zerotier.com/",
+                "icon": "./images/zerotier.png"
             },
             {
                 "name": "WWZ.iM",
