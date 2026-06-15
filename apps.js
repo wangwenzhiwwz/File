@@ -628,12 +628,6 @@ const appData = [
                 "icon": "./images/Raw Image Extension.png"
             },
             {
-                "name": "PicSharp",
-                "description": "A modern, full-featured, high-performance, cross-platform image compression application.",
-                "link": "https://github.com/AkiraBit/PicSharp",
-                "icon": "./images/PicSharp.png"
-            },
-            {
                 "name": "BalenaEtcher",
                 "description": "Flash OS images to USB",
                 "link": "https://etcher.balena.io/#download-etcher",
@@ -1390,6 +1384,18 @@ const appData = [
         "title": "Other",
         "apps": [
             {
+                "name": "Squoosh",
+                "description": "Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.",
+                "link": "https://squoosh.app/",
+                "icon": "./images/squoosh.app.png"
+            },
+            {
+                "name": "Birme",
+                "description": "将图片压缩到所需的尺寸",
+                "link": "https://www.birme.net/",
+                "icon": "./images/birme.png"
+            },
+            {
                 "name": "SnapAny",
                 "description": "Save videos, images from platforms",
                 "link": "https://snapany.com/",
@@ -1502,12 +1508,6 @@ const appData = [
                 "description": "Online typing practice and learning platform.",
                 "link": "https://www.edclub.com/sportal/",
                 "icon": "./images/typingclub.jpeg"
-            },
-            {
-                "name": "Birme",
-                "description": "将图片压缩到所需的尺寸",
-                "link": "https://www.birme.net/",
-                "icon": "./images/birme.png"
             },
             {
                 "name": "默沙东诊疗手册",
