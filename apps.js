@@ -353,12 +353,6 @@ const appData = [
                 "icon": "./images/Google+Labs+Logo.jpg"
             },
             {
-                "name": "LM Studio",
-                "description": "Manage local language models",
-                "link": "https://lmstudio.ai/",
-                "icon": "./images/lmstudio_ai_logo.jpeg"
-            },
-            {
                 "name": "Ollama",
                 "description": "Run large language models locally",
                 "link": "https://ollama.com/",
@@ -429,12 +423,6 @@ const appData = [
                 "description": "Nano Banana Pro 提示词",
                 "link": "https://nanobanana.org/zh/banana-prompts",
                 "icon": "./images/nanobanana.jpg"
-            },
-            {
-                "name": "Civitai",
-                "description": "Open-source generative AI community",
-                "link": "https://civitai.com/videos",
-                "icon": "./images/civitai.jpg"
             }
         ]
     },
@@ -616,10 +604,28 @@ const appData = [
         "title": "Windows",
         "apps": [
             {
-                "name": "V2rayN",
-                "description": "Windows GUI VPN client",
-                "link": "https://blog.wwz.im/article/VPN",
-                "icon": "./images/v2rayn.jpg"
+                "name": "Windows设置",
+                "description": "Practical Windows 11 settings tool",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/Windows",
+                "icon": "./images/windows.jpg"
+            },
+            {
+                "name": "Uninstall Tool",
+                "description": "安全、快速、强大的软件卸载删除工具",
+                "link": "https://www.ghxi.com/uninstalltool.html",
+                "icon": "./images/UninstallTool.png"
+            },
+            {
+                "name": "QuickLook",
+                "description": "QuickLook enables a very quick preview of file contents by pressing the Spacebar",
+                "link": "https://apps.microsoft.com/detail/9nv4bs3l1h4s",
+                "icon": "./images/QuickLook.png"
+            },
+            {
+                "name": "Raw Image Extension",
+                "description": "Microsoft that enables Windows to natively decode and display uncompressed camera files",
+                "link": "https://apps.microsoft.com/detail/9nctdw2w1bh8",
+                "icon": "./images/Raw Image Extension.png"
             },
             {
                 "name": "BalenaEtcher",
@@ -634,6 +640,12 @@ const appData = [
                 "icon": "./images/parsec.png"
             },
             {
+                "name": "MPC-BE",
+                "description": "Free open-source video player",
+                "link": "https://github.com/wangwenzhiwwz/File/blob/master/software/MPC-BE.1.8.2.x64.exe",
+                "icon": "./images/MPC.jpg"
+            },
+            {
                 "name": "Tabby SSH",
                 "description": "Cross-platform SSH management tool",
                 "link": "https://tabby.sh/",
@@ -646,16 +658,28 @@ const appData = [
                 "icon": "./images/clash-nyanpasu.png"
             },
             {
+                "name": "V2rayN",
+                "description": "Windows GUI VPN client",
+                "link": "https://blog.wwz.im/article/VPN",
+                "icon": "./images/v2rayn.jpg"
+            },
+            {
+                "name": "4k Video Downloader",
+                "description": "4K Video Downloader Plus 视频下载器专业版",
+                "link": "https://jpsmile.com/4k-video-downloader-plus/",
+                "icon": "./images/4K Video Downloader.webp"
+            },
+            {
+                "name": "4K Downloader",
+                "description": "Download 4K YouTube videos",
+                "link": "https://lrepacks.net/repaki-programm-dlya-interneta/801-4k-downloader-repack-amp-portable.html",
+                "icon": "./images/4KDownloader.png"
+            },
+            {
                 "name": "VPN Gate",
                 "description": "Free Access to World Knowledge Beyond Government's Firewall.",
                 "link": "https://www.vpngate.net/en/",
                 "icon": "./images/VPN Gate.jpg"
-            },
-            {
-                "name": "PowerToys",
-                "description": "用于自定义 Windows 的实用工具",
-                "link": "https://learn.microsoft.com/zh-cn/windows/powertoys/",
-                "icon": "./images/PowerToys.png"
             },
             {
                 "name": "Moo0",
@@ -664,10 +688,10 @@ const appData = [
                 "icon": "./images/Moo0.png"
             },
             {
-                "name": "Windows设置",
-                "description": "Practical Windows 11 settings tool",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/tag/Windows",
-                "icon": "./images/windows.jpg"
+                "name": "PowerToys",
+                "description": "用于自定义 Windows 的实用工具",
+                "link": "https://learn.microsoft.com/zh-cn/windows/powertoys/",
+                "icon": "./images/PowerToys.png"
             },
             {
                 "name": "数码荔枝",
@@ -694,18 +718,6 @@ const appData = [
                 "icon": "./images/CyberMania.png"
             },
             {
-                "name": "4k Video Downloader",
-                "description": "4K Video Downloader Plus 视频下载器专业版",
-                "link": "https://jpsmile.com/4k-video-downloader-plus/",
-                "icon": "./images/4K Video Downloader.webp"
-            },
-            {
-                "name": "4K Downloader",
-                "description": "Download 4K YouTube videos",
-                "link": "https://lrepacks.net/repaki-programm-dlya-interneta/801-4k-downloader-repack-amp-portable.html",
-                "icon": "./images/4KDownloader.png"
-            },
-            {
                 "name": "BalenaEtcher",
                 "description": "Graphical OS image flashing",
                 "link": "https://etcher.balena.io/",
@@ -730,12 +742,6 @@ const appData = [
                 "icon": "./images/PureRef.png"
             },
             {
-                "name": "MPC-BE",
-                "description": "Free open-source video player",
-                "link": "https://github.com/wangwenzhiwwz/File/blob/master/software/MPC-BE.1.8.2.x64.exe",
-                "icon": "./images/MPC.jpg"
-            },
-            {
                 "name": "IrfanView",
                 "description": "Fast image viewer and converter",
                 "link": "https://www.irfanview.com/",
@@ -752,12 +758,6 @@ const appData = [
                 "description": "Robotic process automation tool",
                 "link": "https://www.yingdao.com/",
                 "icon": "./images/yingdao.webp"
-            },
-            {
-                "name": "Uninstall Tool",
-                "description": "安全、快速、强大的软件卸载删除工具",
-                "link": "https://www.ghxi.com/uninstalltool.html",
-                "icon": "./images/UninstallTool.png"
             },
             {
                 "name": "Advanced-IP-Scanner",
@@ -820,22 +820,28 @@ const appData = [
                 "icon": "./images/shadorocket.webp"
             },
             {
+                "name": "Google Authenticator",
+                "description": "Google Authenticator adds an extra layer",
+                "link": "https://apps.apple.com/us/app/google-authenticator/id388497605",
+                "icon": "./images/Google-Authenticator.webp"
+            },
+            {
                 "name": "Notion",
                 "description": "Plan, organize, and track projects",
                 "link": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281",
                 "icon": "./images/notion.webp"
             },
             {
+                "name": "LocalSend",
+                "description": "Secure local file sharing",
+                "link": "https://apps.apple.com/us/app/localsend/id1661733229",
+                "icon": "./images/localsend.png"
+            },
+            {
                 "name": "ChatGPT",
                 "description": "OpenAI's official AI chatbot",
                 "link": "https://apps.apple.com/us/app/chatgpt/id6448311069",
                 "icon": "./images/openai.png"
-            },
-            {
-                "name": "Google Authenticator",
-                "description": "Google Authenticator adds an extra layer",
-                "link": "https://apps.apple.com/us/app/google-authenticator/id388497605",
-                "icon": "./images/Google-Authenticator.webp"
             },
             {
                 "name": "Duolingo",
@@ -878,12 +884,6 @@ const appData = [
                 "description": "Pro filmmaking and photography tool",
                 "link": "https://apps.apple.com/us/app/cadrage-directors-viewfinder/id793232740",
                 "icon": "./images/Cadrage.webp"
-            },
-            {
-                "name": "LocalSend",
-                "description": "Secure local file sharing",
-                "link": "https://apps.apple.com/us/app/localsend/id1661733229",
-                "icon": "./images/localsend.png"
             },
             {
                 "name": "Hypic",
