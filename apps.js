@@ -628,6 +628,12 @@ const appData = [
                 "icon": "./images/Raw Image Extension.png"
             },
             {
+                "name": "PicSharp",
+                "description": "A modern, full-featured, high-performance, cross-platform image compression application.",
+                "link": "https://github.com/AkiraBit/PicSharp",
+                "icon": "./images/PicSharp.png"
+            },
+            {
                 "name": "BalenaEtcher",
                 "description": "Flash OS images to USB",
                 "link": "https://etcher.balena.io/#download-etcher",
