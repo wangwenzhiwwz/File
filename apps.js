@@ -1218,7 +1218,7 @@ const appData = [
             {
                 "name": "Nginx Proxy Manager",
                 "description": "Get Connected · Proxy Hosts",
-                "link": "https://npm.wwz.im/",
+                "link": "https://npm.wwz.im/nginx/proxy",
                 "icon": "./images/Nginx Proxy Manager.png"
             },
             {
