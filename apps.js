@@ -448,18 +448,6 @@ const appData = [
                 "icon": "./images/localsend.png"
             },
             {
-                "name": "Blip",
-                "description": "You've never sent files this fast",
-                "link": "https://blip.net/download",
-                "icon": "./images/blip.png"
-            },
-            {
-                "name": "AuroraOSS",
-                "description": "Collection of open-source apps",
-                "link": "https://auroraoss.com/",
-                "icon": "./images/auroralogo.png"
-            },
-            {
                 "name": "APkPure",
                 "description": "Fast Android APK downloader",
                 "link": "https://blog.wwz.im/article/APKPure",
@@ -1144,28 +1132,16 @@ const appData = [
                 "icon": "./images/EUserv.jpg"
             },
             {
-                "name": "Vultr ",
-                "description": "以高性价比和按小时计费知名云服务商",
-                "link": "https://console.vultr.com/dashboard/",
-                "icon": "./images/vultr.png"
-            },
-            {
-                "name": "Hostinger",
-                "description": "Bring Your Idea Online With a Website",
-                "link": "https://hpanel.hostinger.com/vps",
-                "icon": "./images/hostinger.png"
-            },
-            {
-                "name": "RackNerd",
-                "description": "Global infrastructure as a service",
-                "link": "https://my.racknerd.com/clientarea.php",
-                "icon": "./images/RackNerd.jpg"
-            },
-            {
                 "name": "DogYun",
                 "description": "Affordable and flexible cloud servers",
                 "link": "https://vm.dogyun.com/server/list",
                 "icon": "./images/dogyun.png"
+            },
+            {
+                "name": "Vultr ",
+                "description": "以高性价比和按小时计费知名云服务商",
+                "link": "https://console.vultr.com/dashboard/",
+                "icon": "./images/vultr.png"
             },
             {
                 "name": "VPS推荐",
@@ -1276,6 +1252,12 @@ const appData = [
                 "icon": "./images/artlist.png"
             },
             {
+                "name": "像素蛋糕",
+                "description": "PixCake-像素级AI精修软件",
+                "link": "https://www.pixcakeai.com/",
+                "icon": "./images/pixcake.png"
+            },
+            {
                 "name": "小红书千帆",
                 "description": "解锁社交内容电商全新体验",
                 "link": "https://ark.xiaohongshu.com/ark",
@@ -1324,22 +1306,16 @@ const appData = [
                 "icon": "./images/SMS.png"
             },
             {
-                "name": "CASETiFY",
-                "description": "Show Your Colors",
-                "link": "https://www.casetify.com/",
-                "icon": "./images/casetify.png"
-            },
-            {
-                "name": "Gumroad",
-                "description": "Earn your first dollar online with Gumroad",
-                "link": "https://gumroad.com/discover",
-                "icon": "./images/gumroad.png"
-            },
-            {
                 "name": "Estk.me",
                 "description": "Removable eUICC management solution",
                 "link": "https://www.estk.me/downloads/",
                 "icon": "./images/Estk.png"
+            },
+            {
+                "name": "Firsty",
+                "description": "Your international mobile data travel app",
+                "link": "https://www.firsty.app/",
+                "icon": "./images/firsty.webp"
             },
             {
                 "name": "Superalink",
@@ -1354,12 +1330,6 @@ const appData = [
                 "icon": "./images/esimdb.png"
             },
             {
-                "name": "Firsty",
-                "description": "Your international mobile data travel app",
-                "link": "https://www.firsty.app/",
-                "icon": "./images/firsty.webp"
-            },
-            {
                 "name": "BNESIM",
                 "description": "Best eSIM Plans for International Travel",
                 "link": "https://app.bnesim.com/",
@@ -1372,10 +1342,10 @@ const appData = [
                 "icon": "./images/RedteaGO.jpg"
             },
             {
-                "name": "像素蛋糕",
-                "description": "PixCake-像素级AI精修软件",
-                "link": "https://www.pixcakeai.com/",
-                "icon": "./images/pixcake.png"
+                "name": "BANANA SIM",
+                "description": "eSIM 5G 無限數據系列. HK",
+                "link": "https://www.bananatravelsim.com/categories/esim",
+                "icon": "./images/Banana_eSIM.jpeg"
             }
         ],
         "domId": "cat-7"
@@ -1436,12 +1406,6 @@ const appData = [
                 "description": "Free one-stop QR code generator",
                 "link": "https://cli.im/",
                 "icon": "./images/cli.png"
-            },
-            {
-                "name": "菜鸟工具",
-                "description": "Online tools for developers, designers",
-                "link": "https://www.jyshare.com/",
-                "icon": "./images/cainiao.png"
             },
             {
                 "name": "OpenWRT固件生成",
