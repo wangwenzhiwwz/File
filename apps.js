@@ -460,10 +460,10 @@ const appData = [
                 "icon": "./images/CoolAPK.png"
             },
             {
-                "name": "uSmart",
-                "description": "Intelligent camera control app",
-                "link": "https://store.ulefone.com/pages/usmart-e02-spec?srsltid=AfmBOoqAycnJXCjQBEDzKCgebRBO2_SQXoJtjZDYA4JRoi2X2L4poXxI",
-                "icon": "./images/uSmart.png"
+                "name": "MXPlayer",
+                "description": "Powerful video playback app",
+                "link": "https://github.com/wangwenzhiwwz/File/releases/download/ulefone/MXPlayer_v2.13.2.apk",
+                "icon": "./images/MxPlayer.png"
             },
             {
                 "name": "Monitor+",
@@ -472,10 +472,16 @@ const appData = [
                 "icon": "./images/monitor+.jpg"
             },
             {
-                "name": "MXPlayer",
-                "description": "Powerful video playback app",
-                "link": "https://github.com/wangwenzhiwwz/File/releases/download/ulefone/MXPlayer_v2.13.2.apk",
-                "icon": "./images/MxPlayer.png"
+                "name": "uSmart",
+                "description": "Intelligent camera control app",
+                "link": "https://store.ulefone.com/pages/usmart-e02-spec?srsltid=AfmBOoqAycnJXCjQBEDzKCgebRBO2_SQXoJtjZDYA4JRoi2X2L4poXxI",
+                "icon": "./images/uSmart.png"
+            },
+            {
+                "name": "Futebol",
+                "description": "手机当足球瞄准工具",
+                "link": "https://www.pgyer.com/futebol-android",
+                "icon": "./images/Futebol.jpg"
             },
             {
                 "name": "MinimalTimer",
