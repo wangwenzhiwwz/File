@@ -610,6 +610,12 @@ const appData = [
                 "icon": "./images/UninstallTool.png"
             },
             {
+                "name": "NanaZip",
+                "description": "NanaZip is an open source file archiver intended for the modern Windows experience",
+                "link": "https://apps.microsoft.com/detail/9n8g7tscl18r?hl=en-US&gl=US",
+                "icon": "./images/NanaZip.png"
+            },
+            {
                 "name": "QuickLook",
                 "description": "QuickLook enables a very quick preview of file contents by pressing the Spacebar",
                 "link": "https://apps.microsoft.com/detail/9nv4bs3l1h4s",
