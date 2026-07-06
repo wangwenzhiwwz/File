@@ -1222,6 +1222,12 @@ const appData = [
         "title": "Payzone",
         "apps": [
             {
+                "name": "Pockyt Shop",
+                "description": "Apple Store, Amazon gift cards, safe and ...",
+                "link": "https://shop.pockyt.io/",
+                "icon": "./images/pockyt.svg"
+            },
+            {
                 "name": "环球巴士",
                 "description": "一站式流媒体合租平台",
                 "link": "https://universalbus.cn/",
