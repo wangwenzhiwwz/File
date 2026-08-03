@@ -1330,6 +1330,12 @@ const appData = [
                 "icon": "./images/Estk.png"
             },
             {
+                "name": "EasyEUICC",
+                "description": "第三方 eSIM 管理器",
+                "link": "https://easyeuicc.org/",
+                "icon": "./images/EasyEUICC.png"
+            },
+            {
                 "name": "Firsty",
                 "description": "Your international mobile data travel app",
                 "link": "https://www.firsty.app/",
