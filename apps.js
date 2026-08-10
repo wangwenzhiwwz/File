@@ -185,6 +185,12 @@ const appData = [
                 "icon": "./images/LibTV.png"
             },
             {
+                "name": "HeyGen",
+                "description": "AI 数字人口播、广告讲解、产品介绍、多语言视频和真人数字分身",
+                "link": "https://app.heygen.com/home",
+                "icon": "./images/HeyGen.png"
+            },
+            {
                 "name": "Flow",
                 "description": "Google 高级视频AI 模型 Veo",
                 "link": "https://labs.google/fx/tools/flow",
