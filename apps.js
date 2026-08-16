@@ -1366,16 +1366,22 @@ const appData = [
                 "icon": "./images/bnesim.jpeg"
             },
             {
-                "name": "RedteaGO",
-                "description": "eSIM for seamless global travel",
-                "link": "https://esim.redteago.com/zh-CN/orders",
-                "icon": "./images/RedteaGO.jpg"
-            },
-            {
                 "name": "BANANA SIM",
                 "description": "eSIM 5G 無限數據系列. HK",
                 "link": "https://www.bananatravelsim.com/categories/esim",
                 "icon": "./images/Banana_eSIM.jpeg"
+            },
+            {
+                "name": "Eskimo eSIM",
+                "description": "Install Eskimo eSIM once and use it for every trip",
+                "link": "https://www.eskimo.travel/",
+                "icon": "./images/Eskimo_eSIM.png"
+            },
+            {
+                "name": "RedteaGO",
+                "description": "eSIM for seamless global travel",
+                "link": "https://esim.redteago.com/zh-CN/orders",
+                "icon": "./images/RedteaGO.jpg"
             }
         ],
         "domId": "cat-7"
