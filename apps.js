@@ -1360,6 +1360,12 @@ const appData = [
                 "icon": "./images/esimdb.png"
             },
             {
+                "name": "keepgo",
+                "description": "We offer a complete, ready-to-go",
+                "link": "https://myaccount.keepgo.com/",
+                "icon": "./images/keepgo.png"
+            },
+            {
                 "name": "BNESIM",
                 "description": "Best eSIM Plans for International Travel",
                 "link": "https://app.bnesim.com/",
