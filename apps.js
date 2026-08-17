@@ -1220,6 +1220,12 @@ const appData = [
                 "description": "Check VPS IP fraud risk",
                 "link": "https://scamalytics.com/",
                 "icon": "./images/scamalytics.png"
+            },
+            {
+                "name": "FreeSocks",
+                "description": "A VPN for privacy",
+                "link": "https://freesocks.org/",
+                "icon": "./images/FreeSocks.jpg"
             }
         ],
         "domId": "cat-6"
