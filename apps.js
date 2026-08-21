@@ -1394,6 +1394,12 @@ const appData = [
                 "description": "eSIM for seamless global travel",
                 "link": "https://esim.redteago.com/zh-CN/orders",
                 "icon": "./images/RedteaGO.jpg"
+            },
+            {
+                "name": "MeSIM",
+                "description": "MeSIM 提供旅行與商務出行所需的eSIM 行動數據方案",
+                "link": "https://mesimgo.com/",
+                "icon": "./images/MeSIM.png"
             }
         ],
         "domId": "cat-7"
