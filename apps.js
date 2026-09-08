@@ -101,6 +101,12 @@ const appData = [
                 "icon": "./images/Google_Keep.png"
             },
             {
+                "name": "FigJam",
+                "description": "The Online Collaborative Whiteboard for Teams",
+                "link": "https://www.figma.com/",
+                "icon": "./images/FigJam.png"
+            },
+            {
                 "name": "Whimsical",
                 "description": "Unified workspace for teams",
                 "link": "https://whimsical.com/",
@@ -147,12 +153,6 @@ const appData = [
                 "description": "Website performance testing tool",
                 "link": "https://ping.chinaz.com/",
                 "icon": "./images/ChinaZ.png"
-            },
-            {
-                "name": "Myip.is",
-                "description": "显示你当前的公网 IP 地址",
-                "link": "https://myip.is/",
-                "icon": "./images/myip.jpg"
             },
             {
                 "name": "  IPPure",
@@ -1454,6 +1454,12 @@ const appData = [
                 "description": "View public IPv4 and IPv6",
                 "link": "https://ip.wwz.im/",
                 "icon": "./images/myip.png"
+            },
+            {
+                "name": "Myip.is",
+                "description": "显示你当前的公网 IP 地址",
+                "link": "https://myip.is/",
+                "icon": "./images/myip.jpg"
             },
             {
                 "name": "草料二维码",
