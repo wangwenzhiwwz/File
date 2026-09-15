@@ -29,6 +29,12 @@ const appData = [
                 "icon": "./images/ithome.png"
             },
             {
+                "name": "Ping",
+                "description": "Website performance testing tool",
+                "link": "https://chinaz.com/",
+                "icon": "./images/ChinaZ.png"
+            },
+            {
                 "name": "Outlook",
                 "description": "Platform developed by Microsoft",
                 "link": "https://outlook.live.com/",
@@ -149,12 +155,6 @@ const appData = [
                 "icon": "./images/ITDOG.png"
             },
             {
-                "name": "Ping",
-                "description": "Website performance testing tool",
-                "link": "https://ping.chinaz.com/",
-                "icon": "./images/ChinaZ.png"
-            },
-            {
                 "name": "  IPPure",
                 "description": "IP address infomation and risk analysis",
                 "link": "https://ippure.com/",
@@ -166,6 +166,12 @@ const appData = [
     {
         "title": "AI",
         "apps": [
+            {
+                "name": "AIBase",
+                "description": "Your Gateway to AGI",
+                "link": "https://www.aibase.cn/",
+                "icon": "./images/aibase.png"
+            },
             {
                 "name": "Gemini",
                 "description": "Google AI planning and assistance",
@@ -1222,6 +1228,12 @@ const appData = [
                 "icon": "./images/scamalytics.png"
             },
             {
+                "name": "ZeroTier",
+                "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
+                "link": "https://my.zerotier.com/",
+                "icon": "./images/zerotier.png"
+            },
+            {
                 "name": "FreeSocks",
                 "description": "A VPN for privacy",
                 "link": "https://freesocks.org/",
@@ -1426,10 +1438,10 @@ const appData = [
                 "icon": "./images/snapany.png"
             },
             {
-                "name": "ZeroTier",
-                "description": "Global Networking Solution for IoT, SD-WAN, and VPN",
-                "link": "https://my.zerotier.com/",
-                "icon": "./images/zerotier.png"
+                "name": "MY IP",
+                "description": "View public IPv4 and IPv6",
+                "link": "https://ip.wwz.im/",
+                "icon": "./images/myip.png"
             },
             {
                 "name": "WWZ.iM",
@@ -1448,12 +1460,6 @@ const appData = [
                 "description": "Node Conversion Tool Website",
                 "link": "https://sub.wwz.im/",
                 "icon": "./images/SUB Conversion.png"
-            },
-            {
-                "name": "MY IP",
-                "description": "View public IPv4 and IPv6",
-                "link": "https://ip.wwz.im/",
-                "icon": "./images/myip.png"
             },
             {
                 "name": "Myip.is",
