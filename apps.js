@@ -1252,10 +1252,10 @@ const appData = [
                 "icon": "./images/pockyt.svg"
             },
             {
-                "name": "环球巴士",
+                "name": "GoingBus",
                 "description": "一站式流媒体合租平台",
-                "link": "https://universalbus.cn/",
-                "icon": "./images/HQBS.png"
+                "link": "https://cn.goingbus.com/",
+                "icon": "./images/goingbus.png"
             },
             {
                 "name": "银河录像局",
