@@ -1243,6 +1243,85 @@ const appData = [
         "domId": "cat-6"
     },
     {
+        "title": "Esim",
+        "apps": [
+            
+            {
+                "name": "Estk.me",
+                "description": "Removable eUICC management solution",
+                "link": "https://www.estk.me/downloads/",
+                "icon": "./images/Estk.png"
+            },
+            {
+                "name": "EasyEUICC",
+                "description": "第三方 eSIM 管理器",
+                "link": "https://easyeuicc.org/",
+                "icon": "./images/EasyEUICC.png"
+            },
+            {
+                "name": "Firsty",
+                "description": "Your international mobile data travel app",
+                "link": "https://www.firsty.app/",
+                "icon": "./images/firsty.webp"
+            },
+            {
+                "name": "Superalink",
+                "description": "Super hassle-free & affordable connectivity",
+                "link": "https://www.superalink.com/zh/destination?type=limited-offer",
+                "icon": "./images/superalink.png"
+            },
+            {
+                "name": "eSIMDB",
+                "description": "找到最佳的预付费 eSIM 套餐",
+                "link": "https://esimdb.com/",
+                "icon": "./images/esimdb.png"
+            },
+            {
+                "name": "keepgo",
+                "description": "We offer a complete, ready-to-go",
+                "link": "https://myaccount.keepgo.com/",
+                "icon": "./images/keepgo.png"
+            },
+            {
+                "name": "BNESIM",
+                "description": "Best eSIM Plans for International Travel",
+                "link": "https://app.bnesim.com/",
+                "icon": "./images/bnesim.jpeg"
+            },
+            {
+                "name": "BANANA SIM",
+                "description": "eSIM 5G 無限數據系列. HK",
+                "link": "https://www.bananatravelsim.com/categories/esim",
+                "icon": "./images/Banana_eSIM.jpeg"
+            },
+            {
+                "name": "Eskimo eSIM",
+                "description": "Install Eskimo eSIM once and use it for every trip",
+                "link": "https://www.eskimo.travel/",
+                "icon": "./images/Eskimo_eSIM.png"
+            },
+            {
+                "name": "RedteaGO",
+                "description": "eSIM for seamless global travel",
+                "link": "https://esim.redteago.com/zh-CN/orders",
+                "icon": "./images/RedteaGO.jpg"
+            },
+            {
+                "name": "MeSIM",
+                "description": "MeSIM 提供旅行與商務出行所需的eSIM 行動數據方案",
+                "link": "https://mesimgo.com/",
+                "icon": "./images/MeSIM.png"
+            },
+            {
+                "name": "eSIM.GG ",
+                "description": "Global eSIM Plans from €0.88/GB",
+                "link": "https://esim.gg/lines/ee/37253167533",
+                "icon": "./images/esim.gg.png"
+            }
+        ],
+        "domId": "cat-7"
+    },
+    {
         "title": "Payzone",
         "apps": [
             {
@@ -1346,73 +1425,8 @@ const appData = [
                 "description": "Virtual Number for OTP",
                 "link": "https://sms-activate.world/",
                 "icon": "./images/SMS.png"
-            },
-            {
-                "name": "Estk.me",
-                "description": "Removable eUICC management solution",
-                "link": "https://www.estk.me/downloads/",
-                "icon": "./images/Estk.png"
-            },
-            {
-                "name": "EasyEUICC",
-                "description": "第三方 eSIM 管理器",
-                "link": "https://easyeuicc.org/",
-                "icon": "./images/EasyEUICC.png"
-            },
-            {
-                "name": "Firsty",
-                "description": "Your international mobile data travel app",
-                "link": "https://www.firsty.app/",
-                "icon": "./images/firsty.webp"
-            },
-            {
-                "name": "Superalink",
-                "description": "Super hassle-free & affordable connectivity",
-                "link": "https://www.superalink.com/zh/destination?type=limited-offer",
-                "icon": "./images/superalink.png"
-            },
-            {
-                "name": "eSIMDB",
-                "description": "找到最佳的预付费 eSIM 套餐",
-                "link": "https://esimdb.com/",
-                "icon": "./images/esimdb.png"
-            },
-            {
-                "name": "keepgo",
-                "description": "We offer a complete, ready-to-go",
-                "link": "https://myaccount.keepgo.com/",
-                "icon": "./images/keepgo.png"
-            },
-            {
-                "name": "BNESIM",
-                "description": "Best eSIM Plans for International Travel",
-                "link": "https://app.bnesim.com/",
-                "icon": "./images/bnesim.jpeg"
-            },
-            {
-                "name": "BANANA SIM",
-                "description": "eSIM 5G 無限數據系列. HK",
-                "link": "https://www.bananatravelsim.com/categories/esim",
-                "icon": "./images/Banana_eSIM.jpeg"
-            },
-            {
-                "name": "Eskimo eSIM",
-                "description": "Install Eskimo eSIM once and use it for every trip",
-                "link": "https://www.eskimo.travel/",
-                "icon": "./images/Eskimo_eSIM.png"
-            },
-            {
-                "name": "RedteaGO",
-                "description": "eSIM for seamless global travel",
-                "link": "https://esim.redteago.com/zh-CN/orders",
-                "icon": "./images/RedteaGO.jpg"
-            },
-            {
-                "name": "MeSIM",
-                "description": "MeSIM 提供旅行與商務出行所需的eSIM 行動數據方案",
-                "link": "https://mesimgo.com/",
-                "icon": "./images/MeSIM.png"
             }
+           
         ],
         "domId": "cat-7"
     },
