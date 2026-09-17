@@ -1243,38 +1243,13 @@ const appData = [
         "domId": "cat-6"
     },
     {
-        "title": "Esim",
+        "title": "eSIM",
         "apps": [
-            
-            {
-                "name": "Estk.me",
-                "description": "Removable eUICC management solution",
-                "link": "https://www.estk.me/downloads/",
-                "icon": "./images/Estk.png"
-            },
             {
                 "name": "EasyEUICC",
                 "description": "第三方 eSIM 管理器",
                 "link": "https://easyeuicc.org/",
                 "icon": "./images/EasyEUICC.png"
-            },
-            {
-                "name": "Firsty",
-                "description": "Your international mobile data travel app",
-                "link": "https://www.firsty.app/",
-                "icon": "./images/firsty.webp"
-            },
-            {
-                "name": "Superalink",
-                "description": "Super hassle-free & affordable connectivity",
-                "link": "https://www.superalink.com/zh/destination?type=limited-offer",
-                "icon": "./images/superalink.png"
-            },
-            {
-                "name": "eSIMDB",
-                "description": "找到最佳的预付费 eSIM 套餐",
-                "link": "https://esimdb.com/",
-                "icon": "./images/esimdb.png"
             },
             {
                 "name": "keepgo",
@@ -1295,10 +1270,10 @@ const appData = [
                 "icon": "./images/Banana_eSIM.jpeg"
             },
             {
-                "name": "Eskimo eSIM",
-                "description": "Install Eskimo eSIM once and use it for every trip",
-                "link": "https://www.eskimo.travel/",
-                "icon": "./images/Eskimo_eSIM.png"
+                "name": "eSIM.GG ",
+                "description": "Global eSIM Plans from €0.88/GB",
+                "link": "https://esim.gg/lines/ee/37253167533",
+                "icon": "./images/esim.gg.png"
             },
             {
                 "name": "RedteaGO",
@@ -1307,16 +1282,40 @@ const appData = [
                 "icon": "./images/RedteaGO.jpg"
             },
             {
+                "name": "Firsty",
+                "description": "Your international mobile data travel app",
+                "link": "https://www.firsty.app/",
+                "icon": "./images/firsty.webp"
+            },
+            {
+                "name": "Estk.me",
+                "description": "Removable eUICC management solution",
+                "link": "https://www.estk.me/downloads/",
+                "icon": "./images/Estk.png"
+            },
+            {
+                "name": "Superalink",
+                "description": "Super hassle-free & affordable connectivity",
+                "link": "https://www.superalink.com/zh/destination?type=limited-offer",
+                "icon": "./images/superalink.png"
+            },
+            {
+                "name": "eSIMDB",
+                "description": "找到最佳的预付费 eSIM 套餐",
+                "link": "https://esimdb.com/",
+                "icon": "./images/esimdb.png"
+            },
+            {
+                "name": "Eskimo eSIM",
+                "description": "Install Eskimo eSIM once and use it for every trip",
+                "link": "https://www.eskimo.travel/",
+                "icon": "./images/Eskimo_eSIM.png"
+            },
+            {
                 "name": "MeSIM",
                 "description": "MeSIM 提供旅行與商務出行所需的eSIM 行動數據方案",
                 "link": "https://mesimgo.com/",
                 "icon": "./images/MeSIM.png"
-            },
-            {
-                "name": "eSIM.GG ",
-                "description": "Global eSIM Plans from €0.88/GB",
-                "link": "https://esim.gg/lines/ee/37253167533",
-                "icon": "./images/esim.gg.png"
             }
         ],
         "domId": "cat-7"
@@ -1426,9 +1425,8 @@ const appData = [
                 "link": "https://sms-activate.world/",
                 "icon": "./images/SMS.png"
             }
-           
         ],
-        "domId": "cat-7"
+        "domId": "cat-8"
     },
     {
         "title": "Other",
@@ -1650,7 +1648,7 @@ const appData = [
                 "icon": "./images/AppleWallpaper.jpg"
             }
         ],
-        "domId": "cat-8"
+        "domId": "cat-9"
     }
 ];
 document.addEventListener('DOMContentLoaded', () => { 
