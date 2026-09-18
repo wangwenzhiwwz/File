@@ -1418,12 +1418,6 @@ const appData = [
                 "description": "房屋装修效果图设计软件",
                 "link": "https://720.3vjia.com/S124417348?lang=zh-CN",
                 "icon": "./images/SWJ.png"
-            },
-            {
-                "name": "SMS-Activate.",
-                "description": "Virtual Number for OTP",
-                "link": "https://sms-activate.world/",
-                "icon": "./images/SMS.png"
             }
         ],
         "domId": "cat-8"
