@@ -1030,6 +1030,12 @@ const appData = [
                 "icon": "./images/qijishow.svg"
             },
             {
+                "name": "Compositor",
+                "description": "The Photoshop alternative for Mac",
+                "link": "https://github.com/robbietilton/Compositor/releases",
+                "icon": "./images/compositor.png"
+            },
+            {
                 "name": "Apple",
                 "description": "Official Apple website and resources",
                 "link": "https://www.apple.com/",
