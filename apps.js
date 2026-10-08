@@ -1330,10 +1330,10 @@ const appData = [
                 "icon": "./images/pockyt.svg"
             },
             {
-                "name": "GoingBus",
-                "description": "一站式流媒体合租平台",
-                "link": "https://cn.goingbus.com/",
-                "icon": "./images/goingbus.png"
+                "name": "账号星球",
+                "description": "Spotify 苹果ID 电报Telegram 账号购买",
+                "link": "https://www.accountboy.com/",
+                "icon": "./images/accountboy.jpeg"
             },
             {
                 "name": "银河录像局",
@@ -1342,10 +1342,10 @@ const appData = [
                 "icon": "./images/nf.video.png"
             },
             {
-                "name": "账号星球",
-                "description": "Spotify 苹果ID 电报Telegram 账号购买",
-                "link": "https://www.accountboy.com/",
-                "icon": "./images/accountboy.jpeg"
+                "name": "GoingBus",
+                "description": "一站式流媒体合租平台",
+                "link": "https://cn.goingbus.com/",
+                "icon": "./images/goingbus.png"
             },
             {
                 "name": "阿奇索",
@@ -1382,18 +1382,6 @@ const appData = [
                 "description": "解锁社交内容电商全新体验",
                 "link": "https://ark.xiaohongshu.com/ark",
                 "icon": "./images/ark.xiaohongshu.jpg"
-            },
-            {
-                "name": "光厂",
-                "description": "Royalty-free video material platform",
-                "link": "https://www.vjshi.com/",
-                "icon": "./images/光厂.jpg"
-            },
-            {
-                "name": "新片场素材",
-                "description": "Royalty-free audio-visual material hub",
-                "link": "https://stock.xinpianchang.com/",
-                "icon": "./images/xinpianchang.jpg"
             },
             {
                 "name": "千库网",
