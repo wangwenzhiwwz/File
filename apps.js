@@ -1210,12 +1210,6 @@ const appData = [
                 "icon": "./images/FreeDNS.png"
             },
             {
-                "name": "Freenom",
-                "description": "World's first free domain provider",
-                "link": "https://my.freenom.com/clientarea.php?action=domains",
-                "icon": "./images/Freenom.png"
-            },
-            {
                 "name": "Name.com",
                 "description": "Wide range of domain TLDs",
                 "link": "https://www.name.com/zh-cn/account/login",
