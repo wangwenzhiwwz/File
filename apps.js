@@ -616,6 +616,12 @@ const appData = [
                 "icon": "./images/windows.jpg"
             },
             {
+                "name": "Craft Apps",
+                "description": "Twelve apps. One craft.",
+                "link": "https://getartcraft.com/apps",
+                "icon": "./images/getartcraft.png"
+            },
+            {
                 "name": "Uninstall Tool",
                 "description": "安全、快速、强大的软件卸载删除工具",
                 "link": "https://www.ghxi.com/uninstalltool.html",
