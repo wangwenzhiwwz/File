@@ -169,7 +169,7 @@ const appData = [
             {
                 "name": "AIBase",
                 "description": "Your Gateway to AGI",
-                "link": "https://www.aibase.cn/",
+                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
                 "icon": "./images/aibase.png"
             },
             {
@@ -185,16 +185,16 @@ const appData = [
                 "icon": "./images/openai.png"
             },
             {
+                "name": "即梦AI",
+                "description": "即梦AI - 即刻造梦",
+                "link": "https://jimeng.jianying.com/ai-tool/home",
+                "icon": "./images/jimeng.png"
+            },
+            {
                 "name": "LibTV",
                 "description": "LiblibAI 推出的专业 AI 视频创作平台",
                 "link": "https://www.liblib.tv/",
                 "icon": "./images/LibTV.png"
-            },
-            {
-                "name": "HeyGen",
-                "description": "AI 数字人口播、广告讲解、产品介绍、多语言视频和真人数字分身",
-                "link": "https://app.heygen.com/home",
-                "icon": "./images/HeyGen.png"
             },
             {
                 "name": "Flow",
@@ -203,10 +203,10 @@ const appData = [
                 "icon": "./images/Flow.jpg"
             },
             {
-                "name": "即梦AI",
-                "description": "即梦AI - 即刻造梦",
-                "link": "https://jimeng.jianying.com/ai-tool/home",
-                "icon": "./images/jimeng.png"
+                "name": "HeyGen",
+                "description": "AI 数字人口播、广告讲解、产品介绍、多语言视频和真人数字分身",
+                "link": "https://app.heygen.com/home",
+                "icon": "./images/HeyGen.png"
             },
             {
                 "name": "Grok",
@@ -429,12 +429,6 @@ const appData = [
                 "description": "Simplified AI command interface",
                 "link": "https://www.aishort.top/",
                 "icon": "./images/aishort.png"
-            },
-            {
-                "name": "Nano Banana Pro",
-                "description": "Nano Banana Pro 提示词",
-                "link": "https://nanobanana.org/zh/banana-prompts",
-                "icon": "./images/nanobanana.jpg"
             }
         ]
     },
@@ -1334,12 +1328,6 @@ const appData = [
                 "description": "Apple Store, Amazon gift cards, safe and ...",
                 "link": "https://shop.pockyt.io/",
                 "icon": "./images/pockyt.svg"
-            },
-            {
-                "name": "账号星球",
-                "description": "Spotify 苹果ID 电报Telegram 账号购买",
-                "link": "https://www.accountboy.com/",
-                "icon": "./images/accountboy.jpeg"
             },
             {
                 "name": "银河录像局",
