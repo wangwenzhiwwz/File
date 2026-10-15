@@ -323,6 +323,12 @@ const appData = [
                 "icon": "./images/ComfyUI.jpg"
             },
             {
+                "name": "Antigravity",
+                "description": "Experience liftoff with the next-generation IDE",
+                "link": "https://antigravity.google/",
+                "icon": "./images/Antigravity.jpg"
+            },
+            {
                 "name": "RunningHub",
                 "description": "ComfyUI Cloud, Create AI Apps Online",
                 "link": "https://www.runninghub.cn/workflows?id=all_1871125640751345666",
@@ -387,12 +393,6 @@ const appData = [
                 "description": "Animate photos with dynamic motions",
                 "link": "https://viggle.ai/",
                 "icon": "./images/viggle.webp"
-            },
-            {
-                "name": "Antigravity",
-                "description": "Experience liftoff with the next-generation IDE",
-                "link": "https://antigravity.google/",
-                "icon": "./images/Antigravity.jpg"
             },
             {
                 "name": "WebSim",
