@@ -29,10 +29,10 @@ const appData = [
                 "icon": "./images/ithome.png"
             },
             {
-                "name": "Ping",
-                "description": "Website performance testing tool",
-                "link": "https://chinaz.com/",
-                "icon": "./images/ChinaZ.png"
+                "name": "AIBase",
+                "description": "Your Gateway to AGI",
+                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
+                "icon": "./images/aibase.png"
             },
             {
                 "name": "Outlook",
@@ -166,12 +166,6 @@ const appData = [
     {
         "title": "AI",
         "apps": [
-            {
-                "name": "AIBase",
-                "description": "Your Gateway to AGI",
-                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
-                "icon": "./images/aibase.png"
-            },
             {
                 "name": "Gemini",
                 "description": "Google AI planning and assistance",
@@ -317,16 +311,22 @@ const appData = [
                 "icon": "./images/Topaz.png"
             },
             {
-                "name": "ComfyUI",
-                "description": "Intuitive AI image generation",
-                "link": "https://www.comfy.org/",
-                "icon": "./images/ComfyUI.jpg"
-            },
-            {
                 "name": "Antigravity",
                 "description": "Experience liftoff with the next-generation IDE",
                 "link": "https://antigravity.google/",
                 "icon": "./images/Antigravity.jpg"
+            },
+            {
+                "name": "Hyper3D",
+                "description": "AI-powered 3D model generator",
+                "link": "https://hyper3d.ai/",
+                "icon": "./images/hyper3d.png"
+            },
+            {
+                "name": "ComfyUI",
+                "description": "Intuitive AI image generation",
+                "link": "https://www.comfy.org/",
+                "icon": "./images/ComfyUI.jpg"
             },
             {
                 "name": "RunningHub",
@@ -365,22 +365,10 @@ const appData = [
                 "icon": "./images/comfyui-aaaki.svg"
             },
             {
-                "name": "GoogleLabs",
-                "description": "AI-powered video storytelling platform",
-                "link": "https://labs.google/fx",
-                "icon": "./images/Google+Labs+Logo.jpg"
-            },
-            {
                 "name": "Ollama",
                 "description": "Run large language models locally",
                 "link": "https://ollama.com/",
                 "icon": "./images/ollama.png"
-            },
-            {
-                "name": "Cherry Studio",
-                "description": "多模型AI助手平台",
-                "link": "https://www.cherry-ai.com/",
-                "icon": "./images/CherryStudio.png"
             },
             {
                 "name": "Hugging Face",
@@ -399,12 +387,6 @@ const appData = [
                 "description": "Instant AI-powered code generation",
                 "link": "https://websim.ai/",
                 "icon": "./images/WebSim.png"
-            },
-            {
-                "name": "Hyper3D",
-                "description": "AI-powered 3D model generator",
-                "link": "https://hyper3d.ai/",
-                "icon": "./images/hyper3d.png"
             },
             {
                 "name": "Bigjpg",
@@ -1526,12 +1508,6 @@ const appData = [
                 "description": "Online typing practice and learning platform.",
                 "link": "https://www.edclub.com/sportal/",
                 "icon": "./images/typingclub.jpeg"
-            },
-            {
-                "name": "默沙东诊疗手册",
-                "description": "获得医生同样信赖的医学信息",
-                "link": "https://www.msdmanuals.cn/home",
-                "icon": "./images/msdmanuals.svg"
             },
             {
                 "name": "Radio Garden",
