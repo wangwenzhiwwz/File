@@ -1342,12 +1342,6 @@ const appData = [
                 "icon": "./images/uszcn.png"
             },
             {
-                "name": "Artlist",
-                "description": "Royalty-free digital asset subscription",
-                "link": "https://artlist.io/",
-                "icon": "./images/artlist.png"
-            },
-            {
                 "name": "像素蛋糕",
                 "description": "PixCake-像素级AI精修软件",
                 "link": "https://www.pixcakeai.com/",
@@ -1391,13 +1385,13 @@ const appData = [
         "apps": [
             {
                 "name": "Squoosh",
-                "description": "Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.",
+                "description": "终极图像压缩优化工具",
                 "link": "https://squoosh.app/",
                 "icon": "./images/squoosh.app.png"
             },
             {
                 "name": "Birme",
-                "description": "将图片压缩到所需的尺寸",
+                "description": "将图片压缩调整到所需的尺寸",
                 "link": "https://www.birme.net/",
                 "icon": "./images/birme.png"
             },
@@ -1432,22 +1426,22 @@ const appData = [
                 "icon": "./images/SUB Conversion.png"
             },
             {
-                "name": "Myip.is",
-                "description": "显示你当前的公网 IP 地址",
-                "link": "https://myip.is/",
-                "icon": "./images/myip.jpg"
-            },
-            {
                 "name": "草料二维码",
                 "description": "Free one-stop QR code generator",
                 "link": "https://cli.im/",
                 "icon": "./images/cli.png"
             },
             {
-                "name": "OpenWRT固件生成",
+                "name": "OpenWrt 定制",
                 "description": "定制适用于您设备的OpenWrt固件",
                 "link": "https://openwrt.ai/?target=mediatek%2Ffilogic&id=cudy_tr3000-mod",
                 "icon": "./images/openwrt.png"
+            },
+            {
+                "name": "Yandex",
+                "description": "fast Internet search",
+                "link": "https://yandex.az/",
+                "icon": "./images/yandex.png"
             },
             {
                 "name": "YandexTranslate",
@@ -1460,18 +1454,6 @@ const appData = [
                 "description": "Organized file storage solution",
                 "link": "https://alist.wwz.im/",
                 "icon": "./images/alist.png"
-            },
-            {
-                "name": "Yandex",
-                "description": "fast Internet search",
-                "link": "https://yandex.com/",
-                "icon": "./images/yandex.png"
-            },
-            {
-                "name": "Cusdis",
-                "description": "轻量级、隐私优先、开源的评论系统",
-                "link": "https://cusdis.com/dashboard",
-                "icon": "./images/Cusdis.png"
             },
             {
                 "name": "TuChong",
@@ -1488,7 +1470,7 @@ const appData = [
             {
                 "name": "US Address",
                 "description": "Generate valid US addresses",
-                "link": "https://fauxid.com/identity/46c7de5b-db09-4161-b1bf-b5496f24384d",
+                "link": "https://addrgen.vip/",
                 "icon": "./images/dizhi.png"
             },
             {
@@ -1496,6 +1478,12 @@ const appData = [
                 "description": "Free app store for Android TV",
                 "link": "https://app.emotn.com/",
                 "icon": "./images/emotn.webp"
+            },
+            {
+                "name": "SeedHub",
+                "description": "影视&动漫分享",
+                "link": "https://sidhub.cc/",
+                "icon": "./images/seedhub.png"
             },
             {
                 "name": "CN影院",
@@ -1514,12 +1502,6 @@ const appData = [
                 "description": "Stream global radio stations",
                 "link": "https://radio.garden/",
                 "icon": "./images/radio.garden.png"
-            },
-            {
-                "name": "WebIntoApp",
-                "description": "Convert websites to mobile apps",
-                "link": "https://www.webintoapp.com/",
-                "icon": "./images/webintoapp.png"
             },
             {
                 "name": "V2raySE-Singbox",
@@ -1552,46 +1534,16 @@ const appData = [
                 "icon": "./images/Dropbox.png"
             },
             {
-                "name": "Wallpapers Central",
-                "description": "Wallpaper collection and customization platform",
-                "link": "https://wallpapers.ispazio.net/",
-                "icon": "./images/wallpapers.ispazio.jpg"
-            },
-            {
-                "name": "leManoosh",
-                "description": "Industrial Design Trends, Online Courses and Jobs",
-                "link": "https://lemanoosh.com/tagged/colors/",
-                "icon": "./images/lemanoosh.png"
-            },
-            {
-                "name": "Jerry-Lee Bosmans",
-                "description": "Dutch visual artist & designer",
-                "link": "https://www.byjer.com/",
-                "icon": "./images/JER.png"
-            },
-            {
-                "name": "SPACE TYPE GENERATOR",
-                "description": "I-TRY-ALL-THINGS;-I-ACHIEVE-WHAT-I-CAN",
-                "link": "https://spacetypegenerator.com/clutter",
-                "icon": "./images/spacetypegenerator.png"
-            },
-            {
-                "name": "Vocal Remover",
-                "description": "Vocal Remover and Isolation [AI]",
-                "link": "https://vocalremover.org/",
-                "icon": "./images/vocalremover.jpg"
-            },
-            {
-                "name": "SeedHub",
-                "description": "影视&动漫分享",
-                "link": "https://www.seedhub.cc/",
-                "icon": "./images/seedhub.png"
-            },
-            {
                 "name": "Google Search Console",
                 "description": "Search Console tools and reports help you measure your site's Search traffic and performance",
                 "link": "https://search.google.com/search-console/performance/insights?resource_id=sc-domain%3Awwz.im",
                 "icon": "./images/search-console.svg"
+            },
+            {
+                "name": "Wallpapers Central",
+                "description": "Wallpaper collection and customization platform",
+                "link": "https://wallpapers.ispazio.net/",
+                "icon": "./images/wallpapers.ispazio.jpg"
             },
             {
                 "name": "AppleWalls",
