@@ -143,6 +143,12 @@ const appData = [
                 "icon": "./images/openai.png"
             },
             {
+                "name": "Claude",
+                "description": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work.",
+                "link": "https://claude.ai/",
+                "icon": "./images/Claude.png"
+            },
+            {
                 "name": "即梦AI",
                 "description": "即梦AI - 即刻造梦",
                 "link": "https://jimeng.jianying.com/ai-tool/home",
@@ -231,12 +237,6 @@ const appData = [
                 "description": "阿里巴巴云开发的智能助手",
                 "link": "https://www.tongyi.com/",
                 "icon": "./images/QWEN.png"
-            },
-            {
-                "name": "AIBase",
-                "description": "Your Gateway to AGI",
-                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
-                "icon": "./images/aibase.png"
             }
         ],
         "domId": "cat-1"
@@ -244,6 +244,12 @@ const appData = [
     {
         "title": "GenAI",
         "apps": [
+            {
+                "name": "AIBase",
+                "description": "Your Gateway to AGI",
+                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
+                "icon": "./images/aibase.png"
+            },
             {
                 "name": "Lovart",
                 "description": "The World's First AI Design Agent",
