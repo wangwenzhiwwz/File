@@ -29,12 +29,6 @@ const appData = [
                 "icon": "./images/ithome.png"
             },
             {
-                "name": "AIBase",
-                "description": "Your Gateway to AGI",
-                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
-                "icon": "./images/aibase.png"
-            },
-            {
                 "name": "Outlook",
                 "description": "Platform developed by Microsoft",
                 "link": "https://outlook.live.com/",
@@ -51,6 +45,12 @@ const appData = [
                 "description": "Host your business email on a secure",
                 "link": "https://mail.zoho.eu/",
                 "icon": "./images/Zoho-Mail.png"
+            },
+            {
+                "name": "Calendar",
+                "description": "Easier Time Management, Appointments",
+                "link": "https://calendar.google.com/",
+                "icon": "./images/calendar.jpg"
             },
             {
                 "name": "Bilibili",
@@ -95,28 +95,16 @@ const appData = [
                 "icon": "./images/cloudflare.svg"
             },
             {
-                "name": "Teambition",
-                "description": "Enterprise-grade team collaboration tool",
-                "link": "https://www.teambition.com/organization/61ade96d461f91c76e3bfc06/task/shortcut/66d920b8e2a3f00f0ddca2e3/",
-                "icon": "./images/Teambition.jpg"
-            },
-            {
-                "name": "Google Keep",
-                "description": "Lightweight note-taking and to-do application",
-                "link": "https://keep.google.com/",
-                "icon": "./images/Google_Keep.png"
+                "name": "Notion",
+                "description": "Versatile all-in-one productivity app",
+                "link": "https://www.notion.so/",
+                "icon": "./images/notion.webp"
             },
             {
                 "name": "FigJam",
                 "description": "The Online Collaborative Whiteboard for Teams",
                 "link": "https://www.figma.com/",
                 "icon": "./images/FigJam.png"
-            },
-            {
-                "name": "Whimsical",
-                "description": "Unified workspace for teams",
-                "link": "https://whimsical.com/",
-                "icon": "./images/whimsical.jfif"
             },
             {
                 "name": "闪电分镜",
@@ -141,12 +129,6 @@ const appData = [
                 "description": "Business Phone Number & Systems",
                 "link": "https://voice.google.com/",
                 "icon": "./images/google-voice.png"
-            },
-            {
-                "name": "Notion",
-                "description": "Versatile all-in-one productivity app",
-                "link": "https://www.notion.so/",
-                "icon": "./images/notion.webp"
             },
             {
                 "name": "ITDOG",
@@ -267,6 +249,12 @@ const appData = [
                 "description": "阿里巴巴云开发的智能助手",
                 "link": "https://www.tongyi.com/",
                 "icon": "./images/QWEN.png"
+            },
+            {
+                "name": "AIBase",
+                "description": "Your Gateway to AGI",
+                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
+                "icon": "./images/aibase.png"
             }
         ],
         "domId": "cat-1"
@@ -1400,6 +1388,12 @@ const appData = [
                 "description": "Save videos, images from platforms",
                 "link": "https://snapany.com/",
                 "icon": "./images/snapany.png"
+            },
+            {
+                "name": "Whimsical",
+                "description": "Unified workspace for teams",
+                "link": "https://whimsical.com/",
+                "icon": "./images/whimsical.jfif"
             },
             {
                 "name": "MY IP",
