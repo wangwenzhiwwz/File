@@ -71,12 +71,6 @@ const appData = [
                 "icon": "./images/Zcool.png"
             },
             {
-                "name": "Spotify",
-                "description": "Music for everyone",
-                "link": "https://open.spotify.com/",
-                "icon": "./images/Spotify.png"
-            },
-            {
                 "name": "GitHub",
                 "description": "Collaborative code hosting platform",
                 "link": "https://github.com/",
@@ -99,18 +93,6 @@ const appData = [
                 "description": "Versatile all-in-one productivity app",
                 "link": "https://www.notion.so/",
                 "icon": "./images/notion.webp"
-            },
-            {
-                "name": "FigJam",
-                "description": "The Online Collaborative Whiteboard for Teams",
-                "link": "https://www.figma.com/",
-                "icon": "./images/FigJam.png"
-            },
-            {
-                "name": "闪电分镜",
-                "description": "Efficient pre-production planning tool",
-                "link": "https://web.mediastory.cc/",
-                "icon": "./images/SDFJ.webp"
             },
             {
                 "name": "Nodeseek",
