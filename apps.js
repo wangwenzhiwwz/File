@@ -155,6 +155,12 @@ const appData = [
                 "icon": "./images/jimeng.png"
             },
             {
+                "name": "Kling AI",
+                "description": "Kling AI is a generative artificial intelligence service created",
+                "link": "https://kling.ai/app",
+                "icon": "./images/kling.png"
+            },
+            {
                 "name": "LibTV",
                 "description": "LiblibAI 推出的专业 AI 视频创作平台",
                 "link": "https://www.liblib.tv/",
@@ -207,12 +213,6 @@ const appData = [
                 "description": "字节跳动旗下AI 智能助手",
                 "link": "https://www.doubao.com/",
                 "icon": "./images/doubao.png"
-            },
-            {
-                "name": "Kling AI",
-                "description": "Kling AI is a generative artificial intelligence service created",
-                "link": "https://app.klingai.com/",
-                "icon": "./images/klingai.jpg"
             },
             {
                 "name": "智谱清影",
