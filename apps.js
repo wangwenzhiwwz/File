@@ -149,6 +149,12 @@ const appData = [
                 "icon": "./images/Claude.png"
             },
             {
+                "name": "Grok",
+                "description": "xAI's generative AI chatbot",
+                "link": "https://grok.com/",
+                "icon": "./images/Grok.jpg"
+            },
+            {
                 "name": "LibTV",
                 "description": "LiblibAI 推出的专业 AI 视频创作平台",
                 "link": "https://www.liblib.tv/",
@@ -165,6 +171,12 @@ const appData = [
                 "description": "即梦AI - 即刻造梦",
                 "link": "https://jimeng.jianying.com/ai-tool/home",
                 "icon": "./images/jimeng.png"
+            },
+            {
+                "name": "Flow",
+                "description": "Google 高级视频AI 模型 Veo",
+                "link": "https://labs.google/fx/tools/flow",
+                "icon": "./images/Flow.jpg"
             },
             {
                 "name": "DeepSeek",
@@ -203,46 +215,16 @@ const appData = [
                 "icon": "./images/kling.png"
             },
             {
-                "name": "Flow",
-                "description": "Google 高级视频AI 模型 Veo",
-                "link": "https://labs.google/fx/tools/flow",
-                "icon": "./images/Flow.jpg"
-            },
-            {
-                "name": "Grok",
-                "description": "xAI's generative AI chatbot",
-                "link": "https://grok.com/",
-                "icon": "./images/Grok.jpg"
-            },
-            {
                 "name": "Microsoft Copilot",
                 "description": "AI companion for productivity",
                 "link": "https://copilot.microsoft.com/imagine",
                 "icon": "./images/Copilot.png"
             },
             {
-                "name": "GoogleAiStudio",
-                "description": "Google DeepMind's latest AI tools",
-                "link": "https://aistudio.google.com/",
-                "icon": "./images/GoogleAiStudio.png"
-            },
-            {
-                "name": "NotebookLM",
-                "description": "AI Research Tool & Thinking Partner",
-                "link": "https://notebooklm.google.com/",
-                "icon": "./images/notebooklm.png"
-            },
-            {
                 "name": "Playground",
                 "description": "Free AI Design Tool",
                 "link": "https://playground.com/design/c/mobile-wallpaper",
                 "icon": "./images/playground.jpeg"
-            },
-            {
-                "name": "GitHub Copilot",
-                "description": "AI-powered coding assistant",
-                "link": "https://github.com/copilot/",
-                "icon": "./images/GitHub Copilot.png"
             }
         ],
         "domId": "cat-1"
@@ -255,6 +237,24 @@ const appData = [
                 "description": "Your Gateway to AGI",
                 "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
                 "icon": "./images/aibase.png"
+            },
+            {
+                "name": "GitHub Copilot",
+                "description": "AI-powered coding assistant",
+                "link": "https://github.com/copilot/",
+                "icon": "./images/GitHub Copilot.png"
+            },
+            {
+                "name": "NotebookLM",
+                "description": "AI Research Tool & Thinking Partner",
+                "link": "https://notebooklm.google.com/",
+                "icon": "./images/notebooklm.png"
+            },
+            {
+                "name": "GoogleAiStudio",
+                "description": "Google DeepMind's latest AI tools",
+                "link": "https://aistudio.google.com/",
+                "icon": "./images/GoogleAiStudio.png"
             },
             {
                 "name": "Lovart",
