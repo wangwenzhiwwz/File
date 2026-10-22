@@ -149,10 +149,52 @@ const appData = [
                 "icon": "./images/Claude.png"
             },
             {
+                "name": "LibTV",
+                "description": "LiblibAI 推出的专业 AI 视频创作平台",
+                "link": "https://www.liblib.tv/",
+                "icon": "./images/LibTV.png"
+            },
+            {
+                "name": "豆包",
+                "description": "字节跳动旗下AI 智能助手",
+                "link": "https://www.doubao.com/",
+                "icon": "./images/doubao.png"
+            },
+            {
                 "name": "即梦AI",
                 "description": "即梦AI - 即刻造梦",
                 "link": "https://jimeng.jianying.com/ai-tool/home",
                 "icon": "./images/jimeng.png"
+            },
+            {
+                "name": "DeepSeek",
+                "description": "Into the Unknown",
+                "link": "https://www.deepseek.com/",
+                "icon": "./images/DeepSeek.png"
+            },
+            {
+                "name": "Kimi",
+                "description": " Built for Agentic Coding & Knowledge Work",
+                "link": "https://www.kimi.ai/",
+                "icon": "./images/kimi.jpg"
+            },
+            {
+                "name": "Qwen",
+                "description": "阿里巴巴云开发的智能助手",
+                "link": "https://www.tongyi.com/",
+                "icon": "./images/QWEN.png"
+            },
+            {
+                "name": "Xiaomi MiMo",
+                "description": "Unlocking the Reasoning Potential of Language Model",
+                "link": "https://aistudio.xiaomimimo.com/",
+                "icon": "./images/Xiaomi.png"
+            },
+            {
+                "name": "智谱清言",
+                "description": "智谱清言是基于GLM-4.7 的全能AI 助手",
+                "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
+                "icon": "./images/chatglm.png"
             },
             {
                 "name": "Kling AI",
@@ -161,22 +203,10 @@ const appData = [
                 "icon": "./images/kling.png"
             },
             {
-                "name": "LibTV",
-                "description": "LiblibAI 推出的专业 AI 视频创作平台",
-                "link": "https://www.liblib.tv/",
-                "icon": "./images/LibTV.png"
-            },
-            {
                 "name": "Flow",
                 "description": "Google 高级视频AI 模型 Veo",
                 "link": "https://labs.google/fx/tools/flow",
                 "icon": "./images/Flow.jpg"
-            },
-            {
-                "name": "HeyGen",
-                "description": "AI 数字人口播、广告讲解、产品介绍、多语言视频和真人数字分身",
-                "link": "https://app.heygen.com/home",
-                "icon": "./images/HeyGen.png"
             },
             {
                 "name": "Grok",
@@ -209,34 +239,10 @@ const appData = [
                 "icon": "./images/playground.jpeg"
             },
             {
-                "name": "豆包",
-                "description": "字节跳动旗下AI 智能助手",
-                "link": "https://www.doubao.com/",
-                "icon": "./images/doubao.png"
-            },
-            {
-                "name": "智谱清影",
-                "description": "智谱清言是基于GLM-4.7 的全能AI 助手",
-                "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
-                "icon": "./images/chatglm.png"
-            },
-            {
-                "name": "Xiaomi MiMo",
-                "description": "Unlocking the Reasoning Potential of Language Model",
-                "link": "https://aistudio.xiaomimimo.com/",
-                "icon": "./images/Xiaomi.png"
-            },
-            {
                 "name": "GitHub Copilot",
                 "description": "AI-powered coding assistant",
                 "link": "https://github.com/copilot/",
                 "icon": "./images/GitHub Copilot.png"
-            },
-            {
-                "name": "Qwen",
-                "description": "阿里巴巴云开发的智能助手",
-                "link": "https://www.tongyi.com/",
-                "icon": "./images/QWEN.png"
             }
         ],
         "domId": "cat-1"
@@ -261,6 +267,12 @@ const appData = [
                 "description": "AI Visual Creation Engine for Ads, Films",
                 "link": "https://app.tapnow.ai/#/canvas/projects",
                 "icon": "./images/tapnow.jpg"
+            },
+            {
+                "name": "HeyGen",
+                "description": "AI 数字人口播、广告讲解、产品介绍、多语言视频和真人数字分身",
+                "link": "https://app.heygen.com/home",
+                "icon": "./images/HeyGen.png"
             },
             {
                 "name": "LiblibAI",
