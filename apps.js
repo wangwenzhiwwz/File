@@ -143,6 +143,12 @@ const appData = [
                 "icon": "./images/openai.png"
             },
             {
+                "name": "Kling AI",
+                "description": "Kling AI is a generative artificial intelligence service created",
+                "link": "https://kling.ai/app",
+                "icon": "./images/kling.png"
+            },
+            {
                 "name": "Claude",
                 "description": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work.",
                 "link": "https://claude.ai/",
@@ -153,12 +159,6 @@ const appData = [
                 "description": "即梦AI - 即刻造梦",
                 "link": "https://jimeng.jianying.com/ai-tool/home",
                 "icon": "./images/jimeng.png"
-            },
-            {
-                "name": "Kling AI",
-                "description": "Kling AI is a generative artificial intelligence service created",
-                "link": "https://kling.ai/app",
-                "icon": "./images/kling.png"
             },
             {
                 "name": "LibTV",
