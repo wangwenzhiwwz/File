@@ -131,40 +131,64 @@ const appData = [
         "title": "AI",
         "apps": [
             {
-                "name": "Gemini",
-                "description": "Google AI planning and assistance",
-                "link": "https://gemini.google.com/",
-                "icon": "./images/Gemini.png"
-            },
-            {
                 "name": "ChatGPT",
-                "description": "OpenAI's official conversational AI",
+                "description": "综合能力全面，擅长推理、写作、数据分析、图片理解、创作及工具协作",
                 "link": "https://chatgpt.com/",
                 "icon": "./images/openai.png"
             },
             {
                 "name": "Claude",
-                "description": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work.",
+                "description": "长文理解、代码开发、文档处理和复杂项目协作表现突出",
                 "link": "https://claude.ai/",
                 "icon": "./images/Claude.png"
             },
             {
+                "name": "Gemini",
+                "description": "多模态理解、长上下文及 Google 生态协作能力突出",
+                "link": "https://gemini.google.com/",
+                "icon": "./images/Gemini.png"
+            },
+            {
+                "name": "DeepSeek",
+                "description": "推理、数学、代码及中文任务有竞争力，适合研究和开发",
+                "link": "https://www.deepseek.com/",
+                "icon": "./images/DeepSeek.png"
+            },
+            {
                 "name": "Grok",
-                "description": "xAI's generative AI chatbot",
+                "description": "实时信息与 X 社交平台内容结合，适合追踪热点和讨论",
                 "link": "https://grok.com/",
                 "icon": "./images/Grok.jpg"
+            },
+            {
+                "name": "豆包",
+                "description": "中文交互方便，语音、图片创作和日常使用门槛低",
+                "link": "https://www.doubao.com/",
+                "icon": "./images/doubao.png"
+            },
+            {
+                "name": "Qwen",
+                "description": "中文、代码、多模态及开放权重模型生态较丰富",
+                "link": "https://www.tongyi.com/",
+                "icon": "./images/QWEN.png"
+            },
+            {
+                "name": "Kimi",
+                "description": "长文档处理、资料整理、研究和中文写作较有特色",
+                "link": "https://www.kimi.ai/",
+                "icon": "./images/kimi.jpg"
+            },
+            {
+                "name": "智谱清言",
+                "description": "中文推理、编程、智能体及企业应用",
+                "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
+                "icon": "./images/chatglm.png"
             },
             {
                 "name": "LibTV",
                 "description": "LiblibAI 推出的专业 AI 视频创作平台",
                 "link": "https://www.liblib.tv/",
                 "icon": "./images/LibTV.png"
-            },
-            {
-                "name": "豆包",
-                "description": "字节跳动旗下AI 智能助手",
-                "link": "https://www.doubao.com/",
-                "icon": "./images/doubao.png"
             },
             {
                 "name": "即梦AI",
@@ -177,54 +201,6 @@ const appData = [
                 "description": "Google 高级视频AI 模型 Veo",
                 "link": "https://labs.google/fx/tools/flow",
                 "icon": "./images/Flow.jpg"
-            },
-            {
-                "name": "DeepSeek",
-                "description": "Into the Unknown",
-                "link": "https://www.deepseek.com/",
-                "icon": "./images/DeepSeek.png"
-            },
-            {
-                "name": "Kimi",
-                "description": " Built for Agentic Coding & Knowledge Work",
-                "link": "https://www.kimi.ai/",
-                "icon": "./images/kimi.jpg"
-            },
-            {
-                "name": "Qwen",
-                "description": "阿里巴巴云开发的智能助手",
-                "link": "https://www.tongyi.com/",
-                "icon": "./images/QWEN.png"
-            },
-            {
-                "name": "Xiaomi MiMo",
-                "description": "Unlocking the Reasoning Potential of Language Model",
-                "link": "https://aistudio.xiaomimimo.com/",
-                "icon": "./images/Xiaomi.png"
-            },
-            {
-                "name": "智谱清言",
-                "description": "智谱清言是基于GLM-4.7 的全能AI 助手",
-                "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
-                "icon": "./images/chatglm.png"
-            },
-            {
-                "name": "Kling AI",
-                "description": "Kling AI is a generative artificial intelligence service created",
-                "link": "https://kling.ai/app",
-                "icon": "./images/kling.png"
-            },
-            {
-                "name": "Microsoft Copilot",
-                "description": "AI companion for productivity",
-                "link": "https://copilot.microsoft.com/imagine",
-                "icon": "./images/Copilot.png"
-            },
-            {
-                "name": "Playground",
-                "description": "Free AI Design Tool",
-                "link": "https://playground.com/design/c/mobile-wallpaper",
-                "icon": "./images/playground.jpeg"
             }
         ],
         "domId": "cat-1"
@@ -237,6 +213,18 @@ const appData = [
                 "description": "Your Gateway to AGI",
                 "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
                 "icon": "./images/aibase.png"
+            },
+            {
+                "name": "Playground",
+                "description": "Free AI Design Tool",
+                "link": "https://playground.com/design/c/mobile-wallpaper",
+                "icon": "./images/playground.jpeg"
+            },
+            {
+                "name": "Kling AI",
+                "description": "Kling AI is a generative artificial intelligence service created",
+                "link": "https://kling.ai/app",
+                "icon": "./images/kling.png"
             },
             {
                 "name": "GitHub Copilot",
