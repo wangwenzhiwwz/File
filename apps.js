@@ -132,73 +132,73 @@ const appData = [
         "apps": [
             {
                 "name": "ChatGPT",
-                "description": "综合能力全面，擅长推理、写作、数据分析、图片理解、创作及工具协作",
+                "description": "Your all-round partner for ideas, work, and creativity.",
                 "link": "https://chatgpt.com/",
                 "icon": "./images/openai.png"
             },
             {
                 "name": "Claude",
-                "description": "长文理解、代码开发、文档处理和复杂项目协作表现突出",
+                "description": "A thoughtful expert in writing and complex coding.",
                 "link": "https://claude.ai/",
                 "icon": "./images/Claude.png"
             },
             {
                 "name": "Gemini",
-                "description": "多模态理解、长上下文及 Google 生态协作能力突出",
+                "description": "Google's multimodal AI for connected creativity.",
                 "link": "https://gemini.google.com/",
                 "icon": "./images/Gemini.png"
             },
             {
                 "name": "DeepSeek",
-                "description": "推理、数学、代码及中文任务有竞争力，适合研究和开发",
+                "description": "A reasoning powerhouse for math and programming.",
                 "link": "https://www.deepseek.com/",
                 "icon": "./images/DeepSeek.png"
             },
             {
                 "name": "Grok",
-                "description": "实时信息与 X 社交平台内容结合，适合追踪热点和讨论",
+                "description": "Real-time insights with a bold, witty personality.",
                 "link": "https://grok.com/",
                 "icon": "./images/Grok.jpg"
             },
             {
                 "name": "豆包",
-                "description": "中文交互方便，语音、图片创作和日常使用门槛低",
+                "description": "Everyday AI for natural conversations and creative fun.",
                 "link": "https://www.doubao.com/",
                 "icon": "./images/doubao.png"
             },
             {
                 "name": "Qwen",
-                "description": "中文、代码、多模态及开放权重模型生态较丰富",
+                "description": "An open AI ecosystem for language, code, and vision.",
                 "link": "https://www.tongyi.com/",
                 "icon": "./images/QWEN.png"
             },
             {
                 "name": "Kimi",
-                "description": "长文档处理、资料整理、研究和中文写作较有特色",
+                "description": "A research expert for long documents and deep analysis.",
                 "link": "https://www.kimi.ai/",
                 "icon": "./images/kimi.jpg"
             },
             {
                 "name": "智谱清言",
-                "description": "中文推理、编程、智能体及企业应用",
+                "description": "A practical AI for Chinese reasoning and productivity.",
                 "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
                 "icon": "./images/chatglm.png"
             },
             {
                 "name": "LibTV",
-                "description": "LiblibAI 推出的专业 AI 视频创作平台",
+                "description": "Turn creative ideas into AI-generated videos.",
                 "link": "https://www.liblib.tv/",
                 "icon": "./images/LibTV.png"
             },
             {
                 "name": "即梦AI",
-                "description": "即梦AI - 即刻造梦",
+                "description": "Bring your imagination to life with AI visuals.",
                 "link": "https://jimeng.jianying.com/ai-tool/home",
                 "icon": "./images/jimeng.png"
             },
             {
                 "name": "Flow",
-                "description": "Google 高级视频AI 模型 Veo",
+                "description": "Create cinematic stories with Google's Veo models.",
                 "link": "https://labs.google/fx/tools/flow",
                 "icon": "./images/Flow.jpg"
             }
