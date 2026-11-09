@@ -143,6 +143,12 @@ const appData = [
                 "icon": "./images/Claude.png"
             },
             {
+                "name": "WorkBuddy",
+                "description": "AI Agent for Everyday Office Work",
+                "link": "https://www.workbuddy.cn/app",
+                "icon": "./images/workbuddy.png"
+            },
+            {
                 "name": "Gemini",
                 "description": "Google's multimodal AI for connected creativity.",
                 "link": "https://gemini.google.com/",
@@ -177,12 +183,6 @@ const appData = [
                 "description": "A research expert for long documents and deep analysis.",
                 "link": "https://www.kimi.ai/",
                 "icon": "./images/kimi.jpg"
-            },
-            {
-                "name": "智谱清言",
-                "description": "A practical AI for Chinese reasoning and productivity.",
-                "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
-                "icon": "./images/chatglm.png"
             },
             {
                 "name": "LibTV",
@@ -249,6 +249,12 @@ const appData = [
                 "description": "The World's First AI Design Agent",
                 "link": "https://www.lovart.ai/",
                 "icon": "./images/lovart.png"
+            },
+            {
+                "name": "智谱清言",
+                "description": "A practical AI for Chinese reasoning and productivity.",
+                "link": "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2?t=1770174655953&from=sidebar&lang=zh",
+                "icon": "./images/chatglm.png"
             },
             {
                 "name": "TapNow",
