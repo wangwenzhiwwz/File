@@ -215,6 +215,18 @@ const appData = [
                 "icon": "./images/aibase.png"
             },
             {
+                "name": "LocModel",
+                "description": "Bring large models, into your computer.",
+                "link": "https://locmodel.com/",
+                "icon": "./images/locmodel.png"
+            },
+            {
+                "name": "Ollama",
+                "description": "Run large language models locally",
+                "link": "https://ollama.com/",
+                "icon": "./images/ollama.png"
+            },
+            {
                 "name": "Playground",
                 "description": "Free AI Design Tool",
                 "link": "https://playground.com/design/c/mobile-wallpaper",
@@ -345,12 +357,6 @@ const appData = [
                 "description": "秋葉aaaki 开发的 ComfyUI 启动器",
                 "link": "https://comfyui-wiki.com/zh/install/install-comfyui",
                 "icon": "./images/comfyui-aaaki.svg"
-            },
-            {
-                "name": "Ollama",
-                "description": "Run large language models locally",
-                "link": "https://ollama.com/",
-                "icon": "./images/ollama.png"
             },
             {
                 "name": "Hugging Face",
