@@ -209,10 +209,10 @@ const appData = [
         "title": "GenAI",
         "apps": [
             {
-                "name": "AIBase",
-                "description": "Your Gateway to AGI",
-                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
-                "icon": "./images/aibase.png"
+                "name": "炉子",
+                "description": "把全世界的 AI 能力， 装进炉子",
+                "link": "https://app.luzi.top/community/forum",
+                "icon": "./images/luzi.png"
             },
             {
                 "name": "LocModel",
@@ -399,6 +399,12 @@ const appData = [
                 "description": "Simplified AI command interface",
                 "link": "https://www.aishort.top/",
                 "icon": "./images/aishort.png"
+            },
+            {
+                "name": "AIBase",
+                "description": "Your Gateway to AGI",
+                "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
+                "icon": "./images/aibase.png"
             }
         ]
     },
