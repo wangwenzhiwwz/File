@@ -1000,9 +1000,15 @@ const appData = [
         "title": "Mac",
         "apps": [
             {
+                "name": "Apple",
+                "description": "Official Apple website and resources",
+                "link": "https://www.apple.com/app-store/",
+                "icon": "./images/Apple.png"
+            },
+            {
                 "name": "奇迹秀",
                 "description": "Boost productivity with plugins",
-                "link": "https://www.qijishow.com/",
+                "link": "https://www.qijishow.com/down/index",
                 "icon": "./images/qijishow.svg"
             },
             {
@@ -1012,16 +1018,10 @@ const appData = [
                 "icon": "./images/compositor.png"
             },
             {
-                "name": "Apple",
-                "description": "Official Apple website and resources",
-                "link": "https://www.apple.com/",
-                "icon": "./images/Apple.png"
-            },
-            {
-                "name": "Mac Mouse Fix",
-                "description": "让你10美元的鼠标比苹果触控板还好用！",
-                "link": "https://macmousefix.com/zh-Hans/",
-                "icon": "./images/macmousefix.png"
+                "name": "SpektraLab",
+                "description": "Not a filter. A print.",
+                "link": "https://spektralab.app/",
+                "icon": "./images/spektralab.png"
             },
             {
                 "name": "MOC",
