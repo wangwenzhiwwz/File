@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Hiddify 中文新手指南：官方软件下载、安装、导入订阅和连接教程。">
+<title>Hiddify 入门指南 — 从下载到连接</title>
+<style>
+:root{--bg:#f5f6f8;--panel:#fff;--ink:#17191d;--muted:#68707d;--line:#e7e9ee;--blue:#246bfe;--blue2:#eaf1ff;--green:#16865b;--shadow:0 18px 55px rgba(24,35,58,.07);--radius:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.3px}.logo{width:35px;height:35px;border-radius:12px;background:linear-gradient(145deg,#4d8dff,#1555d8);display:grid;place-items:center;color:#fff;font-weight:800;box-shadow:0 6px 16px #246bfe35}.nav{display:flex;gap:26px;color:#596170;font-size:14px}.nav a:hover{color:var(--blue)}
+.hero{padding:76px 0 62px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:999px;background:#eaf1ff;color:#245ed0;font-size:13px;font-weight:650}.dot{width:7px;height:7px;border-radius:50%;background:#2c76ff}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.12;letter-spacing:-2.8px;margin:22px 0 18px}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:18px}.actions{display:flex;justify-content:center;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:14px;font-weight:650;font-size:15px;transition:.2s}.btn.primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px #246bfe30}.btn.secondary{background:#fff;border:1px solid var(--line)}.btn:hover{transform:translateY(-2px)}
+.notice{margin:0 auto 62px;max-width:850px;padding:15px 18px;background:#fff;border:1px solid var(--line);border-radius:16px;color:#596170;font-size:14px;text-align:left}.notice strong{color:#252a33}
+section{padding:34px 0 54px}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font-size:30px;letter-spacing:-1px;margin:0 0 8px}.section-head p{margin:0;color:var(--muted)}
+.platforms{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.platform{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px 16px;min-height:190px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:0 5px 20px #17233a05}.platform .emoji{font-size:27px;margin-bottom:10px}.platform h3{margin:0;font-size:17px}.platform p{font-size:13px;color:var(--muted);margin:5px 0 14px}.platform a{margin-top:auto;color:var(--blue);font-size:13px;font-weight:700}
+.guide{display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:start}.tabs{background:#fff;border:1px solid var(--line);border-radius:20px;padding:9px;display:grid;gap:5px}.tab{border:0;background:transparent;text-align:left;padding:12px 14px;border-radius:12px;font:inherit;color:#596170;cursor:pointer}.tab.active{background:var(--blue2);color:#1d5bd8;font-weight:700}.guide-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;min-height:310px}.guide-card h3{margin:0 0 5px;font-size:22px}.guide-card .sub{color:var(--muted);margin:0 0 20px;font-size:14px}.steps{display:grid;gap:14px}.step{display:grid;grid-template-columns:30px 1fr;gap:12px}.num{width:28px;height:28px;border-radius:9px;background:#edf2ff;color:#245ed0;display:grid;place-items:center;font-size:13px;font-weight:750}.step strong{display:block;margin-bottom:2px}.step span{font-size:14px;color:var(--muted)}.guide-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.flow-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:23px}.flow-card .n{font-size:12px;color:var(--blue);font-weight:800;letter-spacing:1px}.flow-card h3{font-size:18px;margin:8px 0}.flow-card p{font-size:14px;color:var(--muted);margin:0}
+.faq{max-width:850px;margin:auto;display:grid;gap:10px}.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 20px}.faq summary{font-weight:700;cursor:pointer}.faq details p{color:var(--muted);font-size:14px;margin:12px 0 0}
+footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot a{color:#315fc2}
+@media(max-width:850px){.platforms{grid-template-columns:repeat(2,1fr)}.guide{grid-template-columns:1fr}.tabs{grid-template-columns:repeat(3,1fr)}.tab{text-align:center;padding:10px 6px;font-size:13px}.flow{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}.nav{gap:12px;font-size:12px}.hero{padding:54px 0 40px}.hero p{font-size:16px}.platforms{gap:9px}.platform{padding:16px 13px;min-height:175px}.guide-card{padding:21px}.section-head h2{font-size:26px}}
+</style>
+<script type="text/javascript" nonce="fb1d968a771a432b9be8592b7f8" src="//local.adguard.org?ts=1795165241146&amp;type=content-script&amp;dmn=chatgpt.com&amp;url=https%3A%2F%2Fchatgpt.com%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_00000000048081fd878205ba3c3cf33d%26fn%3Dhiddify-beginner-guide.html%26cd%3Dattachment%26ts%3D498657%26p%3Dfs%26cid%3D1%26sig%3D216f8188f58a821721b82908ced22c1ba915aff939d34890b5549fd93d7c44cf%26v%3D0&amp;app=chrome.exe&amp;css=2&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="fb1d968a771a432b9be8592b7f8" src="//local.adguard.org?ts=1795165241146&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#"><span class="logo">H</span><span>Hiddify 入门指南</span></a>
+  <nav class="nav"><a href="#download">软件下载</a><a href="#start">新手教程</a><a href="#faq">常见问题</a></nav>
+</header>
+<main>
+<section class="hero wrap">
+  <span class="eyebrow"><i class="dot"></i> 面向第一次使用的你</span>
+  <h1>从下载开始，<br>轻松学会 Hiddify。</h1>
+  <p>不需要先弄懂复杂的网络术语。跟着设备选择、安装应用、导入连接信息这三步，一步一步完成设置。</p>
+  <div class="actions"><a class="btn primary" href="#download">选择我的设备</a><a class="btn secondary" href="https://hiddify.com/app/" target="_blank" rel="noopener">查看官方英文教程 ↗</a></div>
+</section>
+<div class="wrap notice"><strong>先了解一件事：</strong>Hiddify 是连接客户端，不会自动提供可用的网络线路。使用前，你需要从自己信任的服务提供方或自建服务器获取订阅链接 / 配置链接。请勿向陌生人发送你的订阅链接，它可能包含你的账户访问权限。</div>
+
+<section class="wrap" id="download">
+  <div class="section-head"><h2>选择你的设备</h2><p>优先使用官方应用商店或 Hiddify 官方 GitHub 发布页。</p></div>
+  <div class="platforms">
+    <article class="platform"><div class="emoji">🪟</div><h3>Windows</h3><p>Windows 10 / 11 · 64 位</p><a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe">直接下载 .exe ↓</a></article>
+    <article class="platform"><div class="emoji">🍎</div><h3>macOS</h3><p>Intel 与 Apple 芯片 · 通用版</p><a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg">直接下载 .dmg ↓</a></article>
+    <article class="platform"><div class="emoji">🤖</div><h3>Android</h3><p>通用 APK · 适合大多数安卓手机</p><a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk">直接下载 APK ↓</a><a style="margin-top:8px;color:#68707d" href="https://play.google.com/store/apps/details?id=app.hiddify.com" target="_blank" rel="noopener">或从 Google Play 安装 ↗</a></article>
+    <article class="platform"><div class="emoji">📱</div><h3>iPhone / iPad</h3><p>通过 App Store 安装</p><a href="https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532" target="_blank" rel="noopener">App Store ↗</a></article>
+    <article class="platform"><div class="emoji">🐧</div><h3>Linux</h3><p>请按发行版选择安装包</p><a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener">官方下载 ↗</a></article>
+  </div>
+</section>
+
+<section class="wrap" id="start">
+  <div class="section-head"><h2>跟着你的设备完成设置</h2><p>先安装应用，再添加服务商提供的链接，最后点击连接。</p></div>
+  <div class="guide">
+    <div class="tabs" role="tablist" aria-label="选择设备">
+      <button class="tab active" data-os="win">Windows</button><button class="tab" data-os="mac">macOS</button><button class="tab" data-os="android">Android</button><button class="tab" data-os="ios">iPhone</button><button class="tab" data-os="linux">Linux</button>
+    </div>
+    <div class="guide-card" id="guideContent" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="section-head"><h2>你只需要理解三个词</h2><p>不用背专业术语，知道它们分别做什么就够了。</p></div>
+  <div class="flow">
+    <article class="flow-card"><div class="n">01 / APP</div><h3>客户端</h3><p>就是安装在手机或电脑上的 Hiddify 应用，负责连接和管理线路。</p></article>
+    <article class="flow-card"><div class="n">02 / PROFILE</div><h3>配置 / 订阅</h3><p>由服务提供方或你自己的服务器生成。导入后，应用才知道可以连接哪些线路。</p></article>
+    <article class="flow-card"><div class="n">03 / CONNECT</div><h3>连接</h3><p>导入配置后点击连接。首次使用时，系统可能会询问是否允许添加 VPN 配置。</p></article>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <div class="section-head"><h2>常见问题</h2><p>遇到问题时，先从这里排查。</p></div>
+  <div class="faq">
+    <details><summary>下载并安装后，为什么不能直接使用？</summary><p>因为 Hiddify 是客户端，不是线路服务。你还需要一条有效的订阅链接或单节点配置。请向你的服务提供方获取，不要使用来源不明的免费链接。</p></details>
+    <details><summary>订阅链接和节点链接有什么区别？</summary><p>订阅链接通常包含多个节点，并可能定期更新；单节点链接通常只对应一条线路。请按服务提供方给出的格式导入。</p></details>
+    <details><summary>导入链接时提示无效怎么办？</summary><p>确认复制的是完整链接，没有多余空格；订阅链接通常应为 HTTPS。若仍失败，请向提供方确认链接是否过期、是否适用于 Hiddify。</p></details>
+    <details><summary>连接按钮点了没反应怎么办？</summary><p>检查系统是否允许 Hiddify 添加 VPN 配置；关闭其他可能冲突的 VPN / 代理应用后再试；更新配置并切换节点。仍无法连接时，记录错误提示并联系线路提供方。</p></details>
+    <details><summary>把订阅链接发给别人安全吗？</summary><p>不建议。订阅链接可能相当于账户凭证，拿到链接的人可能使用你的线路流量。不要公开发布，也不要发给陌生客服或网站。</p></details>
+    <details><summary>这个网站会提供免费节点吗？</summary><p>不会。本指南只介绍 Hiddify 客户端的官方获取方式和基础使用方法，不销售、不托管也不分发代理节点。</p></details>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>Hiddify 新手入门指南 · 独立第三方教程</span><span>非 Hiddify 官方网站，与 Hiddify 项目无隶属关系。<a href="https://github.com/hiddify/hiddify-app" target="_blank" rel="noopener">官方开源项目 ↗</a></span></div></footer>
+<script>
+const guides={
+win:{title:"Windows 安装与连接",sub:"适用于 Windows 10 / 11 64 位电脑。",download:"https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe",steps:[["下载安装包","点击本页「下载对应安装包」，直接获取 Windows x64 安装文件（.exe）。"],["完成安装","双击安装包，按提示继续。若系统询问是否允许更改设备，确认安装文件来自官方发布页后再允许。"],["添加配置","打开 Hiddify，点击首页的「＋」，选择从剪贴板添加；先复制服务商提供的完整订阅链接。"],["开始连接","配置导入后，点击首页连接按钮。Windows 可能弹出网络权限提示，按系统提示确认。"]],link:"https://hiddify.com/app/How-to-install-Hiddify-app/"},
+mac:{title:"macOS 安装与连接",sub:"适用于 macOS 10.15 或更新版本，支持 Intel 与 Apple 芯片。",steps:[["下载 DMG","点击本页「下载对应安装包」，获取 Intel 与 Apple 芯片通用的 DMG 安装包。"],["安装应用","打开 DMG，将 Hiddify 拖入「应用程序」文件夹，再从应用程序中启动。"],["添加配置","复制服务商提供的订阅链接，打开 Hiddify，点击「＋」并选择从剪贴板添加。"],["允许 VPN 并连接","首次连接时，macOS 可能要求允许添加 VPN 配置。确认后返回应用，点击连接。"]],link:"https://hiddify.com/app/How-to-install-Hiddify-app/"},
+android:{title:"Android 安装与连接",sub:"适用于 Android 7.0 或更新版本。通用 APK 适合大多数安卓手机。",download:"https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk",steps:[["从 Google Play 安装","优先打开 Google Play 的 Hiddify 官方应用页面，点击安装。"],["复制订阅链接","在服务提供方的用户中心复制 Hiddify / 通用订阅链接。不要复制网页地址。"],["导入配置","打开 Hiddify，点击「＋」，选择从剪贴板添加，等待配置导入完成。"],["允许 VPN 并连接","点击连接；系统首次询问 VPN 连接权限时，选择允许。"]],link:"https://hiddify.com/app/How-to-install-Hiddify-app/"},
+ios:{title:"iPhone / iPad 安装与连接",sub:"适用于 iOS / iPadOS 15 或更新版本；商店可用性因 Apple ID 地区而异。",download:"https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532",steps:[["从 App Store 安装","通过本页 App Store 官方入口打开应用页面，核对应用名称和开发者后获取。"],["复制配置链接","从服务提供方处复制完整订阅链接。请勿把链接发给其他人。"],["添加到 Hiddify","打开应用，点击「＋」，选择从剪贴板添加，等待配置载入。"],["允许 VPN 并连接","点击连接。首次使用时，iOS 会请求添加 VPN 配置，按提示选择允许并验证设备密码。"]],link:"https://hiddify.com/app/How-to-install-Hiddify-app/"},
+linux:{title:"Linux 安装与连接",sub:"适用于 64 位 Linux。不同发行版的安装方式可能不同。",download:"https://github.com/hiddify/hiddify-app/releases/latest",steps:[["选择对应版本","点击官方发布页，根据系统架构选择 x64 或 ARM64 的 Linux 安装文件。"],["安装并启动","优先参考官方 Linux 安装说明；不要执行来源不明的终端命令。"],["导入订阅","复制服务提供方给出的订阅链接，在 Hiddify 中点击「＋」并从剪贴板添加。"],["允许系统网络权限","按发行版提示配置 VPN / TUN 所需权限，然后点击连接。"]],link:"https://hiddify.com/app/How-to-install-Hiddify-app/"}
+};
+function render(os){const g=guides[os];document.getElementById("guideContent").innerHTML=`<h3>${g.title}</h3><p class="sub">${g.sub}</p><div class="steps">${g.steps.map((s,i)=>`<div class="step"><div class="num">${i+1}</div><div><strong>${s[0]}</strong><span>${s[1]}</span></div></div>`).join("")}</div><div class="guide-links"><a class="btn primary" href="${g.download}">下载对应安装包 ↓</a><a class="btn secondary" href="${g.link}" target="_blank" rel="noopener">官方详细教程 ↗</a></div>`}
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.os)}));render("win");
+</script>
+</body></html>
