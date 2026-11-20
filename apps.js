@@ -412,6 +412,12 @@ const appData = [
         "title": "Android",
         "apps": [
             {
+                "name": "Hiddify",
+                "description": "An easy-to-use application available for iOS, Android, Windows, macOS, and Linux.",
+                "link": "https://app.wwz.im/page/Hiddify",
+                "icon": "./images/hiddify.png"
+            },
+            {
                 "name": "V2rayNG",
                 "description": "Cross-platform VPN client solution",
                 "link": "https://v2rayng.2dust.link/",
