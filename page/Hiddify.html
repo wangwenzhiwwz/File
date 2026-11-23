@@ -365,6 +365,19 @@ footer{padding:30px 0 42px}
  .card,.card.active{border-radius:14px}
  .download-note,.guide-panel,.notice{border-radius:12px}
 }
+
+/* Download note: clear information hierarchy */
+.download-note{display:block;text-align:left;max-width:720px;margin:28px auto 0;padding:20px 22px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--muted);font-size:13px;line-height:1.8}
+.download-note-heading{color:var(--ink);font-size:14px;font-weight:700;letter-spacing:-.1px;margin-bottom:7px}
+.download-note p{margin:0}
+.download-note p strong{color:var(--ink);font-weight:650}
+.download-note .download-note-tip{margin-top:12px;padding-top:11px;border-top:1px solid var(--line);font-size:12px}
+.download-note-tip span{color:var(--ink);font-weight:650;margin-right:5px}
+@media(max-width:600px){
+ .download-note{margin-top:20px;padding:16px 17px;font-size:12px;line-height:1.8}
+ .download-note-heading{font-size:13px;margin-bottom:6px}
+ .download-note .download-note-tip{margin-top:10px;padding-top:9px;font-size:11px}
+}
 </style>
 </head>
 <body>
@@ -379,7 +392,11 @@ footer{padding:30px 0 42px}
 <article class="card" id="android" data-os="android"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><g fill="currentColor"><path d="M11.3 12.4 8.5 7.6l1.5-.9 2.9 5a14.6 14.6 0 0 1 14.2 0l2.9-5 1.5.9-2.8 4.8a11.2 11.2 0 0 1 5.1 9.3H6.2a11.2 11.2 0 0 1 5.1-9.3Z"/><path d="M6.2 23.3h27.6v5.2a3 3 0 0 1-3 3h-1.1v4.2a2 2 0 0 1-4 0v-4.2H14.3v4.2a2 2 0 0 1-4 0v-4.2H9.2a3 3 0 0 1-3-3v-5.2Z"/></g><circle cx="14.3" cy="16.8" r="1.2" fill="var(--card)"/><circle cx="25.7" cy="16.8" r="1.2" fill="var(--card)"/></svg></span><h3>Android</h3><p class="desc">Android 7.0 或更新版本</p><a class="btn" href="https://play.google.com/store/apps/details?id=app.hiddify.com" target="_blank" rel="noopener noreferrer">Google Play ↗</a><a class="secondary" data-asset="Hiddify-Android-universal.apk" href="https://github.com/hiddify/hiddify-app/releases">下载 APK ↓</a></article>
 <article class="card" id="ios" data-os="ios"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path fill="currentColor" d="M20 4.2c-2.2 0-4.1 1.8-4.1 4.1v23.4c0 2.2 1.8 4.1 4.1 4.1s4.1-1.8 4.1-4.1V8.3c0-2.3-1.8-4.1-4.1-4.1Zm0 2.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm0 27.5a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z"/></svg></span><h3>iPhone / iPad</h3><p class="desc">iOS 15 或更新版本</p><a class="btn" href="https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532" target="_blank" rel="noopener noreferrer">App Store ↗</a><span class="secondary">商店可用性因地区而异</span></article>
 </div>
-<div class="download-note"><strong>下载前了解</strong><span> Hiddify 应用免费，但连接通常需要服务提供方给你的订阅链接或配置。应用内若有 Free 免费配置，也可尝试；共享线路不保证速度与稳定性。</span></div>
+<aside class="download-note" aria-label="连接配置说明">
+<div class="download-note-heading">应用免费，连接需要配置</div>
+<p>Hiddify 是客户端，不会自动提供专属线路。连接通常需要服务提供方给你的<strong>订阅链接或节点配置</strong>。</p>
+<p class="download-note-tip"><span>还没有配置？</span>可在应用内查看是否提供 Free 免费配置；共享线路可能拥挤、限速或暂时不可用。</p>
+</aside>
 
 </section>
 <section class="guide" id="steps">
