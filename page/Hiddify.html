@@ -486,6 +486,34 @@ footer{padding:20px 0 28px}
  .guide details.guide-panel{padding:0 12px}
 }
 
+
+/* Extreme simplification: keep only the download tiles; flatten nested panels */
+#download{padding:18px 18px 20px;margin:0 -18px;border-radius:16px}
+#download .download-note{background:transparent;border:0;border-radius:0;box-shadow:none;padding:12px 0 0;margin:12px 0 0;border-top:1px solid var(--line)}
+.guide{background:transparent;padding:0;margin:46px 0 0;border-radius:0}
+.guide .guide-title{text-align:left;margin:0 0 6px}
+.guide .guide-intro{text-align:left;margin:0 0 18px}
+.guide .guide-panel.beginner-step,.guide details.guide-panel{background:transparent;border:0;border-radius:0;box-shadow:none;padding:18px 0;margin:0;border-top:1px solid var(--line)}
+.guide .step-heading{margin:0 0 8px;gap:10px}
+.guide .step-number{width:28px;height:28px;flex-basis:28px;border-radius:50%;font-size:13px}
+.guide .guide-panel p,.guide .guide-panel li{line-height:1.75}
+.guide .choice-card{background:transparent;border:0;border-radius:0;padding:10px 0;margin:8px 0 0}
+.guide .choice-card>strong{font-size:12px}
+.guide .choice-mark{width:20px;height:20px;background:var(--soft);color:var(--blue)}
+.guide .info-pair{display:block;margin:10px 0}
+.guide .info-pair>div{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:9px 0}
+.guide details.guide-panel summary{padding:15px 0}
+.guide .detail-body{padding:0 0 14px;border:0}
+.guide .guide-official{padding-top:14px}
+@media(max-width:600px){
+ #download{padding:14px 12px;margin:0 -6px;border-radius:12px}
+ .guide{margin-top:34px}
+ .guide .guide-panel.beginner-step,.guide details.guide-panel{padding:15px 0;margin:0}
+ .guide .step-heading{margin-bottom:7px}
+ .guide .info-pair>div{padding:8px 0}
+ .guide details.guide-panel summary{padding:13px 0}
+}
+
 </style>
 </head>
 <body>
