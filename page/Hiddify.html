@@ -284,47 +284,71 @@ footer{padding:30px 0 42px}
  footer{padding:22px 0 30px}
 }
 
+
+/* Key information blocks: concise copy with generous spacing */
+.hero p{max-width:620px;margin-inline:auto;line-height:1.8}
+.download-note{max-width:760px;margin:28px auto 0;padding:18px 22px;background:var(--card);border:1px solid var(--line);border-radius:16px;text-align:left;display:flex;gap:10px;align-items:baseline;line-height:1.85}
+.download-note strong{color:var(--ink);white-space:nowrap}
+.info-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.info-pair>div{padding:17px 19px;border-radius:14px;background:var(--bg);border:1px solid var(--line)}
+.info-pair strong,.info-pair span{display:block}
+.info-pair strong{font-size:13px;color:var(--ink);margin-bottom:6px}
+.info-pair span{font-size:12px;color:var(--muted);line-height:1.8}
+.security-note{padding-top:15px;border-top:1px solid var(--line)}
+.guide-panel p{line-height:1.9}
+.guide-panel li{line-height:1.9;margin:7px 0}
+@media(max-width:600px){
+ .download-note{display:block;padding:15px 16px;margin-top:22px}
+ .download-note strong{display:block;margin-bottom:4px}
+ .info-pair{grid-template-columns:1fr;gap:9px;margin:15px 0}
+ .info-pair>div{padding:14px 15px}
+ .guide-panel li{margin:5px 0}
+}
+
 </style>
 </head>
 <body>
 <header class="wrap"><a class="brand" href="#" aria-label="Hiddify 下载首页"><img class="brand-logo" src="https://app.wwz.im/images/hiddify.png" alt="Hiddify" width="32" height="32" fetchpriority="high">Hiddify 下载</a><nav class="nav"><a href="#steps">安装说明</a><a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">官方发布页 ↗</a></nav></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow">HIDDIFY APP</div><h1>先安装，再连接。</h1><p>选择设备，获取官方客户端。</p><a class="top-install" id="topInstallCta" href="#download">选择设备 <span aria-hidden="true">↓</span></a><div class="version" aria-live="polite"><span class="dot"></span><strong id="version">正在获取…</strong><span id="date"></span></div></section>
+<section class="hero"><div class="eyebrow">免费 · 开源 · 无广告</div><h1>先安装，再连接。</h1><p>Hiddify 是代理 / VPN 连接客户端，支持导入多种订阅与节点配置。</p><a class="top-install" id="topInstallCta" href="#download">选择设备 <span aria-hidden="true">↓</span></a><div class="version" aria-live="polite"><span class="dot"></span><strong id="version">正在获取…</strong><span id="date"></span></div></section>
 <section id="download">
 <div class="download-head"><h2>下载客户端</h2><p id="deviceHint">已自动识别设备</p></div>
 <div class="grid">
-<article class="card" id="win" data-os="win"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path fill="currentColor" d="M4 7.2 18 5.2v13.3H4V7.2Zm16-2.3L36 2.5v16H20V4.9ZM4 20.5h14v13.3L4 31.8V20.5Zm16 0h16v16l-16-2.2V20.5Z"/></svg></span><h3>Windows</h3><p class="desc">Windows 10 / 11 · 64 位</p><a class="btn" data-asset="Hiddify-Windows-Setup-x64.exe" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe">下载 EXE ↓</a><a class="secondary" href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">其他版本 ↗</a></article>
-<article class="card" id="mac" data-os="mac"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path fill="currentColor" d="M29.2 21.1c0-4.1 3.3-6.1 3.5-6.2-1.9-2.8-4.8-3.2-5.8-3.3-2.5-.3-4.9 1.5-6.2 1.5-1.3 0-3.3-1.5-5.4-1.4-2.8 0-5.4 1.6-6.8 4.1-2.9 5-.7 12.4 2.1 16.5 1.4 2 3 4.2 5.1 4.1 2-.1 2.8-1.3 5.3-1.3s3.2 1.3 5.4 1.3c2.2 0 3.6-2 5-4.1 1.6-2.3 2.2-4.6 2.2-4.7-.1 0-4.4-1.7-4.4-6.5ZM25.1 8.9c1.1-1.3 1.9-3.1 1.7-4.9-1.6.1-3.5 1.1-4.7 2.4-1 1.1-2 3-1.8 4.8 1.8.1 3.7-.9 4.8-2.3Z" transform="translate(-1 -1) scale(.95)"/></svg></span><h3>macOS</h3><p class="desc">Intel / Apple 芯片</p><a class="btn" data-asset="Hiddify-MacOS.dmg" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg">下载 DMG ↓</a><a class="secondary" href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">其他版本 ↗</a></article>
+<article class="card" id="win" data-os="win"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path fill="currentColor" d="M4 7.2 18 5.2v13.3H4V7.2Zm16-2.3L36 2.5v16H20V4.9ZM4 20.5h14v13.3L4 31.8V20.5Zm16 0h16v16l-16-2.2V20.5Z"/></svg></span><h3>Windows</h3><p class="desc">Windows 10（1809）/ 11 · 64 位</p><a class="btn" data-asset="Hiddify-Windows-Setup-x64.exe" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe">下载 EXE ↓</a><a class="secondary" href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">其他版本 ↗</a></article>
+<article class="card" id="mac" data-os="mac"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path fill="currentColor" d="M29.2 21.1c0-4.1 3.3-6.1 3.5-6.2-1.9-2.8-4.8-3.2-5.8-3.3-2.5-.3-4.9 1.5-6.2 1.5-1.3 0-3.3-1.5-5.4-1.4-2.8 0-5.4 1.6-6.8 4.1-2.9 5-.7 12.4 2.1 16.5 1.4 2 3 4.2 5.1 4.1 2-.1 2.8-1.3 5.3-1.3s3.2 1.3 5.4 1.3c2.2 0 3.6-2 5-4.1 1.6-2.3 2.2-4.6 2.2-4.7-.1 0-4.4-1.7-4.4-6.5ZM25.1 8.9c1.1-1.3 1.9-3.1 1.7-4.9-1.6.1-3.5 1.1-4.7 2.4-1 1.1-2 3-1.8 4.8 1.8.1 3.7-.9 4.8-2.3Z" transform="translate(-1 -1) scale(.95)"/></svg></span><h3>macOS</h3><p class="desc">macOS 10.15+ · Intel / Apple 芯片</p><a class="btn" data-asset="Hiddify-MacOS.dmg" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg">下载 DMG ↓</a><a class="secondary" href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">其他版本 ↗</a></article>
 <article class="card" id="android" data-os="android"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><g fill="currentColor"><path d="M11.3 12.4 8.5 7.6l1.5-.9 2.9 5a14.6 14.6 0 0 1 14.2 0l2.9-5 1.5.9-2.8 4.8a11.2 11.2 0 0 1 5.1 9.3H6.2a11.2 11.2 0 0 1 5.1-9.3Z"/><path d="M6.2 23.3h27.6v5.2a3 3 0 0 1-3 3h-1.1v4.2a2 2 0 0 1-4 0v-4.2H14.3v4.2a2 2 0 0 1-4 0v-4.2H9.2a3 3 0 0 1-3-3v-5.2Z"/></g><circle cx="14.3" cy="16.8" r="1.2" fill="var(--card)"/><circle cx="25.7" cy="16.8" r="1.2" fill="var(--card)"/></svg></span><h3>Android</h3><p class="desc">Android 7.0 或更新版本</p><a class="btn" href="https://play.google.com/store/apps/details?id=app.hiddify.com" target="_blank" rel="noopener noreferrer">Google Play ↗</a><a class="secondary" data-asset="Hiddify-Android-universal.apk" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk">下载 APK ↓</a></article>
 <article class="card" id="ios" data-os="ios"><span class="icon platform-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path fill="currentColor" d="M20 4.2c-2.2 0-4.1 1.8-4.1 4.1v23.4c0 2.2 1.8 4.1 4.1 4.1s4.1-1.8 4.1-4.1V8.3c0-2.3-1.8-4.1-4.1-4.1Zm0 2.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm0 27.5a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Z"/></svg></span><h3>iPhone / iPad</h3><p class="desc">iOS 15 或更新版本</p><a class="btn" href="https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532" target="_blank" rel="noopener noreferrer">App Store ↗</a><span class="secondary">商店可用性因地区而异</span></article>
 </div>
-<p class="download-note">需要连接配置？请向可信服务提供方获取。Hiddify 本身不提供线路。</p>
+<div class="download-note"><strong>下载前了解</strong><span> Hiddify 应用免费，但连接通常需要服务提供方给你的订阅链接或配置。应用内若有 Free 免费配置，也可尝试；共享线路不保证速度与稳定性。</span></div>
 
 </section>
 <section class="guide" id="steps">
 <h2 class="guide-title">安装与连接</h2>
-<p class="guide-intro">三步完成设置。</p>
+<p class="guide-intro">安装应用 → 添加配置 → 点击连接。通常几分钟即可完成。</p>
 
 <div class="guide-panel beginner-step">
 <div class="step-heading"><span class="step-number">1</span><div><h3>打开应用</h3></div></div>
-<p>首次启动按提示完成设置，进入 Hiddify 首页。</p>
+<p>首次打开时，按需选择<strong>简体中文</strong>和当前所在地区，再点击 Start / 开始进入首页。匿名使用统计可按个人意愿选择。</p>
+<div class="result">进入首页后，找到顶部或页面中的「＋」添加按钮。不同系统和版本的界面可能略有差异。</div>
 </div>
 
 <div class="guide-panel beginner-step">
 <div class="step-heading"><span class="step-number">2</span><div><h3>添加连接配置</h3></div></div>
-<p>使用服务商提供的链接、二维码或配置文件。</p>
+<p>配置由网络服务提供方发放，Hiddify 不会自动生成你的专属线路。</p>
+<div class="info-pair"><div><strong>订阅链接</strong><span>通常以 https:// 开头，可包含多条线路，并支持更新。</span></div><div><strong>单节点配置</strong><span>通常以 vless://、vmess:// 等开头，只对应单条线路。</span></div></div>
 <div class="choice-card">
 <strong><span class="choice-mark">A</span> 已有配置</strong>
 <ol>
 <li>点击首页「＋」或「添加配置」。</li>
-<li>按配置类型选择导入链接、扫码或导入文件。</li>
-<li>如果服务商提供一键导入，直接点击并允许打开 Hiddify。</li>
+<li>复制完整订阅链接后，选择「剪贴板」或「手动」粘贴；订阅链接通常必须以 https:// 开头。</li>
+<li>如果拿到二维码，选择扫码；如果拿到配置文件，选择文件导入。</li>
+<li>也可以打开服务商的用户中心，点击「导入 Hiddify」一键添加。</li>
 </ol>
-<div class="result">导入完成后，首页会显示配置卡片。</div>
+<div class="result"><strong>导入成功：</strong>首页出现配置卡片（Profile）。一个配置卡片可能包含多条可切换线路。</div>
 </div>
 <div class="choice-card">
 <strong><span class="choice-mark">B</span> 暂时没有配置</strong>
-<p>查看应用内是否提供 Free 免费配置；若没有，请向可信服务提供方获取。免费资源不保证速度和稳定性。</p>
+<p>点击「＋」后查看是否有 Free / 免费选项。若有，选择一个免费配置并按提示添加；若没有，则需要向可信服务提供方获取订阅或配置。免费线路由网络提供，可能拥挤、限速或随时不可用。</p>
 </div>
 <p class="security-note">请勿公开分享配置链接，也不要导入陌生来源的配置。</p>
 </div>
@@ -333,33 +357,34 @@ footer{padding:30px 0 42px}
 <div class="step-heading"><span class="step-number">3</span><div><h3>连接并测试</h3></div></div>
 <ol class="connect-list">
 <li>点击首页的连接按钮。</li>
-<li>首次使用时，按系统提示允许 VPN 权限。</li>
-<li>显示 Connected 后，打开网页确认网络正常。</li>
+<li>首次连接时，系统会询问是否允许 Hiddify 创建 VPN 连接，确认是应用发起后选择允许。</li>
+<li>等待按钮显示 Connected / 已连接，再打开网页测试访问是否正常。</li>
+<li>如有多条线路，通常可先使用 Auto 自动选择；连接失败时更新配置或换一条线路。</li>
 </ol>
 </div>
 
 <details class="guide-panel">
-<summary>不同设备怎么安装？</summary>
+<summary>各设备安装方法与系统要求</summary>
 <div class="detail-body">
-<p><strong>Windows 电脑</strong></p>
-<ol><li>点击上方 Windows 下载按钮，下载完成后打开浏览器「下载」列表，双击 .exe 安装文件。</li><li>跟随安装向导操作，通常保持默认选项即可。</li><li>如果出现安全警告，先确认文件来自本页链接的 Hiddify 官方 GitHub 发布页；无法确认来源时不要继续安装。</li></ol>
-<p><strong>Mac 电脑</strong></p>
-<ol><li>下载 DMG 文件，在「下载」文件夹中双击打开。</li><li>将 Hiddify 图标拖到「应用程序」文件夹。</li><li>从「应用程序」中打开 Hiddify。若系统阻止打开，请先核对下载来源，再查看<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装说明</a>，不要运行陌生人提供的修复命令。</li></ol>
-<p><strong>Android 手机</strong></p>
-<ol><li>优先从 Google Play 安装，点击「安装」后等待完成。</li><li>如果使用 APK，下载后点击文件并按系统提示安装。只在确认 APK 来自官方发布页后安装。</li><li>如果系统要求允许安装未知应用，只为当前浏览器或文件管理器临时开启；安装完成后建议关闭。</li></ol>
-<p><strong>iPhone / iPad</strong></p>
-<ol><li>点击 App Store，选择「获取」，按提示使用 Face ID、Touch ID 或密码确认。</li><li>安装完成后点击「打开」。如果商店显示不可用，可能与 Apple ID 所在地区有关。</li></ol>
+<p><strong>Windows 10（版本 1809）/ Windows 11</strong></p>
+<ol><li>下载 EXE，打开浏览器下载列表并双击安装文件。</li><li>按安装向导完成安装，首次连接 VPN 模式时按系统提示授予权限。</li><li>Windows 7 / 8 不受支持。若出现安全提示，先核对文件来自官方发布页。</li></ol>
+<p><strong>macOS 10.15 或更新版本</strong></p>
+<ol><li>下载 DMG 并双击打开。</li><li>将 Hiddify 图标拖入「应用程序」文件夹，再从应用程序启动。</li><li>若 macOS 阻止打开，先核对下载来源，再查看<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装说明</a>，不要运行陌生命令。</li></ol>
+<p><strong>Android 7.0 或更新版本</strong></p>
+<ol><li>优先从 Google Play 安装并打开。</li><li>无法使用商店时，可下载通用 APK；打开安装文件，按系统提示完成安装。</li><li>如需允许安装未知应用，只为当前浏览器或文件管理器临时开启，安装后建议关闭。</li></ol>
+<p><strong>iOS 15 或更新版本</strong></p>
+<ol><li>在 App Store 点击「获取」，使用 Face ID、Touch ID 或密码确认。</li><li>首次连接时，按提示允许添加 VPN 配置并输入设备密码。</li><li>若商店显示不可用，可能与 Apple ID 所在地区有关。</li></ol>
 </div>
 </details>
 
 <details class="guide-panel">
-<summary>我卡住了：常见问题怎么处理？</summary>
+<summary>连接失败与常见问题</summary>
 <div class="detail-body">
-<p><strong>找不到「＋」或添加配置入口：</strong>回到应用首页，查看顶部或页面中的添加按钮；不同版本界面可能不同，也可以参考<a href="https://hiddify.com/app/How-to-use-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方使用教程</a>。</p>
-<p><strong>提示链接无效 / Invalid URL：</strong>确认复制的是完整链接，没有漏掉开头或结尾；再向配置提供方确认链接是否过期、是否适用于 Hiddify。</p>
-<p><strong>一直显示 Connecting：</strong>先确认手机或电脑本身可以正常上网，再尝试更新配置；仍无法连接时联系配置提供方。</p>
-<p><strong>显示 Connected，但网页打不开：</strong>暂时关闭其他 VPN 或代理应用，切换 Wi-Fi / 移动网络再测试；仍不行请联系配置提供方。</p>
-<p><strong>系统询问是否允许 VPN：</strong>这是建立本机 VPN 连接所需的系统授权。确认请求来自 Hiddify 后再允许；不确定时先取消并核实。</p>
+<p><strong>提示 Invalid URL / 添加失败：</strong>确认链接完整、没有多余空格；订阅链接应为 https://，并确认链接未过期。</p>
+<p><strong>一直显示 Connecting：</strong>先确认本机网络正常；回到配置卡片点击更新，再尝试 Auto 或切换其他线路。</p>
+<p><strong>显示 Connected 但网页打不开：</strong>暂时关闭其他 VPN / 代理应用，切换 Wi-Fi 或移动网络后重试。</p>
+<p><strong>部分应用无法连接：</strong>检查是否启用了 VPN 模式；电脑端若使用系统代理，部分软件可能不会自动走代理。</p>
+<p><strong>仍然无法连接：</strong>记录错误提示和当前线路，联系配置提供方检查订阅状态及服务器。</p>
 </div>
 </details>
 <p class="guide-official">需要查看原版说明？<a href="https://hiddify.com/app/How-to-use-Hiddify-app/" target="_blank" rel="noopener noreferrer">Hiddify 官方使用教程 ↗</a>　<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装教程 ↗</a></p>
