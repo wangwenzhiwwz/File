@@ -378,6 +378,92 @@ footer{padding:30px 0 42px}
  .download-note-heading{font-size:13px;margin-bottom:6px}
  .download-note .download-note-tip{margin-top:10px;padding-top:9px;font-size:11px}
 }
+
+/* Final visual refinement: compact, quiet, and consistent */
+:root{--bg:#fff;--card:#fff;--ink:#202124;--muted:#777d87;--line:#eceef1;--soft:#f3f6fb;--blue:#246bfe;--header-bg:rgba(255,255,255,.9)}
+@media(prefers-color-scheme:dark){:root{--bg:#111214;--card:#181a1d;--ink:#f1f2f4;--muted:#a0a5ae;--line:#2b2e33;--soft:#202a3a;--blue:#82aaff;--header-bg:rgba(17,18,20,.9)}}
+body{font-size:14px;line-height:1.65}
+.wrap{width:min(920px,calc(100% - 48px))}
+header.wrap{height:60px}
+.brand{font-size:14px}
+.hero{padding:58px 0 34px}
+.hero .eyebrow{padding:0;border:0;background:none;font-size:11px;letter-spacing:.7px}
+.hero h1{font-size:clamp(34px,5vw,46px);letter-spacing:-1.7px;margin:13px 0}
+.hero p{font-size:14px;max-width:560px}
+.top-install{min-height:42px;margin-top:19px;padding:0 20px;border-radius:9px;font-size:12px}
+.version{font-size:11px;margin-top:12px}
+.download-head{margin:24px 0 13px}
+.download-head h2{font-size:18px}
+.download-head p{font-size:11px}
+.grid{gap:12px}
+.card,.card.active{min-height:180px;padding:19px 17px;border-radius:13px;background:var(--card);border:1px solid var(--line)}
+.card.active{border-color:var(--blue)}
+.platform-icon{width:30px;height:30px;margin-bottom:13px}
+.platform-icon svg{width:28px;height:28px}
+.card h3{font-size:14px}
+.desc{font-size:11px;min-height:30px;margin:5px 0 12px}
+.card .btn{min-height:39px;padding:8px;border-radius:8px;font-size:11px}
+.secondary{font-size:10px;margin-top:7px}
+.tag{font-size:9px;padding:2px 7px}
+.download-note{max-width:100%;margin:15px auto 0;padding:15px 17px;border-radius:11px;font-size:12px;line-height:1.75}
+.download-note-heading{font-size:13px;margin-bottom:4px}
+.download-note .download-note-tip{font-size:11px;margin-top:8px;padding-top:8px}
+.mobile-download{margin-top:12px}
+.steps{padding:58px 0 42px}
+.guide-title{font-size:21px}
+.guide-intro{font-size:12px;margin:0 0 22px}
+.guide-panel{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:20px 0;margin:0;box-shadow:none!important}
+.step-heading{gap:11px;margin:0 0 10px}
+.step-number{width:30px;height:30px;flex-basis:30px;border-radius:9px;font-size:13px}
+.step-heading h3{font-size:15px}
+.guide-panel p,.guide-panel li{font-size:12px;line-height:1.8}
+.info-pair{gap:10px;margin:12px 0}
+.info-pair>div{padding:12px 14px;border-radius:9px}
+.choice-card{padding:13px 15px;margin-top:11px;border-radius:10px;background:var(--bg)}
+.choice-card li{font-size:11px;line-height:1.75;margin:5px 0}
+.result{padding:11px 13px;margin-top:10px;border-radius:9px;font-size:11px;line-height:1.75}
+details.guide-panel{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:-1px}
+details.guide-panel summary{padding:16px 0;font-size:13px}
+.detail-body{padding:0 0 15px;border:0}
+.detail-body p{margin:9px 0}
+.guide-official{margin:18px 0 0;font-size:11px}
+footer{padding:20px 0 28px}
+@media(max-width:760px){
+ .wrap{width:calc(100% - 36px)}
+ .hero{padding:42px 0 27px}
+ .grid{gap:10px}
+ .card,.card.active{min-height:170px;padding:15px 12px}
+ .steps{padding:43px 0 32px}
+}
+@media(max-width:600px){
+ header.wrap{height:54px;padding:0 14px}
+ .hero{padding:32px 0 22px}
+ .hero h1{font-size:34px;letter-spacing:-1.2px}
+ .hero p{font-size:12px;line-height:1.7}
+ .top-install{margin-top:15px;min-height:40px}
+ .download-head{margin:17px 0 11px}
+ .download-head h2{font-size:17px}
+ .card,.card.active{min-height:164px;padding:14px 11px;border-radius:11px}
+ .platform-icon{margin-bottom:10px}
+ .desc{font-size:10px;min-height:29px;margin:4px 0 10px}
+ .card .btn{min-height:38px;font-size:10px}
+ .download-note{margin-top:12px;padding:13px 14px}
+ .steps{padding:38px 0 25px}
+ .guide-title{font-size:19px}
+ .guide-intro{font-size:11px;margin-bottom:14px}
+ .guide-panel{padding:15px 0}
+ .step-heading h3{font-size:14px}
+ .step-number{width:28px;height:28px;flex-basis:28px}
+ .guide-panel p,.guide-panel li{font-size:11px}
+ .info-pair{grid-template-columns:1fr 1fr}
+ .info-pair>div{padding:10px}
+ .info-pair span{font-size:10px}
+ .choice-card{padding:11px 12px}
+ details.guide-panel summary{padding:14px 0;font-size:12px}
+ .detail-body{padding:0 0 13px}
+}
+@media(max-width:360px){.wrap{width:calc(100% - 26px)}.info-pair{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
