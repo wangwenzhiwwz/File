@@ -465,17 +465,15 @@ footer{padding:20px 0 28px}
 @media(max-width:360px){.wrap{width:calc(100% - 26px)}.info-pair{grid-template-columns:1fr}}
 
 
-/* Soft color blocks distinguish the page's main sections */
-:root{--download-tint:#f0f5ff;--guide-tint:#f4f6f8;--note-tint:#fff8e9;--step-tint:#fff;--step-blue:#e8f0ff;--step-green:#e8f6ef;--step-violet:#f0edff}
-@media(prefers-color-scheme:dark){:root{--download-tint:#182337;--guide-tint:#171a20;--note-tint:#2a251a;--step-tint:#1b1e24;--step-blue:#202d43;--step-green:#1d3029;--step-violet:#29243a}}
+/* Two-tone section system: blue for downloads, neutral gray for guidance */
+:root{--download-tint:#f0f5ff;--guide-tint:#f4f5f7;--note-tint:#e8f0ff;--step-tint:#fff}
+@media(prefers-color-scheme:dark){:root{--download-tint:#182337;--guide-tint:#191b20;--note-tint:#202d43;--step-tint:#1b1e24}}
 #download{background:var(--download-tint);border-radius:18px;padding:20px;margin:0 -20px}
 #download .download-head{margin-top:0}
 #download .download-note{background:var(--note-tint);border-color:transparent}
 .guide{background:var(--guide-tint);border-radius:18px;padding:24px 22px;margin-top:28px}
 .guide .guide-panel.beginner-step{background:var(--step-tint);border:1px solid var(--line);border-radius:13px;padding:17px 18px;margin:12px 0}
-.guide .beginner-step:nth-of-type(1) .step-number{background:var(--step-blue)}
-.guide .beginner-step:nth-of-type(2) .step-number{background:var(--step-green);color:#21845a}
-.guide .beginner-step:nth-of-type(3) .step-number{background:var(--step-violet);color:#7357c8}
+.guide .beginner-step .step-number{background:var(--soft);color:var(--blue)}
 .guide .choice-card{background:var(--bg)}
 .guide details.guide-panel{background:var(--step-tint);border:1px solid var(--line);border-radius:12px;padding:0 15px;margin:10px 0}
 .guide details.guide-panel summary{padding:14px 0}
