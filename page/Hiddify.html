@@ -23,7 +23,45 @@ footer{border-top:1px solid var(--line);padding:19px 0 28px;color:var(--muted);f
 .mobile-download{display:none}
 @media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card{min-height:190px}.hero{padding:43px 0 25px}.step-grid{grid-template-columns:1fr}.steps{padding:37px 0}.download-head{align-items:center}}
 @media(max-width:480px){.wrap{width:calc(100% - 28px)}header{height:58px}.nav{gap:13px;font-size:12px}.nav a:first-child{display:none}.hero h1{font-size:39px}.hero p{font-size:14px}.download-head h2{font-size:19px}.download-head p{font-size:10px}.grid{gap:9px}.card{padding:15px 12px;border-radius:15px;min-height:185px}.icon{font-size:24px}.card h3{font-size:15px}.desc{font-size:10px}.btn{font-size:11px}.tag{right:8px;top:8px;font-size:9px}.mobile-download{position:fixed;z-index:5;display:block;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));padding:7px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:15px}.mobile-download a{display:block;background:var(--blue);color:#fff;text-align:center;padding:11px;border-radius:10px;font-size:13px;font-weight:750}footer{padding-bottom:90px}}
-@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#101114;--card:#191b20;--ink:#f2f3f5;--muted:#a0a6b2;--line:#2b2e36;--blue:#6b9cff;--soft:#1d2b46}body{background:var(--bg);color:var(--ink)}.card.active{border-color:#537ecb}.tag{color:#a9c5ff}.notice{background:var(--card)}.notice strong{color:var(--ink)}.mobile-download{background:rgba(25,27,32,.9)}}
+/* Mobile-first refinements */
+a,button{-webkit-tap-highlight-color:transparent}
+a:focus-visible{outline:3px solid #8bb2ff;outline-offset:3px}
+@media(max-width:600px){
+header.wrap{position:sticky;top:0;z-index:10;width:100%;padding:0 16px;background:rgba(245,246,248,.9);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.hero{padding:34px 0 22px}
+.hero h1{font-size:clamp(32px,9vw,40px);letter-spacing:-1.6px;margin:10px 0}
+.hero p{max-width:300px;margin:auto;font-size:13px;line-height:1.55}
+.version{margin-top:11px;font-size:11px}
+#download{scroll-margin-top:70px}
+.download-head{margin:9px 0 12px}
+.download-head h2{font-size:20px}
+.download-head p{max-width:130px;text-align:right;line-height:1.4}
+.grid{gap:10px}
+.card{min-height:194px;padding:16px 13px;border-radius:16px}
+.card.active{border:1.5px solid var(--blue);box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 12%,transparent)}
+.card:hover{transform:none}
+.icon{font-size:26px;margin-bottom:11px}
+.card h3{font-size:15px}
+.desc{font-size:11px;line-height:1.45;min-height:33px;margin:5px 0 12px}
+.btn{min-height:44px;border-radius:12px;font-size:12px;padding:11px 6px}
+.secondary{min-height:24px;padding-top:4px;font-size:11px}
+.notice{font-size:11px;line-height:1.65;padding:12px 13px;margin-top:12px}
+.steps{padding:34px 0 28px}
+.steps h2{font-size:20px;margin-bottom:14px}
+.step-grid{gap:8px}
+.step{display:grid;grid-template-columns:64px 1fr;column-gap:10px;align-items:start;padding:13px;border-radius:13px}
+.num{grid-row:1 / span 2;padding-top:2px;font-size:10px}
+.step strong{margin:0 0 3px;font-size:13px}
+.step p{font-size:11px;line-height:1.55}
+footer{font-size:10px;line-height:1.6;padding:16px 0 24px}
+.foot{display:grid;gap:5px}
+.mobile-download{left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom));padding:6px;border-radius:14px;box-shadow:0 5px 24px rgba(0,0,0,.09)}
+.mobile-download a{min-height:46px;display:flex;align-items:center;justify-content:center;font-size:13px;border-radius:10px}
+main{padding-bottom:8px}
+}
+@media(max-width:360px){.wrap{width:calc(100% - 22px)}.grid{gap:8px}.card{padding:14px 10px;min-height:188px}.card h3{font-size:14px}.desc{font-size:10px}.btn{font-size:10px}}
+@media(hover:none){.card:hover{transform:none}.btn:hover{background:var(--blue)}}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#101114;--card:#191b20;--ink:#f2f3f5;--muted:#a0a6b2;--line:#2b2e36;--blue:#6b9cff;--soft:#1d2b46}body{background:var(--bg);color:var(--ink)}.card.active{border-color:#537ecb}.tag{color:#a9c5ff}.notice{background:var(--card)}.notice strong{color:var(--ink)}.mobile-download{background:rgba(25,27,32,.9)}@media(max-width:600px){header.wrap{background:rgba(16,17,20,.9)}}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
@@ -54,7 +92,7 @@ footer{border-top:1px solid var(--line);padding:19px 0 28px;color:var(--muted);f
 "use strict";
 const assets={win:"Hiddify-Windows-Setup-x64.exe",mac:"Hiddify-MacOS.dmg",android:"Hiddify-Android-universal.apk"};
 function detect(){const ua=navigator.userAgent||"",p=navigator.platform||"";if(/iPad|iPhone|iPod/i.test(ua)||(/Macintosh/i.test(ua)&&navigator.maxTouchPoints>1))return"ios";if(/Android/i.test(ua))return"android";if(/Windows|Win/i.test(ua+" "+p))return"win";if(/Mac/i.test(ua+" "+p))return"mac";return""}
-const os=detect();if(os){document.getElementById(os).classList.add("active");const names={win:"Windows",mac:"macOS",android:"Android",ios:"iPhone / iPad"};const cta=document.getElementById("mobileCta");cta.textContent="下载 "+names[os]+" 版本 ↓";cta.href=os==="ios"?"https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532":os==="android"?"https://play.google.com/store/apps/details?id=app.hiddify.com":"#"+os;}
+const os=detect();if(os){document.getElementById(os).classList.add("active");const names={win:"Windows",mac:"macOS",android:"Android",ios:"iPhone / iPad"};const cta=document.getElementById("mobileCta");cta.textContent="下载 "+names[os]+" 版本 ↓";cta.href=document.querySelector("#"+os+" .btn").href;}
 async function latest(){const v=document.getElementById("version"),d=document.getElementById("date");try{const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),5000);const res=await fetch("https://api.github.com/repos/hiddify/hiddify-app/releases/latest",{headers:{Accept:"application/vnd.github+json"},cache:"no-store",signal:ctl.signal});clearTimeout(timer);if(!res.ok)throw Error();const release=await res.json();if(release.prerelease||release.draft)throw Error();v.textContent=release.tag_name||"官方稳定版";d.textContent=release.published_at?" · "+new Date(release.published_at).toLocaleDateString("zh-CN"):"";for(const name of Object.values(assets)){const asset=(release.assets||[]).find(x=>x.name===name);if(asset&&asset.browser_download_url&&asset.browser_download_url.startsWith("https://github.com/hiddify/hiddify-app/releases/download/"))document.querySelectorAll('[data-asset="'+name+'"]').forEach(a=>a.href=asset.browser_download_url)}}catch(e){v.textContent="请查看官方发布页";d.textContent="";}}
 latest();
 })();
