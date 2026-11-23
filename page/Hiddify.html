@@ -62,7 +62,7 @@ main{padding-bottom:8px}
 }
 @media(max-width:360px){.wrap{width:calc(100% - 22px)}.grid{gap:8px}.card{padding:14px 10px;min-height:188px}.card h3{font-size:14px}.desc{font-size:10px}.btn{font-size:10px}}
 @media(hover:none){.card:hover{transform:none}.btn:hover{background:var(--blue)}}
-@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#101114;--card:#191b20;--ink:#f2f3f5;--muted:#a0a6b2;--line:#2b2e36;--blue:#6b9cff;--soft:#1d2b46}body{background:var(--bg);color:var(--ink)}.card.active{border-color:#537ecb}.tag{color:#a9c5ff}.notice{background:var(--card)}.notice strong{color:var(--ink)}.mobile-download{background:rgba(25,27,32,.9)}@media(max-width:600px){header.wrap{background:rgba(16,17,20,.9)}}}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#101114;--card:#191b20;--ink:#f2f3f5;--muted:#a0a6b2;--line:#2b2e36;--blue:#6b9cff;--soft:#1d2b46}body{background:var(--bg);color:var(--ink)}.card.active{border-color:#537ecb}.tag{color:#a9c5ff}.notice{background:var(--card)}.notice strong{color:var(--ink)}.mobile-download{background:rgba(25,27,32,.88);border-color:rgba(255,255,255,.12);box-shadow:0 4px 20px rgba(0,0,0,.28)}@media(max-width:600px){header.wrap{background:rgba(16,17,20,.9)}}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
 /* Beginner guide */
@@ -129,9 +129,10 @@ details.guide-panel[open] summary:after{content:"−"}
   .checkline{gap:8px;margin:7px 0}
   .checkline p{margin:0}
   .result{font-size:11px;padding:10px 11px}
-  .mobile-download{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom));padding:7px 8px;border-radius:15px}
-  .mobile-download #mobileCta{min-height:44px;padding:9px 10px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .mobile-download .mobile-guide-link{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 9px;color:var(--blue);font-size:10px;font-weight:700;white-space:nowrap}
+  .mobile-download{display:flex;align-items:center;justify-content:center;gap:13px;width:max-content;max-width:calc(100% - 28px);left:50%;right:auto;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom));padding:6px 7px 6px 8px;border-radius:999px;background:rgba(255,255,255,.86);border:1px solid rgba(130,140,155,.2);box-shadow:0 4px 18px rgba(20,30,50,.10);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+  .mobile-download #mobileCta{display:flex;align-items:center;justify-content:center;min-height:40px;padding:0 17px;border-radius:999px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mobile-download .mobile-guide-link{display:flex;align-items:center;justify-content:center;min-height:40px;padding:0 10px 0 0;color:var(--muted);font-size:11px;font-weight:650;white-space:nowrap}
+  .mobile-download .mobile-guide-link:active{color:var(--blue)}
   main{padding-bottom:14px}
   footer{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
   #download,#steps{scroll-margin-top:68px}
@@ -141,8 +142,9 @@ details.guide-panel[open] summary:after{content:"−"}
   .card{padding:12px 9px;min-height:172px}
   .card h3{font-size:13px}
   .btn{font-size:10px}
-  .mobile-download{gap:4px;padding:6px}
-  .mobile-download .mobile-guide-link{font-size:9px;padding:0 6px}
+  .mobile-download{gap:7px;padding:5px 6px 5px 7px;max-width:calc(100% - 20px)}
+  .mobile-download #mobileCta{min-height:38px;padding:0 12px;font-size:11px}
+  .mobile-download .mobile-guide-link{min-height:38px;font-size:10px;padding:0 7px 0 0}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
