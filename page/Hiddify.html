@@ -305,6 +305,30 @@ footer{padding:30px 0 42px}
  .guide-panel li{margin:5px 0}
 }
 
+/* Interface polish: clearer download priority and device recognition */
+.card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.card:not(.active):hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--blue) 35%,var(--line));box-shadow:var(--shadow)}
+.card.active{border-color:var(--blue);box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 13%,transparent),var(--shadow)}
+.card .btn{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:750}
+.card .btn:hover{filter:brightness(.94);background:var(--blue)}
+.card .secondary{transition:color .18s}
+.card .tag{letter-spacing:.1px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+.version{display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap}
+#deviceHint{min-height:1.5em}
+.download-head p{max-width:55%;line-height:1.6}
+.download-note{box-shadow:0 4px 18px rgba(20,30,50,.025)}
+.guide-panel{box-shadow:0 4px 18px rgba(20,30,50,.025)}
+.guide-panel a{text-underline-offset:3px}
+@media(max-width:600px){
+ .card:not(.active):hover{transform:none;box-shadow:none}
+ .card.active{box-shadow:0 0 0 2px color-mix(in srgb,var(--blue) 14%,transparent)}
+ .download-head p{max-width:54%}
+ .download-note{box-shadow:none}
+ .guide-panel{box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+
 </style>
 </head>
 <body>
@@ -409,7 +433,17 @@ const os=detect(),top=document.getElementById("topInstallCta"),hint=document.get
 function setPrimary(){
  if(!os){hint.textContent="请选择设备";top.href="#download";top.textContent="选择设备 ↓";return;}
  const card=document.getElementById(os),link=card&&card.querySelector(".btn");
- if(card){card.classList.add("active");card.setAttribute("aria-label",names[os]+"，当前设备");}
+ if(card){
+  card.classList.add("active");
+  card.setAttribute("aria-label",names[os]+"，当前设备");
+  card.setAttribute("aria-current","true");
+  if(!card.querySelector(".tag")){
+   const badge=document.createElement("span");
+   badge.className="tag";
+   badge.textContent="当前设备";
+   card.insertBefore(badge,card.firstChild);
+  }
+ }
  hint.textContent="已识别当前设备："+names[os]+"；也可以选择其他平台。";
  const href=link?link.href:(stores[os]||"#download");
  top.href=href;
