@@ -345,6 +345,26 @@ footer{padding:30px 0 42px}
 }
 @media(max-width:370px){.nav{gap:8px}.nav a{font-size:9px}}
 
+
+/* Minimal visual system: flat surfaces, subtle borders, no decorative shadows */
+:root{--shadow:none}
+.card,.card.active,.card:not(.active):hover,
+.download-note,.guide-panel,.notice{box-shadow:none!important}
+.card:not(.active):hover{transform:none!important}
+.card{border-radius:16px;transition:border-color .18s ease,background-color .18s ease}
+.card.active{border-width:1px;border-color:var(--blue);box-shadow:none!important}
+.card .btn{box-shadow:none}
+.download-note,.guide-panel,.notice{border:1px solid var(--line);border-radius:14px}
+.choice-card,.info-pair>div{box-shadow:none;border-radius:12px}
+.top-install,.mobile-download,.mobile-download #mobileCta,.btn,.tag,.step-number,.choice-mark{box-shadow:none}
+@media(hover:hover){
+ .card:not(.active):hover{border-color:var(--muted);transform:none}
+ .card .btn:hover{filter:none;opacity:.9}
+}
+@media(max-width:600px){
+ .card,.card.active{border-radius:14px}
+ .download-note,.guide-panel,.notice{border-radius:12px}
+}
 </style>
 </head>
 <body>
