@@ -22,7 +22,88 @@ header.wrap{height:68px;display:flex;align-items:center;justify-content:space-be
 @media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card{min-height:178px}.hero{padding:56px 0 38px}.guide{padding:50px 0 40px}}
 @media(max-width:600px){.wrap{width:calc(100% - 30px)}header.wrap{width:100%;height:58px;padding:0 15px}.brand{font-size:14px}.brand-logo{width:28px;height:28px}.nav{gap:14px}.nav a{font-size:11px}.nav a:first-child{display:none}.hero{padding:43px 0 30px}.eyebrow{font-size:11px}.hero h1{font-size:38px;letter-spacing:-1.5px;margin:10px 0}.hero p{font-size:13px;line-height:1.75}.top-install{margin-top:19px;min-height:46px;font-size:13px}.version{font-size:10px;margin-top:12px}#download{padding:17px 13px 16px;border-radius:14px}.download-head{align-items:flex-start;margin-bottom:13px}.download-head h2{font-size:18px}.download-head p{font-size:10px;max-width:48%;line-height:1.5}.grid{gap:9px}.card{min-height:165px;padding:15px 11px 12px;border-radius:10px}.platform-icon{width:29px;height:29px;margin-bottom:10px}.platform-icon svg{width:26px;height:26px}.card h3{font-size:14px}.desc{font-size:10px;min-height:30px;margin:4px 0 10px}.btn{min-height:39px;font-size:11px;padding:7px 5px}.secondary{font-size:10px;margin-top:7px}.tag{font-size:9px;right:7px;top:7px}.download-note{font-size:10px;margin-top:13px;padding-top:11px}.guide{padding:42px 0 32px}.guide-title{font-size:21px}.guide-intro{font-size:11px;margin-bottom:17px}.guide-panel{padding:15px 0}.step-heading{gap:10px}.step-heading h3{font-size:14px}.step-number{width:27px;height:27px;flex-basis:27px;font-size:12px}.guide-panel p,.guide-panel li,.choice-card li{font-size:11px;line-height:1.75}.info-pair{grid-template-columns:1fr;gap:0;margin:9px 0}.info-pair>div{padding:8px 0}.choice-card{margin-top:9px;padding-top:9px}.result{font-size:10px;padding:9px 10px}.guide-official{font-size:10px;margin-top:15px}details.guide-panel summary{min-height:50px;font-size:12px}footer{font-size:10px;padding:16px 0 23px}.foot{display:grid;gap:4px}}
 @media(max-width:360px){.wrap{width:calc(100% - 24px)}.hero h1{font-size:34px}.card{padding-inline:9px}.btn{font-size:10px}}
-@media(hover:none){.top-install:hover,.btn:hover{filter:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}</style>
+@media(hover:none){.top-install:hover,.btn:hover{filter:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+/* Centered, spacious composition */
+.wrap{width:min(900px,calc(100% - 56px))}
+.hero{text-align:center;padding:82px 0 60px}
+.hero p{margin-inline:auto}
+.eyebrow{display:inline-block}
+.top-install{margin-top:28px}
+.version{justify-content:center}
+#download{padding:34px 34px 29px}
+.download-head{display:block;text-align:center;margin-bottom:25px}
+.download-head h2{font-size:24px}
+.download-head p{text-align:center;max-width:none;margin:5px 0 0}
+.grid{gap:16px}
+.card{align-items:center;text-align:center;min-height:205px;padding:23px 18px 18px}
+.platform-icon{justify-content:center;margin:0 auto 15px}
+.card h3{text-align:center}
+.desc{max-width:190px;min-height:36px;margin:6px auto 15px}
+.btn{width:100%;margin-top:auto}
+.secondary{width:100%}
+.tag{right:12px;top:12px}
+.download-note{text-align:center;max-width:680px;margin:23px auto 0;padding-top:17px}
+.download-note-heading{margin-bottom:5px}
+.guide{max-width:760px;margin-inline:auto;padding:78px 0 60px}
+.guide-title,.guide-intro{text-align:center}
+.guide-title{font-size:27px}
+.guide-intro{margin:7px 0 32px}
+.guide-panel{padding:25px 0}
+.step-heading{justify-content:center;margin-bottom:12px}
+.step-heading h3{text-align:center}
+.guide-panel.beginner-step>p{text-align:center;max-width:650px;margin:8px auto}
+.guide-panel .result{max-width:650px;margin:14px auto 0;text-align:center}
+.info-pair{gap:30px;max-width:650px;margin:18px auto}
+.info-pair>div{text-align:center}
+.choice-card{max-width:650px;margin:17px auto 0}
+.choice-card>strong{justify-content:center}
+.choice-card ol{text-align:left;max-width:590px;margin:12px auto}
+.choice-card>p{text-align:center}
+.security-note{text-align:center}
+.connect-list{max-width:620px;margin:12px auto;padding-left:22px;text-align:left}
+details.guide-panel summary{justify-content:center;gap:18px}
+.detail-body{max-width:680px;margin-inline:auto}
+.detail-body p{text-align:left}
+.guide-official{text-align:center;margin-top:25px}
+@media(max-width:760px){
+ .wrap{width:calc(100% - 36px)}
+ .hero{padding:62px 0 45px}
+ #download{padding:25px 20px 22px}
+ .grid{gap:12px}
+ .card{min-height:190px;padding:19px 13px 15px}
+ .guide{padding:58px 0 42px}
+ .guide-panel{padding:20px 0}
+}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 30px)}
+ header.wrap{width:100%}
+ .hero{padding:48px 0 36px}
+ .hero h1{font-size:36px}
+ .hero p{max-width:330px}
+ #download{padding:21px 13px 18px}
+ .download-head{margin-bottom:19px}
+ .download-head h2{font-size:20px}
+ .grid{gap:10px}
+ .card{min-height:174px;padding:17px 10px 13px}
+ .desc{min-height:31px;margin:5px auto 11px}
+ .download-note{margin-top:17px;padding-top:13px}
+ .guide{padding:48px 0 34px}
+ .guide-title{font-size:22px}
+ .guide-intro{margin:6px 0 23px}
+ .guide-panel{padding:17px 0}
+ .step-heading{margin-bottom:9px}
+ .guide-panel.beginner-step>p{text-align:center}
+ .info-pair{gap:3px;margin:12px auto}
+ .info-pair>div{padding:10px 0}
+ .choice-card{margin-top:12px;padding-top:12px}
+ .choice-card ol{padding-left:20px}
+ .guide-official{line-height:2}
+}
+@media(max-width:360px){
+ .hero h1{font-size:33px}
+ .card{padding-inline:8px}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#download">跳转到客户端下载</a><header class="wrap"><a class="brand" href="#" aria-label="Hiddify 下载首页"><img class="brand-logo" src="https://app.wwz.im/images/hiddify.png" alt="Hiddify" width="32" height="32" fetchpriority="high">Hiddify 下载</a><nav class="nav" aria-label="页面导航"><a href="#download">下载客户端</a><a href="#steps">安装指南</a><a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">官方发布页 ↗</a></nav></header>
