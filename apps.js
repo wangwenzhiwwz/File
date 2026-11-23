@@ -1120,6 +1120,12 @@ const appData = [
                 "icon": "./images/bwh.png"
             },
             {
+                "name": "CloudCone",
+                "description": "KVM-based VPS and dedicated servers",
+                "link": "https://app.cloudcone.com/",
+                "icon": "./images/CloudCone.jpg"
+            },
+            {
                 "name": "ColoCrossing",
                 "description": "Colocation & Dedicated Server Hosting",
                 "link": "https://cloud.colocrossing.com/clientarea.php?action=services",
@@ -1154,12 +1160,6 @@ const appData = [
                 "description": "Curated cost-effective VPS deals",
                 "link": "https://kejilion.pro/topvps/",
                 "icon": "./images/Cloud-icon.png"
-            },
-            {
-                "name": "CloudCone",
-                "description": "KVM-based VPS and dedicated servers",
-                "link": "https://app.cloudcone.com/",
-                "icon": "./images/CloudCone.jpg"
             },
             {
                 "name": "Serv00",
