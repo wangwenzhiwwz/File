@@ -140,6 +140,81 @@ footer{border-top:1px solid var(--line);padding:19px 0 28px;color:var(--muted);f
  .guide-official{line-height:1.8}
 }
 
+
+/* Whitespace refinement: calmer rhythm without making the page unnecessarily long */
+.wrap{width:min(1000px,calc(100% - 48px))}
+.hero{padding:68px 0 42px}
+.hero h1{margin:16px 0}
+.top-install{margin-top:28px;min-height:50px;padding-inline:28px}
+.version{margin-top:17px}
+.download-head{margin:22px 0 16px}
+.grid{gap:16px}
+.card{min-height:218px;padding:24px 20px;border-radius:20px}
+.platform-icon{margin-bottom:18px}
+.desc{margin:7px 0 19px;min-height:38px}
+.notice{margin-top:20px;padding:16px 19px;line-height:1.8}
+.mobile-download{margin-top:20px;padding:7px 10px}
+.steps{padding:64px 0 52px}
+.guide-intro{margin-bottom:26px}
+.guide-panel{padding:22px;margin:16px 0;border-radius:18px}
+.step-heading{gap:15px;margin-bottom:15px}
+.step-heading h3{font-size:18px}
+.step-number{width:42px;height:42px;flex-basis:42px}
+.plain-list{margin:12px 0}
+.plain-list li,.connect-list li{line-height:1.9;margin:6px 0}
+.choice-card{margin-top:16px;padding:18px;border-radius:15px}
+.choice-card ol{margin:12px 0}
+.choice-card li{line-height:1.9;margin:8px 0}
+.result{padding:15px 17px;margin-top:15px;line-height:1.85}
+details.guide-panel summary{padding:19px 21px}
+.detail-body{padding:0 21px 20px}
+.detail-body p{margin:13px 0;line-height:1.85}
+.guide-official{margin:22px 0 0;line-height:1.9}
+footer{padding:24px 0 34px}
+@media(max-width:760px){
+ .wrap{width:min(100% - 36px,620px)}
+ .hero{padding:52px 0 32px}
+ .grid{gap:13px}
+ .card{min-height:204px;padding:20px 16px}
+ .steps{padding:48px 0 38px}
+ .guide-panel{padding:18px;margin:13px 0}
+}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 32px)}
+ .hero{padding:38px 0 27px}
+ .hero h1{margin:12px 0}
+ .top-install{margin-top:20px}
+ .version{margin-top:13px}
+ .download-head{margin:14px 0 13px}
+ .grid{gap:11px}
+ .card{min-height:188px;padding:17px 13px;border-radius:16px}
+ .platform-icon{margin-bottom:13px}
+ .desc{margin:5px 0 13px;min-height:32px}
+ .notice{margin-top:15px;padding:13px 14px;line-height:1.75}
+ .mobile-download{margin-top:16px;padding:6px 7px}
+ .steps{padding:40px 0 30px}
+ .guide-intro{margin-bottom:18px;line-height:1.7}
+ .guide-panel{padding:15px;margin:11px 0;border-radius:15px}
+ .step-heading{gap:11px;margin-bottom:12px}
+ .step-heading h3{font-size:15px}
+ .step-number{width:36px;height:36px;flex-basis:36px}
+ .plain-list{margin:9px 0}
+ .plain-list li,.connect-list li{line-height:1.8;margin:4px 0}
+ .choice-card{padding:13px;margin-top:12px}
+ .choice-card ol{margin:9px 0}
+ .choice-card li{line-height:1.8;margin:6px 0}
+ .result{padding:12px 13px;margin-top:11px;line-height:1.75}
+ details.guide-panel summary{padding:15px 16px}
+ .detail-body{padding:0 15px 15px}
+ .detail-body p{margin:10px 0;line-height:1.75}
+ .guide-official{margin-top:16px;line-height:1.8}
+ footer{padding:18px 0 26px}
+}
+@media(max-width:360px){
+ .wrap{width:calc(100% - 26px)}
+ .card{padding:14px 10px}
+}
+
 </style>
 </head>
 <body>
