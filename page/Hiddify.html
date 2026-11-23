@@ -329,10 +329,26 @@ footer{padding:30px 0 42px}
 }
 @media(prefers-reduced-motion:reduce){.card{transition:none}}
 
+/* Navigation and accessibility refinement */
+.skip-link{position:fixed;z-index:30;left:16px;top:10px;transform:translateY(-160%);padding:10px 14px;border-radius:10px;background:var(--blue);color:#fff;font-size:13px;font-weight:700}
+.skip-link:focus{transform:translateY(0)}
+.nav{align-items:center;gap:20px}
+.nav a{white-space:nowrap}
+.nav a:focus-visible,.brand:focus-visible,.btn:focus-visible,.top-install:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+#download,#steps{scroll-margin-top:84px}
+@media(max-width:600px){
+ .nav{gap:12px}
+ .nav a{font-size:10px}
+ .nav a:first-child{display:block}
+ .nav a:last-child{display:none}
+ #download,#steps{scroll-margin-top:66px}
+}
+@media(max-width:370px){.nav{gap:8px}.nav a{font-size:9px}}
+
 </style>
 </head>
 <body>
-<header class="wrap"><a class="brand" href="#" aria-label="Hiddify 下载首页"><img class="brand-logo" src="https://app.wwz.im/images/hiddify.png" alt="Hiddify" width="32" height="32" fetchpriority="high">Hiddify 下载</a><nav class="nav"><a href="#steps">安装说明</a><a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">官方发布页 ↗</a></nav></header>
+<a class="skip-link" href="#download">跳转到客户端下载</a><header class="wrap"><a class="brand" href="#" aria-label="Hiddify 下载首页"><img class="brand-logo" src="https://app.wwz.im/images/hiddify.png" alt="Hiddify" width="32" height="32" fetchpriority="high">Hiddify 下载</a><nav class="nav" aria-label="页面导航"><a href="#download">下载客户端</a><a href="#steps">安装指南</a><a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">官方发布页 ↗</a></nav></header>
 <main class="wrap">
 <section class="hero"><div class="eyebrow">免费 · 开源 · 无广告</div><h1>先安装，再连接。</h1><p>Hiddify 是代理 / VPN 连接客户端，支持导入多种订阅与节点配置。</p><a class="top-install" id="topInstallCta" href="#download">选择设备 <span aria-hidden="true">↓</span></a><div class="version" aria-live="polite"><span class="dot"></span><strong id="version">正在获取…</strong><span id="date"></span></div></section>
 <section id="download">
