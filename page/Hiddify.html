@@ -90,7 +90,65 @@ details.guide-panel[open] summary:after{content:"−"}
 .result{border-radius:12px;background:var(--soft);padding:12px 14px;color:var(--ink);font-size:12px;line-height:1.7;margin-top:12px}
 .result strong{color:var(--blue)}
 @media(max-width:600px){.guide{padding:4px 0 30px}.guide-title{font-size:20px}.guide-intro{font-size:11px}.guide-grid{grid-template-columns:1fr}.guide-panel{padding:14px}.guide-panel p,.guide-panel li{font-size:11px}details.guide-panel summary{padding:14px}.detail-body{padding:0 14px 14px}}
-\n</style>
+\n
+/* Mobile usability pass */
+@media(max-width:600px){
+  html{scroll-padding-top:68px}
+  body{font-size:14px}
+  .wrap{width:calc(100% - 28px)}
+  header.wrap{height:56px;padding:0 14px}
+  .brand{font-size:14px;gap:8px}
+  .brand-logo{width:29px;height:29px}
+  .nav{gap:0}
+  .nav a:last-child{font-size:11px}
+  .hero{padding:25px 0 19px}
+  .eyebrow{font-size:10px}
+  .hero h1{font-size:clamp(30px,8.5vw,37px);letter-spacing:-1.3px;margin:8px 0}
+  .hero p{font-size:12px;max-width:290px}
+  .version{font-size:10px;margin-top:9px}
+  .download-head{align-items:center;margin:7px 0 10px}
+  .download-head h2{font-size:18px}
+  .download-head p{font-size:10px;max-width:48%;text-align:right}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .card{min-width:0;min-height:176px;padding:14px 11px;border-radius:15px}
+  .icon{font-size:23px;margin-bottom:9px}
+  .card h3{font-size:14px}
+  .desc{font-size:10px;min-height:30px;margin:4px 0 9px}
+  .btn{font-size:11px;min-height:44px;padding:10px 5px}
+  .secondary{font-size:10px;min-height:25px;margin-top:5px}
+  .notice{font-size:10px;padding:10px 12px;line-height:1.55}
+  .guide{padding:26px 0 20px}
+  .guide-title{font-size:19px}
+  .guide-intro{font-size:11px;margin-bottom:12px}
+  .guide-panel{border-radius:14px;margin:8px 0;padding:13px}
+  .guide-grid{display:grid;grid-template-columns:1fr;gap:7px}
+  details.guide-panel summary{min-height:50px;padding:13px 14px;font-size:12px;line-height:1.45}
+  .detail-body{padding:0 13px 13px}
+  .guide-panel p,.guide-panel li{font-size:11px;line-height:1.65}
+  .guide-panel ol{padding-left:18px}
+  .checkline{gap:8px;margin:7px 0}
+  .checkline p{margin:0}
+  .result{font-size:11px;padding:10px 11px}
+  .mobile-download{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom));padding:7px 8px;border-radius:15px}
+  .mobile-download #mobileCta{min-height:44px;padding:9px 10px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mobile-download .mobile-guide-link{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 9px;color:var(--blue);font-size:10px;font-weight:700;white-space:nowrap}
+  main{padding-bottom:14px}
+  footer{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
+  #download,#steps{scroll-margin-top:68px}
+}
+@media(max-width:360px){
+  .wrap{width:calc(100% - 22px)}
+  .card{padding:12px 9px;min-height:172px}
+  .card h3{font-size:13px}
+  .btn{font-size:10px}
+  .mobile-download{gap:4px;padding:6px}
+  .mobile-download .mobile-guide-link{font-size:9px;padding:0 6px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+
+</style>
 </head>
 <body>
 <header class="wrap"><a class="brand" href="#" aria-label="Hiddify 下载首页"><img class="brand-logo" src="https://app.wwz.im/images/hiddify.png" alt="Hiddify" width="32" height="32" fetchpriority="high">Hiddify 下载</a><nav class="nav"><a href="#steps">安装说明</a><a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">官方发布页 ↗</a></nav></header>
@@ -173,10 +231,10 @@ details.guide-panel[open] summary:after{content:"−"}
 <p><strong>3. 找不到配置、提示链接无效</strong>：联系发给你链接的人确认链接是否完整、有效，以及是否适用于 Hiddify。</p>
 <p><a href="https://hiddify.com/app/How-to-use-Hiddify-app/" target="_blank" rel="noopener noreferrer">查看 Hiddify 官方使用教程 ↗</a> · <a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装教程 ↗</a></p>
 </div>
-</section></section>
+</section>
 </main>
 <footer><div class="wrap foot"><span>Hiddify 下载指南 · 独立第三方页面</span><span><a href="https://github.com/hiddify/hiddify-app" target="_blank" rel="noopener noreferrer">GitHub 官方项目 ↗</a> · <a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装文档 ↗</a></span></div></footer>
-<div class="mobile-download"><a id="mobileCta" href="#download">选择设备并下载 ↓</a></div>
+<div class="mobile-download"><a id="mobileCta" href="#download">选择设备并下载 ↓</a><a class="mobile-guide-link" href="#steps">已下载？查看安装步骤</a></div>
 <script>
 (function(){
 "use strict";
