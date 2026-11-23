@@ -150,6 +150,18 @@ details.guide-panel[open] summary:after{content:"−"}
   html{scroll-behavior:auto}
 }
 
+@media(max-width:600px){
+  .mobile-download{position:static;display:flex;align-items:center;justify-content:center;gap:12px;width:fit-content;max-width:100%;margin:14px auto 0;padding:5px 6px 5px 7px;transform:none;border-radius:999px;background:var(--card);border:1px solid var(--line);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+  .mobile-download #mobileCta{display:flex;align-items:center;justify-content:center;min-height:38px;padding:0 13px;border-radius:999px;font-size:11px;white-space:nowrap}
+  .mobile-download .mobile-guide-link{display:flex;align-items:center;justify-content:center;min-height:38px;padding:0 9px 0 0;color:var(--muted);font-size:10px;font-weight:650;white-space:nowrap}
+  footer{padding-bottom:24px}
+}
+@media(max-width:360px){
+  .mobile-download{gap:7px;padding:5px}
+  .mobile-download #mobileCta{min-height:36px;padding:0 10px;font-size:10px}
+  .mobile-download .mobile-guide-link{min-height:36px;font-size:9px;padding-right:6px}
+}
+
 </style>
 </head>
 <body>
@@ -165,7 +177,8 @@ details.guide-panel[open] summary:after{content:"−"}
 <article class="card" id="ios" data-os="ios"><span class="icon">📱</span><h3>iPhone / iPad</h3><p class="desc">iOS 15 或更新版本<br>通过 App Store 获取</p><a class="btn" href="https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532" target="_blank" rel="noopener noreferrer">App Store ↗</a><span class="secondary">商店可用性因地区而异</span></article>
 </div>
 <div class="notice"><strong>先确认：</strong>Hiddify 是连接工具，不是网络服务套餐。你可以导入服务提供方给你的配置，也可以尝试应用内的 Free 免费配置（共享资源，速度和可用性不保证）。<a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">官方发布页 ↗</a></div>
-</section>
+
+<div class="mobile-download"><a id="mobileCta" href="#download">选择设备并下载 ↓</a><a class="mobile-guide-link" href="#steps">已下载？查看安装步骤</a></div></section>
 <section class="guide" id="steps">
 <h2 class="guide-title">第 2–4 步 · 完成首次连接</h2>
 <p class="guide-intro">先安装应用，再选择你目前的情况。无需一次读完所有说明。</p>
@@ -236,7 +249,6 @@ details.guide-panel[open] summary:after{content:"−"}
 </section>
 </main>
 <footer><div class="wrap foot"><span>Hiddify 下载指南 · 独立第三方页面</span><span><a href="https://github.com/hiddify/hiddify-app" target="_blank" rel="noopener noreferrer">GitHub 官方项目 ↗</a> · <a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装文档 ↗</a></span></div></footer>
-<div class="mobile-download"><a id="mobileCta" href="#download">选择设备并下载 ↓</a><a class="mobile-guide-link" href="#steps">已下载？查看安装步骤</a></div>
 <script>
 (function(){
 "use strict";
