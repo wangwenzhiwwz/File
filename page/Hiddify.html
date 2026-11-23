@@ -63,7 +63,33 @@ main{padding-bottom:8px}
 @media(hover:none){.card:hover{transform:none}.btn:hover{background:var(--blue)}}
 @media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#101114;--card:#191b20;--ink:#f2f3f5;--muted:#a0a6b2;--line:#2b2e36;--blue:#6b9cff;--soft:#1d2b46}body{background:var(--bg);color:var(--ink)}.card.active{border-color:#537ecb}.tag{color:#a9c5ff}.notice{background:var(--card)}.notice strong{color:var(--ink)}.mobile-download{background:rgba(25,27,32,.9)}@media(max-width:600px){header.wrap{background:rgba(16,17,20,.9)}}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-</style>
+
+/* Beginner guide */
+.guide{padding:8px 0 42px}
+.guide-title{text-align:center;font-size:22px;letter-spacing:-.5px;margin:0 0 8px}
+.guide-intro{text-align:center;color:var(--muted);font-size:12px;margin:0 0 18px}
+.guide-panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:10px 0}
+.guide-panel h3{font-size:15px;margin:0 0 9px}
+.guide-panel p,.guide-panel li{font-size:12px;line-height:1.7;color:var(--muted)}
+.guide-panel p{margin:6px 0}
+.guide-panel ol{padding-left:19px;margin:7px 0}
+.guide-panel strong{color:var(--ink)}
+.guide-panel a{color:var(--blue);font-weight:700}
+.guide-label{display:inline-block;font-size:10px;font-weight:750;color:var(--blue);background:var(--soft);border-radius:20px;padding:3px 8px;margin-bottom:8px}
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+details.guide-panel{padding:0;overflow:hidden}
+details.guide-panel summary{cursor:pointer;list-style:none;padding:15px 16px;font-size:13px;font-weight:750;display:flex;align-items:center;justify-content:space-between}
+details.guide-panel summary::-webkit-details-marker{display:none}
+details.guide-panel summary:after{content:"＋";color:var(--blue);font-size:17px}
+details.guide-panel[open] summary:after{content:"−"}
+.detail-body{padding:0 16px 15px;border-top:1px solid var(--line)}
+.detail-body p{margin:9px 0 0}
+.checkline{display:flex;gap:9px;align-items:flex-start;margin:8px 0}
+.checkline b{color:var(--blue);font-size:12px;flex:0 0 auto}
+.result{border-radius:12px;background:var(--soft);padding:12px 14px;color:var(--ink);font-size:12px;line-height:1.7;margin-top:12px}
+.result strong{color:var(--blue)}
+@media(max-width:600px){.guide{padding:4px 0 30px}.guide-title{font-size:20px}.guide-intro{font-size:11px}.guide-grid{grid-template-columns:1fr}.guide-panel{padding:14px}.guide-panel p,.guide-panel li{font-size:11px}details.guide-panel summary{padding:14px}.detail-body{padding:0 14px 14px}}
+\n</style>
 </head>
 <body>
 <header class="wrap"><a class="brand" href="#"><span class="mark">H</span>Hiddify 下载</a><nav class="nav"><a href="#steps">安装说明</a><a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">官方发布页 ↗</a></nav></header>
@@ -79,11 +105,54 @@ main{padding-bottom:8px}
 </div>
 <div class="notice"><strong>提示：</strong>Hiddify 是客户端，不提供节点或订阅。安装后还需要从你信任的服务提供方获取配置链接并导入。订阅链接相当于账户凭证，请勿公开分享。<a href="https://github.com/hiddify/hiddify-app/releases/latest" target="_blank" rel="noopener noreferrer">核对官方版本 ↗</a></div>
 </section>
-<section class="steps" id="steps"><h2>安装后，只需三步</h2><div class="step-grid">
-<div class="step"><span class="num">STEP 01</span><strong>安装应用</strong><p>下载对应设备的安装包，按系统提示完成安装。</p></div>
-<div class="step"><span class="num">STEP 02</span><strong>导入配置</strong><p>复制服务提供方给你的订阅链接，打开 Hiddify，点击添加（＋）并从剪贴板导入。</p></div>
-<div class="step"><span class="num">STEP 03</span><strong>允许并连接</strong><p>点击连接，首次使用时按系统提示允许创建 VPN 配置。</p></div>
-</div></section>
+<section class="guide" id="steps">
+<h2 class="guide-title">从安装到成功连接</h2>
+<p class="guide-intro">按顺序完成下面几步，不需要了解技术术语。</p>
+<div class="guide-grid">
+<details class="guide-panel" open>
+<summary>① 如何安装？按你的设备查看</summary>
+<div class="detail-body">
+<p><strong>Windows 10 / 11（64 位）</strong></p>
+<ol><li>下载 Windows 安装包（.exe），在浏览器下载记录或“下载”文件夹中双击打开。</li><li>按安装程序提示继续，保持默认选项，完成后点击 Finish。</li><li>如果出现“Windows 已保护你的电脑”，先确认文件来自本页的 Hiddify 官方 GitHub 下载，再点“更多信息”查看发布者信息；无法确认来源时不要继续安装。</li></ol>
+<p><strong>macOS 10.15 或更新版本</strong></p>
+<ol><li>下载 DMG，打开下载的文件。</li><li>将 Hiddify 图标拖到 Applications（应用程序）文件夹。</li><li>从“应用程序”中打开 Hiddify。若 macOS 提示无法验证应用，请先查看<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方 macOS 安装说明</a>，不要随意下载所谓修复工具。</li></ol>
+<p><strong>Android 7.0 或更新版本</strong></p>
+<ol><li>优先点击 Google Play 安装并打开。</li><li>如无法使用 Google Play，再下载本页 APK，打开下载文件并按系统提示安装。</li><li>若系统要求允许“安装未知应用”，只对本次使用的浏览器或文件管理器临时授权；安装后可关闭该权限。</li></ol>
+<p><strong>iPhone / iPad（iOS 15 或更新版本）</strong></p>
+<ol><li>点击 App Store，点“获取”并完成验证。</li><li>安装后打开 Hiddify。首次连接时，按系统提示允许添加 VPN 配置并输入设备密码。</li></ol>
+</div>
+</details>
+<details class="guide-panel" open>
+<summary>② 没有配置链接？先了解这一点</summary>
+<div class="detail-body">
+<p><strong>下载 Hiddify 不等于已经拥有可用线路。</strong>Hiddify 是连接工具，本身不提供个人专属服务器或订阅服务。</p>
+<p>你需要向自己信任的服务提供方获取<strong>订阅链接 / 用户链接</strong>，或由对方提供二维码、配置文件。不要使用陌生人发来的不明链接。</p>
+<p>订阅链接通常以 <strong>https://</strong> 开头。它可能包含你的账号权限，请勿发到公开群聊或社交平台。</p>
+</div>
+</details>
+<details class="guide-panel" open>
+<summary>③ 怎样导入订阅链接？</summary>
+<div class="detail-body">
+<ol><li>先复制服务提供方给你的完整订阅链接。若对方提供的是个人用户页面，打开页面并点击“在 Hiddify 中打开”一类按钮，通常可以直接导入。</li><li>如果不能自动打开 Hiddify：进入 Hiddify 首页，点击顶部的 <strong>＋</strong>。</li><li>选择 <strong>Clipboard（剪贴板）</strong> 导入刚才复制的链接。也可以选择二维码扫描，或进入 Manually（手动）粘贴链接后添加。</li><li>添加成功后，首页会出现一个配置 / Profile 卡片。</li></ol>
+<div class="result">看到 <strong>Invalid URL</strong> 或添加失败？检查是否复制了完整链接、开头是否为 https://，并确认链接没有过期；仍失败请联系链接提供方。</div>
+</div>
+</details>
+<details class="guide-panel" open>
+<summary>④ 怎样开始连接？</summary>
+<div class="detail-body">
+<ol><li>在 Hiddify 首页确认已经出现配置卡片。</li><li>点击页面中央的连接按钮（Tap to connect）。</li><li>首次连接时，手机按提示点“允许 / OK”；电脑按系统提示允许 Hiddify 创建 VPN 连接。</li><li>按钮显示绿色 <strong>Connected</strong>（已连接）时，表示连接已建立。再次点击可断开。</li></ol>
+<div class="result"><strong>完成标志：</strong>Hiddify 显示 Connected，打开浏览器访问一个网页确认网络正常。若显示已连接但网页无法打开，尝试切换网络或联系服务提供方。</div>
+</div>
+</details>
+</div>
+<div class="guide-panel">
+<h3>常见问题</h3>
+<p><strong>一直显示 Connecting…</strong>：回到首页更新配置，或在 Proxies（节点）中换一个线路再试；仍不行请联系服务提供方。</p>
+<p><strong>显示 Connected 但无法上网</strong>：检查当前 Wi-Fi / 蜂窝网络是否正常，暂时关闭其他 VPN 或代理应用后再试。</p>
+<p><strong>不知道去哪里找订阅链接</strong>：联系提供你服务的商家或管理员。本站不出售订阅，也无法替你生成个人配置。</p>
+<p><a href="https://hiddify.com/app/How-to-use-Hiddify-app/" target="_blank" rel="noopener noreferrer">查看 Hiddify 官方完整使用教程 ↗</a></p>
+</div>
+</section>
 </main>
 <footer><div class="wrap foot"><span>Hiddify 下载指南 · 独立第三方页面</span><span><a href="https://github.com/hiddify/hiddify-app" target="_blank" rel="noopener noreferrer">GitHub 官方项目 ↗</a> · <a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装文档 ↗</a></span></div></footer>
 <div class="mobile-download"><a id="mobileCta" href="#download">选择设备并下载 ↓</a></div>
