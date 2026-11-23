@@ -113,6 +113,33 @@ footer{border-top:1px solid var(--line);padding:19px 0 28px;color:var(--muted);f
 @media(max-width:360px){.wrap{width:calc(100% - 22px)}.card{padding:12px 9px;min-height:172px}.card h3{font-size:13px}.btn{font-size:10px}.mobile-download{gap:6px}.mobile-download #mobileCta{padding:0 9px;font-size:10px}.mobile-guide-link{font-size:9px;padding-right:4px}}
 @media(hover:none){.top-install:hover{transform:none;filter:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Beginner tutorial: clear sequence and visible action cues */
+.step-heading{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.step-heading h3{font-size:17px;margin:0}
+.step-heading .guide-label{margin:0 0 4px}
+.step-number{display:flex;align-items:center;justify-content:center;flex:0 0 38px;width:38px;height:38px;border-radius:13px;background:var(--soft);color:var(--blue);font-size:17px;font-weight:800}
+.plain-list{padding-left:20px;margin:8px 0}
+.plain-list li,.connect-list li{font-size:12px;line-height:1.75;color:var(--muted);padding-left:3px;margin:3px 0}
+.choice-card{margin-top:12px;padding:14px;border:1px solid var(--line);border-radius:13px;background:color-mix(in srgb,var(--card) 90%,var(--soft))}
+.choice-card>strong{display:flex;align-items:center;gap:8px;font-size:13px}
+.choice-mark{display:inline-flex;align-items:center;justify-content:center;width:23px;height:23px;border-radius:50%;background:var(--blue);color:white;font-size:11px}
+.choice-card ol{padding-left:20px;margin:9px 0}
+.choice-card li{font-size:12px;line-height:1.75;color:var(--muted);margin:5px 0}
+.connect-list{padding-left:21px;margin:8px 0}
+.disconnect-tip{margin-top:12px!important;padding-top:10px;border-top:1px solid var(--line)}
+.guide-official{text-align:center;font-size:11px;color:var(--muted);margin:15px 0 0}
+.guide-official a{color:var(--blue);font-weight:700}
+@media(max-width:600px){
+ .step-heading{gap:10px}
+ .step-heading h3{font-size:15px}
+ .step-number{flex-basis:34px;width:34px;height:34px;border-radius:11px}
+ .choice-card{padding:12px;margin-top:10px}
+ .choice-card>strong{font-size:12px}
+ .choice-card li,.plain-list li,.connect-list li{font-size:11px;line-height:1.7}
+ .guide-official{line-height:1.8}
+}
+
 </style>
 </head>
 <body>
@@ -131,72 +158,84 @@ footer{border-top:1px solid var(--line);padding:19px 0 28px;color:var(--muted);f
 
 <div class="mobile-download"><a id="mobileCta" href="#download">选择设备并开始 ↓</a><a class="mobile-guide-link" href="#steps">已下载？查看安装步骤</a></div></section>
 <section class="guide" id="steps">
-<h2 class="guide-title">第 2–4 步 · 完成首次连接</h2>
-<p class="guide-intro">先安装应用，再选择你目前的情况。无需一次读完所有说明。</p>
-<div class="guide-panel">
-<span class="guide-label">安装后第一次打开</span>
-<h3>先完成应用初始设置</h3>
-<div class="checkline"><b>01</b><p>如果出现语言选择，选择<strong>简体中文</strong>（如果列表中有）。</p></div>
-<div class="checkline"><b>02</b><p>如果出现地区 / Region，选择你<strong>当前所在的国家或地区</strong>；这会影响本地网站的分流方式。</p></div>
-<div class="checkline"><b>03</b><p>如果出现匿名分析 / Analytics 选项，可按个人意愿开启或关闭，不影响基本连接。</p></div>
-<div class="checkline"><b>04</b><p>点击 Start / 开始，进入 Hiddify 首页。</p></div>
+<h2 class="guide-title">安装完成后，跟着做就能连接</h2>
+<p class="guide-intro">不用懂网络知识。按顺序完成下面 3 步；每一步都告诉你应该看到什么。</p>
+
+<div class="guide-panel beginner-step">
+<div class="step-heading"><span class="step-number">1</span><div><span class="guide-label">先做这一步</span><h3>打开 Hiddify，完成首次设置</h3></div></div>
+<p>安装完成后，在电脑或手机上打开 Hiddify。</p>
+<ul class="plain-list">
+<li>如果询问语言，选择<strong>简体中文</strong>（如果有）。</li>
+<li>如果询问地区，选择你<strong>当前所在的国家或地区</strong>。</li>
+<li>如果询问是否发送匿名使用统计，可按个人意愿选择。</li>
+<li>进入应用首页后，准备添加配置。</li>
+</ul>
+<div class="result"><strong>这一步完成的标志：</strong>你已经进入 Hiddify 主界面，能看到添加配置的入口（通常是「＋」）。不同版本的按钮位置和文字可能略有不同。</div>
 </div>
-<div class="guide-grid">
+
+<div class="guide-panel beginner-step">
+<div class="step-heading"><span class="step-number">2</span><div><span class="guide-label">选择适合你的方式</span><h3>添加配置，让 Hiddify 知道要连接哪里</h3></div></div>
+<p>先看你手上有没有服务商发来的订阅链接、二维码或配置文件。</p>
+<div class="choice-card">
+<strong><span class="choice-mark">A</span> 我有订阅链接 / 二维码（最常见）</strong>
+<ol>
+<li><strong>有一键导入页面：</strong>打开服务商发给你的用户中心，点击「导入 Hiddify」或类似按钮；浏览器询问是否打开 Hiddify 时，选择「打开」。</li>
+<li><strong>只有一条链接：</strong>先复制完整链接，再打开 Hiddify，点击首页的「＋」或「添加配置」，选择剪贴板导入；如果没有剪贴板选项，就选择手动添加并粘贴链接。</li>
+<li><strong>拿到二维码：</strong>在添加配置页面选择扫码 / QR Code，使用相机扫描服务商提供的二维码。</li>
+<li><strong>拿到配置文件：</strong>在添加配置页面选择文件导入，再选择对方发给你的文件。</li>
+</ol>
+<div class="result"><strong>导入成功后：</strong>首页会出现一个配置卡片（Profile）。看到配置卡片，就可以进行下一步了。</div>
+</div>
+<div class="choice-card">
+<strong><span class="choice-mark">B</span> 我没有订阅链接，想先试试看</strong>
+<ol>
+<li>在 Hiddify 首页点击「＋」或「添加配置」。</li>
+<li>看看页面里是否提供 Free（免费）配置或试用入口。</li>
+<li>如果有，阅读页面说明后按提示添加；如果没有，说明当前版本或地区可能不提供此选项。</li>
+</ol>
+<div class="result">免费配置并非每个版本、地区都提供；即使能添加，也可能速度较慢或暂时无法连接。Hiddify 本身不是节点服务商，不会自动赠送稳定线路。需要配置时，请向你信任的服务提供方获取。</div>
+</div>
+<div class="notice"><strong>安全提醒：</strong>订阅链接相当于连接账号凭证。不要把链接、二维码或配置文件公开发到群聊，也不要导入陌生人发来的配置。</div>
+</div>
+
+<div class="guide-panel beginner-step">
+<div class="step-heading"><span class="step-number">3</span><div><span class="guide-label">最后一步</span><h3>点击连接，确认真的能上网</h3></div></div>
+<ol class="connect-list">
+<li>回到 Hiddify 首页，确认已经看到刚才添加的配置卡片。</li>
+<li>点击页面中央的连接按钮（可能显示 Connect / 连接 / Tap to connect）。</li>
+<li>第一次连接时，系统可能弹出 VPN 权限提示。确认是 Hiddify 发起后，选择允许 / Allow / OK。</li>
+<li>稍等片刻，应用显示 Connected（已连接）或连接按钮变为已连接状态。</li>
+<li>打开浏览器，访问一个平时能打开的网站，确认网页可以正常加载。</li>
+</ol>
+<div class="result"><strong>真正成功的标志：</strong>Hiddify 显示已连接，而且浏览器能正常打开网页。只看到 Connected 还不够，建议实际打开网页测试。</div>
+<p class="disconnect-tip">需要停止连接时，重新打开 Hiddify，点击同一个连接按钮即可断开。</p>
+</div>
+
 <details class="guide-panel">
-<summary>怎样把应用安装到设备上？</summary>
+<summary>不同设备怎么安装？</summary>
 <div class="detail-body">
-<p><strong>Windows 10（版本 1809）/ 11，64 位</strong></p>
-<ol><li>点击 Windows 下载按钮，等待 .exe 文件下载完成。</li><li>打开浏览器下载记录，或进入“下载”文件夹，双击安装文件。</li><li>如出现 Windows 安全提示，先确认文件来自 Hiddify 官方 GitHub 发布页；确认后再按提示选择“更多信息”→“仍要运行”。</li><li>按安装向导继续，通常保持默认安装位置即可；完成后点击 Finish（完成）。</li></ol>
-<p><strong>macOS 10.15 或更新版本（Intel / Apple 芯片）</strong></p>
-<ol><li>下载 .dmg 文件，在“下载”文件夹中双击打开。</li><li>将 Hiddify 图标拖入 Applications（应用程序）文件夹，等待复制完成。</li><li>从“应用程序”文件夹打开 Hiddify。若 macOS 阻止打开，请先核对下载来源，再严格按<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">Hiddify 官方 macOS 安装说明</a>处理；不要使用第三方修复工具。</li></ol>
-<p><strong>Android 7.0 或更新版本</strong></p>
-<ol><li>优先点击 Google Play，进入应用页后点击“安装”，完成后点击“打开”。</li><li>如果无法使用 Google Play，可下载 APK；下载完成后从通知栏或“文件 / 下载”中点开。</li><li>若系统提示禁止安装未知应用，只为当前浏览器或文件管理器临时开启“允许来自此来源”，返回安装界面点击“安装”；安装完成后建议关闭该权限。</li></ol>
-<p><strong>iPhone / iPad（iOS 15 或更新版本）</strong></p>
-<ol><li>点击 App Store，点“获取”，使用 Face ID、Touch ID 或密码确认。</li><li>安装完成后点击“打开”。如果商店搜索不到，可能是当前 Apple ID 地区暂未提供该应用。</li></ol>
+<p><strong>Windows 电脑</strong></p>
+<ol><li>点击上方 Windows 下载按钮，下载完成后打开浏览器「下载」列表，双击 .exe 安装文件。</li><li>跟随安装向导操作，通常保持默认选项即可。</li><li>如果出现安全警告，先确认文件来自本页链接的 Hiddify 官方 GitHub 发布页；无法确认来源时不要继续安装。</li></ol>
+<p><strong>Mac 电脑</strong></p>
+<ol><li>下载 DMG 文件，在「下载」文件夹中双击打开。</li><li>将 Hiddify 图标拖到「应用程序」文件夹。</li><li>从「应用程序」中打开 Hiddify。若系统阻止打开，请先核对下载来源，再查看<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装说明</a>，不要运行陌生人提供的修复命令。</li></ol>
+<p><strong>Android 手机</strong></p>
+<ol><li>优先从 Google Play 安装，点击「安装」后等待完成。</li><li>如果使用 APK，下载后点击文件并按系统提示安装。只在确认 APK 来自官方发布页后安装。</li><li>如果系统要求允许安装未知应用，只为当前浏览器或文件管理器临时开启；安装完成后建议关闭。</li></ol>
+<p><strong>iPhone / iPad</strong></p>
+<ol><li>点击 App Store，选择「获取」，按提示使用 Face ID、Touch ID 或密码确认。</li><li>安装完成后点击「打开」。如果商店显示不可用，可能与 Apple ID 所在地区有关。</li></ol>
 </div>
 </details>
+
 <details class="guide-panel">
-<summary>我有订阅链接 / 配置二维码</summary>
+<summary>我卡住了：常见问题怎么处理？</summary>
 <div class="detail-body">
-<p><strong>方法 A：通过服务商提供的用户页面导入（优先）</strong></p>
-<ol><li>打开服务商发给你的个人用户页面。</li><li>点击页面上的“连接 / 在 Hiddify 中打开”按钮。</li><li>浏览器询问是否打开 Hiddify 时，选择打开；回到应用确认配置已添加。</li></ol>
-<p><strong>方法 B：复制链接后手动导入</strong></p>
-<ol><li>复制完整的订阅链接。订阅链接通常以 <strong>https://</strong> 开头；单个节点配置也可能以 vless://、vmess:// 等开头。</li><li>打开 Hiddify 首页，点击顶部 <strong>＋</strong>。</li><li>选择 Clipboard（剪贴板）导入；或选择 Manually（手动），粘贴链接并点击 Add（添加）。</li><li>如果拿到的是二维码，选择 QR code / Scan QR 扫描；如果拿到配置文件，选择 File 导入。</li></ol>
-<div class="result"><strong>成功标志：</strong>首页出现一个 Profile（配置 / 订阅）卡片。提示 Invalid URL 或 Failed to add profile 时，检查链接是否复制完整、是否过期；不要把链接发给陌生人排查。</div>
+<p><strong>找不到「＋」或添加配置入口：</strong>回到应用首页，查看顶部或页面中的添加按钮；不同版本界面可能不同，也可以参考<a href="https://hiddify.com/app/How-to-use-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方使用教程</a>。</p>
+<p><strong>提示链接无效 / Invalid URL：</strong>确认复制的是完整链接，没有漏掉开头或结尾；再向配置提供方确认链接是否过期、是否适用于 Hiddify。</p>
+<p><strong>一直显示 Connecting：</strong>先确认手机或电脑本身可以正常上网，再尝试更新配置；仍无法连接时联系配置提供方。</p>
+<p><strong>显示 Connected，但网页打不开：</strong>暂时关闭其他 VPN 或代理应用，切换 Wi-Fi / 移动网络再测试；仍不行请联系配置提供方。</p>
+<p><strong>系统询问是否允许 VPN：</strong>这是建立本机 VPN 连接所需的系统授权。确认请求来自 Hiddify 后再允许；不确定时先取消并核实。</p>
 </div>
 </details>
-<details class="guide-panel">
-<summary>我没有订阅链接，能先试用吗？</summary>
-<div class="detail-body">
-<p>可以查看 Hiddify 应用内是否提供 Free（免费配置）：</p>
-<ol><li>打开 Hiddify 首页，点击顶部 <strong>＋</strong>。</li><li>在添加配置面板中查看是否有 <strong>Free</strong> 开关或免费配置列表。</li><li>如果有，选择其中一个配置，阅读并确认它的使用条款，再按提示添加。</li></ol>
-<div class="result">免费配置属于共享资源，可能拥挤、速度较慢或暂时不可用；并非所有版本或地区都一定显示。需要稳定使用时，请使用可信服务提供方给你的配置。本站不会替你提供账号或线路。</div>
-</div>
-</details>
-<details class="guide-panel">
-<summary>怎样连接？怎样确认成功？</summary>
-<div class="detail-body">
-<ol><li>确认首页已经显示 Profile 卡片，点击屏幕中央的连接按钮（Tap to connect）。</li><li>首次连接时，手机按系统提示允许添加 VPN 配置；Android 可能显示连接请求，点击 OK。电脑按系统提示允许 Hiddify 建立 VPN 连接。</li><li>连接成功后，按钮通常会变成绿色并显示 <strong>Connected</strong>。</li><li>打开浏览器访问常用网页，确认页面能正常加载。再次点击连接按钮即可断开。</li></ol>
-<div class="result"><strong>注意：</strong>显示 Connected 代表隧道已建立，不代表所有网站都一定可访问；还要实际打开网页验证。</div>
-</div>
-</details>
-<details class="guide-panel">
-<summary>Windows / macOS / Android 安装时遇到提示</summary>
-<div class="detail-body">
-<p><strong>Windows：</strong>下载 EXE 后双击运行。若出现“Windows 已保护你的电脑”，只有在确认文件来自本页指向的 Hiddify 官方 GitHub 发布页后，才可点击“更多信息”查看“仍要运行”；无法确认来源就停止安装。</p>
-<p><strong>macOS：</strong>打开 DMG，将 Hiddify 拖入 Applications（应用程序）。如果首次打开被 macOS 拦截，先核对下载来源，再按<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方 macOS 安装说明</a>处理。不要运行来源不明的“破解 / 修复”命令。</p>
-<p><strong>Android：</strong>优先使用 Google Play。安装 APK 时，如果系统要求允许“安装未知应用”，只给当前浏览器或文件管理器临时授权；安装完成后可关闭该权限。</p>
-<p><strong>iPhone / iPad：</strong>通过 App Store 安装。首次连接时按提示点击 Allow（允许），并输入设备密码。</p>
-</div>
-</details>
-</div>
-<div class="guide-panel">
-<h3>连接失败，先按这个顺序检查</h3>
-<p><strong>1. 一直显示 Connecting…</strong>：先确认当前 Wi-Fi / 蜂窝网络能正常上网；回到配置卡片更新订阅，再尝试切换一个节点。</p>
-<p><strong>2. 显示 Connected 但网页打不开</strong>：暂时关闭其他 VPN / 代理应用，切换 Wi-Fi 与移动网络测试；仍不行请联系配置提供方。</p>
-<p><strong>3. 找不到配置、提示链接无效</strong>：联系发给你链接的人确认链接是否完整、有效，以及是否适用于 Hiddify。</p>
-<p><a href="https://hiddify.com/app/How-to-use-Hiddify-app/" target="_blank" rel="noopener noreferrer">查看 Hiddify 官方使用教程 ↗</a> · <a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装教程 ↗</a></p>
-</div>
+<p class="guide-official">需要查看原版说明？<a href="https://hiddify.com/app/How-to-use-Hiddify-app/" target="_blank" rel="noopener noreferrer">Hiddify 官方使用教程 ↗</a>　<a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装教程 ↗</a></p>
 </section>
 </main>
 <footer><div class="wrap foot"><span>Hiddify 下载指南 · 独立第三方页面</span><span><a href="https://github.com/hiddify/hiddify-app" target="_blank" rel="noopener noreferrer">GitHub 官方项目 ↗</a> · <a href="https://hiddify.com/app/How-to-install-Hiddify-app/" target="_blank" rel="noopener noreferrer">官方安装文档 ↗</a></span></div></footer>
