@@ -586,6 +586,12 @@ const appData = [
         "title": "Windows",
         "apps": [
             {
+                "name": "HuarunWin",
+                "description": "跨平台下载、安装和管理工具",
+                "link": "https://huarun.win/",
+                "icon": "./images/huayun.svg"
+            },
+            {
                 "name": "Windows设置",
                 "description": "Practical Windows 11 settings tool",
                 "link": "https://github.com/wangwenzhiwwz/File/releases/tag/Windows",
