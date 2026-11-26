@@ -157,7 +157,7 @@ const appData = [
             {
                 "name": "ElevenLabs",
                 "description": "Realistic AI-generated synthetic voice",
-                "link": "https://elevenlabs.io/",
+                "link": "https://elevenlabs.io/app",
                 "icon": "./images/elevenlabs.png"
             },
             {
