@@ -143,28 +143,28 @@ const appData = [
                 "icon": "./images/Claude.png"
             },
             {
-                "name": "WorkBuddy",
-                "description": "AI Agent for Everyday Office Work",
-                "link": "https://www.workbuddy.cn/app",
-                "icon": "./images/workbuddy.png"
-            },
-            {
                 "name": "Gemini",
                 "description": "Google's multimodal AI for connected creativity.",
                 "link": "https://gemini.google.com/",
                 "icon": "./images/Gemini.png"
             },
             {
-                "name": "DeepSeek",
-                "description": "A reasoning powerhouse for math and programming.",
-                "link": "https://www.deepseek.com/",
-                "icon": "./images/DeepSeek.png"
-            },
-            {
                 "name": "Grok",
                 "description": "Real-time insights with a bold, witty personality.",
                 "link": "https://grok.com/",
                 "icon": "./images/Grok.jpg"
+            },
+            {
+                "name": "ElevenLabs",
+                "description": "Realistic AI-generated synthetic voice",
+                "link": "https://elevenlabs.io/",
+                "icon": "./images/elevenlabs.png"
+            },
+            {
+                "name": "DeepSeek",
+                "description": "A reasoning powerhouse for math and programming.",
+                "link": "https://www.deepseek.com/",
+                "icon": "./images/DeepSeek.png"
             },
             {
                 "name": "豆包",
@@ -213,6 +213,18 @@ const appData = [
                 "description": "把全世界的 AI 能力， 装进炉子",
                 "link": "https://app.luzi.top/community/forum",
                 "icon": "./images/luzi.png"
+            },
+            {
+                "name": "Antigravity",
+                "description": "Experience liftoff with the next-generation IDE",
+                "link": "https://antigravity.google/",
+                "icon": "./images/Antigravity.jpg"
+            },
+            {
+                "name": "WorkBuddy",
+                "description": "AI Agent for Everyday Office Work",
+                "link": "https://www.workbuddy.cn/",
+                "icon": "./images/workbuddy.png"
             },
             {
                 "name": "LocModel",
@@ -305,12 +317,6 @@ const appData = [
                 "icon": "./images/Topaz.png"
             },
             {
-                "name": "Antigravity",
-                "description": "Experience liftoff with the next-generation IDE",
-                "link": "https://antigravity.google/",
-                "icon": "./images/Antigravity.jpg"
-            },
-            {
                 "name": "Hyper3D",
                 "description": "AI-powered 3D model generator",
                 "link": "https://hyper3d.ai/",
@@ -339,12 +345,6 @@ const appData = [
                 "description": "AI Video Editor | Edit Videos with Prompts",
                 "link": "https://www.chatcut.io/",
                 "icon": "./images/chatcut.png"
-            },
-            {
-                "name": "ElevenLabs",
-                "description": "Realistic AI-generated synthetic voice",
-                "link": "https://elevenlabs.io/",
-                "icon": "./images/elevenlabs.png"
             },
             {
                 "name": "Cursor",
@@ -377,12 +377,6 @@ const appData = [
                 "icon": "./images/WebSim.png"
             },
             {
-                "name": "Bigjpg",
-                "description": "AI-powered lossless image upscaling",
-                "link": "https://bigjpg.com/",
-                "icon": "./images/bigjpg.png"
-            },
-            {
                 "name": "OpenClaw",
                 "description": "Personal AI Assistant",
                 "link": "https://openclaw.ai/",
@@ -405,6 +399,12 @@ const appData = [
                 "description": "Your Gateway to AGI",
                 "link": "https://app.aibase.cn/zh/best-ai-tools/monthly/",
                 "icon": "./images/aibase.png"
+            },
+            {
+                "name": "Bigjpg",
+                "description": "AI-powered lossless image upscaling",
+                "link": "https://bigjpg.com/",
+                "icon": "./images/bigjpg.png"
             }
         ]
     },
